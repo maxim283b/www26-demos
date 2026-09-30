@@ -81,165 +81,34 @@ def main() -> None:
         raise RuntimeError("summary ids do not match index.tsv")
 
     pdf_count = sum((root / "pdf" / row["filename"]).exists() for row in rows)
-    repo_only_count = sum(
-        row["paper_id"] in REPOSITORIES
-        and not (root / "pdf" / row["filename"]).exists()
-        for row in rows
-    )
-    abstract_only_count = len(rows) - pdf_count - repo_only_count
-
     lines = [
-        "# The Web Conference 2027 — ретроспектива Demo Track 2026",
+        "# WWW'26 Demo Track",
         "",
-        "Аналитический корпус прошлогоднего Demo Track для подготовки заявки на "
-        "[The Web Conference 2027](https://www2027.thewebconf.org/). Формат списка повторяет "
-        "идею репозитория `aaai26-demos`: коротко — что решали, что сделали и чем работа "
-        "выделяется. Последняя часть — практические выводы именно для WebConf'27.",
-        "",
-        "## Корпус и методика",
-        "",
-        "- Источник состава: официальный список из **40 принятых demo papers WebConf'26**.",
-        f"- Для **{pdf_count} работ** найдены легальные OA/author PDFs и выполнена конвертация "
-        f"**Marker 2.0.0 → Markdown**; результат проверен по manifest (`{pdf_count}/{pdf_count} ok`).",
-        f"- Для **{repo_only_count} работ** без доступного proceedings PDF найден официальный "
-        "или авторский GitHub. Их анализ дополнительно опирается на код и README; такие строки "
-        "помечены `GitHub/code+README`, а не `full text`.",
-        f"- Для оставшихся **{abstract_only_count} работ** ACM PDF недоступен без browser "
-        "challenge/подписки и официальный repository не найден; анализ ограничен публичным "
-        "abstract и помечен `abstract`.",
-        "- Формулировки «выделяется» ниже — аналитические выводы по принятому корпусу, а не "
-        "цитаты или раскрытые мотивы рецензентов.",
-        "",
-        "## Все принятые demo papers WebConf'26",
+        f"Обзор тематик, {len(rows)} статей. Номер в скобках соответствует префиксу файлов "
+        "в `pdf/` и `md/`.",
         "",
     ]
 
     for number, row in enumerate(rows, 1):
         paper_id = row["paper_id"]
         pdf = root / "pdf" / row["filename"]
-        if pdf.exists():
-            title_url = f"pdf/{row['filename']}"
-            repo = REPOSITORIES.get(paper_id)
-            repo_link = f" · [GitHub]({repo})" if repo else ""
-            evidence = f"[full text · MD](md/{paper_id}/{paper_id}.md){repo_link}"
-        elif paper_id in REPOSITORIES:
-            title_url = REPOSITORIES[paper_id]
-            evidence = f"GitHub/code+README · [DOI]({row['doi_url']})"
-        else:
-            title_url = row["doi_url"]
-            evidence = "abstract"
+        title_url = f"pdf/{row['filename']}" if pdf.exists() else row["doi_url"]
+        links = []
+        if (root / "md" / paper_id / f"{paper_id}.md").exists():
+            links.append(f"[md](md/{paper_id}/{paper_id}.md)")
+        if paper_id in REPOSITORIES:
+            links.append(f"[github]({REPOSITORIES[paper_id]})")
+        suffix = f" {' · '.join(links)}" if links else ""
         lines.append(
             f"{number}. **[{row['title']}]({title_url})** (`{paper_id}`) — "
-            f"{SUMMARIES[paper_id]} *{evidence}*."
+            f"{SUMMARIES[paper_id]}{suffix}."
         )
 
-    lines.extend(
-        [
-            "",
-            "## Что характерно для принятого корпуса",
-            "",
-            "Индикаторы ниже не являются взаимоисключающими категориями; это keyword-анализ "
-            "заголовков и abstract/full text:",
-            "",
-            "- **26/40** работ используют LLM или агентов как существенную часть системы; сам "
-            "факт использования LLM уже не является вкладом — принимаемые работы показывают "
-            "новый workflow, control layer, данные или измеримую практическую пользу.",
-            "- **34/40** явно предлагают интерактивную platform/interface/dashboard/browser "
-            "experience. Для demo track интерфейс — часть научного аргумента, а не упаковка.",
-            "- **23/40** явно содержат evaluation, benchmark, robustness, fairness, calibration "
-            "или другую измеримую проверку. «Работает на сцене» обычно подкреплено числами.",
-            "- Не менее **15/40** abstract прямо указывают open source, public API, live demo или "
-            "другой открытый artifact; реальная доля выше, поскольку не все abstract перечисляют ссылки.",
-            "",
-            "Повторяющийся паттерн сильной заявки: **конкретная боль → работающая end-to-end "
-            "система → понятный hands-on сценарий → измеримая проверка → контролируемость и "
-            "воспроизводимый artifact**. Особенно заметны human-in-the-loop управление, "
-            "provenance/freshness, интерпретируемость и опыт реального deployment.",
-            "",
-            "## Как переложить это на заявку WebConf'27",
-            "",
-            "Официальный call требует уже **implemented and tested system**, прямого hands-on "
-            "взаимодействия и описания развертывания на площадке. Отбор идет по originality, "
-            "significance, quality и clarity. Практически это означает:",
-            "",
-            "1. Сформулировать один демонстрируемый пользовательский путь на 2–4 минуты: input, "
-            "момент взаимодействия, наблюдаемый результат и сравнение/контроль.",
-            "2. Отделить системный вклад от базовой модели: orchestration, retrieval, memory, "
-            "interface, validation, privacy, latency или domain adaptation должны быть явными.",
-            "3. Дать хотя бы одну численную проверку и один качественный case study; для deployed "
-            "систем особенно убедительны latency, reliability и реальные usage metrics.",
-            "4. Приложить короткое видео, repository и, если возможно, стабильный web demo; call "
-            "прямо поощряет external material.",
-            "5. Описать venue setup и fallback: hardware, network, accounts/data, время reset, "
-            "offline recording на случай сбоя и то, что именно делает посетитель.",
-            "6. Заложить отдельный раздел про ethical use of data / informed consent — он обязателен.",
-            "",
-            "### Рекомендуемая структура четырех страниц",
-            "",
-            "- **Стр. 1:** проблема, аудитория, gap, 2–3 contributions и один screenshot/teaser.",
-            "- **Стр. 2:** архитектура и то, что технически ново относительно baseline/related systems.",
-            "- **Стр. 3:** пошаговый demo script, интеракции посетителя и план deployment на venue.",
-            "- **Стр. 4:** evaluation/case study, ограничения, ethics, ссылки на video/code/demo и references.",
-            "",
-            "## Формальные требования WebConf'27",
-            "",
-            "- Deadline: **16 ноября 2026, end-of-day AoE**; notification — 4 января 2027, "
-            "camera-ready — 31 января 2027.",
-            "- Один PDF, английский язык, ACM `sigconf` double-column, максимум **4 страницы "
-            "включая references**.",
-            "- Подача через OpenReview в Demo track; заявка **не анонимная**, review single-blind.",
-            "- Обязательны очная demo-презентация и onsite poster; no-show может привести к withdrawal.",
-            "- Принятая работа требует отдельной conference registration. Если ни один автор не "
-            "покрыт ACM Open, call указывает субсидированный APC 2027: $500 для ACM/SIG member "
-            "или $750 для non-member.",
-            "",
-            "Официальные страницы: [Call for Demonstrations](https://www2027.thewebconf.org/demos/) · "
-            "[Important Dates](https://www2027.thewebconf.org/important-dates/) · "
-            "[Accepted Demos 2026](https://www2026.thewebconf.org/accepted/demo.html).",
-            "",
-            "## Структура репозитория и воспроизведение",
-            "",
-            "```text",
-            "www27-demos/",
-            f"├── pdf/                 # {pdf_count} доступных OA/author PDFs",
-            "├── md/<paper_id>/       # Marker Markdown + извлеченные изображения",
-            "├── metadata/            # cached Crossref/OpenAlex/Unpaywall/etc.",
-            "├── index.tsv            # 40 официальных работ, DOI, PDF provenance/status",
-            "├── abstracts.tsv        # 40 abstract + provenance",
-            "├── etl.py               # incremental Marker pipeline",
-            "└── tools/               # collection, download and report scripts",
-            "```",
-            "",
-            "```powershell",
-            "python -m venv .venv",
-            ".\\.venv\\Scripts\\python.exe -m pip install -e .",
-            ".\\.venv\\Scripts\\python.exe .\\tools\\collect_papers.py --metadata-only",
-            ".\\.venv\\Scripts\\python.exe .\\tools\\extract_abstracts.py",
-            ".\\.venv\\Scripts\\python.exe .\\etl.py --mode fast --no-ocr",
-            ".\\.venv\\Scripts\\python.exe .\\tools\\build_report.py",
-            "```",
-            "",
-            "`--no-ocr` выбран намеренно: доступные статьи — born-digital PDF с текстовым слоем; "
-            "OCR здесь только замедляет прогон и может ухудшить формулы. Pipeline инкрементальный и "
-            "повторно обрабатывает только отсутствующие/неудачные результаты.",
-            "",
-            "## Ограничения",
-            "",
-            f"- Полный корпус содержит 40 работ, но локально сохранены только те {pdf_count} PDF, которые "
-            "авторы или репозитории открыли без обхода access controls. ACM Cloudflare/OpenReview "
-            "challenges намеренно не обходились.",
-            "- GitHub-строки позволяют проверить архитектуру и воспроизвести систему, но не "
-            "заменяют доказательства, таблицы и ограничения из полного текста статьи.",
-            "- Для `abstract`-строк нельзя надежно проверить детали, не вошедшие в публичную "
-            "аннотацию; соответствующие тезисы поэтому уже и осторожнее full-text тезисов.",
-            "- Автоматический keyword-count — описательная статистика корпуса, не причинное "
-            "объяснение решений Program Committee.",
-            "",
-        ]
-    )
-
     (root / "README.md").write_text("\n".join(lines), encoding="utf-8")
-    print(f"wrote {len(rows)} paper summaries to {root / 'README.md'}")
+    print(
+        f"wrote {len(rows)} paper summaries ({pdf_count} PDFs) to "
+        f"{root / 'README.md'}"
+    )
 
 
 if __name__ == "__main__":

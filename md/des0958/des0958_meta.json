@@ -1,0 +1,617 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Roamify: An Interactive Browser Extension for Real-Time\nLLM-Based Travel Itinerary Generation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          78.60051727294922,
+          79.14044380187988
+        ],
+        [
+          531.4326782226562,
+          79.14044380187988
+        ],
+        [
+          531.4326782226562,
+          119.61273193359375
+        ],
+        [
+          78.60051727294922,
+          119.61273193359375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.73760986328125,
+          312.0831985473633
+        ],
+        [
+          95.8073558807373,
+          312.0831985473633
+        ],
+        [
+          95.8073558807373,
+          326.8681945800781
+        ],
+        [
+          50.73760986328125,
+          326.8681945800781
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.16265296936035,
+          512.0239562988281
+        ],
+        [
+          123.1680908203125,
+          512.0239562988281
+        ],
+        [
+          123.1680908203125,
+          527.018798828125
+        ],
+        [
+          50.16265296936035,
+          527.018798828125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.4309139251709,
+          581.103515625
+        ],
+        [
+          102.93467330932617,
+          581.103515625
+        ],
+        [
+          102.93467330932617,
+          595.6189727783203
+        ],
+        [
+          50.4309139251709,
+          595.6189727783203
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.359130859375,
+          313.02745056152344
+        ],
+        [
+          404.6525573730469,
+          313.02745056152344
+        ],
+        [
+          404.6525573730469,
+          326.18804931640625
+        ],
+        [
+          314.359130859375,
+          326.18804931640625
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction and Motivation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4994583129883,
+          397.4854431152344
+        ],
+        [
+          476.43475341796875,
+          397.4854431152344
+        ],
+        [
+          476.43475341796875,
+          412.8309631347656
+        ],
+        [
+          314.4994583129883,
+          412.8309631347656
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.81159019470215,
+          649.5752563476562
+        ],
+        [
+          91.43892288208008,
+          649.5752563476562
+        ],
+        [
+          91.43892288208008,
+          662.7050628662109
+        ],
+        [
+          50.81159019470215,
+          662.7050628662109
+        ]
+      ]
+    },
+    {
+      "title": "2 System Overview and Architecture",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.81147575378418,
+          169.9258689880371
+        ],
+        [
+          241.9662322998047,
+          169.9258689880371
+        ],
+        [
+          241.9662322998047,
+          184.679931640625
+        ],
+        [
+          50.81147575378418,
+          184.679931640625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Data Collection and Preprocessing",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.65615653991699,
+          304.88069915771484
+        ],
+        [
+          249.3317642211914,
+          304.88069915771484
+        ],
+        [
+          249.3317642211914,
+          319.8324279785156
+        ],
+        [
+          50.65615653991699,
+          319.8324279785156
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Summarisation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.72812271118164,
+          462.0963134765625
+        ],
+        [
+          154.45147705078125,
+          462.0963134765625
+        ],
+        [
+          154.45147705078125,
+          476.77197265625
+        ],
+        [
+          50.72812271118164,
+          476.77197265625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Itinerary Generation and Personalisation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.41007423400879,
+          575.0158081054688
+        ],
+        [
+          283.25994873046875,
+          575.0158081054688
+        ],
+        [
+          283.25994873046875,
+          589.9409637451172
+        ],
+        [
+          50.41007423400879,
+          589.9409637451172
+        ]
+      ]
+    },
+    {
+      "title": "2.4 Deployment and Reproducibility",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2349853515625,
+          284.9072570800781
+        ],
+        [
+          505.391845703125,
+          284.9072570800781
+        ],
+        [
+          505.391845703125,
+          300.5658264160156
+        ],
+        [
+          314.2349853515625,
+          300.5658264160156
+        ]
+      ]
+    },
+    {
+      "title": "3 Demonstration Setup",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.26226806640625,
+          409.1388702392578
+        ],
+        [
+          439.66571044921875,
+          409.1388702392578
+        ],
+        [
+          439.66571044921875,
+          424.080810546875
+        ],
+        [
+          314.26226806640625,
+          424.080810546875
+        ]
+      ]
+    },
+    {
+      "title": "Installation and Access.",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.12757110595703,
+          522.0763092041016
+        ],
+        [
+          434.54156494140625,
+          522.0763092041016
+        ],
+        [
+          434.54156494140625,
+          536.6149749755859
+        ],
+        [
+          314.12757110595703,
+          536.6149749755859
+        ]
+      ]
+    },
+    {
+      "title": "4 Key Technical Contributions",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.55513954162598,
+          81.51945877075195
+        ],
+        [
+          212.52395629882812,
+          81.51945877075195
+        ],
+        [
+          212.52395629882812,
+          96.1689453125
+        ],
+        [
+          50.55513954162598,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "5 Limitations and Future Work",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.800209045410156,
+          470.51129150390625
+        ],
+        [
+          215.06735229492188,
+          470.51129150390625
+        ],
+        [
+          215.06735229492188,
+          485.8559875488281
+        ],
+        [
+          50.800209045410156,
+          485.8559875488281
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.9384765625,
+          670.5320892333984
+        ],
+        [
+          126.69194793701172,
+          670.5320892333984
+        ],
+        [
+          126.69194793701172,
+          685.2099838256836
+        ],
+        [
+          50.9384765625,
+          685.2099838256836
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.33800506591797,
+          256.6707000732422
+        ],
+        [
+          372.3036193847656,
+          256.6707000732422
+        ],
+        [
+          372.3036193847656,
+          270.76397705078125
+        ],
+        [
+          314.33800506591797,
+          270.76397705078125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          290
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          764
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          496
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          318
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Reference",
+          15
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\des0958_Roamify_An_Interactive_Browser_Extension_for_Real_Time_LLM_Based_Travel_Itinerary_Generation"
+}

@@ -327,8 +327,8 @@ def main() -> int:
             "doi_url": f"https://doi.org/{doi}" if doi else "",
             "pdf_url": pdf_url,
             "pdf_source": pdf_source,
-            "status": status,
             "errors": " | ".join(errors),
+            "status": status,
         })
 
     fields = list(records[0]) if records else []
