@@ -1,0 +1,863 @@
+{
+  "paper": {
+    "paper_id": "des1017",
+    "title": "MetriKG: Profiling Static and Evolving Knowledge Graphs",
+    "authors": "Hasan H. Günes — TU Wien, Milos Jovanovik — TU Wien,Ss. Cyril and Methodius University in Skopje, Katja Hose — TU Wien"
+  },
+  "crossref": {
+    "DOI": "10.1145/3774905.3793136",
+    "title": [
+      "MetriKG: Profiling Static and Evolving Knowledge Graphs"
+    ],
+    "page": "200-203",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3774905.3793136",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "container-title": [
+      "Companion Proceedings of the ACM Web Conference 2026"
+    ],
+    "URL": "https://doi.org/10.1145/3774905.3793136",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0005-5277-1119",
+        "authenticated-orcid": false,
+        "given": "Hasan H.",
+        "family": "Günes",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "TU Wien, Vienna, Austria"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7360-8015",
+        "authenticated-orcid": false,
+        "given": "Milos",
+        "family": "Jovanovik",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "TU Wien, Vienna, Austria and Ss. Cyril and Methodius University in Skopje, Skopje, Macedonia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7025-8099",
+        "authenticated-orcid": false,
+        "given": "Katja",
+        "family": "Hose",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "TU Wien, Vienna, Austria"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "openalex": {
+    "id": "https://openalex.org/W7162659062",
+    "doi": "https://doi.org/10.1145/3774905.3793136",
+    "title": "MetriKG: Profiling Static and Evolving Knowledge Graphs",
+    "display_name": "MetriKG: Profiling Static and Evolving Knowledge Graphs",
+    "publication_year": 2026,
+    "publication_date": "2026-05-28",
+    "ids": {
+      "openalex": "https://openalex.org/W7162659062",
+      "doi": "https://doi.org/10.1145/3774905.3793136"
+    },
+    "language": null,
+    "primary_location": {
+      "id": "doi:10.1145/3774905.3793136",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793136",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "type": "conference-paper",
+    "indexed_in": [
+      "crossref"
+    ],
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1145/3774905.3793136",
+      "any_repository_has_fulltext": null
+    },
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5137246481",
+          "display_name": "Hasan H. Günes",
+          "orcid": "https://orcid.org/0009-0005-5277-1119",
+          "observed_orcids": [
+            "https://orcid.org/0009-0005-5277-1119"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I145847075",
+            "display_name": "TU Wien",
+            "ror": "https://ror.org/04d836q62",
+            "country_code": "AT",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I145847075"
+            ]
+          }
+        ],
+        "countries": [
+          "AT"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Hasan H. Günes",
+        "raw_affiliation_strings": [
+          "TU Wien, Vienna, Austria"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0005-5277-1119",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "TU Wien, Vienna, Austria",
+            "institution_ids": [
+              "https://openalex.org/I145847075"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5086047485",
+          "display_name": "Milos Jovanovik",
+          "orcid": "https://orcid.org/0000-0001-7360-8015",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7360-8015"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I145847075",
+            "display_name": "TU Wien",
+            "ror": "https://ror.org/04d836q62",
+            "country_code": "AT",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I145847075"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I76245029",
+            "display_name": "Ss. Cyril and Methodius University in Skopje",
+            "ror": "https://ror.org/02wk2vx54",
+            "country_code": "MK",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I76245029"
+            ]
+          }
+        ],
+        "countries": [
+          "AT",
+          "MK"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Milos Jovanovik",
+        "raw_affiliation_strings": [
+          "TU Wien, Vienna, Austria and Ss. Cyril and Methodius University in Skopje, Skopje, Macedonia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7360-8015",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "TU Wien, Vienna, Austria and Ss. Cyril and Methodius University in Skopje, Skopje, Macedonia",
+            "institution_ids": [
+              "https://openalex.org/I145847075",
+              "https://openalex.org/I76245029"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5122292965",
+          "display_name": "Katja Hose",
+          "orcid": "https://orcid.org/0000-0001-7025-8099",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7025-8099"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I145847075",
+            "display_name": "TU Wien",
+            "ror": "https://ror.org/04d836q62",
+            "country_code": "AT",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I145847075"
+            ]
+          }
+        ],
+        "countries": [
+          "AT"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Katja Hose",
+        "raw_affiliation_strings": [
+          "TU Wien, Vienna, Austria"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7025-8099",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "TU Wien, Vienna, Austria",
+            "institution_ids": [
+              "https://openalex.org/I145847075"
+            ]
+          }
+        ]
+      }
+    ],
+    "institutions": [],
+    "countries_distinct_count": 2,
+    "institutions_distinct_count": 2,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 0.0,
+    "has_fulltext": false,
+    "cited_by_count": 0,
+    "citation_normalized_percentile": {
+      "value": 0.54374481,
+      "is_in_top_1_percent": false,
+      "is_in_top_10_percent": false
+    },
+    "cited_by_percentile_year": null,
+    "biblio": {
+      "volume": null,
+      "issue": null,
+      "first_page": "200",
+      "last_page": "203"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "is_xpac": false,
+    "primary_topic": {
+      "id": "https://openalex.org/T11273",
+      "display_name": "Advanced Graph Neural Networks",
+      "score": 0.9485999941825867,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    "topics": [
+      {
+        "id": "https://openalex.org/T11273",
+        "display_name": "Advanced Graph Neural Networks",
+        "score": 0.9485999941825867,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T12292",
+        "display_name": "Graph Theory and Algorithms",
+        "score": 0.01360000018030405,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1707",
+          "display_name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11303",
+        "display_name": "Bayesian Modeling and Causal Inference",
+        "score": 0.0032999999821186066,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "keywords": [
+      {
+        "id": "https://openalex.org/keywords/profiling",
+        "display_name": "Profiling (computer programming)",
+        "score": 0.5001999735832214
+      },
+      {
+        "id": "https://openalex.org/keywords/knowledge-graph",
+        "display_name": "Knowledge graph",
+        "score": 0.32749998569488525
+      },
+      {
+        "id": "https://openalex.org/keywords/knowledge-representation-and-reasoning",
+        "display_name": "Knowledge representation and reasoning",
+        "score": 0.3068000078201294
+      },
+      {
+        "id": "https://openalex.org/keywords/knowledge-based-systems",
+        "display_name": "Knowledge-based systems",
+        "score": 0.29260000586509705
+      }
+    ],
+    "concepts": [
+      {
+        "id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "level": 0,
+        "score": 0.6413999795913696
+      },
+      {
+        "id": "https://openalex.org/C187191949",
+        "wikidata": "https://www.wikidata.org/wiki/Q1138496",
+        "display_name": "Profiling (computer programming)",
+        "level": 2,
+        "score": 0.5001999735832214
+      },
+      {
+        "id": "https://openalex.org/C154945302",
+        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+        "display_name": "Artificial intelligence",
+        "level": 1,
+        "score": 0.40470001101493835
+      },
+      {
+        "id": "https://openalex.org/C80444323",
+        "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+        "display_name": "Theoretical computer science",
+        "level": 1,
+        "score": 0.35269999504089355
+      },
+      {
+        "id": "https://openalex.org/C124101348",
+        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+        "display_name": "Data mining",
+        "level": 1,
+        "score": 0.34630000591278076
+      },
+      {
+        "id": "https://openalex.org/C2987255567",
+        "wikidata": "https://www.wikidata.org/wiki/Q33002955",
+        "display_name": "Knowledge graph",
+        "level": 2,
+        "score": 0.32749998569488525
+      },
+      {
+        "id": "https://openalex.org/C161301231",
+        "wikidata": "https://www.wikidata.org/wiki/Q3478658",
+        "display_name": "Knowledge representation and reasoning",
+        "level": 2,
+        "score": 0.3068000078201294
+      },
+      {
+        "id": "https://openalex.org/C115925183",
+        "wikidata": "https://www.wikidata.org/wiki/Q1412694",
+        "display_name": "Knowledge-based systems",
+        "level": 2,
+        "score": 0.29260000586509705
+      },
+      {
+        "id": "https://openalex.org/C4554734",
+        "wikidata": "https://www.wikidata.org/wiki/Q593744",
+        "display_name": "Knowledge base",
+        "level": 2,
+        "score": 0.2581000030040741
+      },
+      {
+        "id": "https://openalex.org/C119857082",
+        "wikidata": "https://www.wikidata.org/wiki/Q2539",
+        "display_name": "Machine learning",
+        "level": 1,
+        "score": 0.2581000030040741
+      },
+      {
+        "id": "https://openalex.org/C11413529",
+        "wikidata": "https://www.wikidata.org/wiki/Q8366",
+        "display_name": "Algorithm",
+        "level": 1,
+        "score": 0.25279998779296875
+      }
+    ],
+    "mesh": [],
+    "locations_count": 1,
+    "locations": [
+      {
+        "id": "doi:10.1145/3774905.3793136",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3774905.3793136",
+        "pdf_url": null,
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+        "raw_type": "proceedings-article"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1145/3774905.3793136",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793136",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "sustainable_development_goals": [],
+    "x_sdgs": [],
+    "study_designs": [],
+    "awards": [],
+    "funders": [],
+    "has_content": {
+      "pdf": false,
+      "grobid_xml": false
+    },
+    "content_urls": null,
+    "referenced_works_count": 8,
+    "referenced_works": [
+      "https://openalex.org/W184864457",
+      "https://openalex.org/W1483046884",
+      "https://openalex.org/W1513505952",
+      "https://openalex.org/W2885934743",
+      "https://openalex.org/W2902810976",
+      "https://openalex.org/W3096828908",
+      "https://openalex.org/W3201880832",
+      "https://openalex.org/W4288343461"
+    ],
+    "related_works": [],
+    "abstract_inverted_index": {
+      "Knowledge": [
+        0
+      ],
+      "graphs": [
+        1,
+        46
+      ],
+      "(KGs)": [
+        2
+      ],
+      "are": [
+        3
+      ],
+      "a": [
+        4,
+        66,
+        71
+      ],
+      "foundational": [
+        5
+      ],
+      "technology": [
+        6
+      ],
+      "for": [
+        7,
+        31,
+        39,
+        76,
+        97,
+        121
+      ],
+      "representing": [
+        8
+      ],
+      "and": [
+        9,
+        23,
+        35,
+        79,
+        106,
+        116,
+        125,
+        133
+      ],
+      "integrating": [
+        10
+      ],
+      "information": [
+        11
+      ],
+      "across": [
+        12
+      ],
+      "heterogeneous": [
+        13
+      ],
+      "domains.": [
+        14
+      ],
+      "As": [
+        15
+      ],
+      "some": [
+        16
+      ],
+      "KGs": [
+        17,
+        87
+      ],
+      "evolve,": [
+        18
+      ],
+      "understanding": [
+        19
+      ],
+      "how": [
+        20
+      ],
+      "their": [
+        21
+      ],
+      "structural": [
+        22
+      ],
+      "semantic": [
+        24
+      ],
+      "properties": [
+        25
+      ],
+      "change": [
+        26
+      ],
+      "over": [
+        27
+      ],
+      "time": [
+        28
+      ],
+      "is": [
+        29,
+        131
+      ],
+      "crucial": [
+        30
+      ],
+      "ensuring": [
+        32
+      ],
+      "quality,": [
+        33
+      ],
+      "consistency,": [
+        34
+      ],
+      "interpretability.": [
+        36
+      ],
+      "Existing": [
+        37
+      ],
+      "methods": [
+        38
+      ],
+      "KG": [
+        40
+      ],
+      "evaluation": [
+        41
+      ],
+      "often": [
+        42
+      ],
+      "focus": [
+        43
+      ],
+      "on": [
+        44
+      ],
+      "static": [
+        45,
+        78
+      ],
+      "or": [
+        47,
+        92
+      ],
+      "analyze": [
+        48
+      ],
+      "evolution": [
+        49
+      ],
+      "solely": [
+        50
+      ],
+      "at": [
+        51,
+        113
+      ],
+      "the": [
+        52
+      ],
+      "data": [
+        53,
+        115
+      ],
+      "level,": [
+        54
+      ],
+      "leaving": [
+        55
+      ],
+      "schema-level": [
+        56
+      ],
+      "dynamics": [
+        57
+      ],
+      "underexplored.": [
+        58
+      ],
+      "To": [
+        59
+      ],
+      "address": [
+        60
+      ],
+      "this": [
+        61
+      ],
+      "gap,": [
+        62
+      ],
+      "we": [
+        63
+      ],
+      "introduce": [
+        64
+      ],
+      "MetriKG,": [
+        65
+      ],
+      "web-based": [
+        67
+      ],
+      "application": [
+        68
+      ],
+      "that": [
+        69
+      ],
+      "computes": [
+        70
+      ],
+      "comprehensive": [
+        72
+      ],
+      "set": [
+        73
+      ],
+      "of": [
+        74,
+        100,
+        128
+      ],
+      "metrics": [
+        75
+      ],
+      "both": [
+        77,
+        114
+      ],
+      "evolving": [
+        80
+      ],
+      "KGs.": [
+        81,
+        129
+      ],
+      "MetriKG": [
+        82,
+        119,
+        130
+      ],
+      "enables": [
+        83
+      ],
+      "users": [
+        84
+      ],
+      "to": [
+        85
+      ],
+      "evaluate": [
+        86
+      ],
+      "provided": [
+        88
+      ],
+      "as": [
+        89,
+        103
+      ],
+      "RDF": [
+        90
+      ],
+      "files": [
+        91
+      ],
+      "through": [
+        93
+      ],
+      "SPARQL": [
+        94
+      ],
+      "endpoints,": [
+        95
+      ],
+      "allowing": [
+        96
+      ],
+      "multi-dimensional": [
+        98
+      ],
+      "analysis": [
+        99
+      ],
+      "aspects": [
+        101
+      ],
+      "such": [
+        102
+      ],
+      "cohesion,": [
+        104
+      ],
+      "connectivity,": [
+        105
+      ],
+      "inheritance": [
+        107
+      ],
+      "depth.": [
+        108
+      ],
+      "By": [
+        109
+      ],
+      "supporting": [
+        110
+      ],
+      "metric": [
+        111
+      ],
+      "computation": [
+        112
+      ],
+      "schema": [
+        117
+      ],
+      "levels,": [
+        118
+      ],
+      "allows": [
+        120
+      ],
+      "systematic": [
+        122
+      ],
+      "profiling,": [
+        123
+      ],
+      "classification,": [
+        124
+      ],
+      "temporal": [
+        126
+      ],
+      "monitoring": [
+        127
+      ],
+      "open-source": [
+        132
+      ],
+      "publicly": [
+        134
+      ],
+      "available.": [
+        135
+      ]
+    },
+    "counts_by_year": [],
+    "updated_date": "2026-09-25T08:18:29.962427",
+    "created_date": "2026-05-29T00:00:00"
+  },
+  "unpaywall": {},
+  "semantic_scholar": {},
+  "arxiv": {}
+}

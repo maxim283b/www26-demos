@@ -1,0 +1,1550 @@
+{
+  "paper": {
+    "paper_id": "des0940",
+    "title": "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents",
+    "authors": "Prahaladh Chandrahasan — Carnegie Mellon University, Jiahe Jin — Carnegie Mellon University, Zhihan Zhang — Carnegie Mellon University, Tevin Wang — Carnegie Mellon University, Andy Tang — Carnegie Mellon University, Lucy Mo — Carnegie Mellon University, Morteza Ziyadi — Amazon, Leonardo F.R. Ribeiro — Amazon, Zimeng Qiu — Amazon, Markus Dreyer — Amazon, Akari Asai — Carnegie Mellon University, Chenyan Xiong — Carnegie Mellon University"
+  },
+  "crossref": {
+    "DOI": "10.1145/3774905.3793116",
+    "title": [
+      "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents"
+    ],
+    "page": "120-123",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3774905.3793116",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "container-title": [
+      "Companion Proceedings of the ACM Web Conference 2026"
+    ],
+    "URL": "https://doi.org/10.1145/3774905.3793116",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0004-5229-6808",
+        "authenticated-orcid": false,
+        "given": "Prahaladh",
+        "family": "Chandrahasan",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-3309-5642",
+        "authenticated-orcid": false,
+        "given": "Jiahe",
+        "family": "Jin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-0451-7291",
+        "authenticated-orcid": false,
+        "given": "Zhihan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0004-0334-5941",
+        "authenticated-orcid": false,
+        "given": "Tevin",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-7586-9224",
+        "authenticated-orcid": false,
+        "given": "Andy",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0004-5199-9421",
+        "authenticated-orcid": false,
+        "given": "Lucy",
+        "family": "Mo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-7022-0845",
+        "authenticated-orcid": false,
+        "given": "Morteza",
+        "family": "Ziyadi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Amazon, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2639-942X",
+        "authenticated-orcid": false,
+        "given": "Leonardo",
+        "family": "F.R. Ribeiro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Amazon, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2258-0304",
+        "authenticated-orcid": false,
+        "given": "Zimeng",
+        "family": "Qiu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Amazon, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1117-1070",
+        "authenticated-orcid": false,
+        "given": "Markus",
+        "family": "Dreyer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Amazon, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-3244-6598",
+        "authenticated-orcid": false,
+        "given": "Akari",
+        "family": "Asai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0392-4183",
+        "authenticated-orcid": false,
+        "given": "Chenyan",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "openalex": {
+    "id": "https://openalex.org/W4416060136",
+    "doi": "https://doi.org/10.1145/3774905.3793116",
+    "title": "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents",
+    "display_name": "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents",
+    "publication_year": 2026,
+    "publication_date": "2026-05-28",
+    "ids": {
+      "openalex": "https://openalex.org/W4416060136",
+      "doi": "https://doi.org/10.1145/3774905.3793116"
+    },
+    "language": "en",
+    "primary_location": {
+      "id": "doi:10.1145/3774905.3793116",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793116",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "type": "conference-paper",
+    "indexed_in": [
+      "arxiv",
+      "crossref",
+      "datacite"
+    ],
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1145/3774905.3793116",
+      "any_repository_has_fulltext": true
+    },
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5120321902",
+          "display_name": "Prahaladh Chandrahasan",
+          "orcid": "https://orcid.org/0009-0004-5229-6808",
+          "observed_orcids": [
+            "https://orcid.org/0009-0004-5229-6808"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Prahaladh Chandrahasan",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0004-5229-6808",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5110086334",
+          "display_name": "Jiahe Jin",
+          "orcid": "https://orcid.org/0009-0006-3309-5642",
+          "observed_orcids": [
+            "https://orcid.org/0009-0006-3309-5642"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jiahe Jin",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0006-3309-5642",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5101798380",
+          "display_name": "Zhihan Zhang",
+          "orcid": "https://orcid.org/0000-0001-7394-5409",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7394-5409",
+            "https://orcid.org/0009-0000-0451-7291"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Zhihan Zhang",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0000-0451-7291",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5051757476",
+          "display_name": "Tevin Wang",
+          "orcid": "https://orcid.org/0009-0004-0334-5941",
+          "observed_orcids": [
+            "https://orcid.org/0009-0004-0334-5941",
+            "https://orcid.org/0009-0008-1517-1212"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Tevin Wang",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0004-0334-5941",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5104685241",
+          "display_name": "Andy Tang",
+          "orcid": "https://orcid.org/0009-0001-7586-9224",
+          "observed_orcids": [
+            "https://orcid.org/0009-0001-7586-9224"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Andy Tang",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0001-7586-9224",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5110222218",
+          "display_name": "Lucy Mo",
+          "orcid": "https://orcid.org/0009-0004-5199-9421",
+          "observed_orcids": [
+            "https://orcid.org/0009-0004-5199-9421"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Lucy Mo",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0004-5199-9421",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5058753263",
+          "display_name": "Morteza Ziyadi",
+          "orcid": "https://orcid.org/0009-0002-7022-0845",
+          "observed_orcids": [
+            "https://orcid.org/0009-0002-7022-0845"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1311688040",
+            "display_name": "Amazon (United States)",
+            "ror": "https://ror.org/04mv4n011",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Morteza Ziyadi",
+        "raw_affiliation_strings": [
+          "Amazon, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0002-7022-0845",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Amazon, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5063685873",
+          "display_name": "Leonardo F. R. Ribeiro",
+          "orcid": "https://orcid.org/0000-0003-2639-942X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-2639-942X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1311688040",
+            "display_name": "Amazon (United States)",
+            "ror": "https://ror.org/04mv4n011",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Leonardo F.R. Ribeiro",
+        "raw_affiliation_strings": [
+          "Amazon, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-2639-942X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Amazon, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "Zimeng Qiu",
+          "orcid": "https://orcid.org/0000-0002-2258-0304",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2258-0304"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1311688040",
+            "display_name": "Amazon (United States)",
+            "ror": "https://ror.org/04mv4n011",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Zimeng Qiu",
+        "raw_affiliation_strings": [
+          "Amazon, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2258-0304",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Amazon, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5079131136",
+          "display_name": "Markus Dreyer",
+          "orcid": "https://orcid.org/0000-0002-1117-1070",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1117-1070"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1311688040",
+            "display_name": "Amazon (United States)",
+            "ror": "https://ror.org/04mv4n011",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Markus Dreyer",
+        "raw_affiliation_strings": [
+          "Amazon, Seattle, WA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-1117-1070",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Amazon, Seattle, WA, USA",
+            "institution_ids": [
+              "https://openalex.org/I1311688040"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5108758733",
+          "display_name": "Akari Asai",
+          "orcid": "https://orcid.org/0009-0001-3244-6598",
+          "observed_orcids": [
+            "https://orcid.org/0009-0001-3244-6598"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Akari Asai",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0001-3244-6598",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5006340382",
+          "display_name": "Chenyan Xiong",
+          "orcid": "https://orcid.org/0000-0002-0392-4183",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0392-4183"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I74973139",
+            "display_name": "Carnegie Mellon University",
+            "ror": "https://ror.org/05x2bcf33",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Chenyan Xiong",
+        "raw_affiliation_strings": [
+          "Carnegie Mellon University, Pittsburgh, PA, USA"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0392-4183",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+            "institution_ids": [
+              "https://openalex.org/I74973139"
+            ]
+          }
+        ]
+      }
+    ],
+    "institutions": [],
+    "countries_distinct_count": 1,
+    "institutions_distinct_count": 2,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 0.0,
+    "has_fulltext": false,
+    "cited_by_count": 0,
+    "citation_normalized_percentile": {
+      "value": 0.00342027,
+      "is_in_top_1_percent": false,
+      "is_in_top_10_percent": false
+    },
+    "cited_by_percentile_year": null,
+    "biblio": {
+      "volume": null,
+      "issue": null,
+      "first_page": "120",
+      "last_page": "123"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "is_xpac": false,
+    "primary_topic": {
+      "id": "https://openalex.org/T11704",
+      "display_name": "Mobile Crowdsensing and Crowdsourcing",
+      "score": 0.15369999408721924,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1706",
+        "display_name": "Computer Science Applications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    "topics": [
+      {
+        "id": "https://openalex.org/T11704",
+        "display_name": "Mobile Crowdsensing and Crowdsourcing",
+        "score": 0.15369999408721924,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1706",
+          "display_name": "Computer Science Applications"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10028",
+        "display_name": "Topic Modeling",
+        "score": 0.1509000062942505,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T13274",
+        "display_name": "Expert finding and Q&A systems",
+        "score": 0.10559999942779541,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1710",
+          "display_name": "Information Systems"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "keywords": [
+      {
+        "id": "https://openalex.org/keywords/deep-learning",
+        "display_name": "Deep learning",
+        "score": 0.6741999983787537
+      },
+      {
+        "id": "https://openalex.org/keywords/ranking",
+        "display_name": "Ranking (information retrieval)",
+        "score": 0.5663999915122986
+      },
+      {
+        "id": "https://openalex.org/keywords/baseline",
+        "display_name": "Baseline (sea)",
+        "score": 0.4794999957084656
+      },
+      {
+        "id": "https://openalex.org/keywords/quality",
+        "display_name": "Quality (philosophy)",
+        "score": 0.4657000005245209
+      },
+      {
+        "id": "https://openalex.org/keywords/preference",
+        "display_name": "Preference",
+        "score": 0.4115999937057495
+      },
+      {
+        "id": "https://openalex.org/keywords/simple",
+        "display_name": "Simple (philosophy)",
+        "score": 0.34439998865127563
+      }
+    ],
+    "concepts": [
+      {
+        "id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "level": 0,
+        "score": 0.791100025177002
+      },
+      {
+        "id": "https://openalex.org/C108583219",
+        "wikidata": "https://www.wikidata.org/wiki/Q197536",
+        "display_name": "Deep learning",
+        "level": 2,
+        "score": 0.6741999983787537
+      },
+      {
+        "id": "https://openalex.org/C154945302",
+        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+        "display_name": "Artificial intelligence",
+        "level": 1,
+        "score": 0.5722000002861023
+      },
+      {
+        "id": "https://openalex.org/C189430467",
+        "wikidata": "https://www.wikidata.org/wiki/Q7293293",
+        "display_name": "Ranking (information retrieval)",
+        "level": 2,
+        "score": 0.5663999915122986
+      },
+      {
+        "id": "https://openalex.org/C12725497",
+        "wikidata": "https://www.wikidata.org/wiki/Q810247",
+        "display_name": "Baseline (sea)",
+        "level": 2,
+        "score": 0.4794999957084656
+      },
+      {
+        "id": "https://openalex.org/C2779530757",
+        "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+        "display_name": "Quality (philosophy)",
+        "level": 2,
+        "score": 0.4657000005245209
+      },
+      {
+        "id": "https://openalex.org/C2781249084",
+        "wikidata": "https://www.wikidata.org/wiki/Q908656",
+        "display_name": "Preference",
+        "level": 2,
+        "score": 0.4115999937057495
+      },
+      {
+        "id": "https://openalex.org/C107457646",
+        "wikidata": "https://www.wikidata.org/wiki/Q207434",
+        "display_name": "Human–computer interaction",
+        "level": 1,
+        "score": 0.4004000127315521
+      },
+      {
+        "id": "https://openalex.org/C2522767166",
+        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+        "display_name": "Data science",
+        "level": 1,
+        "score": 0.3449999988079071
+      },
+      {
+        "id": "https://openalex.org/C2780586882",
+        "wikidata": "https://www.wikidata.org/wiki/Q7520643",
+        "display_name": "Simple (philosophy)",
+        "level": 2,
+        "score": 0.34439998865127563
+      },
+      {
+        "id": "https://openalex.org/C23123220",
+        "wikidata": "https://www.wikidata.org/wiki/Q816826",
+        "display_name": "Information retrieval",
+        "level": 1,
+        "score": 0.34299999475479126
+      },
+      {
+        "id": "https://openalex.org/C2984842247",
+        "wikidata": "https://www.wikidata.org/wiki/Q197536",
+        "display_name": "Deep neural networks",
+        "level": 3,
+        "score": 0.3093000054359436
+      },
+      {
+        "id": "https://openalex.org/C192209626",
+        "wikidata": "https://www.wikidata.org/wiki/Q190909",
+        "display_name": "Focus (optics)",
+        "level": 2,
+        "score": 0.27379998564720154
+      },
+      {
+        "id": "https://openalex.org/C119857082",
+        "wikidata": "https://www.wikidata.org/wiki/Q2539",
+        "display_name": "Machine learning",
+        "level": 1,
+        "score": 0.26100000739097595
+      },
+      {
+        "id": "https://openalex.org/C2776401178",
+        "wikidata": "https://www.wikidata.org/wiki/Q12050496",
+        "display_name": "Feature (linguistics)",
+        "level": 2,
+        "score": 0.2535000145435333
+      }
+    ],
+    "mesh": [],
+    "locations_count": 3,
+    "locations": [
+      {
+        "id": "doi:10.1145/3774905.3793116",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3774905.3793116",
+        "pdf_url": null,
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+        "raw_type": "proceedings-article"
+      },
+      {
+        "id": "pmh:oai:arXiv.org:2507.05495",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2507.05495",
+        "pdf_url": "https://arxiv.org/pdf/2507.05495",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      {
+        "id": "doi:10.48550/arxiv.2507.05495",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.48550/arxiv.2507.05495",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": null,
+        "raw_source_name": null,
+        "raw_type": "Preprint"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1145/3774905.3793116",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793116",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "sustainable_development_goals": [],
+    "x_sdgs": [],
+    "study_designs": [],
+    "awards": [],
+    "funders": [],
+    "has_content": {
+      "grobid_xml": false,
+      "pdf": false
+    },
+    "content_urls": null,
+    "referenced_works_count": 0,
+    "referenced_works": [],
+    "related_works": [],
+    "abstract_inverted_index": {
+      "Evaluating": [
+        0
+      ],
+      "deep": [
+        1,
+        45,
+        116
+      ],
+      "research": [
+        2,
+        46,
+        117
+      ],
+      "agents": [
+        3,
+        59,
+        118,
+        125
+      ],
+      "that": [
+        4,
+        98,
+        172
+      ],
+      "iteratively": [
+        5
+      ],
+      "search": [
+        6
+      ],
+      "the": [
+        7,
+        41,
+        51,
+        81,
+        105,
+        146
+      ],
+      "web,": [
+        8
+      ],
+      "analyze": [
+        9
+      ],
+      "information,": [
+        10
+      ],
+      "and": [
+        11,
+        23,
+        54,
+        61,
+        72,
+        135,
+        156
+      ],
+      "generate": [
+        12
+      ],
+      "reports": [
+        13,
+        22,
+        53
+      ],
+      "remains": [
+        14
+      ],
+      "a": [
+        15,
+        36,
+        101,
+        166
+      ],
+      "major": [
+        16
+      ],
+      "challenge,": [
+        17
+      ],
+      "especially": [
+        18
+      ],
+      "in": [
+        19,
+        141,
+        152,
+        178
+      ],
+      "assessing": [
+        20
+      ],
+      "long": [
+        21
+      ],
+      "providing": [
+        24,
+        153
+      ],
+      "fine-grained": [
+        25,
+        74,
+        142,
+        150
+      ],
+      "feedback.": [
+        26
+      ],
+      "To": [
+        27
+      ],
+      "address": [
+        28
+      ],
+      "these": [
+        29
+      ],
+      "gaps,": [
+        30
+      ],
+      "we": [
+        31,
+        91
+      ],
+      "introduce": [
+        32
+      ],
+      "Deep": [
+        33
+      ],
+      "Research": [
+        34
+      ],
+      "Comparator,": [
+        35
+      ],
+      "holistic": [
+        37
+      ],
+      "annotation": [
+        38
+      ],
+      "platform": [
+        39,
+        49,
+        171
+      ],
+      "for": [
+        40,
+        86,
+        119,
+        159
+      ],
+      "human": [
+        42,
+        133
+      ],
+      "evaluation": [
+        43,
+        155
+      ],
+      "of": [
+        44,
+        107,
+        123,
+        149,
+        169
+      ],
+      "agents.": [
+        47
+      ],
+      "Our": [
+        48
+      ],
+      "displays": [
+        50
+      ],
+      "generated": [
+        52
+      ],
+      "intermediate": [
+        55,
+        84
+      ],
+      "steps": [
+        56,
+        85
+      ],
+      "from": [
+        57
+      ],
+      "two": [
+        58,
+        69
+      ],
+      "side-by-side,": [
+        60
+      ],
+      "allows": [
+        62
+      ],
+      "annotators": [
+        63,
+        128
+      ],
+      "to": [
+        64,
+        103,
+        112
+      ],
+      "state": [
+        65
+      ],
+      "their": [
+        66
+      ],
+      "preference": [
+        67
+      ],
+      "between": [
+        68,
+        132
+      ],
+      "final": [
+        70
+      ],
+      "reports,": [
+        71
+      ],
+      "provide": [
+        73,
+        165
+      ],
+      "feedback": [
+        75
+      ],
+      "on": [
+        76
+      ],
+      "specific": [
+        77
+      ],
+      "text": [
+        78
+      ],
+      "spans": [
+        79
+      ],
+      "within": [
+        80
+      ],
+      "report": [
+        82
+      ],
+      "or": [
+        83
+      ],
+      "each": [
+        87
+      ],
+      "agent": [
+        88,
+        96,
+        161
+      ],
+      "separately.": [
+        89
+      ],
+      "Furthermore,": [
+        90
+      ],
+      "develop": [
+        92
+      ],
+      "Simple": [
+        93
+      ],
+      "Deepresearch,": [
+        94
+      ],
+      "an": [
+        95
+      ],
+      "scaffold": [
+        97
+      ],
+      "serves": [
+        99
+      ],
+      "as": [
+        100
+      ],
+      "baseline": [
+        102
+      ],
+      "facilitate": [
+        104
+      ],
+      "integration": [
+        106
+      ],
+      "various": [
+        108
+      ],
+      "large": [
+        109
+      ],
+      "language": [
+        110
+      ],
+      "models": [
+        111
+      ],
+      "transform": [
+        113
+      ],
+      "them": [
+        114
+      ],
+      "into": [
+        115
+      ],
+      "evaluation.": [
+        120
+      ],
+      "Experiment": [
+        121
+      ],
+      "results": [
+        122
+      ],
+      "three": [
+        124
+      ],
+      "with": [
+        126,
+        177
+      ],
+      "17": [
+        127
+      ],
+      "demonstrated": [
+        129
+      ],
+      "strong": [
+        130
+      ],
+      "alignment": [
+        131
+      ],
+      "annotations": [
+        134,
+        151
+      ],
+      "static": [
+        136
+      ],
+      "benchmarks,": [
+        137
+      ],
+      "while": [
+        138
+      ],
+      "revealing": [
+        139
+      ],
+      "divergence": [
+        140
+      ],
+      "metrics,": [
+        143
+      ],
+      "which": [
+        144
+      ],
+      "highlights": [
+        145
+      ],
+      "distinct": [
+        147
+      ],
+      "value": [
+        148
+      ],
+      "robust": [
+        154
+      ],
+      "actionable": [
+        157
+      ],
+      "data": [
+        158
+      ],
+      "nuanced": [
+        160
+      ],
+      "optimization.": [
+        162
+      ],
+      "We": [
+        163
+      ],
+      "will": [
+        164
+      ],
+      "web-based": [
+        167
+      ],
+      "implementation": [
+        168
+      ],
+      "our": [
+        170
+      ],
+      "conference": [
+        173
+      ],
+      "attendees": [
+        174
+      ],
+      "can": [
+        175
+      ],
+      "interact": [
+        176
+      ],
+      "real-time.": [
+        179
+      ]
+    },
+    "counts_by_year": [],
+    "updated_date": "2026-09-24T07:57:37.273135",
+    "created_date": "2025-10-10T00:00:00"
+  },
+  "unpaywall": {},
+  "semantic_scholar": {},
+  "arxiv": {
+    "title": "Deep Research Comparator: A Platform For Fine-grained Human Annotations of Deep Research Agents",
+    "id": "http://arxiv.org/abs/2507.05495v2",
+    "pdf_url": "https://arxiv.org/pdf/2507.05495v2"
+  }
+}

@@ -1,0 +1,929 @@
+{
+  "paper": {
+    "paper_id": "des1030",
+    "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+    "authors": "Saber Zerhoudi — University of Passau, Michael Dinzinger — University of Passau, Michael Granitzer — University of Passau,IT — U Austria, Jelena Mitrovic — University of Passau"
+  },
+  "crossref": {
+    "DOI": "10.1145/3774905.3793140",
+    "title": [
+      "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants"
+    ],
+    "page": "216-220",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3774905.3793140",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "container-title": [
+      "Companion Proceedings of the ACM Web Conference 2026"
+    ],
+    "URL": "https://doi.org/10.1145/3774905.3793140",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2259-0462",
+        "authenticated-orcid": false,
+        "given": "Saber",
+        "family": "Zerhoudi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Passau, Passau, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-1747-5643",
+        "authenticated-orcid": false,
+        "given": "Michael",
+        "family": "Dinzinger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Passau, Passau, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3566-5507",
+        "authenticated-orcid": false,
+        "given": "Michael",
+        "family": "Granitzer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Passau, Passau, Germany and IT:U Austria, Linz, Austria"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3220-8749",
+        "authenticated-orcid": false,
+        "given": "Jelena",
+        "family": "Mitrovic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Passau, Passau, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "openalex": {
+    "id": "https://openalex.org/W7162685032",
+    "doi": "https://doi.org/10.1145/3774905.3793140",
+    "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+    "display_name": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+    "publication_year": 2026,
+    "publication_date": "2026-05-28",
+    "ids": {
+      "openalex": "https://openalex.org/W7162685032",
+      "doi": "https://doi.org/10.1145/3774905.3793140"
+    },
+    "language": null,
+    "primary_location": {
+      "id": "doi:10.1145/3774905.3793140",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793140",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "type": "conference-paper",
+    "indexed_in": [
+      "crossref"
+    ],
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1145/3774905.3793140",
+      "any_repository_has_fulltext": null
+    },
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5077001732",
+          "display_name": "Saber Zerhoudi",
+          "orcid": "https://orcid.org/0000-0003-2259-0462",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-2259-0462"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I186354981",
+            "display_name": "University of Passau",
+            "ror": "https://ror.org/05ydjnb78",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Saber Zerhoudi",
+        "raw_affiliation_strings": [
+          "University of Passau, Passau, Germany"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-2259-0462",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Passau, Passau, Germany",
+            "institution_ids": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5059120311",
+          "display_name": "Michael Dinzinger",
+          "orcid": "https://orcid.org/0009-0003-1747-5643",
+          "observed_orcids": [
+            "https://orcid.org/0009-0003-1747-5643"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I186354981",
+            "display_name": "University of Passau",
+            "ror": "https://ror.org/05ydjnb78",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael Dinzinger",
+        "raw_affiliation_strings": [
+          "University of Passau, Passau, Germany"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0003-1747-5643",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Passau, Passau, Germany",
+            "institution_ids": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5006866152",
+          "display_name": "Michael Granitzer",
+          "orcid": "https://orcid.org/0000-0003-3566-5507",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3566-5507"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I186354981",
+            "display_name": "University of Passau",
+            "ror": "https://ror.org/05ydjnb78",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Michael Granitzer",
+        "raw_affiliation_strings": [
+          "University of Passau, Passau, Germany and IT:U Austria, Linz, Austria"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3566-5507",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Passau, Passau, Germany and IT:U Austria, Linz, Austria",
+            "institution_ids": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5019466280",
+          "display_name": "Jelena Mitrović",
+          "orcid": "https://orcid.org/0000-0003-3220-8749",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3220-8749"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I186354981",
+            "display_name": "University of Passau",
+            "ror": "https://ror.org/05ydjnb78",
+            "country_code": "DE",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ],
+        "countries": [
+          "DE"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Jelena Mitrovic",
+        "raw_affiliation_strings": [
+          "University of Passau, Passau, Germany"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3220-8749",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "University of Passau, Passau, Germany",
+            "institution_ids": [
+              "https://openalex.org/I186354981"
+            ]
+          }
+        ]
+      }
+    ],
+    "institutions": [],
+    "countries_distinct_count": 1,
+    "institutions_distinct_count": 1,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [
+      "https://openalex.org/I186354981"
+    ],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 10.3642,
+    "has_fulltext": false,
+    "cited_by_count": 1,
+    "citation_normalized_percentile": {
+      "value": 0.97698231,
+      "is_in_top_1_percent": false,
+      "is_in_top_10_percent": true
+    },
+    "cited_by_percentile_year": {
+      "min": 93,
+      "max": 96
+    },
+    "biblio": {
+      "volume": null,
+      "issue": null,
+      "first_page": "216",
+      "last_page": "220"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "is_xpac": false,
+    "primary_topic": {
+      "id": "https://openalex.org/T12016",
+      "display_name": "Web Data Mining and Analysis",
+      "score": 0.7258999943733215,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    "topics": [
+      {
+        "id": "https://openalex.org/T12016",
+        "display_name": "Web Data Mining and Analysis",
+        "score": 0.7258999943733215,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1710",
+          "display_name": "Information Systems"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10286",
+        "display_name": "Information Retrieval and Search Behavior",
+        "score": 0.07729999721050262,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1710",
+          "display_name": "Information Systems"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.05660000070929527,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "keywords": [
+      {
+        "id": "https://openalex.org/keywords/the-internet",
+        "display_name": "The Internet",
+        "score": 0.287200003862381
+      },
+      {
+        "id": "https://openalex.org/keywords/document-retrieval",
+        "display_name": "Document retrieval",
+        "score": 0.26420000195503235
+      },
+      {
+        "id": "https://openalex.org/keywords/quality",
+        "display_name": "Quality (philosophy)",
+        "score": 0.2468000054359436
+      },
+      {
+        "id": "https://openalex.org/keywords/data-retrieval",
+        "display_name": "Data retrieval",
+        "score": 0.23739999532699585
+      },
+      {
+        "id": "https://openalex.org/keywords/process",
+        "display_name": "Process (computing)",
+        "score": 0.2303999960422516
+      }
+    ],
+    "concepts": [
+      {
+        "id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "level": 0,
+        "score": 0.5853999853134155
+      },
+      {
+        "id": "https://openalex.org/C136764020",
+        "wikidata": "https://www.wikidata.org/wiki/Q466",
+        "display_name": "World Wide Web",
+        "level": 1,
+        "score": 0.47049999237060547
+      },
+      {
+        "id": "https://openalex.org/C23123220",
+        "wikidata": "https://www.wikidata.org/wiki/Q816826",
+        "display_name": "Information retrieval",
+        "level": 1,
+        "score": 0.36419999599456787
+      },
+      {
+        "id": "https://openalex.org/C49774154",
+        "wikidata": "https://www.wikidata.org/wiki/Q131765",
+        "display_name": "Multimedia",
+        "level": 1,
+        "score": 0.3158999979496002
+      },
+      {
+        "id": "https://openalex.org/C110875604",
+        "wikidata": "https://www.wikidata.org/wiki/Q75",
+        "display_name": "The Internet",
+        "level": 2,
+        "score": 0.287200003862381
+      },
+      {
+        "id": "https://openalex.org/C161156560",
+        "wikidata": "https://www.wikidata.org/wiki/Q1638872",
+        "display_name": "Document retrieval",
+        "level": 2,
+        "score": 0.26420000195503235
+      },
+      {
+        "id": "https://openalex.org/C2779530757",
+        "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+        "display_name": "Quality (philosophy)",
+        "level": 2,
+        "score": 0.2468000054359436
+      },
+      {
+        "id": "https://openalex.org/C551230270",
+        "wikidata": "https://www.wikidata.org/wiki/Q4368942",
+        "display_name": "Data retrieval",
+        "level": 2,
+        "score": 0.23739999532699585
+      },
+      {
+        "id": "https://openalex.org/C98045186",
+        "wikidata": "https://www.wikidata.org/wiki/Q205663",
+        "display_name": "Process (computing)",
+        "level": 2,
+        "score": 0.2303999960422516
+      },
+      {
+        "id": "https://openalex.org/C9652623",
+        "wikidata": "https://www.wikidata.org/wiki/Q190109",
+        "display_name": "Field (mathematics)",
+        "level": 2,
+        "score": 0.2298000007867813
+      }
+    ],
+    "mesh": [],
+    "locations_count": 1,
+    "locations": [
+      {
+        "id": "doi:10.1145/3774905.3793140",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3774905.3793140",
+        "pdf_url": null,
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+        "raw_type": "proceedings-article"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1145/3774905.3793140",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793140",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "sustainable_development_goals": [
+      {
+        "score": 0.5336681008338928,
+        "id": "https://metadata.un.org/sdg/4",
+        "display_name": "Quality Education"
+      }
+    ],
+    "x_sdgs": [],
+    "study_designs": [],
+    "awards": [],
+    "funders": [],
+    "has_content": {
+      "pdf": false,
+      "grobid_xml": false
+    },
+    "content_urls": null,
+    "referenced_works_count": 17,
+    "referenced_works": [
+      "https://openalex.org/W2012833704",
+      "https://openalex.org/W2014766608",
+      "https://openalex.org/W2038378248",
+      "https://openalex.org/W2069870183",
+      "https://openalex.org/W2145349611",
+      "https://openalex.org/W2911388033",
+      "https://openalex.org/W3177057043",
+      "https://openalex.org/W4288725442",
+      "https://openalex.org/W4380715488",
+      "https://openalex.org/W4385634976",
+      "https://openalex.org/W4391272456",
+      "https://openalex.org/W4396823873",
+      "https://openalex.org/W4400524835",
+      "https://openalex.org/W4403219939",
+      "https://openalex.org/W4403347014",
+      "https://openalex.org/W4411119292",
+      "https://openalex.org/W6894273084"
+    ],
+    "related_works": [],
+    "abstract_inverted_index": {
+      "Browser-based": [
+        0
+      ],
+      "language": [
+        1
+      ],
+      "models": [
+        2
+      ],
+      "often": [
+        3
+      ],
+      "use": [
+        4
+      ],
+      "retrieval-augmented": [
+        5
+      ],
+      "generation": [
+        6
+      ],
+      "(RAG)": [
+        7
+      ],
+      "but": [
+        8
+      ],
+      "typically": [
+        9
+      ],
+      "rely": [
+        10
+      ],
+      "on": [
+        11,
+        38
+      ],
+      "fixed,": [
+        12
+      ],
+      "outdated": [
+        13
+      ],
+      "indices": [
+        14
+      ],
+      "that": [
+        15,
+        30,
+        48
+      ],
+      "give": [
+        16
+      ],
+      "users": [
+        17
+      ],
+      "no": [
+        18
+      ],
+      "control": [
+        19
+      ],
+      "over": [
+        20
+      ],
+      "which": [
+        21
+      ],
+      "sources": [
+        22
+      ],
+      "are": [
+        23
+      ],
+      "consulted.": [
+        24
+      ],
+      "This": [
+        25
+      ],
+      "can": [
+        26
+      ],
+      "lead": [
+        27
+      ],
+      "to": [
+        28,
+        56,
+        82
+      ],
+      "answers": [
+        29
+      ],
+      "mix": [
+        31
+      ],
+      "trusted": [
+        32
+      ],
+      "and": [
+        33,
+        52,
+        86,
+        97,
+        116
+      ],
+      "untrusted": [
+        34
+      ],
+      "content": [
+        35
+      ],
+      "or": [
+        36,
+        65
+      ],
+      "draw": [
+        37
+      ],
+      "stale": [
+        39
+      ],
+      "information.": [
+        40
+      ],
+      "We": [
+        41
+      ],
+      "present": [
+        42
+      ],
+      "OwlerLite,": [
+        43
+      ],
+      "a": [
+        44,
+        78,
+        100,
+        106,
+        111
+      ],
+      "browser-based": [
+        45
+      ],
+      "RAG": [
+        46
+      ],
+      "system": [
+        47
+      ],
+      "makes": [
+        49
+      ],
+      "user-defined": [
+        50
+      ],
+      "scopes": [
+        51
+      ],
+      "data": [
+        53
+      ],
+      "freshness": [
+        54
+      ],
+      "central": [
+        55
+      ],
+      "retrieval.": [
+        57
+      ],
+      "Users": [
+        58
+      ],
+      "define": [
+        59
+      ],
+      "reusable": [
+        60
+      ],
+      "scopes-sets": [
+        61
+      ],
+      "of": [
+        62
+      ],
+      "web": [
+        63,
+        118
+      ],
+      "pages": [
+        64
+      ],
+      "sources-and": [
+        66
+      ],
+      "select": [
+        67
+      ],
+      "them": [
+        68
+      ],
+      "when": [
+        69
+      ],
+      "querying.": [
+        70
+      ],
+      "A": [
+        71
+      ],
+      "freshness-aware": [
+        72
+      ],
+      "crawler": [
+        73
+      ],
+      "monitors": [
+        74
+      ],
+      "live": [
+        75
+      ],
+      "pages,": [
+        76
+      ],
+      "uses": [
+        77
+      ],
+      "semantic": [
+        79
+      ],
+      "change": [
+        80
+      ],
+      "detector": [
+        81
+      ],
+      "identify": [
+        83
+      ],
+      "meaningful": [
+        84
+      ],
+      "updates,": [
+        85
+      ],
+      "selectively": [
+        87
+      ],
+      "re-indexes": [
+        88
+      ],
+      "changed": [
+        89
+      ],
+      "content.": [
+        90
+      ],
+      "OwlerLite": [
+        91
+      ],
+      "integrates": [
+        92
+      ],
+      "text": [
+        93
+      ],
+      "relevance,": [
+        94
+      ],
+      "scope": [
+        95
+      ],
+      "choice,": [
+        96
+      ],
+      "recency": [
+        98
+      ],
+      "into": [
+        99
+      ],
+      "unified": [
+        101
+      ],
+      "retrieval": [
+        102
+      ],
+      "model.": [
+        103
+      ],
+      "Implemented": [
+        104
+      ],
+      "as": [
+        105
+      ],
+      "browser": [
+        107
+      ],
+      "extension,": [
+        108
+      ],
+      "it": [
+        109
+      ],
+      "represents": [
+        110
+      ],
+      "step": [
+        112
+      ],
+      "toward": [
+        113
+      ],
+      "more": [
+        114
+      ],
+      "controllable": [
+        115
+      ],
+      "trustworthy": [
+        117
+      ],
+      "assistants.": [
+        119
+      ]
+    },
+    "counts_by_year": [
+      {
+        "year": 2026,
+        "cited_by_count": 1
+      }
+    ],
+    "updated_date": "2026-09-25T08:18:29.962427",
+    "created_date": "2026-05-29T00:00:00"
+  },
+  "unpaywall": {},
+  "semantic_scholar": {
+    "paperId": "2b6667f5c3df772a761b41470bf07cb65ca4f78e",
+    "externalIds": {
+      "DBLP": "conf/www/ZerhoudiDGM26",
+      "ArXiv": "2601.17824",
+      "DOI": "10.1145/3774905.3793140",
+      "CorpusId": 285051575
+    },
+    "url": "https://www.semanticscholar.org/paper/2b6667f5c3df772a761b41470bf07cb65ca4f78e",
+    "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+    "openAccessPdf": {
+      "url": "https://doi.org/10.1145/3774905.3793140",
+      "status": "GOLD",
+      "license": "CCBY"
+    }
+  },
+  "arxiv": {
+    "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+    "id": "http://arxiv.org/abs/2601.17824v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.17824v1"
+  }
+}

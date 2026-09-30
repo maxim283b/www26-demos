@@ -1,0 +1,766 @@
+{
+  "table_of_contents": [
+    {
+      "title": "TrustResearcher: Automating Knowledge-Grounded and\nTransparent Research Ideation with Multi-Agent Collaboration",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.92048645019531,
+          79.73004341125488
+        ],
+        [
+          551.7584228515625,
+          79.73004341125488
+        ],
+        [
+          551.7584228515625,
+          119.63006591796875
+        ],
+        [
+          56.92048645019531,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.90283966064453,
+          242.2759780883789
+        ],
+        [
+          95.6154727935791,
+          242.2759780883789
+        ],
+        [
+          95.6154727935791,
+          254.06037139892578
+        ],
+        [
+          50.90283966064453,
+          254.06037139892578
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.97082710266113,
+          463.47019958496094
+        ],
+        [
+          123.195556640625,
+          463.47019958496094
+        ],
+        [
+          123.195556640625,
+          477.497802734375
+        ],
+        [
+          49.97082710266113,
+          477.497802734375
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.5356330871582,
+          521.1345977783203
+        ],
+        [
+          102.90447235107422,
+          521.1345977783203
+        ],
+        [
+          102.90447235107422,
+          534.8159790039062
+        ],
+        [
+          50.5356330871582,
+          534.8159790039062
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.70974922180176,
+          550.4419097900391
+        ],
+        [
+          140.4966278076172,
+          550.4419097900391
+        ],
+        [
+          140.4966278076172,
+          561.9986572265625
+        ],
+        [
+          50.70974922180176,
+          561.9986572265625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.14783477783203,
+          650.5629272460938
+        ],
+        [
+          90.37962341308594,
+          650.5629272460938
+        ],
+        [
+          90.37962341308594,
+          662.8138275146484
+        ],
+        [
+          51.14783477783203,
+          662.8138275146484
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.60021209716797,
+          241.82965850830078
+        ],
+        [
+          397.8064270019531,
+          241.82965850830078
+        ],
+        [
+          397.8064270019531,
+          254.09811401367188
+        ],
+        [
+          314.60021209716797,
+          254.09811401367188
+        ]
+      ]
+    },
+    {
+      "title": "2 System Design",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.12234878540039,
+          637.7719116210938
+        ],
+        [
+          142.52541732788086,
+          637.7719116210938
+        ],
+        [
+          142.52541732788086,
+          652.3984375
+        ],
+        [
+          51.12234878540039,
+          652.3984375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Structured Knowledge Curation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.02125549316406,
+          109.27308654785156
+        ],
+        [
+          501.03089904785156,
+          109.27308654785156
+        ],
+        [
+          501.03089904785156,
+          123.53643798828125
+        ],
+        [
+          314.02125549316406,
+          123.53643798828125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Diversified Idea Generation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.83231353759766,
+          451.4629669189453
+        ],
+        [
+          479.1507110595703,
+          451.4629669189453
+        ],
+        [
+          479.1507110595703,
+          464.2338409423828
+        ],
+        [
+          313.83231353759766,
+          464.2338409423828
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Idea Selection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.66663360595703,
+          530.3047485351562
+        ],
+        [
+          411.3587341308594,
+          530.3047485351562
+        ],
+        [
+          411.3587341308594,
+          542.5829772949219
+        ],
+        [
+          314.66663360595703,
+          542.5829772949219
+        ]
+      ]
+    },
+    {
+      "title": "2.4 Expert Panel Review & Synthesis",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.20353698730469,
+          81.41948890686035
+        ],
+        [
+          241.67108917236328,
+          81.41948890686035
+        ],
+        [
+          241.67108917236328,
+          96.1907958984375
+        ],
+        [
+          50.20353698730469,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "3 Demonstration",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.98596382141113,
+          358.41309356689453
+        ],
+        [
+          145.16171264648438,
+          358.41309356689453
+        ],
+        [
+          145.16171264648438,
+          371.2573471069336
+        ],
+        [
+          50.98596382141113,
+          371.2573471069336
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Interface",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.76975631713867,
+          405.20947265625
+        ],
+        [
+          123.37386703491211,
+          405.20947265625
+        ],
+        [
+          123.37386703491211,
+          417.72528076171875
+        ],
+        [
+          50.76975631713867,
+          417.72528076171875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Case study",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.80316734313965,
+          539.4802093505859
+        ],
+        [
+          131.8198699951172,
+          539.4802093505859
+        ],
+        [
+          131.8198699951172,
+          553.7030181884766
+        ],
+        [
+          50.80316734313965,
+          553.7030181884766
+        ]
+      ]
+    },
+    {
+      "title": "Topic selected",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          331.02555084228516,
+          155.33260345458984
+        ],
+        [
+          387.0945739746094,
+          155.33260345458984
+        ],
+        [
+          387.0945739746094,
+          167.75213623046875
+        ],
+        [
+          331.02555084228516,
+          167.75213623046875
+        ]
+      ]
+    },
+    {
+      "title": "Scalable Approximation Framework for Real-Time\nk-Truss Disruption in Massive Dynamic Graphs",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          331.6007995605469,
+          325.86055755615234
+        ],
+        [
+          542.6082153320312,
+          325.86055755615234
+        ],
+        [
+          542.6082153320312,
+          350.48516845703125
+        ],
+        [
+          331.6007995605469,
+          350.48516845703125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          63.92350387573242,
+          86.09564208984375
+        ],
+        [
+          185.4561767578125,
+          86.09564208984375
+        ],
+        [
+          185.4561767578125,
+          103.92531967163086
+        ],
+        [
+          63.92350387573242,
+          103.92531967163086
+        ]
+      ]
+    },
+    {
+      "title": "Experimental Validation.",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          66.4786148071289,
+          498.863525390625
+        ],
+        [
+          171.57907104492188,
+          498.863525390625
+        ],
+        [
+          171.57907104492188,
+          512.0941467285156
+        ],
+        [
+          66.4786148071289,
+          512.0941467285156
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.79954528808594,
+          179.21791076660156
+        ],
+        [
+          126.8378791809082,
+          179.21791076660156
+        ],
+        [
+          126.8378791809082,
+          191.38904571533203
+        ],
+        [
+          50.79954528808594,
+          191.38904571533203
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.93122673034668,
+          294.2940673828125
+        ],
+        [
+          107.65510940551758,
+          294.2940673828125
+        ],
+        [
+          107.65510940551758,
+          306.463623046875
+        ],
+        [
+          50.93122673034668,
+          306.463623046875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          266
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          104
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          305
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          127
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          259
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Reference",
+          15
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\des0759_TrustResearcher_Automating_Knowledge_Grounded_and_Transparent_Research_Ideation_with_Multi_Agent"
+}

@@ -1,0 +1,517 @@
+{
+  "table_of_contents": [
+    {
+      "title": "OwlerLite: Scope- and Freshness-Aware\nWeb Retrieval for LLM Assistants",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          147.49484252929688,
+          79.70028305053711
+        ],
+        [
+          461.2107696533203,
+          79.70028305053711
+        ],
+        [
+          461.2107696533203,
+          119.5955810546875
+        ],
+        [
+          147.49484252929688,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.9769401550293,
+          502.9505310058594
+        ],
+        [
+          95.41621398925781,
+          502.9505310058594
+        ],
+        [
+          95.41621398925781,
+          517.0689697265625
+        ],
+        [
+          50.9769401550293,
+          517.0689697265625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.426387786865234,
+          670.2713470458984
+        ],
+        [
+          123.07078552246094,
+          670.2713470458984
+        ],
+        [
+          123.07078552246094,
+          685.231819152832
+        ],
+        [
+          50.426387786865234,
+          685.231819152832
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.675048828125,
+          536.9051971435547
+        ],
+        [
+          367.2360534667969,
+          536.9051971435547
+        ],
+        [
+          367.2360534667969,
+          551.5579986572266
+        ],
+        [
+          313.675048828125,
+          551.5579986572266
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.41307830810547,
+          591.3946380615234
+        ],
+        [
+          397.9862365722656,
+          591.3946380615234
+        ],
+        [
+          397.9862365722656,
+          605.9250030517578
+        ],
+        [
+          314.41307830810547,
+          605.9250030517578
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.321298599243164,
+          553.7066345214844
+        ],
+        [
+          138.74435806274414,
+          553.7066345214844
+        ],
+        [
+          138.74435806274414,
+          568.0660095214844
+        ],
+        [
+          51.321298599243164,
+          568.0660095214844
+        ]
+      ]
+    },
+    {
+      "title": "3 Problem Formulation and Design Principles",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.42259979248047,
+          517.1552124023438
+        ],
+        [
+          552.9145660400391,
+          517.1552124023438
+        ],
+        [
+          552.9145660400391,
+          531.0304565429688
+        ],
+        [
+          314.42259979248047,
+          531.0304565429688
+        ]
+      ]
+    },
+    {
+      "title": "4 System Architecture and Methods",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.538747787475586,
+          294.0051727294922
+        ],
+        [
+          238.26173400878906,
+          294.0051727294922
+        ],
+        [
+          238.26173400878906,
+          307.2549743652344
+        ],
+        [
+          51.538747787475586,
+          307.2549743652344
+        ]
+      ]
+    },
+    {
+      "title": "5 Offline Evaluation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.7345199584961,
+          606.5231323242188
+        ],
+        [
+          426.5960998535156,
+          606.5231323242188
+        ],
+        [
+          426.5960998535156,
+          619.4570007324219
+        ],
+        [
+          314.7345199584961,
+          619.4570007324219
+        ]
+      ]
+    },
+    {
+      "title": "6 Demonstration",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.34095764160156,
+          83.68769073486328
+        ],
+        [
+          409.6277160644531,
+          83.68769073486328
+        ],
+        [
+          409.6277160644531,
+          96.16900634765625
+        ],
+        [
+          314.34095764160156,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "7 Conclusion and Future Directions",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.22379302978516,
+          273.6334762573242
+        ],
+        [
+          501.95338439941406,
+          273.6334762573242
+        ],
+        [
+          501.95338439941406,
+          287.5759582519531
+        ],
+        [
+          314.22379302978516,
+          287.5759582519531
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.60606384277344,
+          629.4239501953125
+        ],
+        [
+          372.3041076660156,
+          629.4239501953125
+        ],
+        [
+          372.3041076660156,
+          643.3670043945312
+        ],
+        [
+          313.60606384277344,
+          643.3670043945312
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          156
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          442
+        ],
+        [
+          "Line",
+          126
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          527
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          19
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          390
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          419
+        ],
+        [
+          "Line",
+          123
+        ],
+        [
+          "Reference",
+          33
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\des1030_OwlerLite_Scope_and_Freshness_Aware_Web_Retrieval_for_LLM_Assistants"
+}

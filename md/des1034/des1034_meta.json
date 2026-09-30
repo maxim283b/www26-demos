@@ -1,0 +1,610 @@
+{
+  "table_of_contents": [
+    {
+      "title": "BLURR: A Boosted Low-Resource Inference for\nVision-Language-Action Model",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          118.90689468383789,
+          79.12907409667969
+        ],
+        [
+          490.18768310546875,
+          79.12907409667969
+        ],
+        [
+          490.18768310546875,
+          119.63006591796875
+        ],
+        [
+          118.90689468383789,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.11161994934082,
+          184.2374267578125
+        ],
+        [
+          95.85890579223633,
+          184.2374267578125
+        ],
+        [
+          95.85890579223633,
+          198.260009765625
+        ],
+        [
+          51.11161994934082,
+          198.260009765625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.300119400024414,
+          351.78247833251953
+        ],
+        [
+          103.11853408813477,
+          351.78247833251953
+        ],
+        [
+          103.11853408813477,
+          365.63299560546875
+        ],
+        [
+          50.300119400024414,
+          365.63299560546875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.75028419494629,
+          400.67518615722656
+        ],
+        [
+          133.4336929321289,
+          400.67518615722656
+        ],
+        [
+          133.4336929321289,
+          414.7489929199219
+        ],
+        [
+          50.75028419494629,
+          414.7489929199219
+        ]
+      ]
+    },
+    {
+      "title": "2 BLURR Architecture",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          315.0222702026367,
+          257.2576217651367
+        ],
+        [
+          437.0990753173828,
+          257.2576217651367
+        ],
+        [
+          437.0990753173828,
+          270.3260498046875
+        ],
+        [
+          315.0222702026367,
+          270.3260498046875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Single-step control with prefix-cached\ninstructions",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          315.12286376953125,
+          370.37548828125
+        ],
+        [
+          534.0245361328125,
+          370.37548828125
+        ],
+        [
+          534.0245361328125,
+          396.2869873046875
+        ],
+        [
+          315.12286376953125,
+          396.2869873046875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Efficient BF16 Decoder with Compilation\nand FlashAttention",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.422183990478516,
+          83.98148918151855
+        ],
+        [
+          282.22911071777344,
+          83.98148918151855
+        ],
+        [
+          282.22911071777344,
+          109.1199951171875
+        ],
+        [
+          51.422183990478516,
+          109.1199951171875
+        ]
+      ]
+    },
+    {
+      "title": "3 Implementation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.74422454833984,
+          568.2547302246094
+        ],
+        [
+          415.8380126953125,
+          568.2547302246094
+        ],
+        [
+          415.8380126953125,
+          581.8698120117188
+        ],
+        [
+          314.74422454833984,
+          581.8698120117188
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Runtime Stack and Demo Integration",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.6762008666992,
+          583.7517700195312
+        ],
+        [
+          528.9261016845703,
+          583.7517700195312
+        ],
+        [
+          528.9261016845703,
+          597.6044464111328
+        ],
+        [
+          314.6762008666992,
+          597.6044464111328
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Experimental Setup",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.1351318359375,
+          292.02079010009766
+        ],
+        [
+          177.2717056274414,
+          292.02079010009766
+        ],
+        [
+          177.2717056274414,
+          305.1598205566406
+        ],
+        [
+          51.1351318359375,
+          305.1598205566406
+        ]
+      ]
+    },
+    {
+      "title": "4 Evaluation",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.83393096923828,
+          499.1982421875
+        ],
+        [
+          125.08992004394531,
+          499.1982421875
+        ],
+        [
+          125.08992004394531,
+          512.60498046875
+        ],
+        [
+          51.83393096923828,
+          512.60498046875
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Overall Efficiency and Throughput",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.50375175476074,
+          514.2639312744141
+        ],
+        [
+          250.63176727294922,
+          514.2639312744141
+        ],
+        [
+          250.63176727294922,
+          528.3614501953125
+        ],
+        [
+          51.50375175476074,
+          528.3614501953125
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Ablation: BLURR Inference Components",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.3951473236084,
+          671.2619934082031
+        ],
+        [
+          282.2765121459961,
+          671.2619934082031
+        ],
+        [
+          282.2765121459961,
+          685.231819152832
+        ],
+        [
+          51.3951473236084,
+          685.231819152832
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Closed-loop Success Rates and Demo\nExperience",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.5881042480469,
+          527.5982666015625
+        ],
+        [
+          526.5713195800781,
+          527.5982666015625
+        ],
+        [
+          526.5713195800781,
+          553.7248382568359
+        ],
+        [
+          314.5881042480469,
+          553.7248382568359
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.03757095336914,
+          311.17989349365234
+        ],
+        [
+          108.43279266357422,
+          311.17989349365234
+        ],
+        [
+          108.43279266357422,
+          322.98685455322266
+        ],
+        [
+          51.03757095336914,
+          322.98685455322266
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          195
+        ],
+        [
+          "Line",
+          86
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          479
+        ],
+        [
+          "Line",
+          129
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          270
+        ],
+        [
+          "Line",
+          94
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          270
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          203
+        ],
+        [
+          "Line",
+          67
+        ],
+        [
+          "Reference",
+          12
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\des1034_BLURR_A_Boosted_Low_Resource_Inference_for_Vision_Language_Action_Model"
+}

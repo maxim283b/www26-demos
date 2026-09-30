@@ -1,0 +1,929 @@
+{
+  "paper": {
+    "paper_id": "des974",
+    "title": "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation",
+    "authors": "Shuo Miao — DCST, Tsinghua University,Quan Cheng Laboratory, Haitao Li — DCST, Tsinghua University, Yueyue Wu — Quan Cheng Laboratory,Tsinghua University, Qingyao Ai — Quan Cheng Laboratory,DCST, Tsinghua University, Yiqun Liu — Quan Cheng Laboratory,DCST, Tsinghua University"
+  },
+  "crossref": {
+    "DOI": "10.1145/3774905.3793126",
+    "title": [
+      "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation"
+    ],
+    "page": "160-163",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3774905.3793126",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "container-title": [
+      "Companion Proceedings of the ACM Web Conference 2026"
+    ],
+    "URL": "https://doi.org/10.1145/3774905.3793126",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0008-0965-9756",
+        "authenticated-orcid": false,
+        "given": "Shuo",
+        "family": "Miao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "DCST, Tsinghua University, Beijing, China and Quan Cheng Laboratory, Jinan, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-8766-8610",
+        "authenticated-orcid": false,
+        "given": "Haitao",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "DCST, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2539-8954",
+        "authenticated-orcid": false,
+        "given": "Yueyue",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Quan Cheng Laboratory, Jinan, China and Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5030-709X",
+        "authenticated-orcid": false,
+        "given": "Qingyao",
+        "family": "Ai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0140-4512",
+        "authenticated-orcid": false,
+        "given": "Yiqun",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "openalex": {
+    "id": "https://openalex.org/W7162655179",
+    "doi": "https://doi.org/10.1145/3774905.3793126",
+    "title": "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation",
+    "display_name": "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation",
+    "publication_year": 2026,
+    "publication_date": "2026-05-28",
+    "ids": {
+      "openalex": "https://openalex.org/W7162655179",
+      "doi": "https://doi.org/10.1145/3774905.3793126"
+    },
+    "language": null,
+    "primary_location": {
+      "id": "doi:10.1145/3774905.3793126",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793126",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "type": "conference-paper",
+    "indexed_in": [
+      "crossref"
+    ],
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1145/3774905.3793126",
+      "any_repository_has_fulltext": null
+    },
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": null,
+          "display_name": "Shuo Miao",
+          "orcid": "https://orcid.org/0009-0008-0965-9756",
+          "observed_orcids": [
+            "https://orcid.org/0009-0008-0965-9756"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I99065089",
+            "display_name": "Tsinghua University",
+            "ror": "https://ror.org/03cve4549",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Shuo Miao",
+        "raw_affiliation_strings": [
+          "DCST, Tsinghua University, Beijing, China and Quan Cheng Laboratory, Jinan, China"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0008-0965-9756",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "DCST, Tsinghua University, Beijing, China and Quan Cheng Laboratory, Jinan, China",
+            "institution_ids": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "Haitao Li",
+          "orcid": "https://orcid.org/0009-0006-8766-8610",
+          "observed_orcids": [
+            "https://orcid.org/0009-0006-8766-8610"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I99065089",
+            "display_name": "Tsinghua University",
+            "ror": "https://ror.org/03cve4549",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Haitao Li",
+        "raw_affiliation_strings": [
+          "DCST, Tsinghua University, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0009-0006-8766-8610",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "DCST, Tsinghua University, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5041525078",
+          "display_name": "Yueyue Wu",
+          "orcid": "https://orcid.org/0000-0002-2539-8954",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2539-8954",
+            "https://orcid.org/0009-0008-9063-6593"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I99065089",
+            "display_name": "Tsinghua University",
+            "ror": "https://ror.org/03cve4549",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yueyue Wu",
+        "raw_affiliation_strings": [
+          "Quan Cheng Laboratory, Jinan, China and Tsinghua University, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2539-8954",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Quan Cheng Laboratory, Jinan, China and Tsinghua University, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5089655391",
+          "display_name": "Qingyao Ai",
+          "orcid": "https://orcid.org/0000-0002-5030-709X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-5030-709X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I99065089",
+            "display_name": "Tsinghua University",
+            "ror": "https://ror.org/03cve4549",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Qingyao Ai",
+        "raw_affiliation_strings": [
+          "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-5030-709X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5100668121",
+          "display_name": "Yiqun Liu",
+          "orcid": "https://orcid.org/0000-0002-0140-4512",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0140-4512"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I99065089",
+            "display_name": "Tsinghua University",
+            "ror": "https://ror.org/03cve4549",
+            "country_code": "CN",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ],
+        "countries": [
+          "CN"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yiqun Liu",
+        "raw_affiliation_strings": [
+          "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-0140-4512",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Quan Cheng Laboratory, Jinan, China and DCST, Tsinghua University, Beijing, China",
+            "institution_ids": [
+              "https://openalex.org/I99065089"
+            ]
+          }
+        ]
+      }
+    ],
+    "institutions": [],
+    "countries_distinct_count": 1,
+    "institutions_distinct_count": 1,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [
+      "https://openalex.org/I99065089"
+    ],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 0.0,
+    "has_fulltext": false,
+    "cited_by_count": 0,
+    "citation_normalized_percentile": {
+      "value": 0.66246057,
+      "is_in_top_1_percent": false,
+      "is_in_top_10_percent": false
+    },
+    "cited_by_percentile_year": null,
+    "biblio": {
+      "volume": null,
+      "issue": null,
+      "first_page": "160",
+      "last_page": "163"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "is_xpac": false,
+    "primary_topic": {
+      "id": "https://openalex.org/T13643",
+      "display_name": "Artificial Intelligence in Law",
+      "score": 0.4189999997615814,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3320",
+        "display_name": "Political Science and International Relations"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/33",
+        "display_name": "Social Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    "topics": [
+      {
+        "id": "https://openalex.org/T13643",
+        "display_name": "Artificial Intelligence in Law",
+        "score": 0.4189999997615814,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3320",
+          "display_name": "Political Science and International Relations"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T12026",
+        "display_name": "Explainable Artificial Intelligence (XAI)",
+        "score": 0.08309999853372574,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10883",
+        "display_name": "Ethics and Social Impacts of AI",
+        "score": 0.08079999685287476,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3311",
+          "display_name": "Safety Research"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      }
+    ],
+    "keywords": [
+      {
+        "id": "https://openalex.org/keywords/modular-design",
+        "display_name": "Modular design",
+        "score": 0.516700029373169
+      },
+      {
+        "id": "https://openalex.org/keywords/key",
+        "display_name": "Key (lock)",
+        "score": 0.30250000953674316
+      },
+      {
+        "id": "https://openalex.org/keywords/expert-system",
+        "display_name": "Expert system",
+        "score": 0.2874000072479248
+      },
+      {
+        "id": "https://openalex.org/keywords/modular-programming",
+        "display_name": "Modular programming",
+        "score": 0.27959999442100525
+      },
+      {
+        "id": "https://openalex.org/keywords/software",
+        "display_name": "Software",
+        "score": 0.27799999713897705
+      }
+    ],
+    "concepts": [
+      {
+        "id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "level": 0,
+        "score": 0.6363999843597412
+      },
+      {
+        "id": "https://openalex.org/C101468663",
+        "wikidata": "https://www.wikidata.org/wiki/Q1620158",
+        "display_name": "Modular design",
+        "level": 2,
+        "score": 0.516700029373169
+      },
+      {
+        "id": "https://openalex.org/C115903868",
+        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+        "display_name": "Software engineering",
+        "level": 1,
+        "score": 0.44839999079704285
+      },
+      {
+        "id": "https://openalex.org/C154945302",
+        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+        "display_name": "Artificial intelligence",
+        "level": 1,
+        "score": 0.33329999446868896
+      },
+      {
+        "id": "https://openalex.org/C199360897",
+        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+        "display_name": "Programming language",
+        "level": 1,
+        "score": 0.3188000023365021
+      },
+      {
+        "id": "https://openalex.org/C26517878",
+        "wikidata": "https://www.wikidata.org/wiki/Q228039",
+        "display_name": "Key (lock)",
+        "level": 2,
+        "score": 0.30250000953674316
+      },
+      {
+        "id": "https://openalex.org/C58328972",
+        "wikidata": "https://www.wikidata.org/wiki/Q184609",
+        "display_name": "Expert system",
+        "level": 2,
+        "score": 0.2874000072479248
+      },
+      {
+        "id": "https://openalex.org/C88482812",
+        "wikidata": "https://www.wikidata.org/wiki/Q6453666",
+        "display_name": "Modular programming",
+        "level": 2,
+        "score": 0.27959999442100525
+      },
+      {
+        "id": "https://openalex.org/C2777904410",
+        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+        "display_name": "Software",
+        "level": 2,
+        "score": 0.27799999713897705
+      },
+      {
+        "id": "https://openalex.org/C9652623",
+        "wikidata": "https://www.wikidata.org/wiki/Q190109",
+        "display_name": "Field (mathematics)",
+        "level": 2,
+        "score": 0.2484000027179718
+      }
+    ],
+    "mesh": [],
+    "locations_count": 1,
+    "locations": [
+      {
+        "id": "doi:10.1145/3774905.3793126",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3774905.3793126",
+        "pdf_url": null,
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+        "raw_type": "proceedings-article"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1145/3774905.3793126",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793126",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "sustainable_development_goals": [],
+    "x_sdgs": [],
+    "study_designs": [],
+    "awards": [],
+    "funders": [],
+    "has_content": {
+      "grobid_xml": false,
+      "pdf": false
+    },
+    "content_urls": null,
+    "referenced_works_count": 4,
+    "referenced_works": [
+      "https://openalex.org/W4389403907",
+      "https://openalex.org/W4389519438",
+      "https://openalex.org/W4415798474",
+      "https://openalex.org/W6893007900"
+    ],
+    "related_works": [],
+    "abstract_inverted_index": {
+      "The": [
+        0
+      ],
+      "rise": [
+        1
+      ],
+      "of": [
+        2,
+        23,
+        31,
+        36,
+        50,
+        56
+      ],
+      "large": [
+        3
+      ],
+      "language": [
+        4
+      ],
+      "models": [
+        5
+      ],
+      "(LLMs)": [
+        6
+      ],
+      "has": [
+        7,
+        17
+      ],
+      "created": [
+        8
+      ],
+      "unprecedented": [
+        9
+      ],
+      "opportunities": [
+        10
+      ],
+      "for": [
+        11,
+        74
+      ],
+      "legal": [
+        12,
+        37,
+        57,
+        96,
+        123
+      ],
+      "AI": [
+        13
+      ],
+      "research.": [
+        14
+      ],
+      "However,": [
+        15
+      ],
+      "progress": [
+        16,
+        120
+      ],
+      "been": [
+        18
+      ],
+      "hindered": [
+        19
+      ],
+      "by": [
+        20,
+        99
+      ],
+      "the": [
+        21,
+        33,
+        48,
+        92
+      ],
+      "absence": [
+        22
+      ],
+      "standardized,": [
+        24
+      ],
+      "lightweight,": [
+        25
+      ],
+      "and": [
+        26,
+        63,
+        69,
+        83,
+        103,
+        117
+      ],
+      "extensible": [
+        27
+      ],
+      "evaluation": [
+        28,
+        49,
+        85
+      ],
+      "frameworks": [
+        29
+      ],
+      "capable": [
+        30
+      ],
+      "supporting": [
+        32
+      ],
+      "growing": [
+        34
+      ],
+      "diversity": [
+        35
+      ],
+      "tasks.": [
+        38
+      ],
+      "We": [
+        39
+      ],
+      "present": [
+        40
+      ],
+      "LegalKit,": [
+        41
+      ],
+      "https://github.com/DavidMiao1127/LegalKit,": [
+        42
+      ],
+      "an": [
+        43
+      ],
+      "efficient": [
+        44
+      ],
+      "toolkit": [
+        45
+      ],
+      "that": [
+        46
+      ],
+      "unifies": [
+        47
+      ],
+      "LLMs": [
+        51
+      ],
+      "across": [
+        52,
+        105
+      ],
+      "a": [
+        53,
+        65,
+        70
+      ],
+      "comprehensive": [
+        54
+      ],
+      "spectrum": [
+        55
+      ],
+      "scenarios.": [
+        58
+      ],
+      "LegalKit": [
+        59,
+        90,
+        111
+      ],
+      "integrates": [
+        60
+      ],
+      "heterogeneous": [
+        61
+      ],
+      "benchmarks,": [
+        62
+      ],
+      "offers": [
+        64
+      ],
+      "flexible": [
+        66
+      ],
+      "configuration": [
+        67
+      ],
+      "system": [
+        68
+      ],
+      "user-friendly": [
+        71
+      ],
+      "web": [
+        72
+      ],
+      "interface": [
+        73
+      ],
+      "interactive": [
+        75
+      ],
+      "evaluation.": [
+        76
+      ],
+      "Its": [
+        77
+      ],
+      "compatibility": [
+        78
+      ],
+      "with": [
+        79
+      ],
+      "multiple": [
+        80
+      ],
+      "acceleration": [
+        81
+      ],
+      "backends": [
+        82
+      ],
+      "recoverable": [
+        84
+      ],
+      "pipelines": [
+        86
+      ],
+      "enables": [
+        87
+      ],
+      "scalable": [
+        88
+      ],
+      "experimentation.": [
+        89
+      ],
+      "lowers": [
+        91
+      ],
+      "barrier": [
+        93
+      ],
+      "to": [
+        94,
+        113
+      ],
+      "rigorous": [
+        95
+      ],
+      "NLP": [
+        97
+      ],
+      "research": [
+        98
+      ],
+      "promoting": [
+        100
+      ],
+      "transparency,": [
+        101
+      ],
+      "reproducibility,": [
+        102
+      ],
+      "comparability": [
+        104
+      ],
+      "studies.": [
+        106
+      ],
+      "Designed": [
+        107
+      ],
+      "as": [
+        108
+      ],
+      "community-oriented": [
+        109
+      ],
+      "infrastructure,": [
+        110
+      ],
+      "aims": [
+        112
+      ],
+      "catalyze": [
+        114
+      ],
+      "future": [
+        115
+      ],
+      "extensions": [
+        116
+      ],
+      "foster": [
+        118
+      ],
+      "collective": [
+        119
+      ],
+      "toward": [
+        121
+      ],
+      "trustworthy": [
+        122
+      ],
+      "AI.": [
+        124
+      ]
+    },
+    "counts_by_year": [],
+    "updated_date": "2026-09-27T08:07:27.782135",
+    "created_date": "2026-05-29T00:00:00"
+  },
+  "unpaywall": {},
+  "semantic_scholar": {},
+  "arxiv": {}
+}

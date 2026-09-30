@@ -1,0 +1,954 @@
+{
+  "paper": {
+    "paper_id": "des960",
+    "title": "DriftNavi: Talk through Your Data Drift with LLMs",
+    "authors": "Zixin Wang — The University of Queensland, Junliang Yu — Griffith University, Tong Chen — The University of Queensland, Yadan Luo — The University of Queensland, Shazia Sadiq — The University of Queensland"
+  },
+  "crossref": {
+    "DOI": "10.1145/3774905.3793123",
+    "title": [
+      "DriftNavi: Talk through Your Data Drift with LLMs"
+    ],
+    "page": "148-151",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3774905.3793123",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "container-title": [
+      "Companion Proceedings of the ACM Web Conference 2026"
+    ],
+    "URL": "https://doi.org/10.1145/3774905.3793123",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2180-7204",
+        "authenticated-orcid": false,
+        "given": "Zixin",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "The University of Queensland, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3401-9829",
+        "authenticated-orcid": false,
+        "given": "Junliang",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Griffith University, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7269-146X",
+        "authenticated-orcid": false,
+        "given": "Tong",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The University of Queensland, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6272-2971",
+        "authenticated-orcid": false,
+        "given": "Yadan",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The University of Queensland, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6739-4145",
+        "authenticated-orcid": false,
+        "given": "Shazia",
+        "family": "Sadiq",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The University of Queensland, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "openalex": {
+    "id": "https://openalex.org/W7162691321",
+    "doi": "https://doi.org/10.1145/3774905.3793123",
+    "title": "DriftNavi: Talk through Your Data Drift with LLMs",
+    "display_name": "DriftNavi: Talk through Your Data Drift with LLMs",
+    "publication_year": 2026,
+    "publication_date": "2026-05-28",
+    "ids": {
+      "openalex": "https://openalex.org/W7162691321",
+      "doi": "https://doi.org/10.1145/3774905.3793123"
+    },
+    "language": null,
+    "primary_location": {
+      "id": "doi:10.1145/3774905.3793123",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793123",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "type": "conference-paper",
+    "indexed_in": [
+      "crossref"
+    ],
+    "open_access": {
+      "is_oa": true,
+      "oa_status": "gold",
+      "oa_url": "https://doi.org/10.1145/3774905.3793123",
+      "any_repository_has_fulltext": null
+    },
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5100727966",
+          "display_name": "Zixin Wang",
+          "orcid": "https://orcid.org/0000-0002-2180-7204",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2180-7204"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Zixin Wang",
+        "raw_affiliation_strings": [
+          "The University of Queensland, Brisbane, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0002-2180-7204",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The University of Queensland, Brisbane, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5084564297",
+          "display_name": "Junliang Yu",
+          "orcid": "https://orcid.org/0000-0003-3401-9829",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3401-9829"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I11701301",
+            "display_name": "Griffith University",
+            "ror": "https://ror.org/02sc3r913",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I11701301"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Junliang Yu",
+        "raw_affiliation_strings": [
+          "Griffith University, Brisbane, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0003-3401-9829",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Griffith University, Brisbane, Australia",
+            "institution_ids": [
+              "https://openalex.org/I11701301"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100461265",
+          "display_name": "Tong Chen",
+          "orcid": "https://orcid.org/0000-0001-7269-146X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7269-146X"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Tong Chen",
+        "raw_affiliation_strings": [
+          "The University of Queensland, Brisbane, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-7269-146X",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The University of Queensland, Brisbane, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5137204694",
+          "display_name": "Yadan Luo",
+          "orcid": "https://orcid.org/0000-0001-6272-2971",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6272-2971"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Yadan Luo",
+        "raw_affiliation_strings": [
+          "The University of Queensland, Brisbane, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-6272-2971",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The University of Queensland, Brisbane, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5070591850",
+          "display_name": "Shazia Wasim Sadiq",
+          "orcid": "https://orcid.org/0000-0001-6739-4145",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-6739-4145"
+          ]
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I165143802",
+            "display_name": "The University of Queensland",
+            "ror": "https://ror.org/00rqy9422",
+            "country_code": "AU",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ],
+        "countries": [
+          "AU"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Shazia Sadiq",
+        "raw_affiliation_strings": [
+          "The University of Queensland, Brisbane, Australia"
+        ],
+        "raw_orcid": "https://orcid.org/0000-0001-6739-4145",
+        "affiliations": [
+          {
+            "raw_affiliation_string": "The University of Queensland, Brisbane, Australia",
+            "institution_ids": [
+              "https://openalex.org/I165143802"
+            ]
+          }
+        ]
+      }
+    ],
+    "institutions": [],
+    "countries_distinct_count": 1,
+    "institutions_distinct_count": 2,
+    "corresponding_author_ids": [],
+    "corresponding_institution_ids": [],
+    "apc_list": null,
+    "apc_paid": null,
+    "fwci": 0.0,
+    "has_fulltext": false,
+    "cited_by_count": 0,
+    "citation_normalized_percentile": {
+      "value": 0.65471698,
+      "is_in_top_1_percent": false,
+      "is_in_top_10_percent": false
+    },
+    "cited_by_percentile_year": null,
+    "biblio": {
+      "volume": null,
+      "issue": null,
+      "first_page": "148",
+      "last_page": "151"
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "is_xpac": false,
+    "primary_topic": {
+      "id": "https://openalex.org/T11986",
+      "display_name": "Scientific Computing and Data Management",
+      "score": 0.1500999927520752,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1802",
+        "display_name": "Information Systems and Management"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/18",
+        "display_name": "Decision Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    "topics": [
+      {
+        "id": "https://openalex.org/T11986",
+        "display_name": "Scientific Computing and Data Management",
+        "score": 0.1500999927520752,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1802",
+          "display_name": "Information Systems and Management"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/18",
+          "display_name": "Decision Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10799",
+        "display_name": "Data Visualization and Analytics",
+        "score": 0.06539999693632126,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1707",
+          "display_name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T12761",
+        "display_name": "Data Stream Mining Techniques",
+        "score": 0.05339999869465828,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "keywords": [
+      {
+        "id": "https://openalex.org/keywords/code",
+        "display_name": "Code (set theory)",
+        "score": 0.5993000268936157
+      },
+      {
+        "id": "https://openalex.org/keywords/track",
+        "display_name": "Track (disk drive)",
+        "score": 0.47040000557899475
+      },
+      {
+        "id": "https://openalex.org/keywords/concept-drift",
+        "display_name": "Concept drift",
+        "score": 0.45879998803138733
+      },
+      {
+        "id": "https://openalex.org/keywords/distribution",
+        "display_name": "Distribution (mathematics)",
+        "score": 0.2973000109195709
+      }
+    ],
+    "concepts": [
+      {
+        "id": "https://openalex.org/C41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "level": 0,
+        "score": 0.6909000277519226
+      },
+      {
+        "id": "https://openalex.org/C2776760102",
+        "wikidata": "https://www.wikidata.org/wiki/Q5139990",
+        "display_name": "Code (set theory)",
+        "level": 3,
+        "score": 0.5993000268936157
+      },
+      {
+        "id": "https://openalex.org/C89992363",
+        "wikidata": "https://www.wikidata.org/wiki/Q5961558",
+        "display_name": "Track (disk drive)",
+        "level": 2,
+        "score": 0.47040000557899475
+      },
+      {
+        "id": "https://openalex.org/C60777511",
+        "wikidata": "https://www.wikidata.org/wiki/Q3045002",
+        "display_name": "Concept drift",
+        "level": 3,
+        "score": 0.45879998803138733
+      },
+      {
+        "id": "https://openalex.org/C2522767166",
+        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+        "display_name": "Data science",
+        "level": 1,
+        "score": 0.39980000257492065
+      },
+      {
+        "id": "https://openalex.org/C154945302",
+        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+        "display_name": "Artificial intelligence",
+        "level": 1,
+        "score": 0.3562999963760376
+      },
+      {
+        "id": "https://openalex.org/C38652104",
+        "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+        "display_name": "Computer security",
+        "level": 1,
+        "score": 0.31700000166893005
+      },
+      {
+        "id": "https://openalex.org/C107457646",
+        "wikidata": "https://www.wikidata.org/wiki/Q207434",
+        "display_name": "Human–computer interaction",
+        "level": 1,
+        "score": 0.31130000948905945
+      },
+      {
+        "id": "https://openalex.org/C119857082",
+        "wikidata": "https://www.wikidata.org/wiki/Q2539",
+        "display_name": "Machine learning",
+        "level": 1,
+        "score": 0.3102000057697296
+      },
+      {
+        "id": "https://openalex.org/C110121322",
+        "wikidata": "https://www.wikidata.org/wiki/Q865811",
+        "display_name": "Distribution (mathematics)",
+        "level": 2,
+        "score": 0.2973000109195709
+      },
+      {
+        "id": "https://openalex.org/C136764020",
+        "wikidata": "https://www.wikidata.org/wiki/Q466",
+        "display_name": "World Wide Web",
+        "level": 1,
+        "score": 0.2533000111579895
+      }
+    ],
+    "mesh": [],
+    "locations_count": 1,
+    "locations": [
+      {
+        "id": "doi:10.1145/3774905.3793123",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3774905.3793123",
+        "pdf_url": null,
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+        "raw_type": "proceedings-article"
+      }
+    ],
+    "best_oa_location": {
+      "id": "doi:10.1145/3774905.3793123",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1145/3774905.3793123",
+      "pdf_url": null,
+      "source": null,
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Companion Proceedings of the ACM Web Conference 2026",
+      "raw_type": "proceedings-article"
+    },
+    "sustainable_development_goals": [],
+    "x_sdgs": [],
+    "study_designs": [],
+    "awards": [],
+    "funders": [],
+    "has_content": {
+      "pdf": false,
+      "grobid_xml": false
+    },
+    "content_urls": null,
+    "referenced_works_count": 1,
+    "referenced_works": [
+      "https://openalex.org/W4409231202"
+    ],
+    "related_works": [],
+    "abstract_inverted_index": {
+      "Data": [
+        0
+      ],
+      "drift": [
+        1,
+        79
+      ],
+      "is": [
+        2,
+        124
+      ],
+      "a": [
+        3,
+        52,
+        70
+      ],
+      "pervasive": [
+        4
+      ],
+      "issue": [
+        5
+      ],
+      "in": [
+        6,
+        26,
+        86
+      ],
+      "real-world": [
+        7
+      ],
+      "machine": [
+        8
+      ],
+      "learning": [
+        9
+      ],
+      "applications.": [
+        10
+      ],
+      "While": [
+        11
+      ],
+      "models": [
+        12
+      ],
+      "often": [
+        13
+      ],
+      "perform": [
+        14
+      ],
+      "well": [
+        15
+      ],
+      "on": [
+        16,
+        110
+      ],
+      "in-distribution": [
+        17
+      ],
+      "data,": [
+        18
+      ],
+      "their": [
+        19,
+        101
+      ],
+      "performance": [
+        20
+      ],
+      "can": [
+        21,
+        37
+      ],
+      "degrade": [
+        22
+      ],
+      "significantly": [
+        23
+      ],
+      "when": [
+        24
+      ],
+      "deployed": [
+        25
+      ],
+      "new": [
+        27
+      ],
+      "environments": [
+        28
+      ],
+      "where": [
+        29
+      ],
+      "the": [
+        30,
+        77,
+        104,
+        116
+      ],
+      "input": [
+        31
+      ],
+      "distribution": [
+        32
+      ],
+      "has": [
+        33
+      ],
+      "shifted.": [
+        34
+      ],
+      "But": [
+        35
+      ],
+      "how": [
+        36
+      ],
+      "users": [
+        38,
+        75,
+        95
+      ],
+      "with": [
+        39
+      ],
+      "varying": [
+        40
+      ],
+      "knowledge": [
+        41
+      ],
+      "backgrounds": [
+        42
+      ],
+      "effectively": [
+        43
+      ],
+      "track": [
+        44
+      ],
+      "and": [
+        45,
+        84,
+        121
+      ],
+      "interpret": [
+        46
+      ],
+      "these": [
+        47
+      ],
+      "changes?": [
+        48
+      ],
+      "We": [
+        49,
+        106
+      ],
+      "present": [
+        50
+      ],
+      "DriftNavi,": [
+        51
+      ],
+      "lightweight": [
+        53
+      ],
+      "conversational": [
+        54
+      ],
+      "tool": [
+        55,
+        91
+      ],
+      "powered": [
+        56
+      ],
+      "by": [
+        57
+      ],
+      "LLMs": [
+        58
+      ],
+      "that": [
+        59,
+        73
+      ],
+      "enables": [
+        60
+      ],
+      "personalized,": [
+        61
+      ],
+      "structured,": [
+        62
+      ],
+      "model-free": [
+        63
+      ],
+      "analysis": [
+        64
+      ],
+      "of": [
+        65,
+        103
+      ],
+      "dataset": [
+        66,
+        113
+      ],
+      "drift.": [
+        67
+      ],
+      "DriftNavi": [
+        68
+      ],
+      "integrates": [
+        69
+      ],
+      "reasoning": [
+        71
+      ],
+      "agent": [
+        72
+      ],
+      "guides": [
+        74
+      ],
+      "through": [
+        76
+      ],
+      "full": [
+        78
+      ],
+      "detection": [
+        80
+      ],
+      "pipeline,": [
+        81
+      ],
+      "detect,": [
+        82
+      ],
+      "explain,": [
+        83
+      ],
+      "adapt,": [
+        85
+      ],
+      "an": [
+        87
+      ],
+      "interactive": [
+        88
+      ],
+      "dialogue.": [
+        89
+      ],
+      "The": [
+        90,
+        119
+      ],
+      "not": [
+        92
+      ],
+      "only": [
+        93
+      ],
+      "helps": [
+        94
+      ],
+      "navigate": [
+        96
+      ],
+      "drift,": [
+        97
+      ],
+      "but": [
+        98
+      ],
+      "also": [
+        99
+      ],
+      "enhances": [
+        100
+      ],
+      "understanding": [
+        102
+      ],
+      "process.": [
+        105
+      ],
+      "conduct": [
+        107
+      ],
+      "case": [
+        108
+      ],
+      "studies": [
+        109
+      ],
+      "stroke": [
+        111
+      ],
+      "prediction": [
+        112
+      ],
+      "to": [
+        114
+      ],
+      "validate": [
+        115
+      ],
+      "tool's": [
+        117
+      ],
+      "effectiveness.": [
+        118
+      ],
+      "code": [
+        120
+      ],
+      "demo": [
+        122
+      ],
+      "video": [
+        123
+      ],
+      "publicly": [
+        125
+      ],
+      "available": [
+        126
+      ],
+      "at": [
+        127
+      ],
+      "https://github.com/Jo-wang/CIRES-DriftNavi": [
+        128
+      ],
+      "here.": [
+        129
+      ]
+    },
+    "counts_by_year": [],
+    "updated_date": "2026-09-26T08:19:03.415552",
+    "created_date": "2026-05-29T00:00:00"
+  },
+  "unpaywall": {},
+  "semantic_scholar": {},
+  "arxiv": {}
+}
