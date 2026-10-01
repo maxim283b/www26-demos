@@ -48,7 +48,7 @@ def restore_abstract(inverted_index: dict[str, list[int]] | None) -> str:
 
 
 def main() -> None:
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[1] / "tracks" / "demos"
     rows: list[dict[str, str]] = []
     for path in sorted((root / "metadata").glob("des*.json")):
         payload = json.loads(path.read_text(encoding="utf-8"))

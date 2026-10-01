@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Convert WebConf demo-track PDFs into one Markdown directory per paper.
+"""Convert WebConf PDFs into one Markdown directory per paper.
 
-Reads PDFs from ./pdf/ and writes one directory per paper into ./md/, following
+By default, reads the demo corpus from ``tracks/demos/pdf`` and writes to
+``tracks/demos/md``. Other tracks can be selected with ``--input`` and
+``--output``. The output follows
 marker's own naming convention:
 
     md/
@@ -31,7 +33,7 @@ marker-pdf, then run `./etl.py` directly). If the interpreter running this
 script cannot import marker, it re-execs itself under the one that can.
 
 Usage:
-    ./etl.py                                              # convert ./pdf -> ./md
+    ./etl.py                                              # convert the demo corpus
     ./etl.py --limit 3                                    # smoke test
     ./etl.py --force                                      # reconvert everything
 """
@@ -70,12 +72,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     p.add_argument(
-        "--input", type=Path, default=here / "pdf", help="folder holding the PDFs"
+        "--input",
+        type=Path,
+        default=here / "tracks" / "demos" / "pdf",
+        help="folder holding the PDFs",
     )
     p.add_argument(
         "--output",
         type=Path,
-        default=here / "md",
+        default=here / "tracks" / "demos" / "md",
         help="destination for the per-paper directories",
     )
     p.add_argument(
@@ -151,12 +156,18 @@ def ensure_marker_importable() -> None:
 
 
 def load_index(index_path: Path) -> dict[str, dict[str, str]]:
-    """Map pdf filename -> metadata row. A missing index is not fatal."""
+    """Map both PDF filename and paper id to metadata rows when available."""
     if not index_path.exists():
         return {}
     with index_path.open(newline="", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh, delimiter="\t"))
-    return {row["filename"]: row for row in rows if row.get("filename")}
+    index: dict[str, dict[str, str]] = {}
+    for row in rows:
+        if row.get("filename"):
+            index[row["filename"]] = row
+        if row.get("paper_id"):
+            index[row["paper_id"]] = row
+    return index
 
 
 def paper_dir(output: Path, pdf: Path) -> Path:
@@ -258,7 +269,7 @@ def write_manifest(pdfs: list[Path], attempted: set[Path], args: argparse.Namesp
     now = dt.datetime.now().astimezone().isoformat(timespec="seconds")
     records = []
     for pdf in sorted(pdfs):
-        meta = index.get(pdf.name, {})
+        meta = index.get(pdf.name) or index.get(pdf.stem.split("_", 1)[0], {})
         directory = paper_dir(args.output, pdf)
         md = markdown_path(args.output, pdf)
         ok = is_converted(args.output, pdf)
@@ -305,7 +316,12 @@ def main(argv: list[str] | None = None) -> int:
         sys.exit(f"no PDFs found in {args.input}")
 
     index = load_index(args.index)
-    missing_pdf = [name for name in index if not (args.input / name).exists()]
+    # Only filename keys can be checked directly.  Newer indexes identify a
+    # paper by id and intentionally let the downloader choose a safe suffix.
+    missing_pdf = [
+        name for name in index
+        if name.lower().endswith(".pdf") and not (args.input / name).exists()
+    ]
 
     done = [p for p in pdfs if is_converted(args.output, p)]
     todo = pdfs if args.force else [p for p in pdfs if p not in set(done)]

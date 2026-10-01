@@ -75,7 +75,7 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 
 def main() -> None:
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[1] / "tracks" / "demos"
     rows = read_tsv(root / "index.tsv")
     if set(SUMMARIES) != {row["paper_id"] for row in rows}:
         raise RuntimeError("summary ids do not match index.tsv")

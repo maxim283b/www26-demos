@@ -1,5 +1,5 @@
 param(
-    [string]$Root = (Split-Path -Parent $PSScriptRoot),
+    [string]$Root = (Join-Path (Split-Path -Parent $PSScriptRoot) 'tracks\demos'),
     [switch]$IncludePublisher
 )
 

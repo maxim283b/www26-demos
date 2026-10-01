@@ -238,7 +238,11 @@ def download_pdf(url: str, destination: Path) -> tuple[bool, str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument(
+        "--root",
+        type=Path,
+        default=Path(__file__).resolve().parents[1] / "tracks" / "demos",
+    )
     parser.add_argument("--refresh", action="store_true", help="repeat metadata lookups")
     parser.add_argument("--metadata-only", action="store_true", help="do not download PDFs")
     parser.add_argument("--limit", type=int)
