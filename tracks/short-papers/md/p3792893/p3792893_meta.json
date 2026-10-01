@@ -1,0 +1,826 @@
+{
+  "table_of_contents": [
+    {
+      "title": "MCP vs RAG vs NLWeb vs HTML:\nA Comparison of the Effectiveness and Efficiency of Different\nAgent Interfaces to the Web (Technical Report)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          63.22317695617676,
+          79.29977416992188
+        ],
+        [
+          547.2054290771484,
+          79.29977416992188
+        ],
+        [
+          547.2054290771484,
+          139.55609130859375
+        ],
+        [
+          63.22317695617676,
+          139.55609130859375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.05485725402832,
+          215.94886779785156
+        ],
+        [
+          95.71554565429688,
+          215.94886779785156
+        ],
+        [
+          95.71554565429688,
+          229.61920166015625
+        ],
+        [
+          51.05485725402832,
+          229.61920166015625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.38686561584473,
+          562.2567901611328
+        ],
+        [
+          102.87932968139648,
+          562.2567901611328
+        ],
+        [
+          102.87932968139648,
+          576.4420013427734
+        ],
+        [
+          50.38686561584473,
+          576.4420013427734
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.912492752075195,
+          626.9601287841797
+        ],
+        [
+          133.3798828125,
+          626.9601287841797
+        ],
+        [
+          133.3798828125,
+          641.3740081787109
+        ],
+        [
+          50.912492752075195,
+          641.3740081787109
+        ]
+      ]
+    },
+    {
+      "title": "2 Architectures and Interfaces",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.606191635131836,
+          277.0077438354492
+        ],
+        [
+          211.08597564697266,
+          277.0077438354492
+        ],
+        [
+          211.08597564697266,
+          291.7409973144531
+        ],
+        [
+          50.606191635131836,
+          291.7409973144531
+        ]
+      ]
+    },
+    {
+      "title": "3 Use Case: Multi-Shop Comparison Shopping",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.6923885345459,
+          148.19817352294922
+        ],
+        [
+          289.24193572998047,
+          148.19817352294922
+        ],
+        [
+          289.24193572998047,
+          161.34747314453125
+        ],
+        [
+          50.6923885345459,
+          161.34747314453125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Task Categories",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.89277458190918,
+          302.4232406616211
+        ],
+        [
+          157.08535766601562,
+          302.4232406616211
+        ],
+        [
+          157.08535766601562,
+          316.8714599609375
+        ],
+        [
+          50.89277458190918,
+          316.8714599609375
+        ]
+      ]
+    },
+    {
+      "title": "4 Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.4370880126953,
+          356.9832458496094
+        ],
+        [
+          370.9077453613281,
+          356.9832458496094
+        ],
+        [
+          370.9077453613281,
+          370.8789978027344
+        ],
+        [
+          314.4370880126953,
+          370.8789978027344
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Evaluation Metrics",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.52186584472656,
+          437.7256622314453
+        ],
+        [
+          436.52622985839844,
+          437.7256622314453
+        ],
+        [
+          436.52622985839844,
+          451.40399169921875
+        ],
+        [
+          314.52186584472656,
+          451.40399169921875
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Effectiveness",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.926015853881836,
+          127.06956481933594
+        ],
+        [
+          143.49380493164062,
+          127.06956481933594
+        ],
+        [
+          143.49380493164062,
+          139.1610107421875
+        ],
+        [
+          51.926015853881836,
+          139.1610107421875
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Efficiency",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.3092575073242,
+          579.2940673828125
+        ],
+        [
+          391.31866455078125,
+          579.2940673828125
+        ],
+        [
+          391.31866455078125,
+          593.5760040283203
+        ],
+        [
+          314.3092575073242,
+          593.5760040283203
+        ]
+      ]
+    },
+    {
+      "title": "5 Error Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.88382530212402,
+          605.8823547363281
+        ],
+        [
+          142.7713394165039,
+          605.8823547363281
+        ],
+        [
+          142.7713394165039,
+          619.4560089111328
+        ],
+        [
+          50.88382530212402,
+          619.4560089111328
+        ]
+      ]
+    },
+    {
+      "title": "6 Related Work",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.822771072387695,
+          82.88841819763184
+        ],
+        [
+          139.08123779296875,
+          82.88841819763184
+        ],
+        [
+          139.08123779296875,
+          96.16900634765625
+        ],
+        [
+          50.822771072387695,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "7 Conclusion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.19952201843262,
+          500.3133087158203
+        ],
+        [
+          126.77830123901367,
+          500.3133087158203
+        ],
+        [
+          126.77830123901367,
+          514.3999938964844
+        ],
+        [
+          51.19952201843262,
+          514.3999938964844
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          313.9514465332031,
+          233.76466369628906
+        ],
+        [
+          372.3041076660156,
+          233.76466369628906
+        ],
+        [
+          372.3041076660156,
+          246.72998046875
+        ],
+        [
+          313.9514465332031,
+          246.72998046875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          201
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          223
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Reference",
+          8
+        ],
+        [
+          "Footnote",
+          6
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          268
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          256
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          304
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "TableGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          262
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          101
+        ],
+        [
+          "Line",
+          45
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          345
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          289
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Reference",
+          15
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792893_MCP_vs_RAG_vs_NLWeb_vs_HTML_A_Comparison_of_the_Effectiveness_and_Efficiency_of_Different_Agent_Inte"
+}

@@ -1,0 +1,847 @@
+{
+  "table_of_contents": [
+    {
+      "title": "WED-Net: A Weather-Effect Disentanglement Network with\nCausal Augmentation for Urban Flow Prediction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          67.70003700256348,
+          79.58045768737793
+        ],
+        [
+          540.3533477783203,
+          79.58045768737793
+        ],
+        [
+          540.3533477783203,
+          119.63006591796875
+        ],
+        [
+          67.70003700256348,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.48116683959961,
+          210.03458404541016
+        ],
+        [
+          95.6132640838623,
+          210.03458404541016
+        ],
+        [
+          95.6132640838623,
+          223.77618408203125
+        ],
+        [
+          51.48116683959961,
+          223.77618408203125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.024986267089844,
+          485.7336730957031
+        ],
+        [
+          123.13794708251953,
+          485.7336730957031
+        ],
+        [
+          123.13794708251953,
+          499.9128112792969
+        ],
+        [
+          50.024986267089844,
+          499.9128112792969
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.50005340576172,
+          531.3744506835938
+        ],
+        [
+          102.87803649902344,
+          531.3744506835938
+        ],
+        [
+          102.87803649902344,
+          545.8690185546875
+        ],
+        [
+          50.50005340576172,
+          545.8690185546875
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.896385192871094,
+          561.5168151855469
+        ],
+        [
+          140.4966278076172,
+          561.5168151855469
+        ],
+        [
+          140.4966278076172,
+          572.97509765625
+        ],
+        [
+          50.896385192871094,
+          572.97509765625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.2017879486084,
+          648.7238159179688
+        ],
+        [
+          94.91740036010742,
+          648.7238159179688
+        ],
+        [
+          94.91740036010742,
+          663.6359252929688
+        ],
+        [
+          51.2017879486084,
+          663.6359252929688
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.7179260253906,
+          440.88446044921875
+        ],
+        [
+          397.6809539794922,
+          440.88446044921875
+        ],
+        [
+          397.6809539794922,
+          455.072998046875
+        ],
+        [
+          314.7179260253906,
+          455.072998046875
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.33734130859375,
+          637.2366943359375
+        ],
+        [
+          402.5550842285156,
+          637.2366943359375
+        ],
+        [
+          402.5550842285156,
+          652.3329925537109
+        ],
+        [
+          314.33734130859375,
+          652.3329925537109
+        ]
+      ]
+    },
+    {
+      "title": "3 Preliminaries",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.58140563964844,
+          628.0574798583984
+        ],
+        [
+          138.6752586364746,
+          628.0574798583984
+        ],
+        [
+          138.6752586364746,
+          641.3740081787109
+        ],
+        [
+          51.58140563964844,
+          641.3740081787109
+        ]
+      ]
+    },
+    {
+      "title": "4 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.92730712890625,
+          240.12213134765625
+        ],
+        [
+          399.81689453125,
+          240.12213134765625
+        ],
+        [
+          399.81689453125,
+          253.37542724609375
+        ],
+        [
+          314.92730712890625,
+          253.37542724609375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Weather-Effect Disentanglement Network",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.67466735839844,
+          254.64836883544922
+        ],
+        [
+          552.5829162597656,
+          254.64836883544922
+        ],
+        [
+          552.5829162597656,
+          269.06640625
+        ],
+        [
+          314.67466735839844,
+          269.06640625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.45139503479004,
+          384.34515380859375
+        ],
+        [
+          268.42735290527344,
+          384.34515380859375
+        ],
+        [
+          268.42735290527344,
+          396.7514190673828
+        ],
+        [
+          51.45139503479004,
+          396.7514190673828
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.97928047180176,
+          280.2217712402344
+        ],
+        [
+          133.94905471801758,
+          280.2217712402344
+        ],
+        [
+          133.94905471801758,
+          294.9217834472656
+        ],
+        [
+          50.97928047180176,
+          294.9217834472656
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Settings",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.95208930969238,
+          296.08795166015625
+        ],
+        [
+          188.34131240844727,
+          296.08795166015625
+        ],
+        [
+          188.34131240844727,
+          310.65643310546875
+        ],
+        [
+          50.95208930969238,
+          310.65643310546875
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Performance Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.74378204345703,
+          353.34645080566406
+        ],
+        [
+          463.29872131347656,
+          353.34645080566406
+        ],
+        [
+          463.29872131347656,
+          367.4020080566406
+        ],
+        [
+          313.74378204345703,
+          367.4020080566406
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.68087005615234,
+          551.9897003173828
+        ],
+        [
+          391.1707305908203,
+          551.9897003173828
+        ],
+        [
+          391.1707305908203,
+          564.6619720458984
+        ],
+        [
+          314.68087005615234,
+          564.6619720458984
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.496803283691406,
+          82.5472354888916
+        ],
+        [
+          151.4388656616211,
+          82.5472354888916
+        ],
+        [
+          151.4388656616211,
+          96.23443603515625
+        ],
+        [
+          50.496803283691406,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.02800369262695,
+          139.3484230041504
+        ],
+        [
+          108.38204956054688,
+          139.3484230041504
+        ],
+        [
+          108.38204956054688,
+          150.90679550170898
+        ],
+        [
+          51.02800369262695,
+          150.90679550170898
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          213
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          269
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          482
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "Equation",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          437
+        ],
+        [
+          "Line",
+          151
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Footnote",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          217
+        ],
+        [
+          "Line",
+          71
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          421
+        ],
+        [
+          "Line",
+          160
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          371
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Reference",
+          28
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793059_WED_Net_A_Weather_Effect_Disentanglement_Network_with_Causal_Augmentation_for_Urban_Flow_Prediction"
+}

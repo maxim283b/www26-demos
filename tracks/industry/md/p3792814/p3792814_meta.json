@@ -1,0 +1,998 @@
+{
+  "table_of_contents": [
+    {
+      "title": "URLBank: Data-Driven URL Discovery via Temporal Link Graphs",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.7602653503418,
+          79.03098106384277
+        ],
+        [
+          558.5893707275391,
+          79.03098106384277
+        ],
+        [
+          558.5893707275391,
+          99.687744140625
+        ],
+        [
+          51.7602653503418,
+          99.687744140625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.20112991333008,
+          245.16414642333984
+        ],
+        [
+          95.41583251953125,
+          245.16414642333984
+        ],
+        [
+          95.41583251953125,
+          257.7190246582031
+        ],
+        [
+          51.20112991333008,
+          257.7190246582031
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.88833999633789,
+          506.5364227294922
+        ],
+        [
+          123.78467559814453,
+          506.5364227294922
+        ],
+        [
+          123.78467559814453,
+          520.7077941894531
+        ],
+        [
+          50.88833999633789,
+          520.7077941894531
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.60064697265625,
+          245.74120330810547
+        ],
+        [
+          367.26502990722656,
+          245.74120330810547
+        ],
+        [
+          367.26502990722656,
+          260.0479736328125
+        ],
+        [
+          314.60064697265625,
+          260.0479736328125
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3226013183594,
+          302.6715316772461
+        ],
+        [
+          404.65252685546875,
+          302.6715316772461
+        ],
+        [
+          404.65252685546875,
+          314.44024658203125
+        ],
+        [
+          314.3226013183594,
+          314.44024658203125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5630645751953,
+          385.5157470703125
+        ],
+        [
+          397.907958984375,
+          385.5157470703125
+        ],
+        [
+          397.907958984375,
+          398.21644592285156
+        ],
+        [
+          314.5630645751953,
+          398.21644592285156
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.39085006713867,
+          640.0704345703125
+        ],
+        [
+          96.29146957397461,
+          640.0704345703125
+        ],
+        [
+          96.29146957397461,
+          655.8087158203125
+        ],
+        [
+          51.39085006713867,
+          655.8087158203125
+        ]
+      ]
+    },
+    {
+      "title": "2 Problem Definition",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.91665840148926,
+          247.2465362548828
+        ],
+        [
+          165.7134246826172,
+          247.2465362548828
+        ],
+        [
+          165.7134246826172,
+          260.1983642578125
+        ],
+        [
+          50.91665840148926,
+          260.1983642578125
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Challenges",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.15610885620117,
+          579.2162475585938
+        ],
+        [
+          133.54486083984375,
+          579.2162475585938
+        ],
+        [
+          133.54486083984375,
+          593.3964385986328
+        ],
+        [
+          51.15610885620117,
+          593.3964385986328
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Opportunities",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.05977630615234,
+          215.32527923583984
+        ],
+        [
+          412.65870666503906,
+          215.32527923583984
+        ],
+        [
+          412.65870666503906,
+          228.69378662109375
+        ],
+        [
+          314.05977630615234,
+          228.69378662109375
+        ]
+      ]
+    },
+    {
+      "title": "3 URLBank System",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.21905517578125,
+          393.2771301269531
+        ],
+        [
+          423.0090637207031,
+          393.2771301269531
+        ],
+        [
+          423.0090637207031,
+          407.7499694824219
+        ],
+        [
+          314.21905517578125,
+          407.7499694824219
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.511362075805664,
+          82.93858909606934
+        ],
+        [
+          165.58711624145508,
+          82.93858909606934
+        ],
+        [
+          165.58711624145508,
+          94.32509994506836
+        ],
+        [
+          51.511362075805664,
+          94.32509994506836
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.42561721801758,
+          486.94578552246094
+        ],
+        [
+          131.1617660522461,
+          486.94578552246094
+        ],
+        [
+          131.1617660522461,
+          499.1001434326172
+        ],
+        [
+          51.42561721801758,
+          499.1001434326172
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.75111389160156,
+          523.0188903808594
+        ],
+        [
+          386.98109436035156,
+          523.0188903808594
+        ],
+        [
+          386.98109436035156,
+          535.2959747314453
+        ],
+        [
+          314.75111389160156,
+          535.2959747314453
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          316.07904052734375,
+          82.68451309204102
+        ],
+        [
+          450.3620910644531,
+          82.68451309204102
+        ],
+        [
+          450.3620910644531,
+          94.18593978881836
+        ],
+        [
+          316.07904052734375,
+          94.18593978881836
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.246883392333984,
+          368.9948501586914
+        ],
+        [
+          148.59471130371094,
+          368.9948501586914
+        ],
+        [
+          148.59471130371094,
+          380.9392776489258
+        ],
+        [
+          51.246883392333984,
+          380.9392776489258
+        ]
+      ]
+    },
+    {
+      "title": "4 Evaluation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.757957458496094,
+          290.00040435791016
+        ],
+        [
+          124.19113540649414,
+          290.00040435791016
+        ],
+        [
+          124.19113540649414,
+          302.74852752685547
+        ],
+        [
+          50.757957458496094,
+          302.74852752685547
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Editorial Dataset",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.10701370239258,
+          612.2802886962891
+        ],
+        [
+          161.60073852539062,
+          612.2802886962891
+        ],
+        [
+          161.60073852539062,
+          625.4498748779297
+        ],
+        [
+          51.10701370239258,
+          625.4498748779297
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Results",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.7750778198242,
+          249.2614974975586
+        ],
+        [
+          449.6891326904297,
+          249.2614974975586
+        ],
+        [
+          449.6891326904297,
+          263.5758056640625
+        ],
+        [
+          314.7750778198242,
+          263.5758056640625
+        ]
+      ]
+    },
+    {
+      "title": "5 Related Work",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.08225440979004,
+          637.2495574951172
+        ],
+        [
+          138.43588256835938,
+          637.2495574951172
+        ],
+        [
+          138.43588256835938,
+          650.3185272216797
+        ],
+        [
+          51.08225440979004,
+          650.3185272216797
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.722068786621094,
+          385.89646911621094
+        ],
+        [
+          213.77989196777344,
+          385.89646911621094
+        ],
+        [
+          213.77989196777344,
+          398.6415252685547
+        ],
+        [
+          50.722068786621094,
+          398.6415252685547
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.0153274536133,
+          660.0442199707031
+        ],
+        [
+          410.4806213378906,
+          660.0442199707031
+        ],
+        [
+          410.4806213378906,
+          674.3164367675781
+        ],
+        [
+          314.0153274536133,
+          674.3164367675781
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.69827651977539,
+          82.79462814331055
+        ],
+        [
+          108.14663696289062,
+          82.79462814331055
+        ],
+        [
+          108.14663696289062,
+          94.03720664978027
+        ],
+        [
+          50.69827651977539,
+          94.03720664978027
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          373
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          21
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          20
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          483
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "ListGroup",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          526
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          323
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          253
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          454
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Reference",
+          33
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792814_URLBank_Data_Driven_URL_Discovery_via_Temporal_Link_Graphs"
+}

@@ -1,0 +1,1417 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Egocentric Co-Pilot: Web-Native Smart-Glasses Agents for\nAssistive Egocentric AI",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          77.20809173583984,
+          78.95937538146973
+        ],
+        [
+          534.8516235351562,
+          78.95937538146973
+        ],
+        [
+          534.8516235351562,
+          119.63006591796875
+        ],
+        [
+          77.20809173583984,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.50573539733887,
+          546.9441375732422
+        ],
+        [
+          96.07935333251953,
+          546.9441375732422
+        ],
+        [
+          96.07935333251953,
+          560.2259979248047
+        ],
+        [
+          50.50573539733887,
+          560.2259979248047
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.79122543334961,
+          226.3832015991211
+        ],
+        [
+          123.07078552246094,
+          226.3832015991211
+        ],
+        [
+          123.07078552246094,
+          240.433837890625
+        ],
+        [
+          50.79122543334961,
+          240.433837890625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.641096115112305,
+          296.76097869873047
+        ],
+        [
+          102.87803649902344,
+          296.76097869873047
+        ],
+        [
+          102.87803649902344,
+          310.6820068359375
+        ],
+        [
+          50.641096115112305,
+          310.6820068359375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.969398498535156,
+          351.73661041259766
+        ],
+        [
+          140.55586624145508,
+          351.73661041259766
+        ],
+        [
+          140.55586624145508,
+          364.277099609375
+        ],
+        [
+          50.969398498535156,
+          364.277099609375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.27525329589844,
+          440.5805969238281
+        ],
+        [
+          133.3798828125,
+          440.5805969238281
+        ],
+        [
+          133.3798828125,
+          455.072998046875
+        ],
+        [
+          51.27525329589844,
+          455.072998046875
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.39407157897949,
+          227.3415298461914
+        ],
+        [
+          139.0762710571289,
+          227.3415298461914
+        ],
+        [
+          139.0762710571289,
+          240.87603759765625
+        ],
+        [
+          51.39407157897949,
+          240.87603759765625
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.6748046875,
+          655.1233062744141
+        ],
+        [
+          399.8168640136719,
+          655.1233062744141
+        ],
+        [
+          399.8168640136719,
+          669.5844573974609
+        ],
+        [
+          314.6748046875,
+          669.5844573974609
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Egocentric Reasoning Core",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.5509567260742,
+          670.9959411621094
+        ],
+        [
+          476.3071746826172,
+          670.9959411621094
+        ],
+        [
+          476.3071746826172,
+          685.2754592895508
+        ],
+        [
+          314.5509567260742,
+          685.2754592895508
+        ]
+      ]
+    },
+    {
+      "title": "3.2 LLM-Orchestrated Neuro-Symbolic\nExecution",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.03523635864258,
+          482.4516906738281
+        ],
+        [
+          251.73140716552734,
+          482.4516906738281
+        ],
+        [
+          251.73140716552734,
+          509.86700439453125
+        ],
+        [
+          51.03523635864258,
+          509.86700439453125
+        ]
+      ]
+    },
+    {
+      "title": "3.3 On-Device Perception and WebRTC-Based\nInteraction",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.4983596801758,
+          537.2934722900391
+        ],
+        [
+          555.7303619384766,
+          537.2934722900391
+        ],
+        [
+          555.7303619384766,
+          564.6620025634766
+        ],
+        [
+          314.4983596801758,
+          564.6620025634766
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Proactive Multimodal Intent\nDisambiguation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.50235557556152,
+          189.46319961547852
+        ],
+        [
+          219.51578521728516,
+          189.46319961547852
+        ],
+        [
+          219.51578521728516,
+          215.96044921875
+        ],
+        [
+          51.50235557556152,
+          215.96044921875
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.31372833251953,
+          303.13135528564453
+        ],
+        [
+          397.7007751464844,
+          303.13135528564453
+        ],
+        [
+          397.7007751464844,
+          316.2878112792969
+        ],
+        [
+          315.31372833251953,
+          316.2878112792969
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Application to Egocentric QA Benchmarks",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.94236755371094,
+          317.98583221435547
+        ],
+        [
+          556.4612274169922,
+          317.98583221435547
+        ],
+        [
+          556.4612274169922,
+          332.0224609375
+        ],
+        [
+          314.94236755371094,
+          332.0224609375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Ablation and Sensitivity Analysis",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.78562927246094,
+          616.1152038574219
+        ],
+        [
+          508.6937713623047,
+          616.1152038574219
+        ],
+        [
+          508.6937713623047,
+          630.4150085449219
+        ],
+        [
+          314.78562927246094,
+          630.4150085449219
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Tool Use in Real-World Scenarios",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.52203178405762,
+          484.8621368408203
+        ],
+        [
+          242.93997192382812,
+          484.8621368408203
+        ],
+        [
+          242.93997192382812,
+          498.90899658203125
+        ],
+        [
+          50.52203178405762,
+          498.90899658203125
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Human-in-the-Loop Evaluation",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.862510681152344,
+          276.3974304199219
+        ],
+        [
+          235.73098754882812,
+          276.3974304199219
+        ],
+        [
+          235.73098754882812,
+          290.7108154296875
+        ],
+        [
+          50.862510681152344,
+          290.7108154296875
+        ]
+      ]
+    },
+    {
+      "title": "5 Limitations and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.3917694091797,
+          138.15616607666016
+        ],
+        [
+          478.96240234375,
+          138.15616607666016
+        ],
+        [
+          478.96240234375,
+          151.87701416015625
+        ],
+        [
+          314.3917694091797,
+          151.87701416015625
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2674865722656,
+          426.47607421875
+        ],
+        [
+          390.8847198486328,
+          426.47607421875
+        ],
+        [
+          390.8847198486328,
+          440.46099853515625
+        ],
+        [
+          314.2674865722656,
+          440.46099853515625
+        ]
+      ]
+    },
+    {
+      "title": "7 Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.51634979248047,
+          670.2305145263672
+        ],
+        [
+          426.7202453613281,
+          670.2305145263672
+        ],
+        [
+          426.7202453613281,
+          685.2754516601562
+        ],
+        [
+          314.51634979248047,
+          685.2754516601562
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.53512382507324,
+          83.09082412719727
+        ],
+        [
+          108.18760299682617,
+          83.09082412719727
+        ],
+        [
+          108.18760299682617,
+          94.23952674865723
+        ],
+        [
+          50.53512382507324,
+          94.23952674865723
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.4709358215332,
+          273.3105010986328
+        ],
+        [
+          187.27741241455078,
+          273.3105010986328
+        ],
+        [
+          187.27741241455078,
+          286.0283203125
+        ],
+        [
+          51.4709358215332,
+          286.0283203125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.76866340637207,
+          581.309326171875
+        ],
+        [
+          193.48439025878906,
+          581.309326171875
+        ],
+        [
+          193.48439025878906,
+          594.1991729736328
+        ],
+        [
+          50.76866340637207,
+          594.1991729736328
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.760772705078125,
+          635.8460083007812
+        ],
+        [
+          260.8955612182617,
+          635.8460083007812
+        ],
+        [
+          260.8955612182617,
+          649.1748046875
+        ],
+        [
+          50.760772705078125,
+          649.1748046875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.64244079589844,
+          646.6916656494141
+        ],
+        [
+          545.1183929443359,
+          646.6916656494141
+        ],
+        [
+          545.1183929443359,
+          671.9241943359375
+        ],
+        [
+          314.64244079589844,
+          671.9241943359375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          51.62168312072754,
+          83.52549934387207
+        ],
+        [
+          269.89691162109375,
+          83.52549934387207
+        ],
+        [
+          269.89691162109375,
+          94.51733779907227
+        ],
+        [
+          51.62168312072754,
+          94.51733779907227
+        ]
+      ]
+    },
+    {
+      "title": "C Additional Results on Egolife and EgoGPT",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.62378120422363,
+          459.5730743408203
+        ],
+        [
+          281.87200927734375,
+          459.5730743408203
+        ],
+        [
+          281.87200927734375,
+          474.4534606933594
+        ],
+        [
+          50.62378120422363,
+          474.4534606933594
+        ]
+      ]
+    },
+    {
+      "title": "D Additional Human Evaluation Details",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.94816970825195,
+          648.3639221191406
+        ],
+        [
+          260.23363494873047,
+          648.3639221191406
+        ],
+        [
+          260.23363494873047,
+          663.2920074462891
+        ],
+        [
+          50.94816970825195,
+          663.2920074462891
+        ]
+      ]
+    },
+    {
+      "title": "E Supplementary Discussion on System\nDeployment and Limitations",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.6443405151367,
+          250.1414337158203
+        ],
+        [
+          520.8642578125,
+          250.1414337158203
+        ],
+        [
+          520.8642578125,
+          277.00982666015625
+        ],
+        [
+          314.6443405151367,
+          277.00982666015625
+        ]
+      ]
+    },
+    {
+      "title": "E.1 Connectivity and Offline Fallback Strategies",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.1166534423828,
+          334.85213470458984
+        ],
+        [
+          561.3473052978516,
+          334.85213470458984
+        ],
+        [
+          561.3473052978516,
+          349.03045654296875
+        ],
+        [
+          314.1166534423828,
+          349.03045654296875
+        ]
+      ]
+    },
+    {
+      "title": "E.2 Data Privacy and Security",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.4630432128906,
+          533.9012603759766
+        ],
+        [
+          471.08599853515625,
+          533.9012603759766
+        ],
+        [
+          471.08599853515625,
+          547.4800109863281
+        ],
+        [
+          314.4630432128906,
+          547.4800109863281
+        ]
+      ]
+    },
+    {
+      "title": "E.3 Algorithmic Adaptability: HCC and T-CoT",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          313.77198028564453,
+          659.7637023925781
+        ],
+        [
+          556.2565612792969,
+          659.7637023925781
+        ],
+        [
+          556.2565612792969,
+          674.3164520263672
+        ],
+        [
+          313.77198028564453,
+          674.3164520263672
+        ]
+      ]
+    },
+    {
+      "title": "E.4 Scalability of the Toolbox Approach",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          50.401702880859375,
+          234.74109649658203
+        ],
+        [
+          257.63255310058594,
+          234.74109649658203
+        ],
+        [
+          257.63255310058594,
+          248.6688232421875
+        ],
+        [
+          50.401702880859375,
+          248.6688232421875
+        ]
+      ]
+    },
+    {
+      "title": "E.5 Hardware Performance: Battery and\nThermal Constraints",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          314.71742248535156,
+          125.40769958496094
+        ],
+        [
+          524.4058227539062,
+          125.40769958496094
+        ],
+        [
+          524.4058227539062,
+          152.20904541015625
+        ],
+        [
+          314.71742248535156,
+          152.20904541015625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          371
+        ],
+        [
+          "Line",
+          142
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          289
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          498
+        ],
+        [
+          "Line",
+          123
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          334
+        ],
+        [
+          "Line",
+          128
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          337
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          231
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          599
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          232
+        ],
+        [
+          "Line",
+          118
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          643
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Reference",
+          46
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          664
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          48
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          11
+        ],
+        [
+          "Reference",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          453
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          70
+        ],
+        [
+          "Line",
+          36
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1902
+        ],
+        [
+          "Line",
+          241
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792996_Egocentric_Co_Pilot_Web_Native_Smart_Glasses_Agents_for_Assistive_Egocentric_AI"
+}

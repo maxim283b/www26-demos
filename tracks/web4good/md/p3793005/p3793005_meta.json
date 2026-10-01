@@ -1,0 +1,1005 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Fine-Grained Traceability for Transparent ML Pipelines",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          87.3984146118164,
+          79.3842658996582
+        ],
+        [
+          523.9125823974609,
+          79.3842658996582
+        ],
+        [
+          523.9125823974609,
+          99.68780517578125
+        ],
+        [
+          87.3984146118164,
+          99.68780517578125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.46553421020508,
+          164.36178588867188
+        ],
+        [
+          95.62560081481934,
+          164.36178588867188
+        ],
+        [
+          95.62560081481934,
+          177.75299072265625
+        ],
+        [
+          51.46553421020508,
+          177.75299072265625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.18950653076172,
+          442.36692810058594
+        ],
+        [
+          123.33746337890625,
+          442.36692810058594
+        ],
+        [
+          123.33746337890625,
+          456.2998046875
+        ],
+        [
+          50.18950653076172,
+          456.2998046875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.2364559173584,
+          490.77978515625
+        ],
+        [
+          102.90734481811523,
+          490.77978515625
+        ],
+        [
+          102.90734481811523,
+          504.6650085449219
+        ],
+        [
+          50.2364559173584,
+          504.6650085449219
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.303483963012695,
+          534.0467834472656
+        ],
+        [
+          140.4966278076172,
+          534.0467834472656
+        ],
+        [
+          140.4966278076172,
+          547.3701019287109
+        ],
+        [
+          50.303483963012695,
+          547.3701019287109
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          315.10265350341797,
+          164.31242752075195
+        ],
+        [
+          397.5368957519531,
+          164.31242752075195
+        ],
+        [
+          397.5368957519531,
+          177.75299072265625
+        ],
+        [
+          315.10265350341797,
+          177.75299072265625
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.37433624267578,
+          587.6655120849609
+        ],
+        [
+          139.20605850219727,
+          587.6655120849609
+        ],
+        [
+          139.20605850219727,
+          601.7730102539062
+        ],
+        [
+          51.37433624267578,
+          601.7730102539062
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Transparency Artefacts for Machine\nLearning Systems",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.27275276184082,
+          603.1453857421875
+        ],
+        [
+          258.25904846191406,
+          603.1453857421875
+        ],
+        [
+          258.25904846191406,
+          630.4804534912109
+        ],
+        [
+          51.27275276184082,
+          630.4804534912109
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Traceability in Machine Learning Systems",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.05496978759766,
+          189.2079734802246
+        ],
+        [
+          552.1002502441406,
+          189.2079734802246
+        ],
+        [
+          552.1002502441406,
+          203.08349609375
+        ],
+        [
+          314.05496978759766,
+          203.08349609375
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Influence and Contribution Estimation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.8834915161133,
+          550.5780944824219
+        ],
+        [
+          536.6986083984375,
+          550.5780944824219
+        ],
+        [
+          536.6986083984375,
+          564.6620025634766
+        ],
+        [
+          313.8834915161133,
+          564.6620025634766
+        ]
+      ]
+    },
+    {
+      "title": "3 The FG-Trac Framework",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.44241142272949,
+          83.11312294006348
+        ],
+        [
+          191.41099548339844,
+          83.11312294006348
+        ],
+        [
+          191.41099548339844,
+          96.16900634765625
+        ],
+        [
+          51.44241142272949,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Traceable Module",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.3852481842041,
+          206.20916748046875
+        ],
+        [
+          166.4344482421875,
+          206.20916748046875
+        ],
+        [
+          166.4344482421875,
+          218.9210205078125
+        ],
+        [
+          51.3852481842041,
+          218.9210205078125
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Blockchain Module",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.39195251464844,
+          280.68775177001953
+        ],
+        [
+          439.0172882080078,
+          280.68775177001953
+        ],
+        [
+          439.0172882080078,
+          294.06298828125
+        ],
+        [
+          314.39195251464844,
+          294.06298828125
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Query Module",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.969215393066406,
+          391.9764862060547
+        ],
+        [
+          149.59579467773438,
+          391.9764862060547
+        ],
+        [
+          149.59579467773438,
+          405.7869873046875
+        ],
+        [
+          50.969215393066406,
+          405.7869873046875
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Computational Complexity",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.01903533935547,
+          409.2186584472656
+        ],
+        [
+          478.9078369140625,
+          409.2186584472656
+        ],
+        [
+          478.9078369140625,
+          423.55682373046875
+        ],
+        [
+          314.01903533935547,
+          423.55682373046875
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.1892547607422,
+          660.3622741699219
+        ],
+        [
+          397.6568603515625,
+          660.3622741699219
+        ],
+        [
+          397.6568603515625,
+          674.272819519043
+        ],
+        [
+          314.1892547607422,
+          674.272819519043
+        ]
+      ]
+    },
+    {
+      "title": "Algorithm 1 FG-Trac End-to-End Procedure for Sample-Level\nTraceability",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.03281593322754,
+          81.98238372802734
+        ],
+        [
+          294.4251480102539,
+          81.98238372802734
+        ],
+        [
+          294.4251480102539,
+          105.90521240234375
+        ],
+        [
+          51.03281593322754,
+          105.90521240234375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.8783264160156,
+          173.34513473510742
+        ],
+        [
+          440.6605224609375,
+          173.34513473510742
+        ],
+        [
+          440.6605224609375,
+          187.40179443359375
+        ],
+        [
+          314.8783264160156,
+          187.40179443359375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Mechanism Validation on CIFAR-10",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.30937385559082,
+          473.46807861328125
+        ],
+        [
+          257.2473678588867,
+          473.46807861328125
+        ],
+        [
+          257.2473678588867,
+          487.95001220703125
+        ],
+        [
+          51.30937385559082,
+          487.95001220703125
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Multimodal Graph Learning in a High-Risk\nDomain",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.046634674072266,
+          428.24281311035156
+        ],
+        [
+          294.6023254394531,
+          428.24281311035156
+        ],
+        [
+          294.6023254394531,
+          455.0729675292969
+        ],
+        [
+          51.046634674072266,
+          455.0729675292969
+        ]
+      ]
+    },
+    {
+      "title": "4.4 User-Level Auditing: End-to-End\nTraceability in Practice",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.3544158935547,
+          624.6297912597656
+        ],
+        [
+          504.7899169921875,
+          624.6297912597656
+        ],
+        [
+          504.7899169921875,
+          652.3329925537109
+        ],
+        [
+          314.3544158935547,
+          652.3329925537109
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.955448150634766,
+          572.4759521484375
+        ],
+        [
+          126.8939437866211,
+          572.4759521484375
+        ],
+        [
+          126.8939437866211,
+          586.5800018310547
+        ],
+        [
+          50.955448150634766,
+          586.5800018310547
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.38243103027344,
+          597.1957855224609
+        ],
+        [
+          372.3041076660156,
+          597.1957855224609
+        ],
+        [
+          372.3041076660156,
+          611.4859924316406
+        ],
+        [
+          314.38243103027344,
+          611.4859924316406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          315.22872161865234,
+          294.96338653564453
+        ],
+        [
+          510.89923095703125,
+          294.96338653564453
+        ],
+        [
+          510.89923095703125,
+          318.74974822998047
+        ],
+        [
+          315.22872161865234,
+          318.74974822998047
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          250
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          238
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          484
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          306
+        ],
+        [
+          "Line",
+          73
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          493
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          245
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          431
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          87
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          473
+        ],
+        [
+          "Line",
+          127
+        ],
+        [
+          "Reference",
+          30
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793005_Fine_Grained_Traceability_for_Transparent_ML_Pipelines"
+}

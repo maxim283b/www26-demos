@@ -1,0 +1,526 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Tuning Qwen2.5-VL to Improve Its Web Interaction Skills",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          80.11606979370117,
+          79.41471862792969
+        ],
+        [
+          529.7666931152344,
+          79.41471862792969
+        ],
+        [
+          529.7666931152344,
+          99.705078125
+        ],
+        [
+          80.11606979370117,
+          99.705078125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.003822326660156,
+          245.82593536376953
+        ],
+        [
+          95.5685863494873,
+          245.82593536376953
+        ],
+        [
+          95.5685863494873,
+          259.9791259765625
+        ],
+        [
+          51.003822326660156,
+          259.9791259765625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.25429725646973,
+          501.9180908203125
+        ],
+        [
+          123.12757873535156,
+          501.9180908203125
+        ],
+        [
+          123.12757873535156,
+          516.4958190917969
+        ],
+        [
+          50.25429725646973,
+          516.4958190917969
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.44097900390625,
+          550.9912719726562
+        ],
+        [
+          102.87803649902344,
+          550.9912719726562
+        ],
+        [
+          102.87803649902344,
+          564.7510070800781
+        ],
+        [
+          50.44097900390625,
+          564.7510070800781
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.15755653381348,
+          605.6347503662109
+        ],
+        [
+          133.39204788208008,
+          605.6347503662109
+        ],
+        [
+          133.39204788208008,
+          619.4560089111328
+        ],
+        [
+          51.15755653381348,
+          619.4560089111328
+        ]
+      ]
+    },
+    {
+      "title": "2 Related works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.3911075592041,
+          403.2380676269531
+        ],
+        [
+          141.28728103637695,
+          403.2380676269531
+        ],
+        [
+          141.28728103637695,
+          417.42095947265625
+        ],
+        [
+          51.3911075592041,
+          417.42095947265625
+        ]
+      ]
+    },
+    {
+      "title": "3 Environment",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.373220443725586,
+          670.3892211914062
+        ],
+        [
+          136.5860939025879,
+          670.3892211914062
+        ],
+        [
+          136.5860939025879,
+          685.2109832763672
+        ],
+        [
+          51.373220443725586,
+          685.2109832763672
+        ]
+      ]
+    },
+    {
+      "title": "4 Two-Stage Fine-tuning",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.43299865722656,
+          331.7446060180664
+        ],
+        [
+          183.6536521911621,
+          331.7446060180664
+        ],
+        [
+          183.6536521911621,
+          346.17242431640625
+        ],
+        [
+          51.43299865722656,
+          346.17242431640625
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Task and Evaluation Setup",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.08583641052246,
+          347.9886474609375
+        ],
+        [
+          210.3863296508789,
+          347.9886474609375
+        ],
+        [
+          210.3863296508789,
+          361.8197937011719
+        ],
+        [
+          51.08583641052246,
+          361.8197937011719
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Stage 1: Learning to Act from the Screen",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.845848083496094,
+          594.0634460449219
+        ],
+        [
+          277.01094818115234,
+          594.0634460449219
+        ],
+        [
+          277.01094818115234,
+          608.5634460449219
+        ],
+        [
+          50.845848083496094,
+          608.5634460449219
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Stage 2: Focusing on the Screen State",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.56587982177734,
+          670.5342864990234
+        ],
+        [
+          524.401611328125,
+          670.5342864990234
+        ],
+        [
+          524.401611328125,
+          685.2754592895508
+        ],
+        [
+          314.56587982177734,
+          685.2754592895508
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.100759506225586,
+          637.6656646728516
+        ],
+        [
+          126.8752326965332,
+          637.6656646728516
+        ],
+        [
+          126.8752326965332,
+          652.3330078125
+        ],
+        [
+          51.100759506225586,
+          652.3330078125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.06517791748047,
+          158.79396057128906
+        ],
+        [
+          372.43370819091797,
+          158.79396057128906
+        ],
+        [
+          372.43370819091797,
+          172.134033203125
+        ],
+        [
+          314.06517791748047,
+          172.134033203125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          282
+        ],
+        [
+          "Line",
+          113
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          322
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          341
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Reference",
+          16
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792932_Tuning_Qwen2_5_VL_to_Improve_Its_Web_Interaction_Skills"
+}

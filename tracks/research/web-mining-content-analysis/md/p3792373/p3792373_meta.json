@@ -1,0 +1,1139 @@
+{
+  "table_of_contents": [
+    {
+      "title": "We Need a More Robust Classifier: Dual Causal Learning\nEmpowers Domain-Incremental Time Series Classification",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          76.0279369354248,
+          79.70669174194336
+        ],
+        [
+          534.8557891845703,
+          79.70669174194336
+        ],
+        [
+          534.8557891845703,
+          119.5955810546875
+        ],
+        [
+          76.0279369354248,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.06988334655762,
+          348.9982452392578
+        ],
+        [
+          95.6704158782959,
+          348.9982452392578
+        ],
+        [
+          95.6704158782959,
+          362.5000915527344
+        ],
+        [
+          51.06988334655762,
+          362.5000915527344
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.02638244628906,
+          413.4710998535156
+        ],
+        [
+          387.6104736328125,
+          413.4710998535156
+        ],
+        [
+          387.6104736328125,
+          427.69281005859375
+        ],
+        [
+          314.02638244628906,
+          427.69281005859375
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.1467056274414,
+          448.6632385253906
+        ],
+        [
+          367.28594970703125,
+          448.6632385253906
+        ],
+        [
+          367.28594970703125,
+          462.70599365234375
+        ],
+        [
+          314.1467056274414,
+          462.70599365234375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.28050994873047,
+          488.18861389160156
+        ],
+        [
+          404.8674774169922,
+          488.18861389160156
+        ],
+        [
+          404.8674774169922,
+          500.80108642578125
+        ],
+        [
+          314.28050994873047,
+          500.80108642578125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4591064453125,
+          578.2895965576172
+        ],
+        [
+          397.5368957519531,
+          578.2895965576172
+        ],
+        [
+          397.5368957519531,
+          592.4779968261719
+        ],
+        [
+          314.4591064453125,
+          592.4779968261719
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.56711769104004,
+          84.02264213562012
+        ],
+        [
+          139.53460693359375,
+          84.02264213562012
+        ],
+        [
+          139.53460693359375,
+          96.16900634765625
+        ],
+        [
+          51.56711769104004,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Time Series Representation Learning",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.32644844055176,
+          100.11568450927734
+        ],
+        [
+          262.46019744873047,
+          100.11568450927734
+        ],
+        [
+          262.46019744873047,
+          112.20355224609375
+        ],
+        [
+          51.32644844055176,
+          112.20355224609375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Continual Learning",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.622907638549805,
+          353.50536346435547
+        ],
+        [
+          176.6199188232422,
+          353.50536346435547
+        ],
+        [
+          176.6199188232422,
+          366.470458984375
+        ],
+        [
+          51.622907638549805,
+          366.470458984375
+        ]
+      ]
+    },
+    {
+      "title": "3 Preliminaries",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.0311279296875,
+          328.81226348876953
+        ],
+        [
+          402.51979064941406,
+          328.81226348876953
+        ],
+        [
+          402.51979064941406,
+          341.2699890136719
+        ],
+        [
+          315.0311279296875,
+          341.2699890136719
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Problem Statement",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.7872772216797,
+          344.06893157958984
+        ],
+        [
+          438.21771240234375,
+          344.06893157958984
+        ],
+        [
+          438.21771240234375,
+          356.96099853515625
+        ],
+        [
+          314.7872772216797,
+          356.96099853515625
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Catastrophic Forgetting",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.45853424072266,
+          490.9966278076172
+        ],
+        [
+          461.36988830566406,
+          490.9966278076172
+        ],
+        [
+          461.36988830566406,
+          503.69842529296875
+        ],
+        [
+          314.45853424072266,
+          503.69842529296875
+        ]
+      ]
+    },
+    {
+      "title": "4 Method",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.69491386413574,
+          557.3056182861328
+        ],
+        [
+          108.83647155761719,
+          557.3056182861328
+        ],
+        [
+          108.83647155761719,
+          570.8890075683594
+        ],
+        [
+          51.69491386413574,
+          570.8890075683594
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Overall Framework",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.47062683105469,
+          572.9914855957031
+        ],
+        [
+          175.04545211791992,
+          572.9914855957031
+        ],
+        [
+          175.04545211791992,
+          586.5800018310547
+        ],
+        [
+          51.47062683105469,
+          586.5800018310547
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Time Series Modeling and Classification",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.6065979003906,
+          326.11942291259766
+        ],
+        [
+          543.5932159423828,
+          326.11942291259766
+        ],
+        [
+          543.5932159423828,
+          339.4974365234375
+        ],
+        [
+          314.6065979003906,
+          339.4974365234375
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Dual Causal Disentanglement for DI-TSC",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.63660430908203,
+          615.6009063720703
+        ],
+        [
+          548.3744201660156,
+          615.6009063720703
+        ],
+        [
+          548.3744201660156,
+          630.4804382324219
+        ],
+        [
+          314.63660430908203,
+          630.4804382324219
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Dual Causal Intervention Perturbation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.25902557373047,
+          451.87660217285156
+        ],
+        [
+          270.40880584716797,
+          451.87660217285156
+        ],
+        [
+          270.40880584716797,
+          464.4329833984375
+        ],
+        [
+          51.25902557373047,
+          464.4329833984375
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiment",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.68784713745117,
+          232.1096649169922
+        ],
+        [
+          129.41844177246094,
+          232.1096649169922
+        ],
+        [
+          129.41844177246094,
+          245.7427978515625
+        ],
+        [
+          51.68784713745117,
+          245.7427978515625
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Settings",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.83041763305664,
+          248.06060028076172
+        ],
+        [
+          188.1217498779297,
+          248.06060028076172
+        ],
+        [
+          188.1217498779297,
+          261.4774169921875
+        ],
+        [
+          51.83041763305664,
+          261.4774169921875
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Overall Performance Comparison",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.06610679626465,
+          660.498779296875
+        ],
+        [
+          246.27188873291016,
+          660.498779296875
+        ],
+        [
+          246.27188873291016,
+          674.272819519043
+        ],
+        [
+          51.06610679626465,
+          674.272819519043
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Ablation Study",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.5734329223633,
+          613.3729248046875
+        ],
+        [
+          416.830810546875,
+          613.3729248046875
+        ],
+        [
+          416.830810546875,
+          626.8139953613281
+        ],
+        [
+          314.5734329223633,
+          626.8139953613281
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 'w/o Dis': The disentanglement module is replaced with two\nMLP modules.",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          68.56622886657715,
+          309.2365036010742
+        ],
+        [
+          295.5149230957031,
+          309.2365036010742
+        ],
+        [
+          295.5149230957031,
+          331.6331787109375
+        ],
+        [
+          68.56622886657715,
+          331.6331787109375
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Hyperparameter Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.02886772155762,
+          469.06658935546875
+        ],
+        [
+          207.34210968017578,
+          469.06658935546875
+        ],
+        [
+          207.34210968017578,
+          482.5168151855469
+        ],
+        [
+          51.02886772155762,
+          482.5168151855469
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Plug-and-Play Compatibility Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.371726989746094,
+          616.1092987060547
+        ],
+        [
+          267.4254913330078,
+          616.1092987060547
+        ],
+        [
+          267.4254913330078,
+          630.4804534912109
+        ],
+        [
+          51.371726989746094,
+          630.4804534912109
+        ]
+      ]
+    },
+    {
+      "title": "5.6 Analysis of Causal Representation Z\ufffd\ufffd",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.892459869384766,
+          289.8080520629883
+        ],
+        [
+          263.7657165527344,
+          289.8080520629883
+        ],
+        [
+          263.7657165527344,
+          303.4317932128906
+        ],
+        [
+          50.892459869384766,
+          303.4317932128906
+        ]
+      ]
+    },
+    {
+      "title": "5.7 Complexity Analysis",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2409362792969,
+          278.3892517089844
+        ],
+        [
+          447.3247375488281,
+          278.3892517089844
+        ],
+        [
+          447.3247375488281,
+          291.94781494140625
+        ],
+        [
+          314.2409362792969,
+          291.94781494140625
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion and Discussion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.8311004638672,
+          518.5146331787109
+        ],
+        [
+          468.6770324707031,
+          518.5146331787109
+        ],
+        [
+          468.6770324707031,
+          531.7849731445312
+        ],
+        [
+          313.8311004638672,
+          531.7849731445312
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.71300506591797,
+          83.25790786743164
+        ],
+        [
+          108.33308029174805,
+          83.25790786743164
+        ],
+        [
+          108.33308029174805,
+          96.16900634765625
+        ],
+        [
+          50.71300506591797,
+          96.16900634765625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          254
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          259
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          638
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          432
+        ],
+        [
+          "Line",
+          144
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          827
+        ],
+        [
+          "Line",
+          164
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          446
+        ],
+        [
+          "Line",
+          153
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          715
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          851
+        ],
+        [
+          "Line",
+          177
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          532
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Reference",
+          45
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          373
+        ],
+        [
+          "Line",
+          113
+        ],
+        [
+          "Reference",
+          32
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792373_We_Need_a_More_Robust_Classifier_Dual_Causal_Learning_Empowers_Domain_Incremental_Time_Series_Classi"
+}

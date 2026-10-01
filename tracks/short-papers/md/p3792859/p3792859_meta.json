@@ -1,0 +1,572 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Improving the Accuracy of Community Detection on Signed\nNetworks via Community Refinement and Contrastive Learning",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          52.210567474365234,
+          79.65814018249512
+        ],
+        [
+          557.1469116210938,
+          79.65814018249512
+        ],
+        [
+          557.1469116210938,
+          119.63006591796875
+        ],
+        [
+          52.210567474365234,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.72128486633301,
+          255.92594146728516
+        ],
+        [
+          95.59554290771484,
+          255.92594146728516
+        ],
+        [
+          95.59554290771484,
+          268.0385971069336
+        ],
+        [
+          50.72128486633301,
+          268.0385971069336
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.433237075805664,
+          414.80859375
+        ],
+        [
+          123.07078552246094,
+          414.80859375
+        ],
+        [
+          123.07078552246094,
+          428.9258117675781
+        ],
+        [
+          50.433237075805664,
+          428.9258117675781
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.20944786071777,
+          463.8501434326172
+        ],
+        [
+          102.87803649902344,
+          463.8501434326172
+        ],
+        [
+          102.87803649902344,
+          478.1419677734375
+        ],
+        [
+          50.20944786071777,
+          478.1419677734375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.316049575805664,
+          509.7893829345703
+        ],
+        [
+          140.4966278076172,
+          509.7893829345703
+        ],
+        [
+          140.4966278076172,
+          521.4075622558594
+        ],
+        [
+          50.316049575805664,
+          521.4075622558594
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          315.4355163574219,
+          255.63880920410156
+        ],
+        [
+          397.7830810546875,
+          255.63880920410156
+        ],
+        [
+          397.7830810546875,
+          268.25301361083984
+        ],
+        [
+          315.4355163574219,
+          268.25301361083984
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.35463523864746,
+          648.3250122070312
+        ],
+        [
+          95.15153503417969,
+          648.3250122070312
+        ],
+        [
+          95.15153503417969,
+          663.5305480957031
+        ],
+        [
+          51.35463523864746,
+          663.5305480957031
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          52.07790756225586,
+          337.89488983154297
+        ],
+        [
+          138.64775848388672,
+          337.89488983154297
+        ],
+        [
+          138.64775848388672,
+          349.59175872802734
+        ],
+        [
+          52.07790756225586,
+          349.59175872802734
+        ]
+      ]
+    },
+    {
+      "title": "3 ReCon: Proposed Framework",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.77911376953125,
+          453.34584045410156
+        ],
+        [
+          215.05162811279297,
+          453.34584045410156
+        ],
+        [
+          215.05162811279297,
+          466.9787902832031
+        ],
+        [
+          51.77911376953125,
+          466.9787902832031
+        ]
+      ]
+    },
+    {
+      "title": "4 Evaluation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.65162658691406,
+          520.8099060058594
+        ],
+        [
+          124.90254592895508,
+          520.8099060058594
+        ],
+        [
+          124.90254592895508,
+          532.0277709960938
+        ],
+        [
+          51.65162658691406,
+          532.0277709960938
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Settings",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.20086097717285,
+          594.8228759765625
+        ],
+        [
+          188.1217498779297,
+          594.8228759765625
+        ],
+        [
+          188.1217498779297,
+          608.5634460449219
+        ],
+        [
+          51.20086097717285,
+          608.5634460449219
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.9186325073242,
+          417.27525329589844
+        ],
+        [
+          450.6623840332031,
+          417.27525329589844
+        ],
+        [
+          450.6623840332031,
+          430.3418273925781
+        ],
+        [
+          314.9186325073242,
+          430.3418273925781
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusions",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.47430610656738,
+          582.6458587646484
+        ],
+        [
+          131.3507843017578,
+          582.6458587646484
+        ],
+        [
+          131.3507843017578,
+          593.8448181152344
+        ],
+        [
+          51.47430610656738,
+          593.8448181152344
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          315.36975860595703,
+          441.66595458984375
+        ],
+        [
+          409.94049072265625,
+          441.66595458984375
+        ],
+        [
+          409.94049072265625,
+          455.54144287109375
+        ],
+        [
+          315.36975860595703,
+          455.54144287109375
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.63660430908203,
+          542.9151306152344
+        ],
+        [
+          372.3041076660156,
+          542.9151306152344
+        ],
+        [
+          372.3041076660156,
+          553.6761627197266
+        ],
+        [
+          314.63660430908203,
+          553.6761627197266
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          268
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          498
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1041
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1410
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "Reference",
+          12
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792859_Improving_the_Accuracy_of_Community_Detection_on_Signed_Networks_via_Community_Refinement_and_Contra"
+}

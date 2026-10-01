@@ -1,0 +1,1462 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Measuring and Enhancing Human Value Alignment in Zero-Shot\nDocument-Level Claim Extraction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.916744232177734,
+          79.10429763793945
+        ],
+        [
+          558.1453247070312,
+          79.10429763793945
+        ],
+        [
+          558.1453247070312,
+          119.59552001953125
+        ],
+        [
+          50.916744232177734,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.98702812194824,
+          179.64724731445312
+        ],
+        [
+          95.74049949645996,
+          179.64724731445312
+        ],
+        [
+          95.74049949645996,
+          191.51638412475586
+        ],
+        [
+          50.98702812194824,
+          191.51638412475586
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.757911682128906,
+          478.1620788574219
+        ],
+        [
+          123.54178619384766,
+          478.1620788574219
+        ],
+        [
+          123.54178619384766,
+          493.31781005859375
+        ],
+        [
+          50.757911682128906,
+          493.31781005859375
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Information systems \u2192 Information retrieval.",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.667314529418945,
+          493.08489990234375
+        ],
+        [
+          246.71942138671875,
+          493.08489990234375
+        ],
+        [
+          246.71942138671875,
+          506.5630798339844
+        ],
+        [
+          50.667314529418945,
+          506.5630798339844
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.51999473571777,
+          515.3914947509766
+        ],
+        [
+          102.87759399414062,
+          515.3914947509766
+        ],
+        [
+          102.87759399414062,
+          529.8709716796875
+        ],
+        [
+          50.51999473571777,
+          529.8709716796875
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.76129341125488,
+          547.323486328125
+        ],
+        [
+          140.4955596923828,
+          547.323486328125
+        ],
+        [
+          140.4955596923828,
+          558.9112701416016
+        ],
+        [
+          50.76129341125488,
+          558.9112701416016
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.91408920288086,
+          649.7670135498047
+        ],
+        [
+          92.35925674438477,
+          649.7670135498047
+        ],
+        [
+          92.35925674438477,
+          662.7948760986328
+        ],
+        [
+          50.91408920288086,
+          662.7948760986328
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6018829345703,
+          179.88843154907227
+        ],
+        [
+          397.5361633300781,
+          179.88843154907227
+        ],
+        [
+          397.5361633300781,
+          191.73577880859375
+        ],
+        [
+          314.6018829345703,
+          191.73577880859375
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.96728706359863,
+          392.3873291015625
+        ],
+        [
+          139.03983306884766,
+          392.3873291015625
+        ],
+        [
+          139.03983306884766,
+          405.4900817871094
+        ],
+        [
+          50.96728706359863,
+          405.4900817871094
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Document-Level Claim Extraction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.62969207763672,
+          407.47169494628906
+        ],
+        [
+          247.72023010253906,
+          407.47169494628906
+        ],
+        [
+          247.72023010253906,
+          421.207763671875
+        ],
+        [
+          50.62969207763672,
+          421.207763671875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Human Value Alignment of LLMs",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.9500961303711,
+          82.65262413024902
+        ],
+        [
+          510.30665588378906,
+          82.65262413024902
+        ],
+        [
+          510.30665588378906,
+          96.23443603515625
+        ],
+        [
+          313.9500961303711,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0347366333008,
+          440.9839324951172
+        ],
+        [
+          399.81610107421875,
+          440.9839324951172
+        ],
+        [
+          399.81610107421875,
+          455.1383972167969
+        ],
+        [
+          314.0347366333008,
+          455.1383972167969
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Problem Definition",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.611650466918945,
+          281.4238815307617
+        ],
+        [
+          173.98245239257812,
+          281.4238815307617
+        ],
+        [
+          173.98245239257812,
+          294.0153579711914
+        ],
+        [
+          50.611650466918945,
+          294.0153579711914
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Human Value Elicitation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.494754791259766,
+          413.83140563964844
+        ],
+        [
+          202.39874267578125,
+          413.83140563964844
+        ],
+        [
+          202.39874267578125,
+          426.5808563232422
+        ],
+        [
+          50.494754791259766,
+          426.5808563232422
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.90641021728516,
+          310.9606018066406
+        ],
+        [
+          468.7005157470703,
+          310.9606018066406
+        ],
+        [
+          468.7005157470703,
+          323.1980438232422
+        ],
+        [
+          314.90641021728516,
+          323.1980438232422
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.191917419433594,
+          495.0146484375
+        ],
+        [
+          277.7150115966797,
+          495.0146484375
+        ],
+        [
+          277.7150115966797,
+          507.5658874511719
+        ],
+        [
+          51.191917419433594,
+          507.5658874511719
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.74363136291504,
+          557.1081848144531
+        ],
+        [
+          134.48537063598633,
+          557.1081848144531
+        ],
+        [
+          134.48537063598633,
+          570.9107818603516
+        ],
+        [
+          51.74363136291504,
+          570.9107818603516
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Dataset",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.52276611328125,
+          572.5111999511719
+        ],
+        [
+          116.07437896728516,
+          572.5111999511719
+        ],
+        [
+          116.07437896728516,
+          584.8876190185547
+        ],
+        [
+          51.52276611328125,
+          584.8876190185547
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.4073791503906,
+          160.6175079345703
+        ],
+        [
+          441.22869873046875,
+          160.6175079345703
+        ],
+        [
+          441.22869873046875,
+          173.309814453125
+        ],
+        [
+          314.4073791503906,
+          173.309814453125
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Baselines",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.7037353515625,
+          476.0221710205078
+        ],
+        [
+          389.15802001953125,
+          476.0221710205078
+        ],
+        [
+          389.15802001953125,
+          487.7530975341797
+        ],
+        [
+          314.7037353515625,
+          487.7530975341797
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Results Analysis",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.89757537841797,
+          613.95849609375
+        ],
+        [
+          424.7926483154297,
+          613.95849609375
+        ],
+        [
+          424.7926483154297,
+          627.0229797363281
+        ],
+        [
+          314.89757537841797,
+          627.0229797363281
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Human Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.05833435058594,
+          538.9061737060547
+        ],
+        [
+          436.69285583496094,
+          538.9061737060547
+        ],
+        [
+          436.69285583496094,
+          551.7534484863281
+        ],
+        [
+          314.05833435058594,
+          551.7534484863281
+        ]
+      ]
+    },
+    {
+      "title": "4.6 Evaluation of HVA Evaluator",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.37986755371094,
+          648.7530670166016
+        ],
+        [
+          222.48388671875,
+          648.7530670166016
+        ],
+        [
+          222.48388671875,
+          661.3241729736328
+        ],
+        [
+          50.37986755371094,
+          661.3241729736328
+        ]
+      ]
+    },
+    {
+      "title": "4.7 Automatic HVA Evaluation Results",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.89094352722168,
+          550.4255218505859
+        ],
+        [
+          252.82237243652344,
+          550.4255218505859
+        ],
+        [
+          252.82237243652344,
+          563.5009460449219
+        ],
+        [
+          50.89094352722168,
+          563.5009460449219
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.07401275634766,
+          320.7419128417969
+        ],
+        [
+          390.97869873046875,
+          320.7419128417969
+        ],
+        [
+          390.97869873046875,
+          332.9220428466797
+        ],
+        [
+          314.07401275634766,
+          332.9220428466797
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.93737030029297,
+          648.5835571289062
+        ],
+        [
+          410.2656555175781,
+          648.5835571289062
+        ],
+        [
+          410.2656555175781,
+          663.357421875
+        ],
+        [
+          313.93737030029297,
+          663.357421875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.8677978515625,
+          82.61631774902344
+        ],
+        [
+          108.18899917602539,
+          82.61631774902344
+        ],
+        [
+          108.18899917602539,
+          94.22757911682129
+        ],
+        [
+          50.8677978515625,
+          94.22757911682129
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          314.65564727783203,
+          550.8417663574219
+        ],
+        [
+          469.81640625,
+          550.8417663574219
+        ],
+        [
+          469.81640625,
+          563.775146484375
+        ],
+        [
+          314.65564727783203,
+          563.775146484375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          315.4775161743164,
+          81.48537254333496
+        ],
+        [
+          556.2860412597656,
+          81.48537254333496
+        ],
+        [
+          556.2860412597656,
+          93.43449783325195
+        ],
+        [
+          315.4775161743164,
+          93.43449783325195
+        ]
+      ]
+    },
+    {
+      "title": "B HVA Evaluator for Automatic Claim\nAssessment",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.63077354431152,
+          214.18462371826172
+        ],
+        [
+          251.65532684326172,
+          214.18462371826172
+        ],
+        [
+          251.65532684326172,
+          238.72350311279297
+        ],
+        [
+          50.63077354431152,
+          238.72350311279297
+        ]
+      ]
+    },
+    {
+      "title": "C Analysis of HVA Evaluator Agreement",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.56922149658203,
+          426.93988037109375
+        ],
+        [
+          262.9235534667969,
+          426.93988037109375
+        ],
+        [
+          262.9235534667969,
+          441.1903991699219
+        ],
+        [
+          50.56922149658203,
+          441.1903991699219
+        ]
+      ]
+    },
+    {
+      "title": "D Experimental Implementation",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.659584045410156,
+          637.5489807128906
+        ],
+        [
+          224.07472229003906,
+          637.5489807128906
+        ],
+        [
+          224.07472229003906,
+          652.3547821044922
+        ],
+        [
+          50.659584045410156,
+          652.3547821044922
+        ]
+      ]
+    },
+    {
+      "title": "E LLM Usage Cost",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.3599548339844,
+          299.76768493652344
+        ],
+        [
+          415.16404724121094,
+          299.76768493652344
+        ],
+        [
+          415.16404724121094,
+          313.5504150390625
+        ],
+        [
+          314.3599548339844,
+          313.5504150390625
+        ]
+      ]
+    },
+    {
+      "title": "Table 7: Prompt of the HVA-CE direct strategy.",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          208.47154998779297,
+          244.62799072265625
+        ],
+        [
+          400.3045959472656,
+          244.62799072265625
+        ],
+        [
+          400.3045959472656,
+          257.9449462890625
+        ],
+        [
+          208.47154998779297,
+          257.9449462890625
+        ]
+      ]
+    },
+    {
+      "title": "Table 8: The Score Prompt of the HVA-CE Score-Dec strategy.",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          178.47283172607422,
+          376.01239013671875
+        ],
+        [
+          429.58251953125,
+          376.01239013671875
+        ],
+        [
+          429.58251953125,
+          388.2559509277344
+        ],
+        [
+          178.47283172607422,
+          388.2559509277344
+        ]
+      ]
+    },
+    {
+      "title": "Table 9: The Decontextualization Prompt of the HVA-CE Score-Dec strategy.",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          149.02013397216797,
+          494.44203186035156
+        ],
+        [
+          459.8321838378906,
+          494.44203186035156
+        ],
+        [
+          459.8321838378906,
+          507.6079406738281
+        ],
+        [
+          149.02013397216797,
+          507.6079406738281
+        ]
+      ]
+    },
+    {
+      "title": "Table 10: The Prompt of the HVA evaluator.",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          214.77621459960938,
+          81.6617660522461
+        ],
+        [
+          395.0141143798828,
+          81.6617660522461
+        ],
+        [
+          395.0141143798828,
+          93.446044921875
+        ],
+        [
+          214.77621459960938,
+          93.446044921875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          220
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          244
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          330
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          18
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          510
+        ],
+        [
+          "Line",
+          158
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          268
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          139
+        ],
+        [
+          "Line",
+          56
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          293
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          451
+        ],
+        [
+          "Line",
+          149
+        ],
+        [
+          "Reference",
+          25
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          274
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          67
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792299_Measuring_and_Enhancing_Human_Value_Alignment_in_Zero_Shot_Document_Level_Claim_Extraction"
+}

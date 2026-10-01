@@ -1,0 +1,672 @@
+{
+  "table_of_contents": [
+    {
+      "title": "PH-EMO: Decoding Emotions from the Brain Inward \u2013\nEEG-Grounded Multimodal Reasoning with LLMs",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          91.07071495056152,
+          79.07392501831055
+        ],
+        [
+          519.9690551757812,
+          79.07392501831055
+        ],
+        [
+          519.9690551757812,
+          119.62994384765625
+        ],
+        [
+          91.07071495056152,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.3504695892334,
+          195.16708374023438
+        ],
+        [
+          95.90527725219727,
+          195.16708374023438
+        ],
+        [
+          95.90527725219727,
+          209.693115234375
+        ],
+        [
+          51.3504695892334,
+          209.693115234375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.42586135864258,
+          472.9439392089844
+        ],
+        [
+          124.03031158447266,
+          472.9439392089844
+        ],
+        [
+          124.03031158447266,
+          487.4718017578125
+        ],
+        [
+          50.42586135864258,
+          487.4718017578125
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Computing methodologies \u2192 Artificial intelligence; Ma-\nchine learning; \u2022 Human-centered computing;",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.18621635437012,
+          487.0987243652344
+        ],
+        [
+          295.6472473144531,
+          487.0987243652344
+        ],
+        [
+          295.6472473144531,
+          511.7119445800781
+        ],
+        [
+          50.18621635437012,
+          511.7119445800781
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.49361610412598,
+          520.7865600585938
+        ],
+        [
+          102.97940826416016,
+          520.7865600585938
+        ],
+        [
+          102.97940826416016,
+          535.0690002441406
+        ],
+        [
+          50.49361610412598,
+          535.0690002441406
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.55969429016113,
+          563.2615814208984
+        ],
+        [
+          140.4955596923828,
+          563.2615814208984
+        ],
+        [
+          140.4955596923828,
+          576.2940673828125
+        ],
+        [
+          50.55969429016113,
+          576.2940673828125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6191864013672,
+          194.96543884277344
+        ],
+        [
+          397.77305603027344,
+          194.96543884277344
+        ],
+        [
+          397.77305603027344,
+          209.69293212890625
+        ],
+        [
+          314.6191864013672,
+          209.69293212890625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.28043746948242,
+          640.5803375244141
+        ],
+        [
+          96.09799575805664,
+          640.5803375244141
+        ],
+        [
+          96.09799575805664,
+          656.5856323242188
+        ],
+        [
+          51.28043746948242,
+          656.5856323242188
+        ]
+      ]
+    },
+    {
+      "title": "2 PH-EMO Framework",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.77324676513672,
+          419.42889404296875
+        ],
+        [
+          173.99334716796875,
+          419.42889404296875
+        ],
+        [
+          173.99334716796875,
+          433.6709899902344
+        ],
+        [
+          50.77324676513672,
+          433.6709899902344
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Multimodal Semantic Extraction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.245582580566406,
+          500.8867950439453
+        ],
+        [
+          239.86914825439453,
+          500.8867950439453
+        ],
+        [
+          239.86914825439453,
+          515.7049865722656
+        ],
+        [
+          50.245582580566406,
+          515.7049865722656
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Human-Consistent Reasoning",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.13372802734375,
+          416.2122344970703
+        ],
+        [
+          492.7715148925781,
+          416.2122344970703
+        ],
+        [
+          492.7715148925781,
+          430.7414245605469
+        ],
+        [
+          314.13372802734375,
+          430.7414245605469
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Evaluation Strategy",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.13355255126953,
+          159.73378372192383
+        ],
+        [
+          175.58607482910156,
+          159.73378372192383
+        ],
+        [
+          175.58607482910156,
+          172.29547119140625
+        ],
+        [
+          51.13355255126953,
+          172.29547119140625
+        ]
+      ]
+    },
+    {
+      "title": "3 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.35752487182617,
+          511.9148712158203
+        ],
+        [
+          133.904296875,
+          511.9148712158203
+        ],
+        [
+          133.904296875,
+          525.0648193359375
+        ],
+        [
+          51.35752487182617,
+          525.0648193359375
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Experimental setups",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.24557876586914,
+          527.60009765625
+        ],
+        [
+          180.61112594604492,
+          527.60009765625
+        ],
+        [
+          180.61112594604492,
+          540.7558135986328
+        ],
+        [
+          51.24557876586914,
+          540.7558135986328
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Quantitative Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.3730926513672,
+          430.97557067871094
+        ],
+        [
+          444.8339080810547,
+          430.97557067871094
+        ],
+        [
+          444.8339080810547,
+          444.114013671875
+        ],
+        [
+          314.3730926513672,
+          444.114013671875
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Qualitative Analysis",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.242950439453125,
+          427.8397521972656
+        ],
+        [
+          179.10992431640625,
+          427.8397521972656
+        ],
+        [
+          179.10992431640625,
+          441.9889831542969
+        ],
+        [
+          50.242950439453125,
+          441.9889831542969
+        ]
+      ]
+    },
+    {
+      "title": "4 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.849281311035156,
+          615.9262847900391
+        ],
+        [
+          126.86783981323242,
+          615.9262847900391
+        ],
+        [
+          126.86783981323242,
+          630.4149780273438
+        ],
+        [
+          50.849281311035156,
+          630.4149780273438
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.3367691040039,
+          136.18330764770508
+        ],
+        [
+          410.8362121582031,
+          136.18330764770508
+        ],
+        [
+          410.8362121582031,
+          150.28143310546875
+        ],
+        [
+          314.3367691040039,
+          150.28143310546875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.2387161254883,
+          258.7755432128906
+        ],
+        [
+          372.3036193847656,
+          258.7755432128906
+        ],
+        [
+          372.3036193847656,
+          272.7569580078125
+        ],
+        [
+          314.2387161254883,
+          272.7569580078125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          249
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          463
+        ],
+        [
+          "Line",
+          129
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          514
+        ],
+        [
+          "Line",
+          123
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          418
+        ],
+        [
+          "Line",
+          129
+        ],
+        [
+          "Reference",
+          23
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792855_PH_EMO_Decoding_Emotions_from_the_Brain_Inward_EEG_Grounded_Multimodal_Reasoning_with_LLMs"
+}

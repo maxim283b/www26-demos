@@ -1,0 +1,1081 @@
+{
+  "table_of_contents": [
+    {
+      "title": "SEP-Attack: A Simple and Effective Paradigm for Transfer-Based\nTextual Adversarial Attack",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.7708797454834,
+          78.69350624084473
+        ],
+        [
+          558.1067047119141,
+          78.69350624084473
+        ],
+        [
+          558.1067047119141,
+          119.5955810546875
+        ],
+        [
+          51.7708797454834,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.425437927246094,
+          296.6480941772461
+        ],
+        [
+          95.65509223937988,
+          296.6480941772461
+        ],
+        [
+          95.65509223937988,
+          310.5313415527344
+        ],
+        [
+          50.425437927246094,
+          310.5313415527344
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.19839286804199,
+          539.9286346435547
+        ],
+        [
+          123.3896484375,
+          539.9286346435547
+        ],
+        [
+          123.3896484375,
+          554.1728057861328
+        ],
+        [
+          50.19839286804199,
+          554.1728057861328
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.604034423828125,
+          585.9381866455078
+        ],
+        [
+          103.1443862915039,
+          585.9381866455078
+        ],
+        [
+          103.1443862915039,
+          600.510009765625
+        ],
+        [
+          50.604034423828125,
+          600.510009765625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.14121437072754,
+          650.8892669677734
+        ],
+        [
+          90.64031410217285,
+          650.8892669677734
+        ],
+        [
+          90.64031410217285,
+          662.8916015625
+        ],
+        [
+          51.14121437072754,
+          662.8916015625
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2334518432617,
+          297.17154693603516
+        ],
+        [
+          405.3468017578125,
+          297.17154693603516
+        ],
+        [
+          405.3468017578125,
+          309.8520812988281
+        ],
+        [
+          314.2334518432617,
+          309.8520812988281
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6377487182617,
+          385.5556640625
+        ],
+        [
+          397.7315368652344,
+          385.5556640625
+        ],
+        [
+          397.7315368652344,
+          400.2779846191406
+        ],
+        [
+          314.6377487182617,
+          400.2779846191406
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0446014404297,
+          391.7746124267578
+        ],
+        [
+          402.73040771484375,
+          391.7746124267578
+        ],
+        [
+          402.73040771484375,
+          406.4420166015625
+        ],
+        [
+          314.0446014404297,
+          406.4420166015625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Query-Based Black-Box Attacks",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.5673370361328,
+          406.8833770751953
+        ],
+        [
+          500.36602783203125,
+          406.8833770751953
+        ],
+        [
+          500.36602783203125,
+          422.13299560546875
+        ],
+        [
+          313.5673370361328,
+          422.13299560546875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Transfer-Based Black-Box Attacks",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.906667709350586,
+          83.66596984863281
+        ],
+        [
+          248.99974822998047,
+          83.66596984863281
+        ],
+        [
+          248.99974822998047,
+          96.16900634765625
+        ],
+        [
+          50.906667709350586,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "3 The Proposed Paradigm",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.36538124084473,
+          402.79335021972656
+        ],
+        [
+          189.0589828491211,
+          402.79335021972656
+        ],
+        [
+          189.0589828491211,
+          416.17144775390625
+        ],
+        [
+          51.36538124084473,
+          416.17144775390625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Problem Formulation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.3229866027832,
+          418.3695831298828
+        ],
+        [
+          185.98656463623047,
+          418.3695831298828
+        ],
+        [
+          185.98656463623047,
+          431.7969665527344
+        ],
+        [
+          51.3229866027832,
+          431.7969665527344
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Generating Diversity-Based Surrogate\nEnsemble Weights",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.43424034118652,
+          647.33642578125
+        ],
+        [
+          266.12091064453125,
+          647.33642578125
+        ],
+        [
+          266.12091064453125,
+          674.3164596557617
+        ],
+        [
+          51.43424034118652,
+          674.3164596557617
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Generating Adversarial Examples via the\nSurrogate Ensemble Model",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.526123046875,
+          375.3053283691406
+        ],
+        [
+          549.3484954833984,
+          375.3053283691406
+        ],
+        [
+          549.3484954833984,
+          400.9864501953125
+        ],
+        [
+          314.526123046875,
+          400.9864501953125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          54.3958683013916,
+          83.91241264343262
+        ],
+        [
+          271.6893310546875,
+          83.91241264343262
+        ],
+        [
+          271.6893310546875,
+          106.40527725219727
+        ],
+        [
+          54.3958683013916,
+          106.40527725219727
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.42465591430664,
+          350.33731842041016
+        ],
+        [
+          250.21625518798828,
+          350.33731842041016
+        ],
+        [
+          250.21625518798828,
+          373.6498718261719
+        ],
+        [
+          51.42465591430664,
+          373.6498718261719
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.66910552978516,
+          437.8473815917969
+        ],
+        [
+          454.3414306640625,
+          437.8473815917969
+        ],
+        [
+          454.3414306640625,
+          449.58961486816406
+        ],
+        [
+          314.66910552978516,
+          449.58961486816406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.1522750854492,
+          529.7506256103516
+        ],
+        [
+          397.5830841064453,
+          529.7506256103516
+        ],
+        [
+          397.5830841064453,
+          541.4446105957031
+        ],
+        [
+          315.1522750854492,
+          541.4446105957031
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.15733337402344,
+          544.947509765625
+        ],
+        [
+          452.43983459472656,
+          544.947509765625
+        ],
+        [
+          452.43983459472656,
+          557.2935333251953
+        ],
+        [
+          315.15733337402344,
+          557.2935333251953
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          319.00215911865234,
+          84.44593048095703
+        ],
+        [
+          535.7888488769531,
+          84.44593048095703
+        ],
+        [
+          535.7888488769531,
+          95.51312255859375
+        ],
+        [
+          319.00215911865234,
+          95.51312255859375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.99262619018555,
+          519.2657775878906
+        ],
+        [
+          186.07918167114258,
+          519.2657775878906
+        ],
+        [
+          186.07918167114258,
+          531.8068237304688
+        ],
+        [
+          51.99262619018555,
+          531.8068237304688
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.8388442993164,
+          471.0157928466797
+        ],
+        [
+          391.33758544921875,
+          471.0157928466797
+        ],
+        [
+          391.33758544921875,
+          484.510986328125
+        ],
+        [
+          314.8388442993164,
+          484.510986328125
+        ]
+      ]
+    },
+    {
+      "title": "6 Acknowledgements",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.15057373046875,
+          627.298095703125
+        ],
+        [
+          431.85072326660156,
+          627.298095703125
+        ],
+        [
+          431.85072326660156,
+          641.439453125
+        ],
+        [
+          314.15057373046875,
+          641.439453125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.87280464172363,
+          83.0752944946289
+        ],
+        [
+          108.14713287353516,
+          83.0752944946289
+        ],
+        [
+          108.14713287353516,
+          96.16900634765625
+        ],
+        [
+          50.87280464172363,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Dataset Description",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.5250358581543,
+          81.58757972717285
+        ],
+        [
+          170.9480323791504,
+          81.58757972717285
+        ],
+        [
+          170.9480323791504,
+          96.1907958984375
+        ],
+        [
+          50.5250358581543,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "B Case Study",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.58939170837402,
+          195.49573516845703
+        ],
+        [
+          125.91806030273438,
+          195.49573516845703
+        ],
+        [
+          125.91806030273438,
+          209.66802978515625
+        ],
+        [
+          50.58939170837402,
+          209.66802978515625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          270
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          413
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          749
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          13
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          580
+        ],
+        [
+          "Line",
+          133
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          294
+        ],
+        [
+          "Line",
+          116
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          317
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          5
+        ],
+        [
+          "Table",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "TableGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          515
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Reference",
+          46
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          231
+        ],
+        [
+          "Line",
+          51
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793042_SEP_Attack_A_Simple_and_Effective_Paradigm_for_Transfer_Based_Textual_Adversarial_Attack"
+}

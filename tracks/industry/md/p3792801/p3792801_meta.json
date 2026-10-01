@@ -1,0 +1,1050 @@
+{
+  "table_of_contents": [
+    {
+      "title": "From Reasoning LLMs to BERT: A Two-Stage Distillation\nFramework for Search Relevance",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          81.85505104064941,
+          79.49776840209961
+        ],
+        [
+          527.7364654541016,
+          79.49776840209961
+        ],
+        [
+          527.7364654541016,
+          119.5955810546875
+        ],
+        [
+          81.85505104064941,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.64173698425293,
+          240.09029388427734
+        ],
+        [
+          95.7063159942627,
+          240.09029388427734
+        ],
+        [
+          95.7063159942627,
+          254.27398681640625
+        ],
+        [
+          50.64173698425293,
+          254.27398681640625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.144657135009766,
+          538.5638580322266
+        ],
+        [
+          123.22896194458008,
+          538.5638580322266
+        ],
+        [
+          123.22896194458008,
+          552.8348236083984
+        ],
+        [
+          50.144657135009766,
+          552.8348236083984
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.76991081237793,
+          585.2552032470703
+        ],
+        [
+          102.87803649902344,
+          585.2552032470703
+        ],
+        [
+          102.87803649902344,
+          599.2980041503906
+        ],
+        [
+          50.76991081237793,
+          599.2980041503906
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.903268814086914,
+          650.5405883789062
+        ],
+        [
+          90.35100173950195,
+          650.5405883789062
+        ],
+        [
+          90.35100173950195,
+          662.9586181640625
+        ],
+        [
+          50.903268814086914,
+          662.9586181640625
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          315.0831069946289,
+          240.99877166748047
+        ],
+        [
+          405.0710906982422,
+          240.99877166748047
+        ],
+        [
+          405.0710906982422,
+          253.5950927734375
+        ],
+        [
+          315.0831069946289,
+          253.5950927734375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4914016723633,
+          320.4961395263672
+        ],
+        [
+          397.536865234375,
+          320.4961395263672
+        ],
+        [
+          397.536865234375,
+          334.52496337890625
+        ],
+        [
+          314.4914016723633,
+          334.52496337890625
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5458297729492,
+          247.48628997802734
+        ],
+        [
+          402.8191223144531,
+          247.48628997802734
+        ],
+        [
+          402.8191223144531,
+          260.926025390625
+        ],
+        [
+          314.5458297729492,
+          260.926025390625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Search Relevance in E-commerce",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2837600708008,
+          262.42261505126953
+        ],
+        [
+          505.83709716796875,
+          262.42261505126953
+        ],
+        [
+          505.83709716796875,
+          276.61700439453125
+        ],
+        [
+          314.2837600708008,
+          276.61700439453125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Reasoning Models for Search Relevance",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.8080520629883,
+          659.9316558837891
+        ],
+        [
+          540.1833343505859,
+          659.9316558837891
+        ],
+        [
+          540.1833343505859,
+          674.3164596557617
+        ],
+        [
+          313.8080520629883,
+          674.3164596557617
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Knowledge Distillation for Search Relevance",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.96122741699219,
+          506.21022033691406
+        ],
+        [
+          294.7152099609375,
+          506.21022033691406
+        ],
+        [
+          294.7152099609375,
+          520.8914489746094
+        ],
+        [
+          50.96122741699219,
+          520.8914489746094
+        ]
+      ]
+    },
+    {
+      "title": "3 The Reasoning then Distilling Framework",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.29051208496094,
+          534.9966430664062
+        ],
+        [
+          543.8584442138672,
+          534.9966430664062
+        ],
+        [
+          543.8584442138672,
+          549.0364685058594
+        ],
+        [
+          314.29051208496094,
+          549.0364685058594
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Framework Overview",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.6297149658203,
+          550.8568267822266
+        ],
+        [
+          449.43145751953125,
+          550.8568267822266
+        ],
+        [
+          449.43145751953125,
+          564.6620178222656
+        ],
+        [
+          314.6297149658203,
+          564.6620178222656
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Search Relevance Reasoning LLM Training\nStage",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.99970245361328,
+          125.47283935546875
+        ],
+        [
+          291.3743591308594,
+          125.47283935546875
+        ],
+        [
+          291.3743591308594,
+          152.1214599609375
+        ],
+        [
+          50.99970245361328,
+          152.1214599609375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.867082595825195,
+          391.3648223876953
+        ],
+        [
+          218.2265853881836,
+          391.3648223876953
+        ],
+        [
+          218.2265853881836,
+          404.047119140625
+        ],
+        [
+          50.867082595825195,
+          404.047119140625
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.66400146484375,
+          385.08604431152344
+        ],
+        [
+          398.46583557128906,
+          385.08604431152344
+        ],
+        [
+          398.46583557128906,
+          398.7127990722656
+        ],
+        [
+          314.66400146484375,
+          398.7127990722656
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Datasets and Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.6732482910156,
+          400.4339904785156
+        ],
+        [
+          462.2685241699219,
+          400.4339904785156
+        ],
+        [
+          462.2685241699219,
+          414.3819885253906
+        ],
+        [
+          314.6732482910156,
+          414.3819885253906
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Implementation Details",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.11239814758301,
+          161.6524543762207
+        ],
+        [
+          196.426025390625,
+          161.6524543762207
+        ],
+        [
+          196.426025390625,
+          174.72979736328125
+        ],
+        [
+          51.11239814758301,
+          174.72979736328125
+        ]
+      ]
+    },
+    {
+      "title": "5 Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.17952346801758,
+          578.7921295166016
+        ],
+        [
+          107.58745193481445,
+          578.7921295166016
+        ],
+        [
+          107.58745193481445,
+          592.8060150146484
+        ],
+        [
+          51.17952346801758,
+          592.8060150146484
+        ]
+      ]
+    },
+    {
+      "title": "5.1 LLM Results and Ablation Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.77203369140625,
+          593.9732666015625
+        ],
+        [
+          238.01995849609375,
+          593.9732666015625
+        ],
+        [
+          238.01995849609375,
+          608.4980163574219
+        ],
+        [
+          50.77203369140625,
+          608.4980163574219
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Distillation Results and Ablation Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.4910583496094,
+          615.8104705810547
+        ],
+        [
+          537.1016235351562,
+          615.8104705810547
+        ],
+        [
+          537.1016235351562,
+          630.4150085449219
+        ],
+        [
+          314.4910583496094,
+          630.4150085449219
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Online Evaluation",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.1650161743164,
+          82.69400596618652
+        ],
+        [
+          432.9368896484375,
+          82.69400596618652
+        ],
+        [
+          432.9368896484375,
+          96.16900634765625
+        ],
+        [
+          314.1650161743164,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.79685974121094,
+          426.2959442138672
+        ],
+        [
+          391.0939178466797,
+          426.2959442138672
+        ],
+        [
+          391.0939178466797,
+          440.4809875488281
+        ],
+        [
+          313.79685974121094,
+          440.4809875488281
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2324676513672,
+          670.4072113037109
+        ],
+        [
+          410.2423095703125,
+          670.4072113037109
+        ],
+        [
+          410.2423095703125,
+          685.2754592895508
+        ],
+        [
+          314.2324676513672,
+          685.2754592895508
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.69813346862793,
+          83.05928421020508
+        ],
+        [
+          108.18738555908203,
+          83.05928421020508
+        ],
+        [
+          108.18738555908203,
+          96.16900634765625
+        ],
+        [
+          50.69813346862793,
+          96.16900634765625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          234
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          243
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          314
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          422
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          519
+        ],
+        [
+          "Line",
+          132
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          285
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          220
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "TableGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          532
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          43
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792801_From_Reasoning_LLMs_to_BERT_A_Two_Stage_Distillation_Framework_for_Search_Relevance"
+}

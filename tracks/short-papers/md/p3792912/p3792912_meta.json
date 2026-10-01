@@ -1,0 +1,591 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Breaking Semantic-Aware Watermarks via LLM-Guided\nCoherence-Preserving Semantic Injection",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          85.59842491149902,
+          79.69569969177246
+        ],
+        [
+          524.1018676757812,
+          79.69569969177246
+        ],
+        [
+          524.1018676757812,
+          119.63006591796875
+        ],
+        [
+          85.59842491149902,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.77086067199707,
+          240.88059997558594
+        ],
+        [
+          95.76387405395508,
+          240.88059997558594
+        ],
+        [
+          95.76387405395508,
+          253.25408935546875
+        ],
+        [
+          50.77086067199707,
+          253.25408935546875
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.977413177490234,
+          519.1200256347656
+        ],
+        [
+          123.13352966308594,
+          519.1200256347656
+        ],
+        [
+          123.13352966308594,
+          532.6668090820312
+        ],
+        [
+          49.977413177490234,
+          532.6668090820312
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.48229789733887,
+          565.0262603759766
+        ],
+        [
+          102.87803649902344,
+          565.0262603759766
+        ],
+        [
+          102.87803649902344,
+          579.5099945068359
+        ],
+        [
+          50.48229789733887,
+          579.5099945068359
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.82365798950195,
+          596.2423553466797
+        ],
+        [
+          140.4966278076172,
+          596.2423553466797
+        ],
+        [
+          140.4966278076172,
+          607.5242614746094
+        ],
+        [
+          50.82365798950195,
+          607.5242614746094
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.8165512084961,
+          287.3932342529297
+        ],
+        [
+          397.62107849121094,
+          287.3932342529297
+        ],
+        [
+          397.62107849121094,
+          299.7245178222656
+        ],
+        [
+          314.8165512084961,
+          299.7245178222656
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.08850860595703,
+          649.1494445800781
+        ],
+        [
+          92.1287956237793,
+          649.1494445800781
+        ],
+        [
+          92.1287956237793,
+          661.8342132568359
+        ],
+        [
+          51.08850860595703,
+          661.8342132568359
+        ]
+      ]
+    },
+    {
+      "title": "2 Method: Coherence-Preserving Semantic\nInjection",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.4768123626709,
+          549.6573028564453
+        ],
+        [
+          272.3150939941406,
+          549.6573028564453
+        ],
+        [
+          272.3150939941406,
+          575.6210021972656
+        ],
+        [
+          51.4768123626709,
+          575.6210021972656
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Adversarial Semantic Injection via\nSemantically Coherent Manipulations (ASI)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3499984741211,
+          366.28992462158203
+        ],
+        [
+          563.7787628173828,
+          366.28992462158203
+        ],
+        [
+          563.7787628173828,
+          391.52178955078125
+        ],
+        [
+          314.3499984741211,
+          391.52178955078125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Consistency-Based Hierarchical Filtering\n(CHF)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.163330078125,
+          386.27618408203125
+        ],
+        [
+          283.0506362915039,
+          386.27618408203125
+        ],
+        [
+          283.0506362915039,
+          412.9144592285156
+        ],
+        [
+          51.163330078125,
+          412.9144592285156
+        ]
+      ]
+    },
+    {
+      "title": "3 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.86729431152344,
+          83.5624008178711
+        ],
+        [
+          398.7415466308594,
+          83.5624008178711
+        ],
+        [
+          398.7415466308594,
+          96.1907958984375
+        ],
+        [
+          314.86729431152344,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Comparative Attack Effectiveness",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.3063507080078,
+          231.19974517822266
+        ],
+        [
+          510.8253936767578,
+          231.19974517822266
+        ],
+        [
+          510.8253936767578,
+          244.45782470703125
+        ],
+        [
+          314.3063507080078,
+          244.45782470703125
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Attack Robustness Across Different\nWatermarking Schemes",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.46240234375,
+          433.4836120605469
+        ],
+        [
+          519.2847290039062,
+          433.4836120605469
+        ],
+        [
+          519.2847290039062,
+          460.513427734375
+        ],
+        [
+          314.46240234375,
+          460.513427734375
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Attack Effectiveness on Content-aware\nWatermarking",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.163381576538086,
+          395.2262878417969
+        ],
+        [
+          271.6368713378906,
+          395.2262878417969
+        ],
+        [
+          271.6368713378906,
+          422.2614440917969
+        ],
+        [
+          51.163381576538086,
+          422.2614440917969
+        ]
+      ]
+    },
+    {
+      "title": "4 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.62042236328125,
+          296.95692443847656
+        ],
+        [
+          390.9609375,
+          296.95692443847656
+        ],
+        [
+          390.9609375,
+          309.18992614746094
+        ],
+        [
+          314.62042236328125,
+          309.18992614746094
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.9849319458008,
+          397.93592834472656
+        ],
+        [
+          372.3041076660156,
+          397.93592834472656
+        ],
+        [
+          372.3041076660156,
+          409.6110076904297
+        ],
+        [
+          313.9849319458008,
+          409.6110076904297
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          224
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          446
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          534
+        ],
+        [
+          "Line",
+          153
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          346
+        ],
+        [
+          "Line",
+          134
+        ],
+        [
+          "Reference",
+          13
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792912_Breaking_Semantic_Aware_Watermarks_via_LLM_Guided_Coherence_Preserving_Semantic_Injection"
+}

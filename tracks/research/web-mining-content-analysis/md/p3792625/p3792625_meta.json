@@ -1,0 +1,1093 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Is Misinformation More Open?\nA Study of robots.txt Gatekeeping on the Web",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          123.08723831176758,
+          79.62460899353027
+        ],
+        [
+          486.29942321777344,
+          79.62460899353027
+        ],
+        [
+          486.29942321777344,
+          119.63006591796875
+        ],
+        [
+          123.08723831176758,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.998952865600586,
+          183.32789611816406
+        ],
+        [
+          95.75615501403809,
+          183.32789611816406
+        ],
+        [
+          95.75615501403809,
+          197.73809814453125
+        ],
+        [
+          50.998952865600586,
+          197.73809814453125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.91836166381836,
+          460.66529846191406
+        ],
+        [
+          123.07078552246094,
+          460.66529846191406
+        ],
+        [
+          123.07078552246094,
+          474.42681884765625
+        ],
+        [
+          49.91836166381836,
+          474.42681884765625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.87343788146973,
+          506.8338317871094
+        ],
+        [
+          102.87803649902344,
+          506.8338317871094
+        ],
+        [
+          102.87803649902344,
+          520.9349670410156
+        ],
+        [
+          49.87343788146973,
+          520.9349670410156
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.38389015197754,
+          558.7353973388672
+        ],
+        [
+          141.46371459960938,
+          558.7353973388672
+        ],
+        [
+          141.46371459960938,
+          571.0211029052734
+        ],
+        [
+          50.38389015197754,
+          571.0211029052734
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.81151580810547,
+          650.7319793701172
+        ],
+        [
+          91.59235954284668,
+          650.7319793701172
+        ],
+        [
+          91.59235954284668,
+          662.7770233154297
+        ],
+        [
+          50.81151580810547,
+          662.7770233154297
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3286666870117,
+          221.47109985351562
+        ],
+        [
+          397.64927673339844,
+          221.47109985351562
+        ],
+        [
+          397.64927673339844,
+          235.89501953125
+        ],
+        [
+          314.3286666870117,
+          235.89501953125
+        ]
+      ]
+    },
+    {
+      "title": "2 Background and Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.00777435302734,
+          115.3802719116211
+        ],
+        [
+          486.3260498046875,
+          115.3802719116211
+        ],
+        [
+          486.3260498046875,
+          130.0244140625
+        ],
+        [
+          314.00777435302734,
+          130.0244140625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Robots.txt",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2215042114258,
+          163.2550277709961
+        ],
+        [
+          393.88050842285156,
+          163.2550277709961
+        ],
+        [
+          393.88050842285156,
+          177.447021484375
+        ],
+        [
+          314.2215042114258,
+          177.447021484375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.15828704833984,
+          440.41419982910156
+        ],
+        [
+          411.2445373535156,
+          440.41419982910156
+        ],
+        [
+          411.2445373535156,
+          455.0729675292969
+        ],
+        [
+          314.15828704833984,
+          455.0729675292969
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.027963638305664,
+          447.21070861816406
+        ],
+        [
+          135.65988159179688,
+          447.21070861816406
+        ],
+        [
+          135.65988159179688,
+          461.6534423828125
+        ],
+        [
+          51.027963638305664,
+          461.6534423828125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Reputable News and Misinformation\nWebsite Lists",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.063411712646484,
+          548.4722442626953
+        ],
+        [
+          260.8711853027344,
+          548.4722442626953
+        ],
+        [
+          260.8711853027344,
+          575.6210174560547
+        ],
+        [
+          51.063411712646484,
+          575.6210174560547
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Robots.txt Collection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.9050064086914,
+          364.31714630126953
+        ],
+        [
+          448.0921325683594,
+          364.31714630126953
+        ],
+        [
+          448.0921325683594,
+          378.3609924316406
+        ],
+        [
+          313.9050064086914,
+          378.3609924316406
+        ]
+      ]
+    },
+    {
+      "title": "3.3 AI Agents Collection",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.935312271118164,
+          406.0106964111328
+        ],
+        [
+          181.80093383789062,
+          406.0106964111328
+        ],
+        [
+          181.80093383789062,
+          420.4194641113281
+        ],
+        [
+          50.935312271118164,
+          420.4194641113281
+        ]
+      ]
+    },
+    {
+      "title": "4 Results",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.93568420410156,
+          606.1603088378906
+        ],
+        [
+          107.55528259277344,
+          606.1603088378906
+        ],
+        [
+          107.55528259277344,
+          620.2860107421875
+        ],
+        [
+          50.93568420410156,
+          620.2860107421875
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Prevalence of AI Agents-specific Directives",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.44126892089844,
+          253.95536041259766
+        ],
+        [
+          554.9486846923828,
+          253.95536041259766
+        ],
+        [
+          554.9486846923828,
+          268.83746337890625
+        ],
+        [
+          313.44126892089844,
+          268.83746337890625
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Restricted AI Agents",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.845333099365234,
+          594.248291015625
+        ],
+        [
+          181.46835708618164,
+          594.248291015625
+        ],
+        [
+          181.46835708618164,
+          608.5634460449219
+        ],
+        [
+          50.845333099365234,
+          608.5634460449219
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Active Blocking of AI Crawlers",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.9123840332031,
+          277.00794982910156
+        ],
+        [
+          496.275146484375,
+          277.00794982910156
+        ],
+        [
+          496.275146484375,
+          291.6124572753906
+        ],
+        [
+          314.9123840332031,
+          291.6124572753906
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Longitudinal Analysis of AI-Specific\nrobots.txt Directives",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          315.3512878417969,
+          482.3258514404297
+        ],
+        [
+          522.5891876220703,
+          482.3258514404297
+        ],
+        [
+          522.5891876220703,
+          509.86700439453125
+        ],
+        [
+          315.3512878417969,
+          509.86700439453125
+        ]
+      ]
+    },
+    {
+      "title": "5 Discussion",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.7334213256836,
+          439.42181396484375
+        ],
+        [
+          387.9928436279297,
+          439.42181396484375
+        ],
+        [
+          387.9928436279297,
+          452.9839782714844
+        ],
+        [
+          314.7334213256836,
+          452.9839782714844
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Implications",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.68187713623047,
+          495.62095642089844
+        ],
+        [
+          405.724365234375,
+          495.62095642089844
+        ],
+        [
+          405.724365234375,
+          509.8887939453125
+        ],
+        [
+          314.68187713623047,
+          509.8887939453125
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Limitations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.868879318237305,
+          424.2601776123047
+        ],
+        [
+          136.74956130981445,
+          424.2601776123047
+        ],
+        [
+          136.74956130981445,
+          437.9159851074219
+        ],
+        [
+          50.868879318237305,
+          437.9159851074219
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Ethics",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.95833778381348,
+          670.3222045898438
+        ],
+        [
+          109.27459716796875,
+          670.3222045898438
+        ],
+        [
+          109.27459716796875,
+          685.2099990844727
+        ],
+        [
+          50.95833778381348,
+          685.2099990844727
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.0163345336914,
+          485.28369140625
+        ],
+        [
+          390.9705047607422,
+          485.28369140625
+        ],
+        [
+          390.9705047607422,
+          498.90899658203125
+        ],
+        [
+          314.0163345336914,
+          498.90899658203125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.759599685668945,
+          83.30507469177246
+        ],
+        [
+          108.14713287353516,
+          83.30507469177246
+        ],
+        [
+          108.14713287353516,
+          96.16900634765625
+        ],
+        [
+          50.759599685668945,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Ranking of Reputable News and\nMisinformation Websites",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.07696533203125,
+          82.41510200500488
+        ],
+        [
+          496.21600341796875,
+          82.41510200500488
+        ],
+        [
+          496.21600341796875,
+          109.1199951171875
+        ],
+        [
+          314.07696533203125,
+          109.1199951171875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          296
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          354
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          291
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          324
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          313
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          264
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          691
+        ],
+        [
+          "Line",
+          86
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          514
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          47
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          105
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792625_Is_Misinformation_More_Open_A_Study_of_robots_txt_Gatekeeping_on_the_Web"
+}

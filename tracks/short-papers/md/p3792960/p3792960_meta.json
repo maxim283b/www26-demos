@@ -1,0 +1,644 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Agent-Enhanced Heterogeneous Graph RAG for Academic\nQuestion Answering",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          74.57621955871582,
+          78.96118927001953
+        ],
+        [
+          533.7622375488281,
+          78.96118927001953
+        ],
+        [
+          533.7622375488281,
+          119.63006591796875
+        ],
+        [
+          74.57621955871582,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.28978729248047,
+          241.83753204345703
+        ],
+        [
+          95.68587112426758,
+          241.83753204345703
+        ],
+        [
+          95.68587112426758,
+          255.75299072265625
+        ],
+        [
+          51.28978729248047,
+          255.75299072265625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.878089904785156,
+          473.97161865234375
+        ],
+        [
+          124.11165618896484,
+          473.97161865234375
+        ],
+        [
+          124.11165618896484,
+          488.38983154296875
+        ],
+        [
+          49.878089904785156,
+          488.38983154296875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.26225662231445,
+          521.227294921875
+        ],
+        [
+          103.29846954345703,
+          521.227294921875
+        ],
+        [
+          103.29846954345703,
+          534.6820068359375
+        ],
+        [
+          50.26225662231445,
+          534.6820068359375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.7495174407959,
+          560.8934326171875
+        ],
+        [
+          141.51870346069336,
+          560.8934326171875
+        ],
+        [
+          141.51870346069336,
+          573.3941040039062
+        ],
+        [
+          50.7495174407959,
+          573.3941040039062
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.863380432128906,
+          650.5669097900391
+        ],
+        [
+          91.13805770874023,
+          650.5669097900391
+        ],
+        [
+          91.13805770874023,
+          662.7394866943359
+        ],
+        [
+          50.863380432128906,
+          662.7394866943359
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.51605224609375,
+          241.6274871826172
+        ],
+        [
+          397.79832458496094,
+          241.6274871826172
+        ],
+        [
+          397.79832458496094,
+          255.75299072265625
+        ],
+        [
+          314.51605224609375,
+          255.75299072265625
+        ]
+      ]
+    },
+    {
+      "title": "How can we develop an agentic RAG method for Academic QA\nin heterogeneous scholarly graphs?",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.0541229248047,
+          481.2378387451172
+        ],
+        [
+          558.6617431640625,
+          481.2378387451172
+        ],
+        [
+          558.6617431640625,
+          505.7030334472656
+        ],
+        [
+          314.0541229248047,
+          505.7030334472656
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.83500099182129,
+          263.0808334350586
+        ],
+        [
+          143.68711853027344,
+          263.0808334350586
+        ],
+        [
+          143.68711853027344,
+          276.17303466796875
+        ],
+        [
+          51.83500099182129,
+          276.17303466796875
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.7173080444336,
+          84.26592636108398
+        ],
+        [
+          399.8291015625,
+          84.26592636108398
+        ],
+        [
+          399.8291015625,
+          96.23443603515625
+        ],
+        [
+          314.7173080444336,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Academic Heterogeneous Graph QA Setting",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5410690307617,
+          398.7267150878906
+        ],
+        [
+          562.9074554443359,
+          398.7267150878906
+        ],
+        [
+          562.9074554443359,
+          413.0734558105469
+        ],
+        [
+          314.5410690307617,
+          413.0734558105469
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Query-Aware Retrieval Agent",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3815612792969,
+          588.6595001220703
+        ],
+        [
+          489.1666259765625,
+          588.6595001220703
+        ],
+        [
+          489.1666259765625,
+          602.5164489746094
+        ],
+        [
+          314.3815612792969,
+          602.5164489746094
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Graph Retrieval and Sufficiency-Aware\nReranking Agent",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.036163330078125,
+          204.93516540527344
+        ],
+        [
+          271.1084976196289,
+          204.93516540527344
+        ],
+        [
+          271.1084976196289,
+          230.78045654296875
+        ],
+        [
+          51.036163330078125,
+          230.78045654296875
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Answer Generation and Graph-Grounded\nValidation Agent",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.870235443115234,
+          539.9910278320312
+        ],
+        [
+          284.37950134277344,
+          539.9910278320312
+        ],
+        [
+          284.37950134277344,
+          566.8274383544922
+        ],
+        [
+          50.870235443115234,
+          566.8274383544922
+        ]
+      ]
+    },
+    {
+      "title": "4 Experimental Setup",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.9692153930664,
+          191.9103012084961
+        ],
+        [
+          432.79811096191406,
+          191.9103012084961
+        ],
+        [
+          432.79811096191406,
+          205.331787109375
+        ],
+        [
+          314.9692153930664,
+          205.331787109375
+        ]
+      ]
+    },
+    {
+      "title": "5 Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.2520446777344,
+          501.27415466308594
+        ],
+        [
+          371.57091522216797,
+          501.27415466308594
+        ],
+        [
+          371.57091522216797,
+          515.0479736328125
+        ],
+        [
+          315.2520446777344,
+          515.0479736328125
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.561697006225586,
+          594.2714538574219
+        ],
+        [
+          126.77633285522461,
+          594.2714538574219
+        ],
+        [
+          126.77633285522461,
+          608.4980010986328
+        ],
+        [
+          50.561697006225586,
+          608.4980010986328
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.76609802246094,
+          82.8218936920166
+        ],
+        [
+          410.2653350830078,
+          82.8218936920166
+        ],
+        [
+          410.2653350830078,
+          96.23443603515625
+        ],
+        [
+          313.76609802246094,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.87195587158203,
+          150.5039176940918
+        ],
+        [
+          372.3041076660156,
+          150.5039176940918
+        ],
+        [
+          372.3041076660156,
+          163.9150390625
+        ],
+        [
+          313.87195587158203,
+          163.9150390625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          309
+        ],
+        [
+          "Line",
+          90
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          556
+        ],
+        [
+          "Line",
+          124
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          288
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Reference",
+          22
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792960_Agent_Enhanced_Heterogeneous_Graph_RAG_for_Academic_Question_Answering"
+}

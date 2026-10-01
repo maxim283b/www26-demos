@@ -1,0 +1,1489 @@
+{
+  "table_of_contents": [
+    {
+      "title": "How Green Is Your Login? A Cross-Protocol Benchmark of\nAuthentication Energy & Latency",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          73.65007781982422,
+          78.93363189697266
+        ],
+        [
+          535.5815277099609,
+          78.93363189697266
+        ],
+        [
+          535.5815277099609,
+          119.62994384765625
+        ],
+        [
+          73.65007781982422,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.885026931762695,
+          267.205810546875
+        ],
+        [
+          95.81620216369629,
+          267.205810546875
+        ],
+        [
+          95.81620216369629,
+          282.1609802246094
+        ],
+        [
+          50.885026931762695,
+          282.1609802246094
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.139204025268555,
+          546.8417816162109
+        ],
+        [
+          123.20601654052734,
+          546.8417816162109
+        ],
+        [
+          123.20601654052734,
+          561.497802734375
+        ],
+        [
+          50.139204025268555,
+          561.497802734375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.490806579589844,
+          561.554443359375
+        ],
+        [
+          246.38113403320312,
+          561.554443359375
+        ],
+        [
+          246.38113403320312,
+          573.7695922851562
+        ],
+        [
+          50.490806579589844,
+          573.7695922851562
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.69088363647461,
+          648.3362731933594
+        ],
+        [
+          91.31701469421387,
+          648.3362731933594
+        ],
+        [
+          91.31701469421387,
+          662.3932342529297
+        ],
+        [
+          50.69088363647461,
+          662.3932342529297
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.16991424560547,
+          268.01239013671875
+        ],
+        [
+          367.47338104248047,
+          268.01239013671875
+        ],
+        [
+          367.47338104248047,
+          282.1609802246094
+        ],
+        [
+          314.16991424560547,
+          282.1609802246094
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2605514526367,
+          313.8047561645508
+        ],
+        [
+          404.65252685546875,
+          313.8047561645508
+        ],
+        [
+          404.65252685546875,
+          326.66607666015625
+        ],
+        [
+          314.2605514526367,
+          326.66607666015625
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6023178100586,
+          396.47369384765625
+        ],
+        [
+          397.5361328125,
+          396.47369384765625
+        ],
+        [
+          397.5361328125,
+          411.23699951171875
+        ],
+        [
+          314.6023178100586,
+          411.23699951171875
+        ]
+      ]
+    },
+    {
+      "title": "2 Background & Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0109329223633,
+          81.8419246673584
+        ],
+        [
+          476.0809020996094,
+          81.8419246673584
+        ],
+        [
+          476.0809020996094,
+          96.23443603515625
+        ],
+        [
+          314.0109329223633,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Authentication Protocol Landscape",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.12129974365234,
+          97.36870193481445
+        ],
+        [
+          516.5643310546875,
+          97.36870193481445
+        ],
+        [
+          516.5643310546875,
+          111.88177490234375
+        ],
+        [
+          314.12129974365234,
+          111.88177490234375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Web Energy Consumption & Sustainability",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2495422363281,
+          636.9609375
+        ],
+        [
+          556.1144256591797,
+          636.9609375
+        ],
+        [
+          556.1144256591797,
+          652.3984222412109
+        ],
+        [
+          314.2495422363281,
+          652.3984222412109
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Authentication Performance Studies",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.704851150512695,
+          328.72350311279297
+        ],
+        [
+          259.36104583740234,
+          328.72350311279297
+        ],
+        [
+          259.36104583740234,
+          343.11798095703125
+        ],
+        [
+          50.704851150512695,
+          343.11798095703125
+        ]
+      ]
+    },
+    {
+      "title": "3 Measurement Scope & Protocol Selection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.40035438537598,
+          556.6971130371094
+        ],
+        [
+          272.8246536254883,
+          556.6971130371094
+        ],
+        [
+          272.8246536254883,
+          570.9107971191406
+        ],
+        [
+          51.40035438537598,
+          570.9107971191406
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Research Scope",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.07843780517578,
+          573.0959930419922
+        ],
+        [
+          155.03839874267578,
+          573.0959930419922
+        ],
+        [
+          155.03839874267578,
+          586.6017913818359
+        ],
+        [
+          51.07843780517578,
+          586.6017913818359
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Target Deployment Scenarios",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.96453857421875,
+          268.3158187866211
+        ],
+        [
+          488.2477111816406,
+          268.3158187866211
+        ],
+        [
+          488.2477111816406,
+          282.1474304199219
+        ],
+        [
+          313.96453857421875,
+          282.1474304199219
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Assumptions & Limitations",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.18115234375,
+          528.758056640625
+        ],
+        [
+          478.4857177734375,
+          528.758056640625
+        ],
+        [
+          478.4857177734375,
+          542.7657775878906
+        ],
+        [
+          314.18115234375,
+          542.7657775878906
+        ]
+      ]
+    },
+    {
+      "title": "4 Methodology & Benchmark Design",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.55465316772461,
+          169.1777114868164
+        ],
+        [
+          243.43274688720703,
+          169.1777114868164
+        ],
+        [
+          243.43274688720703,
+          183.0294189453125
+        ],
+        [
+          50.55465316772461,
+          183.0294189453125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 AuthBench Architecture",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.710487365722656,
+          258.2998809814453
+        ],
+        [
+          199.6404266357422,
+          258.2998809814453
+        ],
+        [
+          199.6404266357422,
+          272.49798583984375
+        ],
+        [
+          50.710487365722656,
+          272.49798583984375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Protocol Scenarios",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.07737731933594,
+          156.1336326599121
+        ],
+        [
+          434.1794738769531,
+          156.1336326599121
+        ],
+        [
+          434.1794738769531,
+          170.1409912109375
+        ],
+        [
+          314.07737731933594,
+          170.1409912109375
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Cryptographic Implementation Details",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.80961608886719,
+          319.3574981689453
+        ],
+        [
+          272.0243911743164,
+          319.3574981689453
+        ],
+        [
+          272.0243911743164,
+          332.9984130859375
+        ],
+        [
+          50.80961608886719,
+          332.9984130859375
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Network Profiles & Fault Model",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.55476188659668,
+          551.7876434326172
+        ],
+        [
+          235.03976440429688,
+          551.7876434326172
+        ],
+        [
+          235.03976440429688,
+          566.2799682617188
+        ],
+        [
+          50.55476188659668,
+          566.2799682617188
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Metrics & Energy Estimation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.4009246826172,
+          560.9501037597656
+        ],
+        [
+          485.45558166503906,
+          560.9501037597656
+        ],
+        [
+          485.45558166503906,
+          575.6864318847656
+        ],
+        [
+          314.4009246826172,
+          575.6864318847656
+        ]
+      ]
+    },
+    {
+      "title": "5 Results and Experimental Setup",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.92938423156738,
+          447.0735168457031
+        ],
+        [
+          229.71212768554688,
+          447.0735168457031
+        ],
+        [
+          229.71212768554688,
+          461.3218078613281
+        ],
+        [
+          50.92938423156738,
+          461.3218078613281
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Configuration",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.29263114929199,
+          463.62611389160156
+        ],
+        [
+          219.31949615478516,
+          463.62611389160156
+        ],
+        [
+          219.31949615478516,
+          477.0564270019531
+        ],
+        [
+          51.29263114929199,
+          477.0564270019531
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Latency Performance Across Network\nConditions",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.0748596191406,
+          427.89674377441406
+        ],
+        [
+          531.4532775878906,
+          427.89674377441406
+        ],
+        [
+          531.4532775878906,
+          455.072998046875
+        ],
+        [
+          314.0748596191406,
+          455.072998046875
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Resource Consumption Breakdown",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.27633476257324,
+          638.1497497558594
+        ],
+        [
+          254.93312072753906,
+          638.1497497558594
+        ],
+        [
+          254.93312072753906,
+          652.3547821044922
+        ],
+        [
+          51.27633476257324,
+          652.3547821044922
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Incremental Security Enhancement Costs",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.0192642211914,
+          660.2562561035156
+        ],
+        [
+          551.0884552001953,
+          660.2562561035156
+        ],
+        [
+          551.0884552001953,
+          674.2509841918945
+        ],
+        [
+          314.0192642211914,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Performance Variability and Distribution\nAnalysis",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.73551559448242,
+          424.1712341308594
+        ],
+        [
+          284.0591125488281,
+          424.1712341308594
+        ],
+        [
+          284.0591125488281,
+          450.8509826660156
+        ],
+        [
+          50.73551559448242,
+          450.8509826660156
+        ]
+      ]
+    },
+    {
+      "title": "5.6 Multi-Dimensional Tradeoff Analysis",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.98733711242676,
+          583.0789489746094
+        ],
+        [
+          263.9911651611328,
+          583.0789489746094
+        ],
+        [
+          263.9911651611328,
+          597.5389709472656
+        ],
+        [
+          50.98733711242676,
+          597.5389709472656
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2253723144531,
+          408.8191223144531
+        ],
+        [
+          391.1979675292969,
+          408.8191223144531
+        ],
+        [
+          391.1979675292969,
+          422.3190002441406
+        ],
+        [
+          314.2253723144531,
+          422.3190002441406
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.16448974609375,
+          585.6747436523438
+        ],
+        [
+          410.1836700439453,
+          585.6747436523438
+        ],
+        [
+          410.1836700439453,
+          599.7194366455078
+        ],
+        [
+          314.16448974609375,
+          599.7194366455078
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.9047908782959,
+          82.77716445922852
+        ],
+        [
+          108.24708938598633,
+          82.77716445922852
+        ],
+        [
+          108.24708938598633,
+          96.1689453125
+        ],
+        [
+          50.9047908782959,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "A Discussion & Design Guidelines",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.80563926696777,
+          81.53855323791504
+        ],
+        [
+          229.31288146972656,
+          81.53855323791504
+        ],
+        [
+          229.31288146972656,
+          96.23443603515625
+        ],
+        [
+          50.80563926696777,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "A.1 Scenario-Driven Protocol Selection",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.82961463928223,
+          160.43531799316406
+        ],
+        [
+          253.3018035888672,
+          160.43531799316406
+        ],
+        [
+          253.3018035888672,
+          174.87396240234375
+        ],
+        [
+          50.82961463928223,
+          174.87396240234375
+        ]
+      ]
+    },
+    {
+      "title": "Key decision factors:",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          60.29776382446289,
+          208.68759155273438
+        ],
+        [
+          147.8621063232422,
+          208.68759155273438
+        ],
+        [
+          147.8621063232422,
+          221.0001220703125
+        ],
+        [
+          60.29776382446289,
+          221.0001220703125
+        ]
+      ]
+    },
+    {
+      "title": "A.2 Design Principles for Sustainable\nAuthentication",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.58083724975586,
+          438.0688934326172
+        ],
+        [
+          244.70550537109375,
+          438.0688934326172
+        ],
+        [
+          244.70550537109375,
+          465.7080078125
+        ],
+        [
+          50.58083724975586,
+          465.7080078125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.7619514465332,
+          623.7695159912109
+        ],
+        [
+          295.6764678955078,
+          623.7695159912109
+        ],
+        [
+          295.6764678955078,
+          647.1139526367188
+        ],
+        [
+          50.7619514465332,
+          647.1139526367188
+        ]
+      ]
+    },
+    {
+      "title": "3. Energy-aware token lifetimes and refresh strategies.",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          325.29224395751953,
+          82.72838973999023
+        ],
+        [
+          550.5681610107422,
+          82.72838973999023
+        ],
+        [
+          550.5681610107422,
+          95.77392578125
+        ],
+        [
+          325.29224395751953,
+          95.77392578125
+        ]
+      ]
+    },
+    {
+      "title": "A.3 Regulatory and Standards Alignment",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.25936126708984,
+          283.68580627441406
+        ],
+        [
+          529.1239471435547,
+          283.68580627441406
+        ],
+        [
+          529.1239471435547,
+          298.50042724609375
+        ],
+        [
+          314.25936126708984,
+          298.50042724609375
+        ]
+      ]
+    },
+    {
+      "title": "A.4 Key Findings and Implications",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.67406463623047,
+          439.3027038574219
+        ],
+        [
+          496.6219482421875,
+          439.3027038574219
+        ],
+        [
+          496.6219482421875,
+          453.91741943359375
+        ],
+        [
+          313.67406463623047,
+          453.91741943359375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          231
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          329
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          314
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          377
+        ],
+        [
+          "Line",
+          130
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          314
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          293
+        ],
+        [
+          "Line",
+          86
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          202
+        ],
+        [
+          "Line",
+          83
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          177
+        ],
+        [
+          "Line",
+          67
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          450
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Reference",
+          40
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          355
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "ListItem",
+          16
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "ListGroup",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          198
+        ],
+        [
+          "Line",
+          69
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "TableGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793017_How_Green_Is_Your_Login_A_Cross_Protocol_Benchmark_of_Authentication_Energy_Latency"
+}

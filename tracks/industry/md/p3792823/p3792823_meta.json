@@ -1,0 +1,1095 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Improving Multi Task Recommendations via Cross User Learning\nwith a Hybrid Pointwise and Pairwise Ranking Loss",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.043521881103516,
+          79.64880180358887
+        ],
+        [
+          558.9393310546875,
+          79.64880180358887
+        ],
+        [
+          558.9393310546875,
+          119.62994384765625
+        ],
+        [
+          51.043521881103516,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.103769302368164,
+          260.64678955078125
+        ],
+        [
+          95.72398567199707,
+          260.64678955078125
+        ],
+        [
+          95.72398567199707,
+          272.44798278808594
+        ],
+        [
+          51.103769302368164,
+          272.44798278808594
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.59631538391113,
+          525.2818450927734
+        ],
+        [
+          123.54717636108398,
+          525.2818450927734
+        ],
+        [
+          123.54717636108398,
+          539.6617889404297
+        ],
+        [
+          50.59631538391113,
+          539.6617889404297
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.45244598388672,
+          559.9124450683594
+        ],
+        [
+          103.0246696472168,
+          559.9124450683594
+        ],
+        [
+          103.0246696472168,
+          574.7179718017578
+        ],
+        [
+          50.45244598388672,
+          574.7179718017578
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.7132453918457,
+          600.2302551269531
+        ],
+        [
+          140.4955596923828,
+          600.2302551269531
+        ],
+        [
+          140.4955596923828,
+          611.7767944335938
+        ],
+        [
+          50.7132453918457,
+          611.7767944335938
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.82444763183594,
+          316.78621673583984
+        ],
+        [
+          397.5361328125,
+          316.78621673583984
+        ],
+        [
+          397.5361328125,
+          328.8684997558594
+        ],
+        [
+          314.82444763183594,
+          328.8684997558594
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.8586120605469,
+          82.13102531433105
+        ],
+        [
+          407.7990417480469,
+          82.13102531433105
+        ],
+        [
+          407.7990417480469,
+          94.90374183654785
+        ],
+        [
+          313.8586120605469,
+          94.90374183654785
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Multi-Objective Recommendation with\nBinary Cross Entropy",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.9985046386719,
+          97.92839813232422
+        ],
+        [
+          538.2346343994141,
+          97.92839813232422
+        ],
+        [
+          538.2346343994141,
+          124.832763671875
+        ],
+        [
+          313.9985046386719,
+          124.832763671875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Ranking Loss in Modern Recommendation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.02013397216797,
+          363.75677490234375
+        ],
+        [
+          555.9866638183594,
+          363.75677490234375
+        ],
+        [
+          555.9866638183594,
+          378.4264221191406
+        ],
+        [
+          314.02013397216797,
+          378.4264221191406
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.85778999328613,
+          237.81793212890625
+        ],
+        [
+          135.6591339111328,
+          237.81793212890625
+        ],
+        [
+          135.6591339111328,
+          251.2974853515625
+        ],
+        [
+          50.85778999328613,
+          251.2974853515625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Dataset and Sampling",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.836904525756836,
+          253.26296997070312
+        ],
+        [
+          186.49261093139648,
+          253.26296997070312
+        ],
+        [
+          186.49261093139648,
+          266.98846435546875
+        ],
+        [
+          50.836904525756836,
+          266.98846435546875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Pointwise BCE Loss",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.00325012207031,
+          670.6830596923828
+        ],
+        [
+          176.73859405517578,
+          670.6830596923828
+        ],
+        [
+          176.73859405517578,
+          683.2652893066406
+        ],
+        [
+          51.00325012207031,
+          683.2652893066406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          378.0427551269531,
+          635.5205841064453
+        ],
+        [
+          492.2727355957031,
+          635.5205841064453
+        ],
+        [
+          492.2727355957031,
+          647.8948974609375
+        ],
+        [
+          378.0427551269531,
+          647.8948974609375
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Pairwise Ranking Loss",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.92782211303711,
+          311.9149703979492
+        ],
+        [
+          190.93593978881836,
+          311.9149703979492
+        ],
+        [
+          190.93593978881836,
+          326.0644226074219
+        ],
+        [
+          50.92782211303711,
+          326.0644226074219
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Pair Construction",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.02860450744629,
+          403.0095520019531
+        ],
+        [
+          167.18758392333984,
+          403.0095520019531
+        ],
+        [
+          167.18758392333984,
+          414.94354248046875
+        ],
+        [
+          51.02860450744629,
+          414.94354248046875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.83783149719238,
+          83.50639915466309
+        ],
+        [
+          235.83792114257812,
+          83.50639915466309
+        ],
+        [
+          235.83792114257812,
+          95.15943145751953
+        ],
+        [
+          50.83783149719238,
+          95.15943145751953
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.8066864013672,
+          606.1599426269531
+        ],
+        [
+          416.56883239746094,
+          606.1599426269531
+        ],
+        [
+          416.56883239746094,
+          617.8236236572266
+        ],
+        [
+          314.8066864013672,
+          617.8236236572266
+        ]
+      ]
+    },
+    {
+      "title": "3.7 Per-User Weighting",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.79487609863281,
+          626.6831359863281
+        ],
+        [
+          176.67892456054688,
+          626.6831359863281
+        ],
+        [
+          176.67892456054688,
+          641.4394378662109
+        ],
+        [
+          50.79487609863281,
+          641.4394378662109
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.4387264251709,
+          349.65543365478516
+        ],
+        [
+          266.0383529663086,
+          349.65543365478516
+        ],
+        [
+          266.0383529663086,
+          373.5765151977539
+        ],
+        [
+          51.4387264251709,
+          373.5765151977539
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          315.0841369628906,
+          359.7190933227539
+        ],
+        [
+          397.9617919921875,
+          359.7190933227539
+        ],
+        [
+          397.9617919921875,
+          371.46986389160156
+        ],
+        [
+          315.0841369628906,
+          371.46986389160156
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.3877639770508,
+          659.6964569091797
+        ],
+        [
+          556.6455688476562,
+          659.6964569091797
+        ],
+        [
+          556.6455688476562,
+          672.4268188476562
+        ],
+        [
+          314.3877639770508,
+          672.4268188476562
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experiment on Home Feed Pre-ranking\nModel",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.986948013305664,
+          500.0592956542969
+        ],
+        [
+          274.2329635620117,
+          500.0592956542969
+        ],
+        [
+          274.2329635620117,
+          525.5281677246094
+        ],
+        [
+          50.986948013305664,
+          525.5281677246094
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Experiment on Notifications Ranking Model",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2840576171875,
+          279.5869445800781
+        ],
+        [
+          559.2621917724609,
+          279.5869445800781
+        ],
+        [
+          559.2621917724609,
+          294.326416015625
+        ],
+        [
+          314.2840576171875,
+          294.326416015625
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.4532470703125,
+          503.3268127441406
+        ],
+        [
+          390.8489074707031,
+          503.3268127441406
+        ],
+        [
+          390.8489074707031,
+          515.4292602539062
+        ],
+        [
+          314.4532470703125,
+          515.4292602539062
+        ]
+      ]
+    },
+    {
+      "title": "6 Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.10044860839844,
+          648.7822265625
+        ],
+        [
+          426.9179992675781,
+          648.7822265625
+        ],
+        [
+          426.9179992675781,
+          663.3574371337891
+        ],
+        [
+          314.10044860839844,
+          663.3574371337891
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.89164161682129,
+          82.73844909667969
+        ],
+        [
+          108.20785903930664,
+          82.73844909667969
+        ],
+        [
+          108.20785903930664,
+          93.8675537109375
+        ],
+        [
+          50.89164161682129,
+          93.8675537109375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          229
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          305
+        ],
+        [
+          "Line",
+          88
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          335
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "Equation",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          211
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          15
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          267
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Table",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "TableGroup",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          303
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Reference",
+          26
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792823_Improving_Multi_Task_Recommendations_via_Cross_User_Learning_with_a_Hybrid_Pointwise_and_Pairwise_Ra"
+}

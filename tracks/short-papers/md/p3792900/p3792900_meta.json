@@ -1,0 +1,494 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Is More Context Always Better? Examining LLM Reasoning\nCapability for Time Interval Prediction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.49200248718262,
+          79.43499183654785
+        ],
+        [
+          538.5667877197266,
+          79.43499183654785
+        ],
+        [
+          538.5667877197266,
+          119.61279296875
+        ],
+        [
+          71.49200248718262,
+          119.61279296875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.38846206665039,
+          361.593017578125
+        ],
+        [
+          95.59344863891602,
+          361.593017578125
+        ],
+        [
+          95.59344863891602,
+          374.9060363769531
+        ],
+        [
+          50.38846206665039,
+          374.9060363769531
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.85202217102051,
+          649.4540405273438
+        ],
+        [
+          92.82707977294922,
+          649.4540405273438
+        ],
+        [
+          92.82707977294922,
+          662.8630828857422
+        ],
+        [
+          50.85202217102051,
+          662.8630828857422
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.7013244628906,
+          361.26473236083984
+        ],
+        [
+          387.9571838378906,
+          361.26473236083984
+        ],
+        [
+          387.9571838378906,
+          374.92779541015625
+        ],
+        [
+          313.7013244628906,
+          374.92779541015625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.9559783935547,
+          408.88458251953125
+        ],
+        [
+          367.23170471191406,
+          408.88458251953125
+        ],
+        [
+          367.23170471191406,
+          422.9639892578125
+        ],
+        [
+          313.9559783935547,
+          422.9639892578125
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.92533111572266,
+          441.5019836425781
+        ],
+        [
+          404.65362548828125,
+          441.5019836425781
+        ],
+        [
+          404.65362548828125,
+          454.0760803222656
+        ],
+        [
+          313.92533111572266,
+          454.0760803222656
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4148635864258,
+          539.0070190429688
+        ],
+        [
+          397.7622985839844,
+          539.0070190429688
+        ],
+        [
+          397.7622985839844,
+          553.7029876708984
+        ],
+        [
+          314.4148635864258,
+          553.7029876708984
+        ]
+      ]
+    },
+    {
+      "title": "2 Experimental Setting",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.6279983520508,
+          311.7312469482422
+        ],
+        [
+          439.5365753173828,
+          311.7312469482422
+        ],
+        [
+          439.5365753173828,
+          326.74444580078125
+        ],
+        [
+          314.6279983520508,
+          326.74444580078125
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Datasets",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5397644042969,
+          327.5743103027344
+        ],
+        [
+          384.24957275390625,
+          327.5743103027344
+        ],
+        [
+          384.24957275390625,
+          342.3710021972656
+        ],
+        [
+          314.5397644042969,
+          342.3710021972656
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Models",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5635452270508,
+          473.26075744628906
+        ],
+        [
+          378.3944320678711,
+          473.26075744628906
+        ],
+        [
+          378.3944320678711,
+          487.9499816894531
+        ],
+        [
+          314.5635452270508,
+          487.9499816894531
+        ]
+      ]
+    },
+    {
+      "title": "3 Experimental Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.18322563171387,
+          670.1990661621094
+        ],
+        [
+          178.31641387939453,
+          670.1990661621094
+        ],
+        [
+          178.31641387939453,
+          685.231819152832
+        ],
+        [
+          51.18322563171387,
+          685.231819152832
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Main Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.5462188720703,
+          137.48407745361328
+        ],
+        [
+          408.42974853515625,
+          137.48407745361328
+        ],
+        [
+          408.42974853515625,
+          150.11102294921875
+        ],
+        [
+          314.5462188720703,
+          150.11102294921875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.57189178466797,
+          308.22310638427734
+        ],
+        [
+          372.3041076660156,
+          308.22310638427734
+        ],
+        [
+          372.3041076660156,
+          322.2460021972656
+        ],
+        [
+          313.57189178466797,
+          322.2460021972656
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          19
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          206
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          210
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          271
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Reference",
+          15
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792900_Is_More_Context_Always_Better_Examining_LLM_Reasoning_Capability_for_Time_Interval_Prediction"
+}

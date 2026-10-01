@@ -1,0 +1,1581 @@
+{
+  "table_of_contents": [
+    {
+      "title": "coTherapist: A Behavior-Aligned Small Language Model\nFramework to Support Mental Healthcare Experts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          84.54647254943848,
+          79.48047637939453
+        ],
+        [
+          525.1152954101562,
+          79.48047637939453
+        ],
+        [
+          525.1152954101562,
+          119.59552001953125
+        ],
+        [
+          84.54647254943848,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.64591407775879,
+          182.87606048583984
+        ],
+        [
+          95.91207504272461,
+          182.87606048583984
+        ],
+        [
+          95.91207504272461,
+          197.677978515625
+        ],
+        [
+          50.64591407775879,
+          197.677978515625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.67795181274414,
+          394.7998809814453
+        ],
+        [
+          123.5181770324707,
+          394.7998809814453
+        ],
+        [
+          123.5181770324707,
+          408.91082763671875
+        ],
+        [
+          50.67795181274414,
+          408.91082763671875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.7030029296875,
+          452.43919372558594
+        ],
+        [
+          103.04476547241211,
+          452.43919372558594
+        ],
+        [
+          103.04476547241211,
+          466.6759948730469
+        ],
+        [
+          50.7030029296875,
+          466.6759948730469
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.85174751281738,
+          494.23109436035156
+        ],
+        [
+          140.59514236450195,
+          494.23109436035156
+        ],
+        [
+          140.59514236450195,
+          506.3770751953125
+        ],
+        [
+          50.85174751281738,
+          506.3770751953125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.16613960266113,
+          566.7825164794922
+        ],
+        [
+          133.379150390625,
+          566.7825164794922
+        ],
+        [
+          133.379150390625,
+          581.3409881591797
+        ],
+        [
+          51.16613960266113,
+          581.3409881591797
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.8583869934082,
+          649.8677673339844
+        ],
+        [
+          91.40237617492676,
+          649.8677673339844
+        ],
+        [
+          91.40237617492676,
+          662.5196228027344
+        ],
+        [
+          51.8583869934082,
+          662.5196228027344
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.1446533203125,
+          593.6157531738281
+        ],
+        [
+          138.6562271118164,
+          593.6157531738281
+        ],
+        [
+          138.6562271118164,
+          608.4979705810547
+        ],
+        [
+          51.1446533203125,
+          608.4979705810547
+        ]
+      ]
+    },
+    {
+      "title": "3 Dataset: Psychotherapy Knowledge Corpus",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.9240493774414,
+          408.2024688720703
+        ],
+        [
+          548.4488983154297,
+          408.2024688720703
+        ],
+        [
+          548.4488983154297,
+          422.26141357421875
+        ],
+        [
+          313.9240493774414,
+          422.26141357421875
+        ]
+      ]
+    },
+    {
+      "title": "4 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.94439697265625,
+          593.3183898925781
+        ],
+        [
+          399.81610107421875,
+          593.3183898925781
+        ],
+        [
+          399.81610107421875,
+          608.5634460449219
+        ],
+        [
+          313.94439697265625,
+          608.5634460449219
+        ]
+      ]
+    },
+    {
+      "title": "Domain-Adaptive Pretraining (DAP)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.44882392883301,
+          593.4037628173828
+        ],
+        [
+          233.38417053222656,
+          593.4037628173828
+        ],
+        [
+          233.38417053222656,
+          608.5634307861328
+        ],
+        [
+          50.44882392883301,
+          608.5634307861328
+        ]
+      ]
+    },
+    {
+      "title": "LoRA Fine-Tuning for Style",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.1806640625,
+          434.3466796875
+        ],
+        [
+          454.6848907470703,
+          434.3466796875
+        ],
+        [
+          454.6848907470703,
+          448.8614196777344
+        ],
+        [
+          313.1806640625,
+          448.8614196777344
+        ]
+      ]
+    },
+    {
+      "title": "Self-Instruction Tuning",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.7834930419922,
+          530.0343475341797
+        ],
+        [
+          435.81056213378906,
+          530.0343475341797
+        ],
+        [
+          435.81056213378906,
+          545.1504364013672
+        ],
+        [
+          313.7834930419922,
+          545.1504364013672
+        ]
+      ]
+    },
+    {
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.6006393432617,
+          626.1572113037109
+        ],
+        [
+          516.1926727294922,
+          626.1572113037109
+        ],
+        [
+          516.1926727294922,
+          641.4394378662109
+        ],
+        [
+          313.6006393432617,
+          641.4394378662109
+        ]
+      ]
+    },
+    {
+      "title": "Combining LoRA and RAG",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.39755439758301,
+          348.5182800292969
+        ],
+        [
+          187.8339729309082,
+          348.5182800292969
+        ],
+        [
+          187.8339729309082,
+          363.3124084472656
+        ],
+        [
+          50.39755439758301,
+          363.3124084472656
+        ]
+      ]
+    },
+    {
+      "title": "The coTherapist Framework",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.455501556396484,
+          451.02589416503906
+        ],
+        [
+          195.47335815429688,
+          451.02589416503906
+        ],
+        [
+          195.47335815429688,
+          466.031982421875
+        ],
+        [
+          50.455501556396484,
+          466.031982421875
+        ]
+      ]
+    },
+    {
+      "title": "5 Evaluation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.27398681640625,
+          659.5260772705078
+        ],
+        [
+          388.50160217285156,
+          659.5260772705078
+        ],
+        [
+          388.50160217285156,
+          674.2509841918945
+        ],
+        [
+          314.27398681640625,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Automatic Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.504167556762695,
+          191.5129737854004
+        ],
+        [
+          186.9095916748047,
+          191.5129737854004
+        ],
+        [
+          186.9095916748047,
+          205.50897216796875
+        ],
+        [
+          50.504167556762695,
+          205.50897216796875
+        ]
+      ]
+    },
+    {
+      "title": "5.2 T-BARS: Therapist Behavior Rating Scale",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.39191818237305,
+          313.9325866699219
+        ],
+        [
+          275.54522705078125,
+          313.9325866699219
+        ],
+        [
+          275.54522705078125,
+          328.6124267578125
+        ],
+        [
+          50.39191818237305,
+          328.6124267578125
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Personality and Psychometric Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.6758499145508,
+          340.7465057373047
+        ],
+        [
+          536.1426086425781,
+          340.7465057373047
+        ],
+        [
+          536.1426086425781,
+          355.6999816894531
+        ],
+        [
+          313.6758499145508,
+          355.6999816894531
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Human Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.9983901977539,
+          528.8993682861328
+        ],
+        [
+          436.72247314453125,
+          528.8993682861328
+        ],
+        [
+          436.72247314453125,
+          544.0439605712891
+        ],
+        [
+          313.9983901977539,
+          544.0439605712891
+        ]
+      ]
+    },
+    {
+      "title": "6 Experimental Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.114498138427734,
+          327.2359085083008
+        ],
+        [
+          177.25534057617188,
+          327.2359085083008
+        ],
+        [
+          177.25534057617188,
+          340.5968017578125
+        ],
+        [
+          51.114498138427734,
+          340.5968017578125
+        ]
+      ]
+    },
+    {
+      "title": "7 Deployment and Privacy",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.774831771850586,
+          508.81004333496094
+        ],
+        [
+          192.4404754638672,
+          508.81004333496094
+        ],
+        [
+          192.4404754638672,
+          524.0867919921875
+        ],
+        [
+          50.774831771850586,
+          524.0867919921875
+        ]
+      ]
+    },
+    {
+      "title": "8 Conclusion and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.6179656982422,
+          378.15394592285156
+        ],
+        [
+          478.0234680175781,
+          378.15394592285156
+        ],
+        [
+          478.0234680175781,
+          392.6559753417969
+        ],
+        [
+          313.6179656982422,
+          392.6559753417969
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgment",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.1895294189453,
+          615.2238464355469
+        ],
+        [
+          405.6210021972656,
+          615.2238464355469
+        ],
+        [
+          405.6210021972656,
+          630.4804382324219
+        ],
+        [
+          314.1895294189453,
+          630.4804382324219
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.45647430419922,
+          82.87218475341797
+        ],
+        [
+          108.13942337036133,
+          82.87218475341797
+        ],
+        [
+          108.13942337036133,
+          94.20952606201172
+        ],
+        [
+          50.45647430419922,
+          94.20952606201172
+        ]
+      ]
+    },
+    {
+      "title": "A Prompts & Responses",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.1494255065918,
+          82.86631965637207
+        ],
+        [
+          180.7939910888672,
+          82.86631965637207
+        ],
+        [
+          180.7939910888672,
+          96.1907958984375
+        ],
+        [
+          51.1494255065918,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "A.1 System Prompts and Agent Specification",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.13047981262207,
+          98.37062072753906
+        ],
+        [
+          281.1715393066406,
+          98.37062072753906
+        ],
+        [
+          281.1715393066406,
+          111.9254150390625
+        ],
+        [
+          51.13047981262207,
+          111.9254150390625
+        ]
+      ]
+    },
+    {
+      "title": "Agentic pipeline configuration.",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.687801361083984,
+          244.35921478271484
+        ],
+        [
+          180.15557861328125,
+          244.35921478271484
+        ],
+        [
+          180.15557861328125,
+          256.669921875
+        ],
+        [
+          51.687801361083984,
+          256.669921875
+        ]
+      ]
+    },
+    {
+      "title": "A.2 Therapist Reference Questions",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.68006896972656,
+          351.69234466552734
+        ],
+        [
+          498.251953125,
+          351.69234466552734
+        ],
+        [
+          498.251953125,
+          365.8238220214844
+        ],
+        [
+          314.68006896972656,
+          365.8238220214844
+        ]
+      ]
+    },
+    {
+      "title": "A.3 Qualitative Outputs by Model Variant",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.2873992919922,
+          456.19386291503906
+        ],
+        [
+          532.5932464599609,
+          456.19386291503906
+        ],
+        [
+          532.5932464599609,
+          472.1139221191406
+        ],
+        [
+          314.2873992919922,
+          472.1139221191406
+        ]
+      ]
+    },
+    {
+      "title": "Base Model (LLaMA 3.1-8B-Instruct).",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.4166259765625,
+          471.4113006591797
+        ],
+        [
+          467.3913269042969,
+          471.4113006591797
+        ],
+        [
+          467.3913269042969,
+          483.8606872558594
+        ],
+        [
+          314.4166259765625,
+          483.8606872558594
+        ]
+      ]
+    },
+    {
+      "title": "Domain-Adaptive Pretraining (LLaMA-DAP).",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.02352142333984,
+          563.9631958007812
+        ],
+        [
+          499.9547424316406,
+          563.9631958007812
+        ],
+        [
+          499.9547424316406,
+          577.9659271240234
+        ],
+        [
+          314.02352142333984,
+          577.9659271240234
+        ]
+      ]
+    },
+    {
+      "title": "LoRA Adapter for Therapist Tone Injection (LLaMA-Tone).\nLevel: Uses therapist tone. Feels like another clinician speaking\ncasually.",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.578474044799805,
+          83.36289024353027
+        ],
+        [
+          294.5935363769531,
+          83.36289024353027
+        ],
+        [
+          294.5935363769531,
+          117.63818359375
+        ],
+        [
+          50.578474044799805,
+          117.63818359375
+        ]
+      ]
+    },
+    {
+      "title": "A.3.1 Self-Instruction for Guiding the Model (LLaMA-Guide).\nLevel: Structured and goal aligned, but sometimes terse.",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.289024353027344,
+          230.22006225585938
+        ],
+        [
+          296.56201171875,
+          230.22006225585938
+        ],
+        [
+          296.56201171875,
+          254.5869140625
+        ],
+        [
+          50.289024353027344,
+          254.5869140625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          61.31576156616211,
+          355.1986312866211
+        ],
+        [
+          145.69512176513672,
+          355.1986312866211
+        ],
+        [
+          145.69512176513672,
+          366.52420806884766
+        ],
+        [
+          61.31576156616211,
+          366.52420806884766
+        ]
+      ]
+    },
+    {
+      "title": "A.3.2 Retrieval-Augmented Generation (LLaMA-RAG).",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.5242805480957,
+          427.09039306640625
+        ],
+        [
+          277.84039306640625,
+          427.09039306640625
+        ],
+        [
+          277.84039306640625,
+          441.0709228515625
+        ],
+        [
+          50.5242805480957,
+          441.0709228515625
+        ]
+      ]
+    },
+    {
+      "title": "A.3.3 LoRA + RAG (TG-RAG).",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.25995635986328,
+          586.7056274414062
+        ],
+        [
+          175.7086944580078,
+          586.7056274414062
+        ],
+        [
+          175.7086944580078,
+          599.8829345703125
+        ],
+        [
+          50.25995635986328,
+          599.8829345703125
+        ]
+      ]
+    },
+    {
+      "title": "A.3.4 coTherapist (Agentic Reasoning + LoRA + RAG).",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          313.93702697753906,
+          82.67134094238281
+        ],
+        [
+          538.7427978515625,
+          82.67134094238281
+        ],
+        [
+          538.7427978515625,
+          95.77392578125
+        ],
+        [
+          313.93702697753906,
+          95.77392578125
+        ]
+      ]
+    },
+    {
+      "title": "A.4 T-BARS Evaluation Judge",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.2508239746094,
+          344.57652282714844
+        ],
+        [
+          464.91119384765625,
+          344.57652282714844
+        ],
+        [
+          464.91119384765625,
+          358.50042724609375
+        ],
+        [
+          314.2508239746094,
+          358.50042724609375
+        ]
+      ]
+    },
+    {
+      "title": "Strict JSON output format.",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.5664749145508,
+          413.6401062011719
+        ],
+        [
+          425.0987243652344,
+          413.6401062011719
+        ],
+        [
+          425.0987243652344,
+          426.4971008300781
+        ],
+        [
+          314.5664749145508,
+          426.4971008300781
+        ]
+      ]
+    },
+    {
+      "title": "Listing 2: COTHERF evaluation judge JSON schema",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          329.19339752197266,
+          662.8389129638672
+        ],
+        [
+          543.1825561523438,
+          662.8389129638672
+        ],
+        [
+          543.1825561523438,
+          676.1689453125
+        ],
+        [
+          329.19339752197266,
+          676.1689453125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          283
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          329
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          177
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          296
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          358
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          344
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          262
+        ],
+        [
+          "Line",
+          88
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "TableGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          246
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          512
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          39
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          492
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Reference",
+          34
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          359
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          374
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          9
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792988_coTherapist_A_Behavior_Aligned_Small_Language_Model_Framework_to_Support_Mental_Healthcare_Experts"
+}

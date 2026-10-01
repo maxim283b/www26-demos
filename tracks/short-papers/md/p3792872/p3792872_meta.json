@@ -1,0 +1,609 @@
+{
+  "table_of_contents": [
+    {
+      "title": "LLM Reasoning for Cold-Start Item Recommendation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          93.9437255859375,
+          78.98830032348633
+        ],
+        [
+          515.7705688476562,
+          78.98830032348633
+        ],
+        [
+          515.7705688476562,
+          99.705078125
+        ],
+        [
+          93.9437255859375,
+          99.705078125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.5244255065918,
+          222.5507354736328
+        ],
+        [
+          95.74746322631836,
+          222.5507354736328
+        ],
+        [
+          95.74746322631836,
+          236.28326416015625
+        ],
+        [
+          51.5244255065918,
+          236.28326416015625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.35414123535156,
+          454.6666717529297
+        ],
+        [
+          102.87803649902344,
+          454.6666717529297
+        ],
+        [
+          102.87803649902344,
+          468.8229675292969
+        ],
+        [
+          50.35414123535156,
+          468.8229675292969
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.918128967285156,
+          495.3464813232422
+        ],
+        [
+          140.4966278076172,
+          495.3464813232422
+        ],
+        [
+          140.4966278076172,
+          507.3901062011719
+        ],
+        [
+          50.918128967285156,
+          507.3901062011719
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.32859992980957,
+          565.4527587890625
+        ],
+        [
+          133.3798828125,
+          565.4527587890625
+        ],
+        [
+          133.3798828125,
+          580.0839996337891
+        ],
+        [
+          51.32859992980957,
+          580.0839996337891
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.306678771972656,
+          650.4497222900391
+        ],
+        [
+          90.95604515075684,
+          650.4497222900391
+        ],
+        [
+          90.95604515075684,
+          663.050537109375
+        ],
+        [
+          51.306678771972656,
+          663.050537109375
+        ]
+      ]
+    },
+    {
+      "title": "2 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.27741622924805,
+          209.2814712524414
+        ],
+        [
+          135.96112060546875,
+          209.2814712524414
+        ],
+        [
+          135.96112060546875,
+          221.45941162109375
+        ],
+        [
+          51.27741622924805,
+          221.45941162109375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Problem Definition",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.93123817443848,
+          223.95023345947266
+        ],
+        [
+          174.9081687927246,
+          223.95023345947266
+        ],
+        [
+          174.9081687927246,
+          237.0849609375
+        ],
+        [
+          50.93123817443848,
+          237.0849609375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Reasoning for Recommendation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.2713508605957,
+          358.47999572753906
+        ],
+        [
+          239.77633666992188,
+          358.47999572753906
+        ],
+        [
+          239.77633666992188,
+          371.7984619140625
+        ],
+        [
+          51.2713508605957,
+          371.7984619140625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 LLM Fine-Tuning",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3638687133789,
+          671.2420349121094
+        ],
+        [
+          429.4390869140625,
+          671.2420349121094
+        ],
+        [
+          429.4390869140625,
+          685.2754516601562
+        ],
+        [
+          314.3638687133789,
+          685.2754516601562
+        ]
+      ]
+    },
+    {
+      "title": "3 Experiment",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.42779731750488,
+          474.2190856933594
+        ],
+        [
+          129.70061874389648,
+          474.2190856933594
+        ],
+        [
+          129.70061874389648,
+          487.8717956542969
+        ],
+        [
+          51.42779731750488,
+          487.8717956542969
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.34299659729004,
+          489.80946350097656
+        ],
+        [
+          177.14089965820312,
+          489.80946350097656
+        ],
+        [
+          177.14089965820312,
+          503.56280517578125
+        ],
+        [
+          51.34299659729004,
+          503.56280517578125
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Reasoning without Fine-Tuning",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.93054962158203,
+          213.76558685302734
+        ],
+        [
+          500.95220947265625,
+          213.76558685302734
+        ],
+        [
+          500.95220947265625,
+          226.92242431640625
+        ],
+        [
+          313.93054962158203,
+          226.92242431640625
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Supervised Fine-Tuning",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.743011474609375,
+          252.79994201660156
+        ],
+        [
+          196.36200714111328,
+          252.79994201660156
+        ],
+        [
+          196.36200714111328,
+          266.617431640625
+        ],
+        [
+          50.743011474609375,
+          266.617431640625
+        ]
+      ]
+    },
+    {
+      "title": "3.4 RL-based Fine-Tuning",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.20844841003418,
+          441.13018798828125
+        ],
+        [
+          188.58198165893555,
+          441.13018798828125
+        ],
+        [
+          188.58198165893555,
+          455.1384582519531
+        ],
+        [
+          51.20844841003418,
+          455.1384582519531
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.96600341796875,
+          534.7197875976562
+        ],
+        [
+          372.5599594116211,
+          534.7197875976562
+        ],
+        [
+          372.5599594116211,
+          547.7259979248047
+        ],
+        [
+          313.96600341796875,
+          547.7259979248047
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          226
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          178
+        ],
+        [
+          "Line",
+          88
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          251
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Reference",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          45
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792872_LLM_Reasoning_for_Cold_Start_Item_Recommendation"
+}

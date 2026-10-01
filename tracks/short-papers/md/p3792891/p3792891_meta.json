@@ -1,0 +1,695 @@
+{
+  "table_of_contents": [
+    {
+      "title": "CytoCrowd: A Multi-Annotator Benchmark Dataset for Cytology\nImage Analysis",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.82320785522461,
+          78.65986633300781
+        ],
+        [
+          559.6617279052734,
+          78.65986633300781
+        ],
+        [
+          559.6617279052734,
+          119.63006591796875
+        ],
+        [
+          51.82320785522461,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.4598331451416,
+          303.28578186035156
+        ],
+        [
+          95.7513599395752,
+          303.28578186035156
+        ],
+        [
+          95.7513599395752,
+          317.8919982910156
+        ],
+        [
+          50.4598331451416,
+          317.8919982910156
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.131507873535156,
+          550.1396484375
+        ],
+        [
+          123.32669448852539,
+          550.1396484375
+        ],
+        [
+          123.32669448852539,
+          564.6138305664062
+        ],
+        [
+          50.131507873535156,
+          564.6138305664062
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.31390380859375,
+          303.61328887939453
+        ],
+        [
+          367.68541717529297,
+          303.61328887939453
+        ],
+        [
+          367.68541717529297,
+          317.8919982910156
+        ],
+        [
+          314.31390380859375,
+          317.8919982910156
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5502700805664,
+          345.5028533935547
+        ],
+        [
+          404.89910888671875,
+          345.5028533935547
+        ],
+        [
+          404.89910888671875,
+          357.7920837402344
+        ],
+        [
+          314.5502700805664,
+          357.7920837402344
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5038757324219,
+          418.4295959472656
+        ],
+        [
+          397.536865234375,
+          418.4295959472656
+        ],
+        [
+          397.536865234375,
+          433.1549987792969
+        ],
+        [
+          314.5038757324219,
+          433.1549987792969
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.93837356567383,
+          648.4886169433594
+        ],
+        [
+          91.6951847076416,
+          648.4886169433594
+        ],
+        [
+          91.6951847076416,
+          662.7962951660156
+        ],
+        [
+          50.93837356567383,
+          662.7962951660156
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.6745491027832,
+          456.37957763671875
+        ],
+        [
+          138.47186279296875,
+          456.37957763671875
+        ],
+        [
+          138.47186279296875,
+          470.35198974609375
+        ],
+        [
+          51.6745491027832,
+          470.35198974609375
+        ]
+      ]
+    },
+    {
+      "title": "3 The CytoCrowd Dataset",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.02352142333984,
+          637.5861968994141
+        ],
+        [
+          453.1505584716797,
+          637.5861968994141
+        ],
+        [
+          453.1505584716797,
+          652.0359954833984
+        ],
+        [
+          314.02352142333984,
+          652.0359954833984
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments and Baselines",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.3958206176758,
+          81.65356636047363
+        ],
+        [
+          467.9365539550781,
+          81.65356636047363
+        ],
+        [
+          467.9365539550781,
+          96.1907958984375
+        ],
+        [
+          314.3958206176758,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Task Definition",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.59043884277344,
+          97.98457717895508
+        ],
+        [
+          419.76393127441406,
+          97.98457717895508
+        ],
+        [
+          419.76393127441406,
+          111.8599853515625
+        ],
+        [
+          314.59043884277344,
+          111.8599853515625
+        ]
+      ]
+    },
+    {
+      "title": "Task 2: Annotation Aggregation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.1389465332031,
+          263.54026794433594
+        ],
+        [
+          447.27728271484375,
+          263.54026794433594
+        ],
+        [
+          447.27728271484375,
+          276.8680419921875
+        ],
+        [
+          314.1389465332031,
+          276.8680419921875
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Evaluation Metrics",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.0955276489258,
+          449.1448516845703
+        ],
+        [
+          436.31410217285156,
+          449.1448516845703
+        ],
+        [
+          436.31410217285156,
+          463.9049987792969
+        ],
+        [
+          314.0955276489258,
+          463.9049987792969
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Baseline Methods",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.09525299072266,
+          596.4828643798828
+        ],
+        [
+          429.89324951171875,
+          596.4828643798828
+        ],
+        [
+          429.89324951171875,
+          611.1699981689453
+        ],
+        [
+          314.09525299072266,
+          611.1699981689453
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Performance Analysis",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.57882308959961,
+          326.5730667114258
+        ],
+        [
+          188.38278579711914,
+          326.5730667114258
+        ],
+        [
+          188.38278579711914,
+          340.9809875488281
+        ],
+        [
+          50.57882308959961,
+          340.9809875488281
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.0263366699219,
+          193.03614807128906
+        ],
+        [
+          390.8495788574219,
+          193.03614807128906
+        ],
+        [
+          390.8495788574219,
+          207.009033203125
+        ],
+        [
+          314.0263366699219,
+          207.009033203125
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.0460433959961,
+          326.4623336791992
+        ],
+        [
+          410.45562744140625,
+          326.4623336791992
+        ],
+        [
+          410.45562744140625,
+          340.5704345703125
+        ],
+        [
+          314.0460433959961,
+          340.5704345703125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.1522903442383,
+          525.2350616455078
+        ],
+        [
+          372.3041076660156,
+          525.2350616455078
+        ],
+        [
+          372.3041076660156,
+          539.7549896240234
+        ],
+        [
+          314.1522903442383,
+          539.7549896240234
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          232
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          217
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          267
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          305
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Reference",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          76
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "Reference",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792891_CytoCrowd_A_Multi_Annotator_Benchmark_Dataset_for_Cytology_Image_Analysis"
+}

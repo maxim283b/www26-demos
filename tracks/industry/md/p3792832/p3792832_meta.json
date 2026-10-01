@@ -1,0 +1,1442 @@
+{
+  "table_of_contents": [
+    {
+      "title": "FRiskGPT: A Generative Foundation Model for Financial Risk\nDetection",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          62.941749572753906,
+          78.76475143432617
+        ],
+        [
+          547.5175323486328,
+          78.76475143432617
+        ],
+        [
+          547.5175323486328,
+          119.59552001953125
+        ],
+        [
+          62.941749572753906,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.99729919433594,
+          405.63148498535156
+        ],
+        [
+          95.6528148651123,
+          405.63148498535156
+        ],
+        [
+          95.6528148651123,
+          420.6875305175781
+        ],
+        [
+          50.99729919433594,
+          420.6875305175781
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.14952087402344,
+          449.4004669189453
+        ],
+        [
+          387.7294006347656,
+          449.4004669189453
+        ],
+        [
+          387.7294006347656,
+          464.035400390625
+        ],
+        [
+          314.14952087402344,
+          464.035400390625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.9486083984375,
+          496.1725616455078
+        ],
+        [
+          367.2347717285156,
+          496.1725616455078
+        ],
+        [
+          367.2347717285156,
+          510.1244201660156
+        ],
+        [
+          313.9486083984375,
+          510.1244201660156
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.82315826416016,
+          524.7334442138672
+        ],
+        [
+          405.30308532714844,
+          524.7334442138672
+        ],
+        [
+          405.30308532714844,
+          537.4248962402344
+        ],
+        [
+          313.82315826416016,
+          537.4248962402344
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2760238647461,
+          605.139404296875
+        ],
+        [
+          397.5363006591797,
+          605.139404296875
+        ],
+        [
+          397.5363006591797,
+          619.5214385986328
+        ],
+        [
+          314.2760238647461,
+          619.5214385986328
+        ]
+      ]
+    },
+    {
+      "title": "2 Motivation Analysis",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.31903266906738,
+          246.89419555664062
+        ],
+        [
+          171.3464126586914,
+          246.89419555664062
+        ],
+        [
+          171.3464126586914,
+          259.4833984375
+        ],
+        [
+          51.31903266906738,
+          259.4833984375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Dilemma of Traditional Financial Risk\nDetection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.36441993713379,
+          261.3255615234375
+        ],
+        [
+          271.0492401123047,
+          261.3255615234375
+        ],
+        [
+          271.0492401123047,
+          288.1253967285156
+        ],
+        [
+          51.36441993713379,
+          288.1253967285156
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Rethinking from Financial Risk Data:\nTowards a Unified Perspective",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.31516456604004,
+          527.2738494873047
+        ],
+        [
+          266.4854965209961,
+          527.2738494873047
+        ],
+        [
+          266.4854965209961,
+          553.7684478759766
+        ],
+        [
+          51.31516456604004,
+          553.7684478759766
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.4842834472656,
+          479.1026916503906
+        ],
+        [
+          399.8730926513672,
+          479.1026916503906
+        ],
+        [
+          399.8730926513672,
+          492.0674133300781
+        ],
+        [
+          314.4842834472656,
+          492.0674133300781
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Redefining Financial Risk Data and Task",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.51200103759766,
+          600.793212890625
+        ],
+        [
+          547.3931579589844,
+          600.793212890625
+        ],
+        [
+          547.3931579589844,
+          614.5614471435547
+        ],
+        [
+          314.51200103759766,
+          614.5614471435547
+        ]
+      ]
+    },
+    {
+      "title": "3.2 General Behavior Language Tokenization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.00997352600098,
+          506.8755798339844
+        ],
+        [
+          284.8351593017578,
+          506.8755798339844
+        ],
+        [
+          284.8351593017578,
+          520.8914184570312
+        ],
+        [
+          51.00997352600098,
+          520.8914184570312
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Auto-regressive Modeling for GBL",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.06675720214844,
+          527.9103698730469
+        ],
+        [
+          511.5024719238281,
+          527.9103698730469
+        ],
+        [
+          511.5024719238281,
+          541.5244293212891
+        ],
+        [
+          314.06675720214844,
+          541.5244293212891
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiment",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.0421028137207,
+          554.3006286621094
+        ],
+        [
+          129.76055145263672,
+          554.3006286621094
+        ],
+        [
+          129.76055145263672,
+          568.2434234619141
+        ],
+        [
+          51.0421028137207,
+          568.2434234619141
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experiment Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.824785232543945,
+          569.7778930664062
+        ],
+        [
+          167.43707275390625,
+          569.7778930664062
+        ],
+        [
+          167.43707275390625,
+          583.9344329833984
+        ],
+        [
+          50.824785232543945,
+          583.9344329833984
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Main Results",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          313.69459533691406,
+          451.7859649658203
+        ],
+        [
+          407.8699493408203,
+          451.7859649658203
+        ],
+        [
+          407.8699493408203,
+          466.097412109375
+        ],
+        [
+          313.69459533691406,
+          466.097412109375
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Model Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.87424087524414,
+          660.2137756347656
+        ],
+        [
+          154.97897338867188,
+          660.2137756347656
+        ],
+        [
+          154.97897338867188,
+          674.3164367675781
+        ],
+        [
+          50.87424087524414,
+          674.3164367675781
+        ]
+      ]
+    },
+    {
+      "title": "5 Related Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.334659576416016,
+          501.83802795410156
+        ],
+        [
+          139.34648895263672,
+          501.83802795410156
+        ],
+        [
+          139.34648895263672,
+          516.159423828125
+        ],
+        [
+          51.334659576416016,
+          516.159423828125
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Financial Risk Detection",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.13574981689453,
+          517.4593048095703
+        ],
+        [
+          200.54679107666016,
+          517.4593048095703
+        ],
+        [
+          200.54679107666016,
+          531.8504028320312
+        ],
+        [
+          51.13574981689453,
+          531.8504028320312
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Foundation Model",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.21836853027344,
+          270.9269714355469
+        ],
+        [
+          434.02880859375,
+          270.9269714355469
+        ],
+        [
+          434.02880859375,
+          285.05743408203125
+        ],
+        [
+          314.21836853027344,
+          285.05743408203125
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.8160858154297,
+          481.3398742675781
+        ],
+        [
+          391.15557861328125,
+          481.3398742675781
+        ],
+        [
+          391.15557861328125,
+          495.2684326171875
+        ],
+        [
+          313.8160858154297,
+          495.2684326171875
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.62146759033203,
+          647.54736328125
+        ],
+        [
+          410.11509704589844,
+          647.54736328125
+        ],
+        [
+          410.11509704589844,
+          661.6454467773438
+        ],
+        [
+          313.62146759033203,
+          661.6454467773438
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.88493537902832,
+          83.08586883544922
+        ],
+        [
+          108.40949249267578,
+          83.08586883544922
+        ],
+        [
+          108.40949249267578,
+          94.11873435974121
+        ],
+        [
+          50.88493537902832,
+          94.11873435974121
+        ]
+      ]
+    },
+    {
+      "title": "A Comparison of FRiskGPT with Existing\nMethods",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.10013008117676,
+          81.74997138977051
+        ],
+        [
+          269.94371795654297,
+          81.74997138977051
+        ],
+        [
+          269.94371795654297,
+          109.1854248046875
+        ],
+        [
+          51.10013008117676,
+          109.1854248046875
+        ]
+      ]
+    },
+    {
+      "title": "B Experiment Detail",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.97279167175293,
+          238.5135040283203
+        ],
+        [
+          163.85132217407227,
+          238.5135040283203
+        ],
+        [
+          163.85132217407227,
+          253.4444580078125
+        ],
+        [
+          50.97279167175293,
+          253.4444580078125
+        ]
+      ]
+    },
+    {
+      "title": "B.1 Datasets and Tasks",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.58708572387695,
+          253.67713165283203
+        ],
+        [
+          173.59174346923828,
+          253.67713165283203
+        ],
+        [
+          173.59174346923828,
+          269.13543701171875
+        ],
+        [
+          50.58708572387695,
+          269.13543701171875
+        ]
+      ]
+    },
+    {
+      "title": "B.2 Implementation Detail and Baselines\nIntroduction",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.32239532470703,
+          300.029296875
+        ],
+        [
+          528.3473052978516,
+          300.029296875
+        ],
+        [
+          528.3473052978516,
+          327.6164245605469
+        ],
+        [
+          314.32239532470703,
+          327.6164245605469
+        ]
+      ]
+    },
+    {
+      "title": "B.3 Computing Environment",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.2735061645508,
+          586.8302307128906
+        ],
+        [
+          469.6494598388672,
+          586.8302307128906
+        ],
+        [
+          469.6494598388672,
+          601.9084320068359
+        ],
+        [
+          314.2735061645508,
+          601.9084320068359
+        ]
+      ]
+    },
+    {
+      "title": "C Case Study",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.44866943359375,
+          654.3794403076172
+        ],
+        [
+          390.64166259765625,
+          654.3794403076172
+        ],
+        [
+          390.64166259765625,
+          669.6544189453125
+        ],
+        [
+          314.44866943359375,
+          669.6544189453125
+        ]
+      ]
+    },
+    {
+      "title": "D More Experiment Result",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.411556243896484,
+          601.2252960205078
+        ],
+        [
+          194.51193237304688,
+          601.2252960205078
+        ],
+        [
+          194.51193237304688,
+          616.4414215087891
+        ],
+        [
+          50.411556243896484,
+          616.4414215087891
+        ]
+      ]
+    },
+    {
+      "title": "D.1 More Experimental Metric on Payment",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.46579551696777,
+          616.6688690185547
+        ],
+        [
+          274.79054260253906,
+          616.6688690185547
+        ],
+        [
+          274.79054260253906,
+          632.1334381103516
+        ],
+        [
+          50.46579551696777,
+          632.1334381103516
+        ]
+      ]
+    },
+    {
+      "title": "D.2 The Robustness of FRiskGPT to Noisy Label",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          313.88578033447266,
+          406.1701354980469
+        ],
+        [
+          558.2750854492188,
+          406.1701354980469
+        ],
+        [
+          558.2750854492188,
+          421.28143310546875
+        ],
+        [
+          313.88578033447266,
+          421.28143310546875
+        ]
+      ]
+    },
+    {
+      "title": "E Deployment",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.14766693115234,
+          496.5604248046875
+        ],
+        [
+          396.5887145996094,
+          496.5604248046875
+        ],
+        [
+          396.5887145996094,
+          510.9444274902344
+        ],
+        [
+          314.14766693115234,
+          510.9444274902344
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          252
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          21
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          323
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          373
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          658
+        ],
+        [
+          "Line",
+          145
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          418
+        ],
+        [
+          "Line",
+          127
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          797
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          452
+        ],
+        [
+          "Line",
+          160
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          398
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          602
+        ],
+        [
+          "Line",
+          140
+        ],
+        [
+          "Reference",
+          49
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          298
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "ListItem",
+          13
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          298
+        ],
+        [
+          "Line",
+          87
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1191
+        ],
+        [
+          "Line",
+          68
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792832_FRiskGPT_A_Generative_Foundation_Model_for_Financial_Risk_Detection"
+}

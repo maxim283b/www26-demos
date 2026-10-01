@@ -1,0 +1,1213 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Debating Truth: Debate-driven Claim Verification with Multiple\nLarge Language Model Agents",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          52.490678787231445,
+          79.03120422363281
+        ],
+        [
+          556.8909301757812,
+          79.03120422363281
+        ],
+        [
+          556.8909301757812,
+          119.63006591796875
+        ],
+        [
+          52.490678787231445,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.31620407104492,
+          324.9411392211914
+        ],
+        [
+          95.64385986328125,
+          324.9411392211914
+        ],
+        [
+          95.64385986328125,
+          339.0119934082031
+        ],
+        [
+          50.31620407104492,
+          339.0119934082031
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.79764366149902,
+          513.0907287597656
+        ],
+        [
+          123.31595993041992,
+          513.0907287597656
+        ],
+        [
+          123.31595993041992,
+          527.3738098144531
+        ],
+        [
+          49.79764366149902,
+          527.3738098144531
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.435977935791016,
+          558.9401092529297
+        ],
+        [
+          103.46431732177734,
+          558.9401092529297
+        ],
+        [
+          103.46431732177734,
+          573.2270050048828
+        ],
+        [
+          50.435977935791016,
+          573.2270050048828
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.76837158203125,
+          588.4787750244141
+        ],
+        [
+          140.6011505126953,
+          588.4787750244141
+        ],
+        [
+          140.6011505126953,
+          600.1330871582031
+        ],
+        [
+          50.76837158203125,
+          600.1330871582031
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.45379638671875,
+          378.8349151611328
+        ],
+        [
+          397.64378356933594,
+          378.8349151611328
+        ],
+        [
+          397.64378356933594,
+          393.2909851074219
+        ],
+        [
+          314.45379638671875,
+          393.2909851074219
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.9592590332031,
+          378.8617401123047
+        ],
+        [
+          402.5550842285156,
+          378.8617401123047
+        ],
+        [
+          402.5550842285156,
+          393.17401123046875
+        ],
+        [
+          314.9592590332031,
+          393.17401123046875
+        ]
+      ]
+    },
+    {
+      "title": "3 DebateCV: Debate-driven Claim Verification",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.968929290771484,
+          526.1104431152344
+        ],
+        [
+          289.40126037597656,
+          526.1104431152344
+        ],
+        [
+          289.40126037597656,
+          540.2540130615234
+        ],
+        [
+          50.968929290771484,
+          540.2540130615234
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Pre-debate Configuration",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.02439880371094,
+          637.8931732177734
+        ],
+        [
+          204.7093505859375,
+          637.8931732177734
+        ],
+        [
+          204.7093505859375,
+          652.3984527587891
+        ],
+        [
+          51.02439880371094,
+          652.3984527587891
+        ]
+      ]
+    },
+    {
+      "title": "3.2 In-Debate Process",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.2748336791992,
+          284.17980194091797
+        ],
+        [
+          431.1686553955078,
+          284.17980194091797
+        ],
+        [
+          431.1686553955078,
+          297.9120178222656
+        ],
+        [
+          314.2748336791992,
+          297.9120178222656
+        ]
+      ]
+    },
+    {
+      "title": "4 Debate-SFT: Post-training the Moderator",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.7139434814453,
+          528.3001098632812
+        ],
+        [
+          537.54052734375,
+          528.3001098632812
+        ],
+        [
+          537.54052734375,
+          542.8094635009766
+        ],
+        [
+          314.7139434814453,
+          542.8094635009766
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.12782287597656,
+          224.05204010009766
+        ],
+        [
+          397.6568603515625,
+          224.05204010009766
+        ],
+        [
+          397.6568603515625,
+          238.5447998046875
+        ],
+        [
+          314.12782287597656,
+          238.5447998046875
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.14105224609375,
+          259.5406723022461
+        ],
+        [
+          440.96063232421875,
+          259.5406723022461
+        ],
+        [
+          440.96063232421875,
+          274.048828125
+        ],
+        [
+          314.14105224609375,
+          274.048828125
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Comparison with Existing Methods",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.55235290527344,
+          135.6332015991211
+        ],
+        [
+          518.3569793701172,
+          135.6332015991211
+        ],
+        [
+          518.3569793701172,
+          150.36846923828125
+        ],
+        [
+          314.55235290527344,
+          150.36846923828125
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Ablation Study",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.26741790771484,
+          558.3631439208984
+        ],
+        [
+          416.8023376464844,
+          558.3631439208984
+        ],
+        [
+          416.8023376464844,
+          573.3199920654297
+        ],
+        [
+          314.26741790771484,
+          573.3199920654297
+        ]
+      ]
+    },
+    {
+      "title": "In this part, we evaluate ablation variants of DebateCV.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.24242401123047,
+          572.7926330566406
+        ],
+        [
+          520.093505859375,
+          572.7926330566406
+        ],
+        [
+          520.093505859375,
+          586.587158203125
+        ],
+        [
+          314.24242401123047,
+          586.587158203125
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Human Evaluation on Synthetic Data",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          313.86634826660156,
+          627.1209869384766
+        ],
+        [
+          528.030029296875,
+          627.1209869384766
+        ],
+        [
+          528.030029296875,
+          641.3739318847656
+        ],
+        [
+          313.86634826660156,
+          641.3739318847656
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Impact of LLMs for Debaters",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.52761650085449,
+          460.0485534667969
+        ],
+        [
+          219.91067504882812,
+          460.0485534667969
+        ],
+        [
+          219.91067504882812,
+          474.5697937011719
+        ],
+        [
+          50.52761650085449,
+          474.5697937011719
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.91686248779297,
+          115.31636810302734
+        ],
+        [
+          391.154296875,
+          115.31636810302734
+        ],
+        [
+          391.154296875,
+          128.67401123046875
+        ],
+        [
+          313.91686248779297,
+          128.67401123046875
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.05613708496094,
+          434.603759765625
+        ],
+        [
+          410.49261474609375,
+          434.603759765625
+        ],
+        [
+          410.49261474609375,
+          448.9174499511719
+        ],
+        [
+          314.05613708496094,
+          448.9174499511719
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.2036247253418,
+          83.07842445373535
+        ],
+        [
+          108.14713287353516,
+          83.07842445373535
+        ],
+        [
+          108.14713287353516,
+          96.16900634765625
+        ],
+        [
+          51.2036247253418,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Definitions of the Verdict Categories",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.555620193481445,
+          82.18553352355957
+        ],
+        [
+          253.04310607910156,
+          82.18553352355957
+        ],
+        [
+          253.04310607910156,
+          96.23443603515625
+        ],
+        [
+          50.555620193481445,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "B Prompts",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.93934631347656,
+          280.573974609375
+        ],
+        [
+          114.2153091430664,
+          280.573974609375
+        ],
+        [
+          114.2153091430664,
+          295.2848205566406
+        ],
+        [
+          50.93934631347656,
+          295.2848205566406
+        ]
+      ]
+    },
+    {
+      "title": "B.1 Pre-debate Configuration Prompts",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.790367126464844,
+          326.3682403564453
+        ],
+        [
+          250.78044891357422,
+          326.3682403564453
+        ],
+        [
+          250.78044891357422,
+          340.9984436035156
+        ],
+        [
+          50.790367126464844,
+          340.9984436035156
+        ]
+      ]
+    },
+    {
+      "title": "B.2 In-debate Process Prompts",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.849252700805664,
+          661.8777008056641
+        ],
+        [
+          211.6439666748047,
+          661.8777008056641
+        ],
+        [
+          211.6439666748047,
+          676.4648132324219
+        ],
+        [
+          50.849252700805664,
+          676.4648132324219
+        ]
+      ]
+    },
+    {
+      "title": "B.3 Corrector's Prompt",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.56495666503906,
+          660.7673492431641
+        ],
+        [
+          439.75506591796875,
+          660.7673492431641
+        ],
+        [
+          439.75506591796875,
+          675.0478134155273
+        ],
+        [
+          313.56495666503906,
+          675.0478134155273
+        ]
+      ]
+    },
+    {
+      "title": "C Examples of DebateCV Outputs",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.99478721618652,
+          512.4087066650391
+        ],
+        [
+          228.12128448486328,
+          512.4087066650391
+        ],
+        [
+          228.12128448486328,
+          526.8998107910156
+        ],
+        [
+          50.99478721618652,
+          526.8998107910156
+        ]
+      ]
+    },
+    {
+      "title": "D Computational Cost Analysis",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.642704010009766,
+          605.5132598876953
+        ],
+        [
+          218.30722045898438,
+          605.5132598876953
+        ],
+        [
+          218.30722045898438,
+          619.4788208007812
+        ],
+        [
+          50.642704010009766,
+          619.4788208007812
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          298
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          488
+        ],
+        [
+          "Line",
+          136
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          473
+        ],
+        [
+          "Line",
+          138
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          687
+        ],
+        [
+          "Line",
+          157
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Reference",
+          7
+        ],
+        [
+          "Footnote",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          409
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          337
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          507
+        ],
+        [
+          "Line",
+          173
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          295
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          572
+        ],
+        [
+          "Line",
+          154
+        ],
+        [
+          "Reference",
+          53
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          297
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "Text",
+          51
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          394
+        ],
+        [
+          "Line",
+          176
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792993_Debating_Truth_Debate_driven_Claim_Verification_with_Multiple_Large_Language_Model_Agents"
+}

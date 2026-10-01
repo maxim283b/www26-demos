@@ -1,0 +1,1367 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Belief-Driven Multi-Agent Collaboration via Approximate Perfect\nBayesian Equilibrium for Social Simulation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.285776138305664,
+          79.13428688049316
+        ],
+        [
+          558.6256713867188,
+          79.13428688049316
+        ],
+        [
+          558.6256713867188,
+          119.61279296875
+        ],
+        [
+          51.285776138305664,
+          119.61279296875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.97447967529297,
+          253.11861419677734
+        ],
+        [
+          96.120849609375,
+          253.11861419677734
+        ],
+        [
+          96.120849609375,
+          266.99700927734375
+        ],
+        [
+          50.97447967529297,
+          266.99700927734375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.34277153015137,
+          528.8203125
+        ],
+        [
+          123.17483139038086,
+          528.8203125
+        ],
+        [
+          123.17483139038086,
+          543.5668182373047
+        ],
+        [
+          50.34277153015137,
+          543.5668182373047
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.43944549560547,
+          575.4291687011719
+        ],
+        [
+          103.07711791992188,
+          575.4291687011719
+        ],
+        [
+          103.07711791992188,
+          589.9560089111328
+        ],
+        [
+          50.43944549560547,
+          589.9560089111328
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3046569824219,
+          253.52476501464844
+        ],
+        [
+          404.65362548828125,
+          253.52476501464844
+        ],
+        [
+          404.65362548828125,
+          266.31805419921875
+        ],
+        [
+          314.3046569824219,
+          266.31805419921875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.83870697021484,
+          331.00389862060547
+        ],
+        [
+          397.7284240722656,
+          331.00389862060547
+        ],
+        [
+          397.7284240722656,
+          345.4840087890625
+        ],
+        [
+          314.83870697021484,
+          345.4840087890625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.07198905944824,
+          640.5303039550781
+        ],
+        [
+          96.2457046508789,
+          640.5303039550781
+        ],
+        [
+          96.2457046508789,
+          656.889404296875
+        ],
+        [
+          51.07198905944824,
+          656.889404296875
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.16123962402344,
+          347.7809143066406
+        ],
+        [
+          402.85276794433594,
+          347.7809143066406
+        ],
+        [
+          402.85276794433594,
+          361.5069885253906
+        ],
+        [
+          314.16123962402344,
+          361.5069885253906
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Cooperative Multi-Agent Collaboration",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.90628814697266,
+          363.04161071777344
+        ],
+        [
+          538.9147338867188,
+          363.04161071777344
+        ],
+        [
+          538.9147338867188,
+          377.263427734375
+        ],
+        [
+          313.90628814697266,
+          377.263427734375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Competitive Multi-Agent Collaboration",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.8381042480469,
+          488.58522033691406
+        ],
+        [
+          540.2376251220703,
+          488.58522033691406
+        ],
+        [
+          540.2376251220703,
+          502.8764343261719
+        ],
+        [
+          313.8381042480469,
+          502.8764343261719
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Game-Theoretic Approaches to Multi-Agent\nCollaboration",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2050476074219,
+          646.4284973144531
+        ],
+        [
+          562.0159149169922,
+          646.4284973144531
+        ],
+        [
+          562.0159149169922,
+          674.2510070800781
+        ],
+        [
+          314.2050476074219,
+          674.2510070800781
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.76180267333984,
+          184.43856811523438
+        ],
+        [
+          399.2870635986328,
+          184.43856811523438
+        ],
+        [
+          399.2870635986328,
+          196.42247772216797
+        ],
+        [
+          314.76180267333984,
+          196.42247772216797
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.84886932373047,
+          276.73555755615234
+        ],
+        [
+          212.12374877929688,
+          276.73555755615234
+        ],
+        [
+          212.12374877929688,
+          289.2257766723633
+        ],
+        [
+          50.84886932373047,
+          289.2257766723633
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.26306915283203,
+          342.12831115722656
+        ],
+        [
+          389.5992736816406,
+          342.12831115722656
+        ],
+        [
+          389.5992736816406,
+          353.90128326416016
+        ],
+        [
+          314.26306915283203,
+          353.90128326416016
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.14332580566406,
+          569.2666168212891
+        ],
+        [
+          293.42337799072266,
+          569.2666168212891
+        ],
+        [
+          293.42337799072266,
+          581.6886291503906
+        ],
+        [
+          51.14332580566406,
+          581.6886291503906
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          52.19812774658203,
+          82.75656509399414
+        ],
+        [
+          283.09728240966797,
+          82.75656509399414
+        ],
+        [
+          283.09728240966797,
+          94.13520812988281
+        ],
+        [
+          52.19812774658203,
+          94.13520812988281
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.73875427246094,
+          201.53814697265625
+        ],
+        [
+          553.8121948242188,
+          201.53814697265625
+        ],
+        [
+          553.8121948242188,
+          214.2824478149414
+        ],
+        [
+          314.73875427246094,
+          214.2824478149414
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.87821197509766,
+          617.4453277587891
+        ],
+        [
+          398.17529296875,
+          617.4453277587891
+        ],
+        [
+          398.17529296875,
+          629.6848754882812
+        ],
+        [
+          314.87821197509766,
+          629.6848754882812
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.96280670166016,
+          632.693115234375
+        ],
+        [
+          441.0854187011719,
+          632.693115234375
+        ],
+        [
+          441.0854187011719,
+          645.5912475585938
+        ],
+        [
+          314.96280670166016,
+          645.5912475585938
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Baselines and Evaluation Metrics",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.13890075683594,
+          396.8250732421875
+        ],
+        [
+          506.7010803222656,
+          396.8250732421875
+        ],
+        [
+          506.7010803222656,
+          411.2369689941406
+        ],
+        [
+          314.13890075683594,
+          411.2369689941406
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Main Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.61861038208008,
+          180.55526733398438
+        ],
+        [
+          143.6205940246582,
+          180.55526733398438
+        ],
+        [
+          143.6205940246582,
+          192.05902099609375
+        ],
+        [
+          51.61861038208008,
+          192.05902099609375
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Empirical Verification of Equilibrium\nProperties",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.7770462036133,
+          263.36194610595703
+        ],
+        [
+          530.2736663818359,
+          263.36194610595703
+        ],
+        [
+          530.2736663818359,
+          288.8898010253906
+        ],
+        [
+          314.7770462036133,
+          288.8898010253906
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Ablation Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.61962127685547,
+          438.56236267089844
+        ],
+        [
+          416.8023376464844,
+          438.56236267089844
+        ],
+        [
+          416.8023376464844,
+          451.59698486328125
+        ],
+        [
+          314.61962127685547,
+          451.59698486328125
+        ]
+      ]
+    },
+    {
+      "title": "5.6 Case Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.4983367919922,
+          628.3474731445312
+        ],
+        [
+          396.8168640136719,
+          628.3474731445312
+        ],
+        [
+          396.8168640136719,
+          641.3740081787109
+        ],
+        [
+          314.4983367919922,
+          641.3740081787109
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.9639663696289,
+          566.8825378417969
+        ],
+        [
+          390.8495788574219,
+          566.8825378417969
+        ],
+        [
+          390.8495788574219,
+          581.3690032958984
+        ],
+        [
+          313.9639663696289,
+          581.3690032958984
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.02210235595703,
+          659.7078094482422
+        ],
+        [
+          410.2162170410156,
+          659.7078094482422
+        ],
+        [
+          410.2162170410156,
+          674.3164520263672
+        ],
+        [
+          314.02210235595703,
+          674.3164520263672
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.70945167541504,
+          83.09967613220215
+        ],
+        [
+          108.23488998413086,
+          83.09967613220215
+        ],
+        [
+          108.23488998413086,
+          96.16900634765625
+        ],
+        [
+          50.70945167541504,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Dataset Details and Statistics",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.45427894592285,
+          468.71978759765625
+        ],
+        [
+          214.9266128540039,
+          468.71978759765625
+        ],
+        [
+          214.9266128540039,
+          482.7839660644531
+        ],
+        [
+          51.45427894592285,
+          482.7839660644531
+        ]
+      ]
+    },
+    {
+      "title": "A.1 Court Debate Dataset (Adversarial)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.02442741394043,
+          561.0835418701172
+        ],
+        [
+          253.23605346679688,
+          561.0835418701172
+        ],
+        [
+          253.23605346679688,
+          575.6210021972656
+        ],
+        [
+          51.02442741394043,
+          575.6210021972656
+        ]
+      ]
+    },
+    {
+      "title": "A.2 MedQA Dataset (Mixed)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.3912658691406,
+          262.63233947753906
+        ],
+        [
+          462.8716278076172,
+          262.63233947753906
+        ],
+        [
+          462.8716278076172,
+          276.2430419921875
+        ],
+        [
+          314.3912658691406,
+          276.2430419921875
+        ]
+      ]
+    },
+    {
+      "title": "A.3 Persona Chat Dataset (Open-Ended)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.04949951171875,
+          648.6636657714844
+        ],
+        [
+          523.1477508544922,
+          648.6636657714844
+        ],
+        [
+          523.1477508544922,
+          663.3138275146484
+        ],
+        [
+          314.04949951171875,
+          663.3138275146484
+        ]
+      ]
+    },
+    {
+      "title": "B Baselines",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.94792366027832,
+          495.58433532714844
+        ],
+        [
+          118.92169189453125,
+          495.58433532714844
+        ],
+        [
+          118.92169189453125,
+          509.8669738769531
+        ],
+        [
+          50.94792366027832,
+          509.8669738769531
+        ]
+      ]
+    },
+    {
+      "title": "C Prompt Engineering Strategy",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.2232894897461,
+          246.7598419189453
+        ],
+        [
+          480.64239501953125,
+          246.7598419189453
+        ],
+        [
+          480.64239501953125,
+          260.3734130859375
+        ],
+        [
+          314.2232894897461,
+          260.3734130859375
+        ]
+      ]
+    },
+    {
+      "title": "C.1 Meta-Agent Coordination Template",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          313.62252044677734,
+          387.3943176269531
+        ],
+        [
+          521.9063873291016,
+          387.3943176269531
+        ],
+        [
+          521.9063873291016,
+          401.2694396972656
+        ],
+        [
+          313.62252044677734,
+          401.2694396972656
+        ]
+      ]
+    },
+    {
+      "title": "C.2 Participant Agent Strategic Template",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.36399459838867,
+          82.06804275512695
+        ],
+        [
+          263.5437240600586,
+          82.06804275512695
+        ],
+        [
+          263.5437240600586,
+          96.23443603515625
+        ],
+        [
+          50.36399459838867,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "PREDICTION].",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          338.7737731933594,
+          84.05608749389648
+        ],
+        [
+          390.1846008300781,
+          84.05608749389648
+        ],
+        [
+          390.1846008300781,
+          95.0357666015625
+        ],
+        [
+          338.7737731933594,
+          95.0357666015625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          321
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1050
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          386
+        ],
+        [
+          "Line",
+          122
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          262
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          34
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          567
+        ],
+        [
+          "Line",
+          153
+        ],
+        [
+          "Reference",
+          41
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          367
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Reference",
+          16
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          289
+        ],
+        [
+          "Line",
+          95
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792976_Belief_Driven_Multi_Agent_Collaboration_via_Approximate_Perfect_Bayesian_Equilibrium_for_Social_Simu"
+}

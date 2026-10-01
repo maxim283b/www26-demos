@@ -1,0 +1,1460 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Cross-Domain Fake News Detection on Unseen Domains via\nLLM-Based Domain-Aware User Modeling",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          67.95003890991211,
+          79.59950637817383
+        ],
+        [
+          541.4682312011719,
+          79.59950637817383
+        ],
+        [
+          541.4682312011719,
+          119.63006591796875
+        ],
+        [
+          67.95003890991211,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.80454635620117,
+          347.01651763916016
+        ],
+        [
+          95.56620597839355,
+          347.01651763916016
+        ],
+        [
+          95.56620597839355,
+          361.1610107421875
+        ],
+        [
+          50.80454635620117,
+          361.1610107421875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.051292419433594,
+          650.8214263916016
+        ],
+        [
+          90.35691261291504,
+          650.8214263916016
+        ],
+        [
+          90.35691261291504,
+          663.1352233886719
+        ],
+        [
+          51.051292419433594,
+          663.1352233886719
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.8087844848633,
+          390.6866455078125
+        ],
+        [
+          387.227783203125,
+          390.6866455078125
+        ],
+        [
+          387.227783203125,
+          405.1318054199219
+        ],
+        [
+          313.8087844848633,
+          405.1318054199219
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.88914489746094,
+          437.7154541015625
+        ],
+        [
+          367.20611572265625,
+          437.7154541015625
+        ],
+        [
+          367.20611572265625,
+          451.7979736328125
+        ],
+        [
+          313.88914489746094,
+          451.7979736328125
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.8518600463867,
+          478.9789123535156
+        ],
+        [
+          404.6535949707031,
+          478.9789123535156
+        ],
+        [
+          404.6535949707031,
+          491.2311096191406
+        ],
+        [
+          313.8518600463867,
+          491.2311096191406
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.36375427246094,
+          561.3182830810547
+        ],
+        [
+          397.5879821777344,
+          561.3182830810547
+        ],
+        [
+          397.5879821777344,
+          575.6210021972656
+        ],
+        [
+          314.36375427246094,
+          575.6210021972656
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.44815635681152,
+          83.1844310760498
+        ],
+        [
+          138.72938919067383,
+          83.1844310760498
+        ],
+        [
+          138.72938919067383,
+          96.16900634765625
+        ],
+        [
+          51.44815635681152,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Single-Domain Fake News Detection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.47823143005371,
+          99.31214904785156
+        ],
+        [
+          258.48291778564453,
+          99.31214904785156
+        ],
+        [
+          258.48291778564453,
+          111.9254150390625
+        ],
+        [
+          51.47823143005371,
+          111.9254150390625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Cross-Domain Fake News Detection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.166574478149414,
+          487.22900390625
+        ],
+        [
+          256.2447509765625,
+          487.22900390625
+        ],
+        [
+          256.2447509765625,
+          500.2369689941406
+        ],
+        [
+          51.166574478149414,
+          500.2369689941406
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.01293182373047,
+          510.4247589111328
+        ],
+        [
+          399.8168640136719,
+          510.4247589111328
+        ],
+        [
+          399.8168640136719,
+          524.1464538574219
+        ],
+        [
+          315.01293182373047,
+          524.1464538574219
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Problem Statement",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.8026580810547,
+          525.6979522705078
+        ],
+        [
+          438.04664611816406,
+          525.6979522705078
+        ],
+        [
+          438.04664611816406,
+          539.7720184326172
+        ],
+        [
+          314.8026580810547,
+          539.7720184326172
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.22844696044922,
+          561.7019348144531
+        ],
+        [
+          158.91862106323242,
+          561.7019348144531
+        ],
+        [
+          158.91862106323242,
+          573.6575775146484
+        ],
+        [
+          51.22844696044922,
+          573.6575775146484
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.54466247558594,
+          332.67864990234375
+        ],
+        [
+          548.0576019287109,
+          332.67864990234375
+        ],
+        [
+          548.0576019287109,
+          356.55347442626953
+        ],
+        [
+          314.54466247558594,
+          356.55347442626953
+        ]
+      ]
+    },
+    {
+      "title": "1. Engagement Prediction Prompt",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          68.57620811462402,
+          249.96839904785156
+        ],
+        [
+          208.0315704345703,
+          249.96839904785156
+        ],
+        [
+          208.0315704345703,
+          263.42845916748047
+        ],
+        [
+          68.57620811462402,
+          263.42845916748047
+        ]
+      ]
+    },
+    {
+      "title": "2(a). User Features Update Prompt",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          66.33702850341797,
+          597.7796630859375
+        ],
+        [
+          207.94676208496094,
+          597.7796630859375
+        ],
+        [
+          207.94676208496094,
+          610.9739685058594
+        ],
+        [
+          66.33702850341797,
+          610.9739685058594
+        ]
+      ]
+    },
+    {
+      "title": "2(b). User Features Update Prompt",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          331.32115173339844,
+          83.98822975158691
+        ],
+        [
+          472.64178466796875,
+          83.98822975158691
+        ],
+        [
+          472.64178466796875,
+          96.96508026123047
+        ],
+        [
+          331.32115173339844,
+          96.96508026123047
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Domain-Shared Feature Learning and\nRelation-Aware Alignment (DSRA)",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.51156234741211,
+          127.65870666503906
+        ],
+        [
+          264.6613311767578,
+          127.65870666503906
+        ],
+        [
+          264.6613311767578,
+          153.70745849609375
+        ],
+        [
+          51.51156234741211,
+          153.70745849609375
+        ]
+      ]
+    },
+    {
+      "title": "3.5 Fake News Detection",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.4663619995117,
+          513.77197265625
+        ],
+        [
+          446.0946807861328,
+          513.77197265625
+        ],
+        [
+          446.0946807861328,
+          527.7139892578125
+        ],
+        [
+          314.4663619995117,
+          527.7139892578125
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments and Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.87267303466797,
+          624.5732116699219
+        ],
+        [
+          464.6835479736328,
+          624.5732116699219
+        ],
+        [
+          464.6835479736328,
+          638.7888336181641
+        ],
+        [
+          314.87267303466797,
+          638.7888336181641
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.51779365539551,
+          359.86214447021484
+        ],
+        [
+          176.54948043823242,
+          359.86214447021484
+        ],
+        [
+          176.54948043823242,
+          372.8668212890625
+        ],
+        [
+          51.51779365539551,
+          372.8668212890625
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Main Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.47830963134766,
+          496.0225524902344
+        ],
+        [
+          407.7996368408203,
+          496.0225524902344
+        ],
+        [
+          407.7996368408203,
+          509.8669738769531
+        ],
+        [
+          314.47830963134766,
+          509.8669738769531
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Case Study",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.25498962402344,
+          445.69239807128906
+        ],
+        [
+          396.8168640136719,
+          445.69239807128906
+        ],
+        [
+          396.8168640136719,
+          459.6529846191406
+        ],
+        [
+          314.25498962402344,
+          459.6529846191406
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusions and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.9314651489258,
+          508.525634765625
+        ],
+        [
+          482.57330322265625,
+          508.525634765625
+        ],
+        [
+          482.57330322265625,
+          523.1159973144531
+        ],
+        [
+          313.9314651489258,
+          523.1159973144531
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.45423126220703,
+          670.4081268310547
+        ],
+        [
+          410.2042694091797,
+          670.4081268310547
+        ],
+        [
+          410.2042694091797,
+          685.2754592895508
+        ],
+        [
+          314.45423126220703,
+          685.2754592895508
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.76046371459961,
+          83.16598320007324
+        ],
+        [
+          107.90755462646484,
+          83.16598320007324
+        ],
+        [
+          107.90755462646484,
+          94.15856552124023
+        ],
+        [
+          50.76046371459961,
+          94.15856552124023
+        ]
+      ]
+    },
+    {
+      "title": "A Prompt Design",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.709720611572266,
+          209.84999084472656
+        ],
+        [
+          147.02323150634766,
+          209.84999084472656
+        ],
+        [
+          147.02323150634766,
+          223.04248046875
+        ],
+        [
+          50.709720611572266,
+          223.04248046875
+        ]
+      ]
+    },
+    {
+      "title": "News Feature Extraction Prompt",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          64.85787963867188,
+          253.31385040283203
+        ],
+        [
+          203.7077407836914,
+          253.31385040283203
+        ],
+        [
+          203.7077407836914,
+          267.27703857421875
+        ],
+        [
+          64.85787963867188,
+          267.27703857421875
+        ]
+      ]
+    },
+    {
+      "title": "Comment Generation Prompt",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          66.19817733764648,
+          423.78131103515625
+        ],
+        [
+          191.2624168395996,
+          423.78131103515625
+        ],
+        [
+          191.2624168395996,
+          436.22216796875
+        ],
+        [
+          66.19817733764648,
+          436.22216796875
+        ]
+      ]
+    },
+    {
+      "title": "B Datasets",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.941497802734375,
+          648.4385375976562
+        ],
+        [
+          113.54538345336914,
+          648.4385375976562
+        ],
+        [
+          113.54538345336914,
+          663.2919921875
+        ],
+        [
+          50.941497802734375,
+          663.2919921875
+        ]
+      ]
+    },
+    {
+      "title": "C Baseline Methods",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.71878814697266,
+          230.21859741210938
+        ],
+        [
+          424.01824951171875,
+          230.21859741210938
+        ],
+        [
+          424.01824951171875,
+          244.76202392578125
+        ],
+        [
+          313.71878814697266,
+          244.76202392578125
+        ]
+      ]
+    },
+    {
+      "title": "D Implementation Details",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.6285171508789,
+          648.3477172851562
+        ],
+        [
+          455.246337890625,
+          648.3477172851562
+        ],
+        [
+          455.246337890625,
+          663.3138122558594
+        ],
+        [
+          313.6285171508789,
+          663.3138122558594
+        ]
+      ]
+    },
+    {
+      "title": "E Experimental Details for RQ3",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.03007507324219,
+          528.2428894042969
+        ],
+        [
+          218.44313049316406,
+          528.2428894042969
+        ],
+        [
+          218.44313049316406,
+          542.7658233642578
+        ],
+        [
+          51.03007507324219,
+          542.7658233642578
+        ]
+      ]
+    },
+    {
+      "title": "F Case Study",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.28087615966797,
+          257.0305480957031
+        ],
+        [
+          388.8859558105469,
+          257.0305480957031
+        ],
+        [
+          388.8859558105469,
+          270.7640380859375
+        ],
+        [
+          314.28087615966797,
+          270.7640380859375
+        ]
+      ]
+    },
+    {
+      "title": "Case 1: News Summary and User Profile\nGenerated News Summary (fake news):",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          56.31574058532715,
+          111.13031005859375
+        ],
+        [
+          205.16055297851562,
+          111.13031005859375
+        ],
+        [
+          205.16055297851562,
+          129.0230712890625
+        ],
+        [
+          56.31574058532715,
+          129.0230712890625
+        ]
+      ]
+    },
+    {
+      "title": "LDAE-Inferred User Profile:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          58.15880584716797,
+          176.34906005859375
+        ],
+        [
+          162.44684600830078,
+          176.34906005859375
+        ],
+        [
+          162.44684600830078,
+          188.799072265625
+        ],
+        [
+          58.15880584716797,
+          188.799072265625
+        ]
+      ]
+    },
+    {
+      "title": "Case 2: User Commenting Features",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          55.23027992248535,
+          241.04024505615234
+        ],
+        [
+          187.7827262878418,
+          241.04024505615234
+        ],
+        [
+          187.7827262878418,
+          253.13690185546875
+        ],
+        [
+          55.23027992248535,
+          253.13690185546875
+        ]
+      ]
+    },
+    {
+      "title": "Real User Comments:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          57.097171783447266,
+          251.911376953125
+        ],
+        [
+          139.67022705078125,
+          251.911376953125
+        ],
+        [
+          139.67022705078125,
+          263.4500732421875
+        ],
+        [
+          57.097171783447266,
+          263.4500732421875
+        ]
+      ]
+    },
+    {
+      "title": "Generated Commenting Features:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          57.750566482543945,
+          315.5100860595703
+        ],
+        [
+          183.44216537475586,
+          315.5100860595703
+        ],
+        [
+          183.44216537475586,
+          327.1089172363281
+        ],
+        [
+          57.750566482543945,
+          327.1089172363281
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          240
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          365
+        ],
+        [
+          "Line",
+          137
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          485
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          332
+        ],
+        [
+          "Line",
+          116
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          637
+        ],
+        [
+          "Line",
+          208
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          780
+        ],
+        [
+          "Line",
+          87
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          537
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          472
+        ],
+        [
+          "Line",
+          153
+        ],
+        [
+          "Reference",
+          38
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          298
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "Reference",
+          8
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          182
+        ],
+        [
+          "Line",
+          79
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          265
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792990_Cross_Domain_Fake_News_Detection_on_Unseen_Domains_via_LLM_Based_Domain_Aware_User_Modeling"
+}

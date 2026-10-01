@@ -1,0 +1,1606 @@
+{
+  "table_of_contents": [
+    {
+      "title": "FishFlow: A LLM-Empowered Dynamic Pricing Framework for\nOnline Fleamarket Platform",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          58.490352630615234,
+          79.0575942993164
+        ],
+        [
+          552.6624755859375,
+          79.0575942993164
+        ],
+        [
+          552.6624755859375,
+          119.59552001953125
+        ],
+        [
+          58.490352630615234,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.779706954956055,
+          295.7029724121094
+        ],
+        [
+          95.91620635986328,
+          295.7029724121094
+        ],
+        [
+          95.91620635986328,
+          310.5312805175781
+        ],
+        [
+          50.779706954956055,
+          310.5312805175781
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5770492553711,
+          296.3463821411133
+        ],
+        [
+          387.3541717529297,
+          296.3463821411133
+        ],
+        [
+          387.3541717529297,
+          310.55279541015625
+        ],
+        [
+          314.5770492553711,
+          310.55279541015625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.0567321777344,
+          341.89430236816406
+        ],
+        [
+          367.0345764160156,
+          341.89430236816406
+        ],
+        [
+          367.0345764160156,
+          356.62200927734375
+        ],
+        [
+          314.0567321777344,
+          356.62200927734375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2177047729492,
+          381.5120086669922
+        ],
+        [
+          404.65252685546875,
+          381.5120086669922
+        ],
+        [
+          404.65252685546875,
+          394.904052734375
+        ],
+        [
+          314.2177047729492,
+          394.904052734375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.23958587646484,
+          462.72889709472656
+        ],
+        [
+          397.5361328125,
+          462.72889709472656
+        ],
+        [
+          397.5361328125,
+          476.9909973144531
+        ],
+        [
+          314.23958587646484,
+          476.9909973144531
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.89892578125,
+          647.9599914550781
+        ],
+        [
+          95.14926338195801,
+          647.9599914550781
+        ],
+        [
+          95.14926338195801,
+          663.4948425292969
+        ],
+        [
+          50.89892578125,
+          663.4948425292969
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4734115600586,
+          534.4678802490234
+        ],
+        [
+          407.4268341064453,
+          534.4678802490234
+        ],
+        [
+          407.4268341064453,
+          548.9709777832031
+        ],
+        [
+          314.4734115600586,
+          548.9709777832031
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Dynamic Pricing System",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.56370544433594,
+          550.6518859863281
+        ],
+        [
+          464.33189392089844,
+          550.6518859863281
+        ],
+        [
+          464.33189392089844,
+          564.7274322509766
+        ],
+        [
+          314.56370544433594,
+          564.7274322509766
+        ]
+      ]
+    },
+    {
+      "title": "2.2 LLM-driven Systems",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.81974411010742,
+          485.09307861328125
+        ],
+        [
+          180.14991760253906,
+          485.09307861328125
+        ],
+        [
+          180.14991760253906,
+          498.90899658203125
+        ],
+        [
+          50.81974411010742,
+          498.90899658203125
+        ]
+      ]
+    },
+    {
+      "title": "3 Framework Design",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.7853088378906,
+          83.6447811126709
+        ],
+        [
+          428.29994201660156,
+          83.6447811126709
+        ],
+        [
+          428.29994201660156,
+          96.23443603515625
+        ],
+        [
+          314.7853088378906,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "4 The Pipeline of Price Adjustment in FishFlow",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.984619140625,
+          194.19580078125
+        ],
+        [
+          560.3439331054688,
+          194.19580078125
+        ],
+        [
+          560.3439331054688,
+          208.38482666015625
+        ],
+        [
+          314.984619140625,
+          208.38482666015625
+        ]
+      ]
+    },
+    {
+      "title": "4.1 The Reserve Price",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.1877212524414,
+          339.8492660522461
+        ],
+        [
+          431.7420959472656,
+          339.8492660522461
+        ],
+        [
+          431.7420959472656,
+          353.4329833984375
+        ],
+        [
+          314.1877212524414,
+          353.4329833984375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 FishFlow Architecture",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.5861587524414,
+          418.9925994873047
+        ],
+        [
+          453.7071533203125,
+          418.9925994873047
+        ],
+        [
+          453.7071533203125,
+          433.15496826171875
+        ],
+        [
+          314.5861587524414,
+          433.15496826171875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          315.10601806640625,
+          670.3493499755859
+        ],
+        [
+          516.6545562744141,
+          670.3493499755859
+        ],
+        [
+          516.6545562744141,
+          683.5042877197266
+        ],
+        [
+          315.10601806640625,
+          683.5042877197266
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.96797943115234,
+          324.07010650634766
+        ],
+        [
+          397.61219787597656,
+          324.07010650634766
+        ],
+        [
+          397.61219787597656,
+          336.0915756225586
+        ],
+        [
+          314.96797943115234,
+          336.0915756225586
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Main Results.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.77123260498047,
+          626.2657012939453
+        ],
+        [
+          145.9681396484375,
+          626.2657012939453
+        ],
+        [
+          145.9681396484375,
+          640.969970703125
+        ],
+        [
+          50.77123260498047,
+          640.969970703125
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Effectiveness of RL Approach",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.04512786865234,
+          575.7851257324219
+        ],
+        [
+          489.1537170410156,
+          575.7851257324219
+        ],
+        [
+          489.1537170410156,
+          589.9387969970703
+        ],
+        [
+          314.04512786865234,
+          589.9387969970703
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Results Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.57815361022949,
+          460.0690612792969
+        ],
+        [
+          160.87112045288086,
+          460.0690612792969
+        ],
+        [
+          160.87112045288086,
+          473.4599914550781
+        ],
+        [
+          50.57815361022949,
+          473.4599914550781
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Online Evaluation.",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          313.93155670166016,
+          649.0026397705078
+        ],
+        [
+          435.59765625,
+          649.0026397705078
+        ],
+        [
+          435.59765625,
+          663.2919769287109
+        ],
+        [
+          313.93155670166016,
+          663.2919769287109
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.1284408569336,
+          266.4489440917969
+        ],
+        [
+          390.8489685058594,
+          266.4489440917969
+        ],
+        [
+          390.8489685058594,
+          279.67193603515625
+        ],
+        [
+          314.1284408569336,
+          279.67193603515625
+        ]
+      ]
+    },
+    {
+      "title": "Limitations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.58290100097656,
+          490.4127960205078
+        ],
+        [
+          375.3799743652344,
+          490.4127960205078
+        ],
+        [
+          375.3799743652344,
+          504.3589782714844
+        ],
+        [
+          313.58290100097656,
+          504.3589782714844
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.6962432861328,
+          627.2162017822266
+        ],
+        [
+          409.939697265625,
+          627.2162017822266
+        ],
+        [
+          409.939697265625,
+          641.4394378662109
+        ],
+        [
+          313.6962432861328,
+          641.4394378662109
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.0600700378418,
+          82.81364822387695
+        ],
+        [
+          108.14663696289062,
+          82.81364822387695
+        ],
+        [
+          108.14663696289062,
+          96.1689453125
+        ],
+        [
+          51.0600700378418,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "A Prompts",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.09431076049805,
+          351.95191955566406
+        ],
+        [
+          115.1781005859375,
+          351.95191955566406
+        ],
+        [
+          115.1781005859375,
+          365.3738098144531
+        ],
+        [
+          51.09431076049805,
+          365.3738098144531
+        ]
+      ]
+    },
+    {
+      "title": "Prompt 1: The Prompt of Similarity Score Task",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          64.49038696289062,
+          440.13853454589844
+        ],
+        [
+          240.2988739013672,
+          440.13853454589844
+        ],
+        [
+          240.2988739013672,
+          452.3899383544922
+        ],
+        [
+          64.49038696289062,
+          452.3899383544922
+        ]
+      ]
+    },
+    {
+      "title": "[Target Item]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          66.85266494750977,
+          520.8562774658203
+        ],
+        [
+          120.62054443359375,
+          520.8562774658203
+        ],
+        [
+          120.62054443359375,
+          532.14990234375
+        ],
+        [
+          66.85266494750977,
+          532.14990234375
+        ]
+      ]
+    },
+    {
+      "title": "[Reference Items]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          66.23848915100098,
+          563.8162994384766
+        ],
+        [
+          134.30465698242188,
+          563.8162994384766
+        ],
+        [
+          134.30465698242188,
+          575.7880706787109
+        ],
+        [
+          66.23848915100098,
+          575.7880706787109
+        ]
+      ]
+    },
+    {
+      "title": "[Similarity Level Scoring Criteria]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          67.29741096496582,
+          607.4089965820312
+        ],
+        [
+          192.5812225341797,
+          607.4089965820312
+        ],
+        [
+          192.5812225341797,
+          619.5218811035156
+        ],
+        [
+          67.29741096496582,
+          619.5218811035156
+        ]
+      ]
+    },
+    {
+      "title": "[Output Requirements]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          330.4849090576172,
+          160.5395622253418
+        ],
+        [
+          419.0232238769531,
+          160.5395622253418
+        ],
+        [
+          419.0232238769531,
+          172.59600830078125
+        ],
+        [
+          330.4849090576172,
+          172.59600830078125
+        ]
+      ]
+    },
+    {
+      "title": "Prompt 2: The Prompt of FishFlow-D",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          328.71402740478516,
+          229.62645721435547
+        ],
+        [
+          469.4098663330078,
+          229.62645721435547
+        ],
+        [
+          469.4098663330078,
+          241.863037109375
+        ],
+        [
+          328.71402740478516,
+          241.863037109375
+        ]
+      ]
+    },
+    {
+      "title": "[Target Item]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.8077163696289,
+          280.2139892578125
+        ],
+        [
+          381.907958984375,
+          280.2139892578125
+        ],
+        [
+          381.907958984375,
+          291.8978576660156
+        ],
+        [
+          329.8077163696289,
+          291.8978576660156
+        ]
+      ]
+    },
+    {
+      "title": "[Price Estimation]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.7095260620117,
+          329.7707290649414
+        ],
+        [
+          399.9122009277344,
+          329.7707290649414
+        ],
+        [
+          399.9122009277344,
+          341.6630554199219
+        ],
+        [
+          329.7095260620117,
+          341.6630554199219
+        ]
+      ]
+    },
+    {
+      "title": "[Output Requirement]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          330.08411407470703,
+          393.71177673339844
+        ],
+        [
+          415.74810791015625,
+          393.71177673339844
+        ],
+        [
+          415.74810791015625,
+          405.291015625
+        ],
+        [
+          330.08411407470703,
+          405.291015625
+        ]
+      ]
+    },
+    {
+      "title": "Prompt 3: The prompt of FishFlow-DR",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.7893829345703,
+          452.54722595214844
+        ],
+        [
+          474.4205627441406,
+          452.54722595214844
+        ],
+        [
+          474.4205627441406,
+          464.5950927734375
+        ],
+        [
+          329.7893829345703,
+          464.5950927734375
+        ]
+      ]
+    },
+    {
+      "title": "[Reference Items]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.86907958984375,
+          533.1648559570312
+        ],
+        [
+          398.79286193847656,
+          533.1648559570312
+        ],
+        [
+          398.79286193847656,
+          544.4700469970703
+        ],
+        [
+          329.86907958984375,
+          544.4700469970703
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 ...\n[User Preference] {user preference}",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.8188171386719,
+          628.5752105712891
+        ],
+        [
+          455.3008117675781,
+          628.5752105712891
+        ],
+        [
+          455.3008117675781,
+          647.9480133056641
+        ],
+        [
+          329.8188171386719,
+          647.9480133056641
+        ]
+      ]
+    },
+    {
+      "title": "[Target Item]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.81275177001953,
+          645.8478698730469
+        ],
+        [
+          381.9079895019531,
+          645.8478698730469
+        ],
+        [
+          381.9079895019531,
+          657.9428863525391
+        ],
+        [
+          329.81275177001953,
+          657.9428863525391
+        ]
+      ]
+    },
+    {
+      "title": "[Price Estimation]",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          329.7979431152344,
+          685.2461700439453
+        ],
+        [
+          399.91217041015625,
+          685.2461700439453
+        ],
+        [
+          399.91217041015625,
+          697.7450714111328
+        ],
+        [
+          329.7979431152344,
+          697.7450714111328
+        ]
+      ]
+    },
+    {
+      "title": "[Output Requirements]",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          67.54679489135742,
+          153.54595184326172
+        ],
+        [
+          154.68069076538086,
+          153.54595184326172
+        ],
+        [
+          154.68069076538086,
+          164.551025390625
+        ],
+        [
+          67.54679489135742,
+          164.551025390625
+        ]
+      ]
+    },
+    {
+      "title": "Prompt 4: The prompt of FishFlow",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          330.3333435058594,
+          83.37031173706055
+        ],
+        [
+          459.8052062988281,
+          83.37031173706055
+        ],
+        [
+          459.8052062988281,
+          96.18707275390625
+        ],
+        [
+          330.3333435058594,
+          96.18707275390625
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 ...\n[User Preference] {user_preference}",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          330.8810806274414,
+          250.2052001953125
+        ],
+        [
+          456.33892822265625,
+          250.2052001953125
+        ],
+        [
+          456.33892822265625,
+          269.5780029296875
+        ],
+        [
+          330.8810806274414,
+          269.5780029296875
+        ]
+      ]
+    },
+    {
+      "title": "[Reasonable Price Rang]",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          330.58824920654297,
+          297.9144515991211
+        ],
+        [
+          422.2441101074219,
+          297.9144515991211
+        ],
+        [
+          422.2441101074219,
+          309.45989990234375
+        ],
+        [
+          330.58824920654297,
+          309.45989990234375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          273
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          439
+        ],
+        [
+          "Line",
+          151
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          17
+        ],
+        [
+          "Equation",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          476
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          397
+        ],
+        [
+          "Line",
+          134
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          191
+        ],
+        [
+          "Line",
+          80
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          407
+        ],
+        [
+          "Line",
+          157
+        ],
+        [
+          "Reference",
+          24
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          280
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "SectionHeader",
+          15
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "ListItem",
+          14
+        ],
+        [
+          "Reference",
+          8
+        ],
+        [
+          "ListGroup",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          98
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792833_FishFlow_A_LLM_Empowered_Dynamic_Pricing_Framework_for_Online_Fleamarket_Platform"
+}

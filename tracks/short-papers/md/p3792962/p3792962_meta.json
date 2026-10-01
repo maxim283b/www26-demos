@@ -1,0 +1,659 @@
+{
+  "table_of_contents": [
+    {
+      "title": "STAR: Semantic Table Representation with Header-Aware\nClustering and Adaptive Weighted Fusion",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          78.13669967651367,
+          79.51949501037598
+        ],
+        [
+          532.2322998046875,
+          79.51949501037598
+        ],
+        [
+          532.2322998046875,
+          119.63006591796875
+        ],
+        [
+          78.13669967651367,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.76278114318848,
+          290.1753158569336
+        ],
+        [
+          95.50057983398438,
+          290.1753158569336
+        ],
+        [
+          95.50057983398438,
+          303.88909912109375
+        ],
+        [
+          50.76278114318848,
+          303.88909912109375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.5861930847168,
+          577.3126831054688
+        ],
+        [
+          123.51401138305664,
+          577.3126831054688
+        ],
+        [
+          123.51401138305664,
+          591.3968200683594
+        ],
+        [
+          50.5861930847168,
+          591.3968200683594
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.45302963256836,
+          612.1257934570312
+        ],
+        [
+          103.24954605102539,
+          612.1257934570312
+        ],
+        [
+          103.24954605102539,
+          626.8069915771484
+        ],
+        [
+          50.45302963256836,
+          626.8069915771484
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.81351852416992,
+          659.8716888427734
+        ],
+        [
+          133.57965087890625,
+          659.8716888427734
+        ],
+        [
+          133.57965087890625,
+          674.2510070800781
+        ],
+        [
+          50.81351852416992,
+          674.2510070800781
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.65798377990723,
+          378.0380859375
+        ],
+        [
+          143.8689079284668,
+          378.0380859375
+        ],
+        [
+          143.8689079284668,
+          391.02398681640625
+        ],
+        [
+          51.65798377990723,
+          391.02398681640625
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.62882995605469,
+          671.3800048828125
+        ],
+        [
+          136.1729393005371,
+          671.3800048828125
+        ],
+        [
+          136.1729393005371,
+          685.2754516601562
+        ],
+        [
+          51.62882995605469,
+          685.2754516601562
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Semantic Clustering and Query Generation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.57249450683594,
+          421.8925323486328
+        ],
+        [
+          561.7532501220703,
+          421.8925323486328
+        ],
+        [
+          561.7532501220703,
+          435.6154479980469
+        ],
+        [
+          314.57249450683594,
+          435.6154479980469
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Weighted Fusion",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.111854553222656,
+          312.96221923828125
+        ],
+        [
+          162.20847702026367,
+          312.96221923828125
+        ],
+        [
+          162.20847702026367,
+          326.2164611816406
+        ],
+        [
+          51.111854553222656,
+          326.2164611816406
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.293701171875,
+          84.3508472442627
+        ],
+        [
+          398.7594451904297,
+          84.3508472442627
+        ],
+        [
+          398.7594451904297,
+          96.1907958984375
+        ],
+        [
+          315.293701171875,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.9674072265625,
+          99.57669067382812
+        ],
+        [
+          441.27818298339844,
+          99.57669067382812
+        ],
+        [
+          441.27818298339844,
+          111.88177490234375
+        ],
+        [
+          314.9674072265625,
+          111.88177490234375
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Main Experimental Results",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.57682037353516,
+          328.9702835083008
+        ],
+        [
+          478.8490447998047,
+          328.9702835083008
+        ],
+        [
+          478.8490447998047,
+          342.018798828125
+        ],
+        [
+          314.57682037353516,
+          342.018798828125
+        ]
+      ]
+    },
+    {
+      "title": "5 Analysis",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.2969913482666,
+          263.64855194091797
+        ],
+        [
+          113.1742172241211,
+          263.64855194091797
+        ],
+        [
+          113.1742172241211,
+          277.17401123046875
+        ],
+        [
+          51.2969913482666,
+          277.17401123046875
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Ablation Study of STAR Components",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.724632263183594,
+          278.26373291015625
+        ],
+        [
+          262.41265869140625,
+          278.26373291015625
+        ],
+        [
+          262.41265869140625,
+          292.8868103027344
+        ],
+        [
+          50.724632263183594,
+          292.8868103027344
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.18982696533203,
+          431.2489929199219
+        ],
+        [
+          391.7428894042969,
+          431.2489929199219
+        ],
+        [
+          391.7428894042969,
+          444.1139831542969
+        ],
+        [
+          314.18982696533203,
+          444.1139831542969
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.809072494506836,
+          82.39288902282715
+        ],
+        [
+          146.31234741210938,
+          82.39288902282715
+        ],
+        [
+          146.31234741210938,
+          96.23443603515625
+        ],
+        [
+          50.809072494506836,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.05394744873047,
+          147.67989349365234
+        ],
+        [
+          108.2394790649414,
+          147.67989349365234
+        ],
+        [
+          108.2394790649414,
+          161.04705810546875
+        ],
+        [
+          51.05394744873047,
+          161.04705810546875
+        ]
+      ]
+    },
+    {
+      "title": "A Prompt for Pseudo Query Generation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.677677154541016,
+          632.7148590087891
+        ],
+        [
+          258.6420135498047,
+          632.7148590087891
+        ],
+        [
+          258.6420135498047,
+          646.4558258056641
+        ],
+        [
+          50.677677154541016,
+          646.4558258056641
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          217
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          274
+        ],
+        [
+          "Line",
+          61
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          579
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "Text",
+          21
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          387
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          551
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Reference",
+          14
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792962_STAR_Semantic_Table_Representation_with_Header_Aware_Clustering_and_Adaptive_Weighted_Fusion"
+}

@@ -1,0 +1,572 @@
+{
+  "table_of_contents": [
+    {
+      "title": "PAOSC: Plug-and-play Attention Optimization for Semantic\nConsistency in LLMs",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          68.78524017333984,
+          78.44741249084473
+        ],
+        [
+          540.4590454101562,
+          78.44741249084473
+        ],
+        [
+          540.4590454101562,
+          119.61273193359375
+        ],
+        [
+          68.78524017333984,
+          119.61273193359375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.88908386230469,
+          265.5867919921875
+        ],
+        [
+          95.76504707336426,
+          265.5867919921875
+        ],
+        [
+          95.76504707336426,
+          279.97296142578125
+        ],
+        [
+          50.88908386230469,
+          279.97296142578125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.395517349243164,
+          488.07733154296875
+        ],
+        [
+          123.30326843261719,
+          488.07733154296875
+        ],
+        [
+          123.30326843261719,
+          502.0968017578125
+        ],
+        [
+          50.395517349243164,
+          502.0968017578125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.4349250793457,
+          534.1148529052734
+        ],
+        [
+          102.87759399414062,
+          534.1148529052734
+        ],
+        [
+          102.87759399414062,
+          548.8349914550781
+        ],
+        [
+          50.4349250793457,
+          548.8349914550781
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.69652557373047,
+          576.0291137695312
+        ],
+        [
+          140.4955596923828,
+          576.0291137695312
+        ],
+        [
+          140.4955596923828,
+          588.4040679931641
+        ],
+        [
+          50.69652557373047,
+          588.4040679931641
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.697601318359375,
+          650.1109771728516
+        ],
+        [
+          92.46624755859375,
+          650.1109771728516
+        ],
+        [
+          92.46624755859375,
+          662.6723785400391
+        ],
+        [
+          50.697601318359375,
+          662.6723785400391
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.77201080322266,
+          440.3434753417969
+        ],
+        [
+          397.5487060546875,
+          440.3434753417969
+        ],
+        [
+          397.5487060546875,
+          455.0729675292969
+        ],
+        [
+          314.77201080322266,
+          455.0729675292969
+        ]
+      ]
+    },
+    {
+      "title": "2 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.73656463623047,
+          638.7111511230469
+        ],
+        [
+          135.67478942871094,
+          638.7111511230469
+        ],
+        [
+          135.67478942871094,
+          652.3984375
+        ],
+        [
+          51.73656463623047,
+          652.3984375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Generator Module",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4740753173828,
+          181.32428741455078
+        ],
+        [
+          433.20753479003906,
+          181.32428741455078
+        ],
+        [
+          433.20753479003906,
+          194.09295654296875
+        ],
+        [
+          314.4740753173828,
+          194.09295654296875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Discriminator Module",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.9343566894531,
+          584.0593872070312
+        ],
+        [
+          452.71600341796875,
+          584.0593872070312
+        ],
+        [
+          452.71600341796875,
+          597.5389862060547
+        ],
+        [
+          314.9343566894531,
+          597.5389862060547
+        ]
+      ]
+    },
+    {
+      "title": "3 HTTP-RL Dataset",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.27549934387207,
+          474.0959014892578
+        ],
+        [
+          159.07446670532227,
+          474.0959014892578
+        ],
+        [
+          159.07446670532227,
+          487.9499816894531
+        ],
+        [
+          51.27549934387207,
+          487.9499816894531
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.7893371582031,
+          457.922607421875
+        ],
+        [
+          397.80088806152344,
+          457.922607421875
+        ],
+        [
+          397.80088806152344,
+          471.3658142089844
+        ],
+        [
+          314.7893371582031,
+          471.3658142089844
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.96106719970703,
+          550.8242797851562
+        ],
+        [
+          126.69194793701172,
+          550.8242797851562
+        ],
+        [
+          126.69194793701172,
+          564.6619567871094
+        ],
+        [
+          50.96106719970703,
+          564.6619567871094
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.15020751953125,
+          226.4212875366211
+        ],
+        [
+          410.2434997558594,
+          226.4212875366211
+        ],
+        [
+          410.2434997558594,
+          240.44244384765625
+        ],
+        [
+          314.15020751953125,
+          240.44244384765625
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.04398345947266,
+          293.4697494506836
+        ],
+        [
+          372.3036193847656,
+          293.4697494506836
+        ],
+        [
+          372.3036193847656,
+          308.12298583984375
+        ],
+        [
+          314.04398345947266,
+          308.12298583984375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          205
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          454
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          543
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          376
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Reference",
+          17
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792911_PAOSC_Plug_and_play_Attention_Optimization_for_Semantic_Consistency_in_LLMs"
+}

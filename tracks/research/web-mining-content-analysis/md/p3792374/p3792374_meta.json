@@ -1,0 +1,1511 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Enhancing Large Language Models for Time-Series Forecasting\nvia Vector-Injected In-Context Learning",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.02821350097656,
+          79.1890926361084
+        ],
+        [
+          554.2396545410156,
+          79.1890926361084
+        ],
+        [
+          554.2396545410156,
+          119.63006591796875
+        ],
+        [
+          56.02821350097656,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.5598258972168,
+          280.6508102416992
+        ],
+        [
+          95.5909595489502,
+          280.6508102416992
+        ],
+        [
+          95.5909595489502,
+          294.1161193847656
+        ],
+        [
+          50.5598258972168,
+          294.1161193847656
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.22338104248047,
+          279.75425720214844
+        ],
+        [
+          387.30152893066406,
+          279.75425720214844
+        ],
+        [
+          387.30152893066406,
+          294.1378173828125
+        ],
+        [
+          314.22338104248047,
+          294.1378173828125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.90930938720703,
+          317.50689697265625
+        ],
+        [
+          367.0350341796875,
+          317.50689697265625
+        ],
+        [
+          367.0350341796875,
+          331.5240173339844
+        ],
+        [
+          313.90930938720703,
+          331.5240173339844
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.1990966796875,
+          360.6761169433594
+        ],
+        [
+          404.6535949707031,
+          360.6761169433594
+        ],
+        [
+          404.6535949707031,
+          374.18609619140625
+        ],
+        [
+          314.1990966796875,
+          374.18609619140625
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4033737182617,
+          440.6997528076172
+        ],
+        [
+          397.81690979003906,
+          440.6997528076172
+        ],
+        [
+          397.81690979003906,
+          455.072998046875
+        ],
+        [
+          314.4033737182617,
+          455.072998046875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.81312942504883,
+          649.4682769775391
+        ],
+        [
+          91.51803588867188,
+          649.4682769775391
+        ],
+        [
+          91.51803588867188,
+          662.7825164794922
+        ],
+        [
+          50.81312942504883,
+          662.7825164794922
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.19559478759766,
+          214.13699340820312
+        ],
+        [
+          402.5550842285156,
+          214.13699340820312
+        ],
+        [
+          402.5550842285156,
+          228.04901123046875
+        ],
+        [
+          314.19559478759766,
+          228.04901123046875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Large Language Models for Time Series",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.30509185791016,
+          229.59496307373047
+        ],
+        [
+          537.0185852050781,
+          229.59496307373047
+        ],
+        [
+          537.0185852050781,
+          243.805419921875
+        ],
+        [
+          314.30509185791016,
+          243.805419921875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 In-context Learning",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.7212371826172,
+          484.8281707763672
+        ],
+        [
+          441.94798278808594,
+          484.8281707763672
+        ],
+        [
+          441.94798278808594,
+          498.97442626953125
+        ],
+        [
+          313.7212371826172,
+          498.97442626953125
+        ]
+      ]
+    },
+    {
+      "title": "3 Preliminaries",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.36558151245117,
+          160.4769287109375
+        ],
+        [
+          138.30674743652344,
+          160.4769287109375
+        ],
+        [
+          138.30674743652344,
+          172.4510498046875
+        ],
+        [
+          51.36558151245117,
+          172.4510498046875
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Time Series Forecasting (TSF)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.07224082946777,
+          174.74296188354492
+        ],
+        [
+          224.37210845947266,
+          174.74296188354492
+        ],
+        [
+          224.37210845947266,
+          188.20745849609375
+        ],
+        [
+          51.07224082946777,
+          188.20745849609375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Residual Stream",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.07649803161621,
+          284.6604766845703
+        ],
+        [
+          159.87313842773438,
+          284.6604766845703
+        ],
+        [
+          159.87313842773438,
+          297.87298583984375
+        ],
+        [
+          51.07649803161621,
+          297.87298583984375
+        ]
+      ]
+    },
+    {
+      "title": "4 Empirical Analysis",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.23297882080078,
+          661.1168060302734
+        ],
+        [
+          164.8780746459961,
+          661.1168060302734
+        ],
+        [
+          164.8780746459961,
+          674.272819519043
+        ],
+        [
+          51.23297882080078,
+          674.272819519043
+        ]
+      ]
+    },
+    {
+      "title": "5 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.86438751220703,
+          616.6456146240234
+        ],
+        [
+          400.1227569580078,
+          616.6456146240234
+        ],
+        [
+          400.1227569580078,
+          630.4804534912109
+        ],
+        [
+          314.86438751220703,
+          630.4804534912109
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Overall Pipeline",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.581838607788086,
+          396.5356750488281
+        ],
+        [
+          158.75592041015625,
+          396.5356750488281
+        ],
+        [
+          158.75592041015625,
+          411.2588195800781
+        ],
+        [
+          50.581838607788086,
+          411.2588195800781
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Context Vector Acquisition",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.7706298828125,
+          347.95733642578125
+        ],
+        [
+          477.4415588378906,
+          347.95733642578125
+        ],
+        [
+          477.4415588378906,
+          361.49578857421875
+        ],
+        [
+          313.7706298828125,
+          361.49578857421875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.7426223754883,
+          284.1398620605469
+        ],
+        [
+          443.0899658203125,
+          284.1398620605469
+        ],
+        [
+          443.0899658203125,
+          295.9530944824219
+        ],
+        [
+          314.7426223754883,
+          295.9530944824219
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.6986312866211,
+          425.3478240966797
+        ],
+        [
+          398.37730407714844,
+          425.3478240966797
+        ],
+        [
+          398.37730407714844,
+          436.6827392578125
+        ],
+        [
+          314.6986312866211,
+          436.6827392578125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.5983581542969,
+          505.37599182128906
+        ],
+        [
+          453.0975036621094,
+          505.37599182128906
+        ],
+        [
+          453.0975036621094,
+          517.090576171875
+        ],
+        [
+          314.5983581542969,
+          517.090576171875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.36167335510254,
+          532.9150085449219
+        ],
+        [
+          200.85232543945312,
+          532.9150085449219
+        ],
+        [
+          200.85232543945312,
+          544.6609497070312
+        ],
+        [
+          51.36167335510254,
+          544.6609497070312
+        ]
+      ]
+    },
+    {
+      "title": "6.2 Standard Dataset Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.694923400878906,
+          312.07930755615234
+        ],
+        [
+          218.75445556640625,
+          312.07930755615234
+        ],
+        [
+          218.75445556640625,
+          325.9320068359375
+        ],
+        [
+          50.694923400878906,
+          325.9320068359375
+        ]
+      ]
+    },
+    {
+      "title": "6.3 Zero-shot Forecasting",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.960426330566406,
+          606.5747222900391
+        ],
+        [
+          187.11235427856445,
+          606.5747222900391
+        ],
+        [
+          187.11235427856445,
+          619.5224609375
+        ],
+        [
+          50.960426330566406,
+          619.5224609375
+        ]
+      ]
+    },
+    {
+      "title": "6.4 Ablation Experiment",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.52085876464844,
+          473.09779357910156
+        ],
+        [
+          447.195068359375,
+          473.09779357910156
+        ],
+        [
+          447.195068359375,
+          486.8988037109375
+        ],
+        [
+          314.52085876464844,
+          486.8988037109375
+        ]
+      ]
+    },
+    {
+      "title": "6.5 Method Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.1170768737793,
+          670.53369140625
+        ],
+        [
+          162.19711303710938,
+          670.53369140625
+        ],
+        [
+          162.19711303710938,
+          685.2100067138672
+        ],
+        [
+          50.1170768737793,
+          685.2100067138672
+        ]
+      ]
+    },
+    {
+      "title": "7 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.6082458496094,
+          514.4039611816406
+        ],
+        [
+          390.8495788574219,
+          514.4039611816406
+        ],
+        [
+          390.8495788574219,
+          528.1909790039062
+        ],
+        [
+          314.6082458496094,
+          528.1909790039062
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.3331985473633,
+          648.1301879882812
+        ],
+        [
+          415.4186096191406,
+          648.1301879882812
+        ],
+        [
+          415.4186096191406,
+          661.7554473876953
+        ],
+        [
+          314.3331985473633,
+          661.7554473876953
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.866750717163086,
+          83.10658264160156
+        ],
+        [
+          108.18351745605469,
+          83.10658264160156
+        ],
+        [
+          108.18351745605469,
+          96.16900634765625
+        ],
+        [
+          50.866750717163086,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "Appendix",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.59967041015625,
+          277.01895904541016
+        ],
+        [
+          102.89802932739258,
+          277.01895904541016
+        ],
+        [
+          102.89802932739258,
+          291.4068298339844
+        ],
+        [
+          51.59967041015625,
+          291.4068298339844
+        ]
+      ]
+    },
+    {
+      "title": "A Dataset Descriptions",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.05240821838379,
+          293.1427917480469
+        ],
+        [
+          174.67975616455078,
+          293.1427917480469
+        ],
+        [
+          174.67975616455078,
+          307.09783935546875
+        ],
+        [
+          51.05240821838379,
+          307.09783935546875
+        ]
+      ]
+    },
+    {
+      "title": "B More Implementation Details",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.784542083740234,
+          584.7274017333984
+        ],
+        [
+          218.11085510253906,
+          584.7274017333984
+        ],
+        [
+          218.11085510253906,
+          598.7338256835938
+        ],
+        [
+          50.784542083740234,
+          598.7338256835938
+        ]
+      ]
+    },
+    {
+      "title": "C Hyperparameter Sensitivity Analysis",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.71976280212402,
+          647.9214019775391
+        ],
+        [
+          256.5656204223633,
+          647.9214019775391
+        ],
+        [
+          256.5656204223633,
+          663.3138275146484
+        ],
+        [
+          50.71976280212402,
+          663.3138275146484
+        ]
+      ]
+    },
+    {
+      "title": "C.1 Variable look-back length",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.5329360961914,
+          626.9364624023438
+        ],
+        [
+          472.8087615966797,
+          626.9364624023438
+        ],
+        [
+          472.8087615966797,
+          641.439453125
+        ],
+        [
+          313.5329360961914,
+          641.439453125
+        ]
+      ]
+    },
+    {
+      "title": "C.2 Number of Examples Used",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.236371994018555,
+          331.270751953125
+        ],
+        [
+          213.07372283935547,
+          331.270751953125
+        ],
+        [
+          213.07372283935547,
+          344.4278259277344
+        ],
+        [
+          51.236371994018555,
+          344.4278259277344
+        ]
+      ]
+    },
+    {
+      "title": "D Inference Efficiency Comparison of\nVector-Injected and Traditional ICL",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.3596248626709,
+          475.51368713378906
+        ],
+        [
+          249.60701751708984,
+          475.51368713378906
+        ],
+        [
+          249.60701751708984,
+          502.47900390625
+        ],
+        [
+          51.3596248626709,
+          502.47900390625
+        ]
+      ]
+    },
+    {
+      "title": "E More Method Analysis",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.344032287597656,
+          612.3454284667969
+        ],
+        [
+          183.57888793945312,
+          612.3454284667969
+        ],
+        [
+          183.57888793945312,
+          625.6829986572266
+        ],
+        [
+          51.344032287597656,
+          625.6829986572266
+        ]
+      ]
+    },
+    {
+      "title": "E.1 Effectiveness of Aggregation",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.85253715515137,
+          627.4235229492188
+        ],
+        [
+          220.94805908203125,
+          627.4235229492188
+        ],
+        [
+          220.94805908203125,
+          641.439453125
+        ],
+        [
+          50.85253715515137,
+          641.439453125
+        ]
+      ]
+    },
+    {
+      "title": "E.2 Comparison of Aggregation Methods",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.4558334350586,
+          235.33616638183594
+        ],
+        [
+          528.1380157470703,
+          235.33616638183594
+        ],
+        [
+          528.1380157470703,
+          248.91143798828125
+        ],
+        [
+          314.4558334350586,
+          248.91143798828125
+        ]
+      ]
+    },
+    {
+      "title": "E.3 Effectiveness of Context Vector Adapter",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.4659729003906,
+          303.0365982055664
+        ],
+        [
+          542.7459411621094,
+          303.0365982055664
+        ],
+        [
+          542.7459411621094,
+          316.61383056640625
+        ],
+        [
+          314.4659729003906,
+          316.61383056640625
+        ]
+      ]
+    },
+    {
+      "title": "F Full Forecasting Results",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.44686126708984,
+          595.5478363037109
+        ],
+        [
+          453.8579864501953,
+          595.5478363037109
+        ],
+        [
+          453.8579864501953,
+          609.4834442138672
+        ],
+        [
+          314.44686126708984,
+          609.4834442138672
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          236
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          283
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          443
+        ],
+        [
+          "Line",
+          134
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          297
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          16
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          302
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          490
+        ],
+        [
+          "Line",
+          57
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          454
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          576
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          48
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          352
+        ],
+        [
+          "Line",
+          126
+        ],
+        [
+          "Reference",
+          12
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          264
+        ],
+        [
+          "Line",
+          119
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1015
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792374_Enhancing_Large_Language_Models_for_Time_Series_Forecasting_via_Vector_Injected_In_Context_Learning"
+}

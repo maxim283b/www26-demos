@@ -1,0 +1,1076 @@
+{
+  "table_of_contents": [
+    {
+      "title": "StreamSense: Streaming Social Task Detection with Selective\nVision\u2013Language Model Routing",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          64.34828567504883,
+          79.0891227722168
+        ],
+        [
+          544.0856323242188,
+          79.0891227722168
+        ],
+        [
+          544.0856323242188,
+          119.63006591796875
+        ],
+        [
+          64.34828567504883,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.72464942932129,
+          265.9427947998047
+        ],
+        [
+          95.55366897583008,
+          265.9427947998047
+        ],
+        [
+          95.55366897583008,
+          280.0339660644531
+        ],
+        [
+          50.72464942932129,
+          280.0339660644531
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.282386779785156,
+          499.8386993408203
+        ],
+        [
+          123.25350952148438,
+          499.8386993408203
+        ],
+        [
+          123.25350952148438,
+          514.3347778320312
+        ],
+        [
+          50.282386779785156,
+          514.3347778320312
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.284040451049805,
+          537.3629608154297
+        ],
+        [
+          102.96329498291016,
+          537.3629608154297
+        ],
+        [
+          102.96329498291016,
+          551.3329925537109
+        ],
+        [
+          50.284040451049805,
+          551.3329925537109
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.65529251098633,
+          570.0383148193359
+        ],
+        [
+          140.73876571655273,
+          570.0383148193359
+        ],
+        [
+          140.73876571655273,
+          582.2901000976562
+        ],
+        [
+          50.65529251098633,
+          582.2901000976562
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.077796936035156,
+          649.7482452392578
+        ],
+        [
+          92.0767879486084,
+          649.7482452392578
+        ],
+        [
+          92.0767879486084,
+          662.7233276367188
+        ],
+        [
+          51.077796936035156,
+          662.7233276367188
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3158950805664,
+          479.2144775390625
+        ],
+        [
+          397.7311706542969,
+          479.2144775390625
+        ],
+        [
+          397.7311706542969,
+          493.5719909667969
+        ],
+        [
+          314.3158950805664,
+          493.5719909667969
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5067138671875,
+          115.3208999633789
+        ],
+        [
+          407.2132568359375,
+          115.3208999633789
+        ],
+        [
+          407.2132568359375,
+          129.41900634765625
+        ],
+        [
+          314.5067138671875,
+          129.41900634765625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Social Task Detection",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.50623321533203,
+          131.56595993041992
+        ],
+        [
+          448.5587158203125,
+          131.56595993041992
+        ],
+        [
+          448.5587158203125,
+          145.1099853515625
+        ],
+        [
+          314.50623321533203,
+          145.1099853515625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Streaming Video Understanding",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.75037384033203,
+          593.8022918701172
+        ],
+        [
+          501.7239074707031,
+          593.8022918701172
+        ],
+        [
+          501.7239074707031,
+          608.5634460449219
+        ],
+        [
+          313.75037384033203,
+          608.5634460449219
+        ]
+      ]
+    },
+    {
+      "title": "3 Streaming Social Task Detection",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.334590911865234,
+          497.7111511230469
+        ],
+        [
+          230.26618194580078,
+          497.7111511230469
+        ],
+        [
+          230.26618194580078,
+          511.3094482421875
+        ],
+        [
+          51.334590911865234,
+          511.3094482421875
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Task Formulation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.165395736694336,
+          588.9408416748047
+        ],
+        [
+          167.78739166259766,
+          588.9408416748047
+        ],
+        [
+          167.78739166259766,
+          602.1909942626953
+        ],
+        [
+          51.165395736694336,
+          602.1909942626953
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Challenge I: Balancing Performance and\nEfficiency",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.2603988647461,
+          352.15747833251953
+        ],
+        [
+          545.9319305419922,
+          352.15747833251953
+        ],
+        [
+          545.9319305419922,
+          378.3609924316406
+        ],
+        [
+          315.2603988647461,
+          378.3609924316406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.533769607543945,
+          83.75644111633301
+        ],
+        [
+          267.5759582519531,
+          83.75644111633301
+        ],
+        [
+          267.5759582519531,
+          107.63662719726562
+        ],
+        [
+          51.533769607543945,
+          107.63662719726562
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.49851989746094,
+          115.74594497680664
+        ],
+        [
+          493.026123046875,
+          115.74594497680664
+        ],
+        [
+          493.026123046875,
+          127.65279006958008
+        ],
+        [
+          314.49851989746094,
+          127.65279006958008
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.90117645263672,
+          552.0406494140625
+        ],
+        [
+          135.79571914672852,
+          552.0406494140625
+        ],
+        [
+          135.79571914672852,
+          563.6653289794922
+        ],
+        [
+          51.90117645263672,
+          563.6653289794922
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Selective Routing to the VLM Expert",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.86135482788086,
+          572.8993835449219
+        ],
+        [
+          259.16910552978516,
+          572.8993835449219
+        ],
+        [
+          259.16910552978516,
+          586.6454467773438
+        ],
+        [
+          50.86135482788086,
+          586.6454467773438
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Deferral Policy",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.2684020996094,
+          648.7985687255859
+        ],
+        [
+          417.642333984375,
+          648.7985687255859
+        ],
+        [
+          417.642333984375,
+          663.2920074462891
+        ],
+        [
+          314.2684020996094,
+          663.2920074462891
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.531131744384766,
+          600.9944000244141
+        ],
+        [
+          133.89976501464844,
+          600.9944000244141
+        ],
+        [
+          133.89976501464844,
+          614.7458190917969
+        ],
+        [
+          51.531131744384766,
+          614.7458190917969
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Settings",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.28531265258789,
+          616.2415008544922
+        ],
+        [
+          188.30290603637695,
+          616.2415008544922
+        ],
+        [
+          188.30290603637695,
+          630.4804382324219
+        ],
+        [
+          51.28531265258789,
+          630.4804382324219
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Main Results",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.0845184326172,
+          649.2852172851562
+        ],
+        [
+          407.91517639160156,
+          649.2852172851562
+        ],
+        [
+          407.91517639160156,
+          663.2920074462891
+        ],
+        [
+          314.0845184326172,
+          663.2920074462891
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Ablation Study on the Encoder Loss",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.26483154296875,
+          268.42517852783203
+        ],
+        [
+          519.0811614990234,
+          268.42517852783203
+        ],
+        [
+          519.0811614990234,
+          282.6689758300781
+        ],
+        [
+          314.26483154296875,
+          282.6689758300781
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Ablation Study on VLM Invocation and the\nPrediction Deferral Strategy",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.4822463989258,
+          556.6061553955078
+        ],
+        [
+          557.8679809570312,
+          556.6061553955078
+        ],
+        [
+          557.8679809570312,
+          583.9554443359375
+        ],
+        [
+          314.4822463989258,
+          583.9554443359375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.37682342529297,
+          406.5721893310547
+        ],
+        [
+          479.42596435546875,
+          406.5721893310547
+        ],
+        [
+          479.42596435546875,
+          418.7590026855469
+        ],
+        [
+          314.37682342529297,
+          418.7590026855469
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.3643035888672,
+          573.6052093505859
+        ],
+        [
+          391.68397521972656,
+          573.6052093505859
+        ],
+        [
+          391.68397521972656,
+          584.9138031005859
+        ],
+        [
+          314.3643035888672,
+          584.9138031005859
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.69302940368652,
+          82.28668212890625
+        ],
+        [
+          146.7993507385254,
+          82.28668212890625
+        ],
+        [
+          146.7993507385254,
+          94.77713584899902
+        ],
+        [
+          50.69302940368652,
+          94.77713584899902
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.73474884033203,
+          206.99205780029297
+        ],
+        [
+          107.85816192626953,
+          206.99205780029297
+        ],
+        [
+          107.85816192626953,
+          219.01956939697266
+        ],
+        [
+          50.73474884033203,
+          219.01956939697266
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          192
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          352
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          419
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          333
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          566
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          457
+        ],
+        [
+          "Line",
+          94
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          494
+        ],
+        [
+          "Line",
+          151
+        ],
+        [
+          "Reference",
+          41
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          87
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Reference",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793046_StreamSense_Streaming_Social_Task_Detection_with_Selective_Vision_Language_Model_Routing"
+}

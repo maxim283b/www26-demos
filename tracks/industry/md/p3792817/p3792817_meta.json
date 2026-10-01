@@ -1,0 +1,1461 @@
+{
+  "table_of_contents": [
+    {
+      "title": "ARADD: An Automatic Real-World API Discovery and\nDeployment Framework for AI Guide Service in Baidu Map",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.06752395629883,
+          79.46659469604492
+        ],
+        [
+          539.0255126953125,
+          79.46659469604492
+        ],
+        [
+          539.0255126953125,
+          119.61273193359375
+        ],
+        [
+          71.06752395629883,
+          119.61273193359375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.969621658325195,
+          281.28895568847656
+        ],
+        [
+          95.62255668640137,
+          281.28895568847656
+        ],
+        [
+          95.62255668640137,
+          295.9139709472656
+        ],
+        [
+          50.969621658325195,
+          295.9139709472656
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.019094467163086,
+          591.0234375
+        ],
+        [
+          123.30055618286133,
+          591.0234375
+        ],
+        [
+          123.30055618286133,
+          605.6537933349609
+        ],
+        [
+          51.019094467163086,
+          605.6537933349609
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Computing methodologies \u2192 Intelligent agents.",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.07089042663574,
+          605.3134918212891
+        ],
+        [
+          254.48011779785156,
+          605.3134918212891
+        ],
+        [
+          254.48011779785156,
+          618.9359436035156
+        ],
+        [
+          51.07089042663574,
+          618.9359436035156
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.09638214111328,
+          649.9596405029297
+        ],
+        [
+          90.69889640808105,
+          649.9596405029297
+        ],
+        [
+          90.69889640808105,
+          662.4017028808594
+        ],
+        [
+          51.09638214111328,
+          662.4017028808594
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.939453125,
+          281.4335403442383
+        ],
+        [
+          367.1095504760742,
+          281.4335403442383
+        ],
+        [
+          367.1095504760742,
+          295.9129943847656
+        ],
+        [
+          313.939453125,
+          295.9129943847656
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.14510345458984,
+          326.0244598388672
+        ],
+        [
+          404.65252685546875,
+          326.0244598388672
+        ],
+        [
+          404.65252685546875,
+          338.42706298828125
+        ],
+        [
+          314.14510345458984,
+          338.42706298828125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5870056152344,
+          415.0946502685547
+        ],
+        [
+          397.8013000488281,
+          415.0946502685547
+        ],
+        [
+          397.8013000488281,
+          428.97698974609375
+        ],
+        [
+          314.5870056152344,
+          428.97698974609375
+        ]
+      ]
+    },
+    {
+      "title": "2 RELATED WORK",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.82679748535156,
+          479.6016540527344
+        ],
+        [
+          421.86529541015625,
+          479.6016540527344
+        ],
+        [
+          421.86529541015625,
+          494.1759948730469
+        ],
+        [
+          313.82679748535156,
+          494.1759948730469
+        ]
+      ]
+    },
+    {
+      "title": "2.1 New Intent Discovery",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.83890533447266,
+          495.1645202636719
+        ],
+        [
+          449.6156921386719,
+          495.1645202636719
+        ],
+        [
+          449.6156921386719,
+          509.86700439453125
+        ],
+        [
+          313.83890533447266,
+          509.86700439453125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Tool/API-Augmented LLMs",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.79071044921875,
+          221.49039459228516
+        ],
+        [
+          214.11270904541016,
+          221.49039459228516
+        ],
+        [
+          214.11270904541016,
+          235.96044921875
+        ],
+        [
+          50.79071044921875,
+          235.96044921875
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Instruction Tuning",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.881507873535156,
+          551.3063507080078
+        ],
+        [
+          173.40499877929688,
+          551.3063507080078
+        ],
+        [
+          173.40499877929688,
+          564.7274322509766
+        ],
+        [
+          50.881507873535156,
+          564.7274322509766
+        ]
+      ]
+    },
+    {
+      "title": "3 PRELIMINARIES",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.37805938720703,
+          268.6464614868164
+        ],
+        [
+          420.1892395019531,
+          268.6464614868164
+        ],
+        [
+          420.1892395019531,
+          282.8439636230469
+        ],
+        [
+          314.37805938720703,
+          282.8439636230469
+        ]
+      ]
+    },
+    {
+      "title": "3.1 The AI Guide Service in Baidu Maps",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.2075653076172,
+          284.59105682373047
+        ],
+        [
+          521.3804626464844,
+          284.59105682373047
+        ],
+        [
+          521.3804626464844,
+          298.5567932128906
+        ],
+        [
+          314.2075653076172,
+          298.5567932128906
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Problem Statement",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.8465042114258,
+          626.9643859863281
+        ],
+        [
+          437.7279968261719,
+          626.9643859863281
+        ],
+        [
+          437.7279968261719,
+          641.3739776611328
+        ],
+        [
+          313.8465042114258,
+          641.3739776611328
+        ]
+      ]
+    },
+    {
+      "title": "4 METHODOLOGY",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.47111892700195,
+          388.9587707519531
+        ],
+        [
+          156.21583557128906,
+          388.9587707519531
+        ],
+        [
+          156.21583557128906,
+          402.3949890136719
+        ],
+        [
+          51.47111892700195,
+          402.3949890136719
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Framework Overview",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.36569595336914,
+          404.28172302246094
+        ],
+        [
+          185.29887771606445,
+          404.28172302246094
+        ],
+        [
+          185.29887771606445,
+          418.08697509765625
+        ],
+        [
+          51.36569595336914,
+          418.08697509765625
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Multi-Stage LLM-Empowered Interactive\nQuery Selection",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.729421615600586,
+          625.4041900634766
+        ],
+        [
+          280.51883697509766,
+          625.4041900634766
+        ],
+        [
+          280.51883697509766,
+          652.3329772949219
+        ],
+        [
+          50.729421615600586,
+          652.3329772949219
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Contextual-Aware API Discovery and Data\nGeneration",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.7549819946289,
+          646.8988494873047
+        ],
+        [
+          556.2101440429688,
+          646.8988494873047
+        ],
+        [
+          556.2101440429688,
+          674.2509841918945
+        ],
+        [
+          314.7549819946289,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Two-Stage Data Filtering",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.1690444946289,
+          402.35760498046875
+        ],
+        [
+          465.13677978515625,
+          402.35760498046875
+        ],
+        [
+          465.13677978515625,
+          416.8224182128906
+        ],
+        [
+          314.1690444946289,
+          416.8224182128906
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.5854034423828,
+          83.87921905517578
+        ],
+        [
+          441.2377624511719,
+          83.87921905517578
+        ],
+        [
+          441.2377624511719,
+          95.67913055419922
+        ],
+        [
+          314.5854034423828,
+          95.67913055419922
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.18790435791016,
+          551.3376159667969
+        ],
+        [
+          446.44276428222656,
+          551.3376159667969
+        ],
+        [
+          446.44276428222656,
+          563.4588317871094
+        ],
+        [
+          314.18790435791016,
+          563.4588317871094
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.63311004638672,
+          583.8701934814453
+        ],
+        [
+          133.78390502929688,
+          583.8701934814453
+        ],
+        [
+          133.78390502929688,
+          595.9979553222656
+        ],
+        [
+          51.63311004638672,
+          595.9979553222656
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Validation of New Intent Discovery",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.15574264526367,
+          528.9369964599609
+        ],
+        [
+          253.1304473876953,
+          528.9369964599609
+        ],
+        [
+          253.1304473876953,
+          542.7439727783203
+        ],
+        [
+          51.15574264526367,
+          542.7439727783203
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Validation of Data Filtering Strategies",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.58748626708984,
+          485.2488555908203
+        ],
+        [
+          530.4190063476562,
+          485.2488555908203
+        ],
+        [
+          530.4190063476562,
+          498.97442626953125
+        ],
+        [
+          314.58748626708984,
+          498.97442626953125
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Case Study",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.808420181274414,
+          659.9512023925781
+        ],
+        [
+          132.68389892578125,
+          659.9512023925781
+        ],
+        [
+          132.68389892578125,
+          674.2509841918945
+        ],
+        [
+          50.808420181274414,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "6 CONCLUSION",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.28829193115234,
+          387.8990936279297
+        ],
+        [
+          405.8918151855469,
+          387.8990936279297
+        ],
+        [
+          405.8918151855469,
+          402.8799743652344
+        ],
+        [
+          314.28829193115234,
+          402.8799743652344
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.789306640625,
+          565.4932708740234
+        ],
+        [
+          410.16778564453125,
+          565.4932708740234
+        ],
+        [
+          410.16778564453125,
+          580.2804412841797
+        ],
+        [
+          313.789306640625,
+          580.2804412841797
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.91090774536133,
+          82.51838493347168
+        ],
+        [
+          108.67204284667969,
+          82.51838493347168
+        ],
+        [
+          108.67204284667969,
+          94.07231712341309
+        ],
+        [
+          50.91090774536133,
+          94.07231712341309
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          314.29335021972656,
+          473.3456726074219
+        ],
+        [
+          559.3632659912109,
+          473.3456726074219
+        ],
+        [
+          559.3632659912109,
+          486.5640106201172
+        ],
+        [
+          314.29335021972656,
+          486.5640106201172
+        ]
+      ]
+    },
+    {
+      "title": "B Prompt Introduction",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.3402862548828,
+          540.0614776611328
+        ],
+        [
+          439.42987060546875,
+          540.0614776611328
+        ],
+        [
+          439.42987060546875,
+          554.9547882080078
+        ],
+        [
+          313.3402862548828,
+          554.9547882080078
+        ]
+      ]
+    },
+    {
+      "title": "Figure 6: The prompt we use for clustering queries.",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          198.97572326660156,
+          348.43782806396484
+        ],
+        [
+          409.4333190917969,
+          348.43782806396484
+        ],
+        [
+          409.4333190917969,
+          361.2099609375
+        ],
+        [
+          198.97572326660156,
+          361.2099609375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          68.79217529296875,
+          83.1221981048584
+        ],
+        [
+          159.2306900024414,
+          83.1221981048584
+        ],
+        [
+          159.2306900024414,
+          94.63564682006836
+        ],
+        [
+          68.79217529296875,
+          94.63564682006836
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          69.02039909362793,
+          196.79853057861328
+        ],
+        [
+          127.450927734375,
+          196.79853057861328
+        ],
+        [
+          127.450927734375,
+          207.51995086669922
+        ],
+        [
+          69.02039909362793,
+          207.51995086669922
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          59.47059631347656,
+          314.9257278442383
+        ],
+        [
+          184.98590469360352,
+          314.9257278442383
+        ],
+        [
+          184.98590469360352,
+          326.8238067626953
+        ],
+        [
+          59.47059631347656,
+          326.8238067626953
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          59.43472480773926,
+          420.15550231933594
+        ],
+        [
+          128.00624084472656,
+          420.15550231933594
+        ],
+        [
+          128.00624084472656,
+          432.15911865234375
+        ],
+        [
+          59.43472480773926,
+          432.15911865234375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          59.67165184020996,
+          476.42271423339844
+        ],
+        [
+          199.75005340576172,
+          476.42271423339844
+        ],
+        [
+          199.75005340576172,
+          489.3545837402344
+        ],
+        [
+          59.67165184020996,
+          489.3545837402344
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          60.6298885345459,
+          648.6266784667969
+        ],
+        [
+          189.52243423461914,
+          648.6266784667969
+        ],
+        [
+          189.52243423461914,
+          660.4357452392578
+        ],
+        [
+          60.6298885345459,
+          660.4357452392578
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          228
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          251
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          553
+        ],
+        [
+          "Line",
+          150
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          286
+        ],
+        [
+          "Line",
+          122
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ChemicalBlock",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          244
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          264
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          21
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          526
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "Reference",
+          38
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          126
+        ],
+        [
+          "Line",
+          47
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          146
+        ],
+        [
+          "Line",
+          46
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          150
+        ],
+        [
+          "Line",
+          48
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792817_ARADD_An_Automatic_Real_World_API_Discovery_and_Deployment_Framework_for_AI_Guide_Service_in_Baidu_M"
+}

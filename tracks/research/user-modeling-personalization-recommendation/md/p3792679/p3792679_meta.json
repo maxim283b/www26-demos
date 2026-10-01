@@ -1,0 +1,1166 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Identifying and Upweighting Power-Niche Users to Mitigate\nPopularity Bias in Recommendations",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          67.59207916259766,
+          79.1985969543457
+        ],
+        [
+          541.2978973388672,
+          79.1985969543457
+        ],
+        [
+          541.2978973388672,
+          119.61279296875
+        ],
+        [
+          67.59207916259766,
+          119.61279296875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.00943565368652,
+          239.95543670654297
+        ],
+        [
+          95.84333038330078,
+          239.95543670654297
+        ],
+        [
+          95.84333038330078,
+          254.4691162109375
+        ],
+        [
+          51.00943565368652,
+          254.4691162109375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.50638771057129,
+          575.7602691650391
+        ],
+        [
+          123.07078552246094,
+          575.7602691650391
+        ],
+        [
+          123.07078552246094,
+          590.0618133544922
+        ],
+        [
+          50.50638771057129,
+          590.0618133544922
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.95432662963867,
+          614.9571533203125
+        ],
+        [
+          102.87803649902344,
+          614.9571533203125
+        ],
+        [
+          102.87803649902344,
+          629.7200012207031
+        ],
+        [
+          50.95432662963867,
+          629.7200012207031
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          315.00208282470703,
+          239.98782348632812
+        ],
+        [
+          397.5368957519531,
+          239.98782348632812
+        ],
+        [
+          397.5368957519531,
+          254.468994140625
+        ],
+        [
+          315.00208282470703,
+          254.468994140625
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.15610885620117,
+          314.78265380859375
+        ],
+        [
+          143.13163375854492,
+          314.78265380859375
+        ],
+        [
+          143.13163375854492,
+          329.0459899902344
+        ],
+        [
+          51.15610885620117,
+          329.0459899902344
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Popularity Bias",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.274343490600586,
+          386.4255065917969
+        ],
+        [
+          155.36381149291992,
+          386.4255065917969
+        ],
+        [
+          155.36381149291992,
+          400.2998352050781
+        ],
+        [
+          51.274343490600586,
+          400.2998352050781
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Value of User Data",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4562683105469,
+          118.29432678222656
+        ],
+        [
+          434.9872283935547,
+          118.29432678222656
+        ],
+        [
+          434.9872283935547,
+          131.78497314453125
+        ],
+        [
+          314.4562683105469,
+          131.78497314453125
+        ]
+      ]
+    },
+    {
+      "title": "3 Understanding Niche Users",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4835510253906,
+          518.6038513183594
+        ],
+        [
+          470.24208068847656,
+          518.6038513183594
+        ],
+        [
+          470.24208068847656,
+          531.8494567871094
+        ],
+        [
+          314.4835510253906,
+          531.8494567871094
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Identifying Power-Niche Users",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.54644966125488,
+          316.24134063720703
+        ],
+        [
+          231.103271484375,
+          316.24134063720703
+        ],
+        [
+          231.103271484375,
+          329.8814392089844
+        ],
+        [
+          51.54644966125488,
+          329.8814392089844
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Significance of Power-Niche Users",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.8575668334961,
+          474.11553955078125
+        ],
+        [
+          512.1826171875,
+          474.11553955078125
+        ],
+        [
+          512.1826171875,
+          488.01544189453125
+        ],
+        [
+          314.8575668334961,
+          488.01544189453125
+        ]
+      ]
+    },
+    {
+      "title": "4 Value of User Data in Recommender Systems",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.43092155456543,
+          350.1083221435547
+        ],
+        [
+          294.1146697998047,
+          350.1083221435547
+        ],
+        [
+          294.1146697998047,
+          362.40496826171875
+        ],
+        [
+          51.43092155456543,
+          362.40496826171875
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Quadrant Valuation Methodology",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.215383529663086,
+          464.38087463378906
+        ],
+        [
+          244.56541442871094,
+          464.38087463378906
+        ],
+        [
+          244.56541442871094,
+          477.0564270019531
+        ],
+        [
+          51.215383529663086,
+          477.0564270019531
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Value of Power-Niche Users for Improving\nNiche and Overall Performance",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.9201889038086,
+          582.6015930175781
+        ],
+        [
+          562.1584625244141,
+          582.6015930175781
+        ],
+        [
+          562.1584625244141,
+          608.4980010986328
+        ],
+        [
+          314.9201889038086,
+          608.4980010986328
+        ]
+      ]
+    },
+    {
+      "title": "5 PAIR: A Reweighting Framework for\nBayesian Personalized Ranking",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.62165451049805,
+          625.2284088134766
+        ],
+        [
+          253.17757415771484,
+          625.2284088134766
+        ],
+        [
+          253.17757415771484,
+          652.3984832763672
+        ],
+        [
+          51.62165451049805,
+          652.3984832763672
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Our Framework",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.0484085083008,
+          127.35562133789062
+        ],
+        [
+          421.70562744140625,
+          127.35562133789062
+        ],
+        [
+          421.70562744140625,
+          139.7630615234375
+        ],
+        [
+          315.0484085083008,
+          139.7630615234375
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Relationship to Prior Work",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.84543037414551,
+          159.24801635742188
+        ],
+        [
+          213.73578643798828,
+          159.24801635742188
+        ],
+        [
+          213.73578643798828,
+          172.621826171875
+        ],
+        [
+          50.84543037414551,
+          172.621826171875
+        ]
+      ]
+    },
+    {
+      "title": "6 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.930362701416016,
+          393.07557678222656
+        ],
+        [
+          133.60019302368164,
+          393.07557678222656
+        ],
+        [
+          133.60019302368164,
+          406.705810546875
+        ],
+        [
+          50.930362701416016,
+          406.705810546875
+        ]
+      ]
+    },
+    {
+      "title": "6.1 Methodology",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.86280822753906,
+          504.66700744628906
+        ],
+        [
+          143.92897033691406,
+          504.66700744628906
+        ],
+        [
+          143.92897033691406,
+          518.7964477539062
+        ],
+        [
+          50.86280822753906,
+          518.7964477539062
+        ]
+      ]
+    },
+    {
+      "title": "6.2 Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.512001037597656,
+          473.99267578125
+        ],
+        [
+          115.55720901489258,
+          473.99267578125
+        ],
+        [
+          115.55720901489258,
+          487.864990234375
+        ],
+        [
+          50.512001037597656,
+          487.864990234375
+        ]
+      ]
+    },
+    {
+      "title": "7 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.79756164550781,
+          584.5664520263672
+        ],
+        [
+          127.80484771728516,
+          584.5664520263672
+        ],
+        [
+          127.80484771728516,
+          597.5390014648438
+        ],
+        [
+          51.79756164550781,
+          597.5390014648438
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.7114715576172,
+          603.3952331542969
+        ],
+        [
+          410.5234680175781,
+          603.3952331542969
+        ],
+        [
+          410.5234680175781,
+          616.6234436035156
+        ],
+        [
+          314.7114715576172,
+          616.6234436035156
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.09942626953125,
+          83.51298522949219
+        ],
+        [
+          108.14713287353516,
+          83.51298522949219
+        ],
+        [
+          108.14713287353516,
+          96.16900634765625
+        ],
+        [
+          51.09942626953125,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Notation",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          52.138423919677734,
+          84.78306198120117
+        ],
+        [
+          117.0475959777832,
+          84.78306198120117
+        ],
+        [
+          117.0475959777832,
+          96.16900634765625
+        ],
+        [
+          52.138423919677734,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "B Hyperparameter Optimization",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.21707725524902,
+          386.3103790283203
+        ],
+        [
+          223.48118591308594,
+          386.3103790283203
+        ],
+        [
+          223.48118591308594,
+          399.19781494140625
+        ],
+        [
+          51.21707725524902,
+          399.19781494140625
+        ]
+      ]
+    },
+    {
+      "title": "C Robustness Analysis of Quadrant Valuation\nResults",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          315.3343963623047,
+          116.02175903320312
+        ],
+        [
+          557.3747406005859,
+          116.02175903320312
+        ],
+        [
+          557.3747406005859,
+          141.25
+        ],
+        [
+          315.3343963623047,
+          141.25
+        ]
+      ]
+    },
+    {
+      "title": "D Supplemental Discussion on User-Weighting\nin BPR",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.6451873779297,
+          630.4461822509766
+        ],
+        [
+          563.8727874755859,
+          630.4461822509766
+        ],
+        [
+          563.8727874755859,
+          656.9960174560547
+        ],
+        [
+          314.6451873779297,
+          656.9960174560547
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          247
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          380
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          356
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          527
+        ],
+        [
+          "Line",
+          145
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          695
+        ],
+        [
+          "Line",
+          167
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          560
+        ],
+        [
+          "Line",
+          126
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1536
+        ],
+        [
+          "Line",
+          89
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          587
+        ],
+        [
+          "Line",
+          197
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          421
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Reference",
+          38
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          640
+        ],
+        [
+          "Line",
+          141
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792679_Identifying_and_Upweighting_Power_Niche_Users_to_Mitigate_Popularity_Bias_in_Recommendations"
+}

@@ -1,0 +1,1297 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Triple-R: Iterative Query Rewriting and Refinement for\nRetrieval-Augmented Fake News Detection",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          86.90136909484863,
+          79.00142669677734
+        ],
+        [
+          523.2006225585938,
+          79.00142669677734
+        ],
+        [
+          523.2006225585938,
+          119.62994384765625
+        ],
+        [
+          86.90136909484863,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.93211364746094,
+          240.27458953857422
+        ],
+        [
+          95.87927055358887,
+          240.27458953857422
+        ],
+        [
+          95.87927055358887,
+          255.38201904296875
+        ],
+        [
+          50.93211364746094,
+          255.38201904296875
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.354347229003906,
+          485.3108825683594
+        ],
+        [
+          123.13113784790039,
+          485.3108825683594
+        ],
+        [
+          123.13113784790039,
+          499.6028137207031
+        ],
+        [
+          50.354347229003906,
+          499.6028137207031
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.30962371826172,
+          531.7762756347656
+        ],
+        [
+          102.9232177734375,
+          531.7762756347656
+        ],
+        [
+          102.9232177734375,
+          546.5189666748047
+        ],
+        [
+          50.30962371826172,
+          546.5189666748047
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.679656982421875,
+          573.6657257080078
+        ],
+        [
+          140.4955596923828,
+          573.6657257080078
+        ],
+        [
+          140.4955596923828,
+          586.4340515136719
+        ],
+        [
+          50.679656982421875,
+          586.4340515136719
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.733524322509766,
+          650.3057556152344
+        ],
+        [
+          91.49621200561523,
+          650.3057556152344
+        ],
+        [
+          91.49621200561523,
+          662.8660125732422
+        ],
+        [
+          50.733524322509766,
+          662.8660125732422
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.78997802734375,
+          275.5194854736328
+        ],
+        [
+          397.5361328125,
+          275.5194854736328
+        ],
+        [
+          397.5361328125,
+          290.6889953613281
+        ],
+        [
+          314.78997802734375,
+          290.6889953613281
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.44607925415039,
+          611.7933654785156
+        ],
+        [
+          139.02775955200195,
+          611.7933654785156
+        ],
+        [
+          139.02775955200195,
+          625.6829681396484
+        ],
+        [
+          51.44607925415039,
+          625.6829681396484
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Fake News Detection",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.111122131347656,
+          626.9052429199219
+        ],
+        [
+          182.03382110595703,
+          626.9052429199219
+        ],
+        [
+          182.03382110595703,
+          641.3739776611328
+        ],
+        [
+          51.111122131347656,
+          641.3739776611328
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Retrieval Augmentation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2497024536133,
+          258.19722747802734
+        ],
+        [
+          462.2046813964844,
+          258.19722747802734
+        ],
+        [
+          462.2046813964844,
+          272.490478515625
+        ],
+        [
+          314.2497024536133,
+          272.490478515625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Reinforcement Learning",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0565490722656,
+          437.73939514160156
+        ],
+        [
+          464.75624084472656,
+          437.73939514160156
+        ],
+        [
+          464.75624084472656,
+          451.48541259765625
+        ],
+        [
+          314.0565490722656,
+          451.48541259765625
+        ]
+      ]
+    },
+    {
+      "title": "3 Our Triple-R",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.67505645751953,
+          637.8578338623047
+        ],
+        [
+          398.53248596191406,
+          637.8578338623047
+        ],
+        [
+          398.53248596191406,
+          652.3547821044922
+        ],
+        [
+          314.67505645751953,
+          652.3547821044922
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.26856994628906,
+          170.31645584106445
+        ],
+        [
+          155.6322898864746,
+          170.31645584106445
+        ],
+        [
+          155.6322898864746,
+          182.3716049194336
+        ],
+        [
+          51.26856994628906,
+          182.3716049194336
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.4540481567383,
+          638.0166320800781
+        ],
+        [
+          495.5078430175781,
+          638.0166320800781
+        ],
+        [
+          495.5078430175781,
+          650.9003448486328
+        ],
+        [
+          314.4540481567383,
+          650.9003448486328
+        ]
+      ]
+    },
+    {
+      "title": "3.3 News Verification",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.1250534057617,
+          428.35560607910156
+        ],
+        [
+          429.84857177734375,
+          428.35560607910156
+        ],
+        [
+          429.84857177734375,
+          442.8379821777344
+        ],
+        [
+          314.1250534057617,
+          442.8379821777344
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiment",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.7468566894531,
+          572.6379089355469
+        ],
+        [
+          393.2794647216797,
+          572.6379089355469
+        ],
+        [
+          393.2794647216797,
+          586.8057861328125
+        ],
+        [
+          314.7468566894531,
+          586.8057861328125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Settings",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.6773681640625,
+          587.8912353515625
+        ],
+        [
+          452.27752685546875,
+          587.8912353515625
+        ],
+        [
+          452.27752685546875,
+          602.5414276123047
+        ],
+        [
+          314.6773681640625,
+          602.5414276123047
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Performance Results",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.80637741088867,
+          528.3267517089844
+        ],
+        [
+          181.85771942138672,
+          528.3267517089844
+        ],
+        [
+          181.85771942138672,
+          542.7439727783203
+        ],
+        [
+          50.80637741088867,
+          542.7439727783203
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Analysis of Query Rewriter",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.26045989990234,
+          583.6526184082031
+        ],
+        [
+          478.35003662109375,
+          583.6526184082031
+        ],
+        [
+          478.35003662109375,
+          597.5389709472656
+        ],
+        [
+          314.26045989990234,
+          597.5389709472656
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Analysis of Query Refinement",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.71604919433594,
+          354.97947692871094
+        ],
+        [
+          229.0763168334961,
+          354.97947692871094
+        ],
+        [
+          229.0763168334961,
+          369.29400634765625
+        ],
+        [
+          50.71604919433594,
+          369.29400634765625
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Analysis of Reinforcement Learning",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.73438262939453,
+          83.08917045593262
+        ],
+        [
+          259.8530502319336,
+          83.08917045593262
+        ],
+        [
+          259.8530502319336,
+          96.23443603515625
+        ],
+        [
+          50.73438262939453,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "4.6 The impact of evidence retrieval sources",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.0796661376953,
+          202.75495147705078
+        ],
+        [
+          543.2690734863281,
+          202.75495147705078
+        ],
+        [
+          543.2690734863281,
+          216.3787841796875
+        ],
+        [
+          314.0796661376953,
+          216.3787841796875
+        ]
+      ]
+    },
+    {
+      "title": "4.7 The Impact of Refinement Threshold \ufffd\ufffd",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.76319885253906,
+          434.84893798828125
+        ],
+        [
+          535.7681121826172,
+          434.84893798828125
+        ],
+        [
+          535.7681121826172,
+          448.89581298828125
+        ],
+        [
+          314.76319885253906,
+          448.89581298828125
+        ]
+      ]
+    },
+    {
+      "title": "The original news article",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.31717872619629,
+          87.1475715637207
+        ],
+        [
+          329.8155517578125,
+          87.1475715637207
+        ],
+        [
+          329.8155517578125,
+          100.40887451171875
+        ],
+        [
+          69.31717872619629,
+          100.40887451171875
+        ]
+      ]
+    },
+    {
+      "title": "Query: generated by frozen LLM-based rewriter",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.00994682312012,
+          167.22165298461914
+        ],
+        [
+          428.1418762207031,
+          167.22165298461914
+        ],
+        [
+          428.1418762207031,
+          181.57733154296875
+        ],
+        [
+          70.00994682312012,
+          181.57733154296875
+        ]
+      ]
+    },
+    {
+      "title": "Query: key words extracted from original news",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.70894432067871,
+          227.9241485595703
+        ],
+        [
+          507.22808837890625,
+          227.9241485595703
+        ],
+        [
+          507.22808837890625,
+          241.978515625
+        ],
+        [
+          69.70894432067871,
+          241.978515625
+        ]
+      ]
+    },
+    {
+      "title": "Query: generated by our proposed method",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.41135787963867,
+          258.4012756347656
+        ],
+        [
+          437.7366943359375,
+          258.4012756347656
+        ],
+        [
+          437.7366943359375,
+          272.62060546875
+        ],
+        [
+          69.41135787963867,
+          272.62060546875
+        ]
+      ]
+    },
+    {
+      "title": "4.8 Case Study",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.6715030670166,
+          451.07386779785156
+        ],
+        [
+          132.66699600219727,
+          451.07386779785156
+        ],
+        [
+          132.66699600219727,
+          466.0320129394531
+        ],
+        [
+          50.6715030670166,
+          466.0320129394531
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.94400787353516,
+          421.9501647949219
+        ],
+        [
+          390.9033508300781,
+          421.9501647949219
+        ],
+        [
+          390.9033508300781,
+          437.0439758300781
+        ],
+        [
+          313.94400787353516,
+          437.0439758300781
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.910888671875,
+          637.1158447265625
+        ],
+        [
+          410.10923767089844,
+          637.1158447265625
+        ],
+        [
+          410.10923767089844,
+          652.3984375
+        ],
+        [
+          313.910888671875,
+          652.3984375
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.78199577331543,
+          82.9138240814209
+        ],
+        [
+          108.26157760620117,
+          82.9138240814209
+        ],
+        [
+          108.26157760620117,
+          96.1689453125
+        ],
+        [
+          50.78199577331543,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "A Details of Baselines",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.15137481689453,
+          83.19377517700195
+        ],
+        [
+          433.5685729980469,
+          83.19377517700195
+        ],
+        [
+          433.5685729980469,
+          96.1689453125
+        ],
+        [
+          314.15137481689453,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "Content-only Methods",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          324.12682342529297,
+          109.99283981323242
+        ],
+        [
+          424.3296661376953,
+          109.99283981323242
+        ],
+        [
+          424.3296661376953,
+          122.295166015625
+        ],
+        [
+          324.12682342529297,
+          122.295166015625
+        ]
+      ]
+    },
+    {
+      "title": "Retrival-augmentation Methods",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          327.95489501953125,
+          321.77394104003906
+        ],
+        [
+          462.250732421875,
+          321.77394104003906
+        ],
+        [
+          462.250732421875,
+          334.4039611816406
+        ],
+        [
+          327.95489501953125,
+          334.4039611816406
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          266
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          324
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          19
+        ],
+        [
+          "Equation",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          417
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          248
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          273
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          248
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          654
+        ],
+        [
+          "Line",
+          75
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          530
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          43
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          412
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Reference",
+          26
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792246_Triple_R_Iterative_Query_Rewriting_and_Refinement_for_Retrieval_Augmented_Fake_News_Detection"
+}

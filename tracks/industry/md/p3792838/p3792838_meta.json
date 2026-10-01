@@ -1,0 +1,970 @@
+{
+  "table_of_contents": [
+    {
+      "title": "OneTrans: Unified Feature Interaction and Sequence Modeling\nwith One Transformer in Industrial Recommender",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          58.279964447021484,
+          79.7010383605957
+        ],
+        [
+          551.8486633300781,
+          79.7010383605957
+        ],
+        [
+          551.8486633300781,
+          119.5955810546875
+        ],
+        [
+          58.279964447021484,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.4012508392334,
+          310.12843322753906
+        ],
+        [
+          95.63162040710449,
+          310.12843322753906
+        ],
+        [
+          95.63162040710449,
+          322.2247314453125
+        ],
+        [
+          50.4012508392334,
+          322.2247314453125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.94516372680664,
+          542.8407897949219
+        ],
+        [
+          123.1794319152832,
+          542.8407897949219
+        ],
+        [
+          123.1794319152832,
+          557.0688323974609
+        ],
+        [
+          49.94516372680664,
+          557.0688323974609
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.75565719604492,
+          588.9207000732422
+        ],
+        [
+          103.1034049987793,
+          588.9207000732422
+        ],
+        [
+          103.1034049987793,
+          603.1790008544922
+        ],
+        [
+          50.75565719604492,
+          603.1790008544922
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.0562515258789,
+          310.8786163330078
+        ],
+        [
+          404.65362548828125,
+          310.8786163330078
+        ],
+        [
+          404.65362548828125,
+          322.5531005859375
+        ],
+        [
+          314.0562515258789,
+          322.5531005859375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.55335998535156,
+          391.96412658691406
+        ],
+        [
+          397.5372619628906,
+          391.96412658691406
+        ],
+        [
+          397.5372619628906,
+          404.7865905761719
+        ],
+        [
+          314.55335998535156,
+          404.7865905761719
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.01585578918457,
+          650.0812683105469
+        ],
+        [
+          90.66083908081055,
+          650.0812683105469
+        ],
+        [
+          90.66083908081055,
+          663.0740203857422
+        ],
+        [
+          51.01585578918457,
+          663.0740203857422
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.06934356689453,
+          353.5301742553711
+        ],
+        [
+          402.6492004394531,
+          353.5301742553711
+        ],
+        [
+          402.6492004394531,
+          366.01888275146484
+        ],
+        [
+          314.06934356689453,
+          366.01888275146484
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.498779296875,
+          543.9333801269531
+        ],
+        [
+          135.84710311889648,
+          543.9333801269531
+        ],
+        [
+          135.84710311889648,
+          557.7614288330078
+        ],
+        [
+          51.498779296875,
+          557.7614288330078
+        ]
+      ]
+    },
+    {
+      "title": "3.1 OneTrans Framework Overview",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.3521270751953,
+          369.7302932739258
+        ],
+        [
+          505.72943115234375,
+          369.7302932739258
+        ],
+        [
+          505.72943115234375,
+          381.3723678588867
+        ],
+        [
+          314.3521270751953,
+          381.3723678588867
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Features and Tokenization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.1058292388916,
+          268.18737030029297
+        ],
+        [
+          210.09130096435547,
+          268.18737030029297
+        ],
+        [
+          210.09130096435547,
+          280.65735626220703
+        ],
+        [
+          51.1058292388916,
+          280.65735626220703
+        ]
+      ]
+    },
+    {
+      "title": "3.3 OneTrans Block",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.56549072265625,
+          253.81208038330078
+        ],
+        [
+          427.5179901123047,
+          253.81208038330078
+        ],
+        [
+          427.5179901123047,
+          265.5776824951172
+        ],
+        [
+          314.56549072265625,
+          265.5776824951172
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Pyramid Stack",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.372013092041016,
+          238.5703582763672
+        ],
+        [
+          151.3011245727539,
+          238.5703582763672
+        ],
+        [
+          151.3011245727539,
+          251.2120361328125
+        ],
+        [
+          51.372013092041016,
+          251.2120361328125
+        ]
+      ]
+    },
+    {
+      "title": "3.5 Training and Deployment Optimization",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.03585433959961,
+          484.31748962402344
+        ],
+        [
+          275.8021545410156,
+          484.31748962402344
+        ],
+        [
+          275.8021545410156,
+          497.7734375
+        ],
+        [
+          51.03585433959961,
+          497.7734375
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.59130859375,
+          395.4059600830078
+        ],
+        [
+          398.55010986328125,
+          395.4059600830078
+        ],
+        [
+          398.55010986328125,
+          408.06781005859375
+        ],
+        [
+          314.59130859375,
+          408.06781005859375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.7985382080078,
+          606.4794616699219
+        ],
+        [
+          441.487060546875,
+          606.4794616699219
+        ],
+        [
+          441.487060546875,
+          619.4788208007812
+        ],
+        [
+          314.7985382080078,
+          619.4788208007812
+        ]
+      ]
+    },
+    {
+      "title": "4.2 RQ1: Performance Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.73524475097656,
+          337.73458099365234
+        ],
+        [
+          491.3205871582031,
+          337.73458099365234
+        ],
+        [
+          491.3205871582031,
+          350.9402770996094
+        ],
+        [
+          313.73524475097656,
+          350.9402770996094
+        ]
+      ]
+    },
+    {
+      "title": "4.3 RQ2: Design Choices via Ablation Study",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.1881790161133,
+          605.6399688720703
+        ],
+        [
+          540.5065612792969,
+          605.6399688720703
+        ],
+        [
+          540.5065612792969,
+          619.5224456787109
+        ],
+        [
+          314.1881790161133,
+          619.5224456787109
+        ]
+      ]
+    },
+    {
+      "title": "4.4 RQ3: Systems Efficiency",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.35157775878906,
+          338.1273193359375
+        ],
+        [
+          460.9623718261719,
+          338.1273193359375
+        ],
+        [
+          460.9623718261719,
+          351.93798828125
+        ],
+        [
+          314.35157775878906,
+          351.93798828125
+        ]
+      ]
+    },
+    {
+      "title": "4.5 RQ4: Scaling-Law Validation",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.58856201171875,
+          561.5322418212891
+        ],
+        [
+          484.2220458984375,
+          561.5322418212891
+        ],
+        [
+          484.2220458984375,
+          575.6864471435547
+        ],
+        [
+          314.58856201171875,
+          575.6864471435547
+        ]
+      ]
+    },
+    {
+      "title": "4.6 RQ5: Online A/B Tests",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.59368324279785,
+          539.1241607666016
+        ],
+        [
+          188.37266540527344,
+          539.1241607666016
+        ],
+        [
+          188.37266540527344,
+          553.6702728271484
+        ],
+        [
+          50.59368324279785,
+          553.6702728271484
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2855453491211,
+          506.40216064453125
+        ],
+        [
+          391.16331481933594,
+          506.40216064453125
+        ],
+        [
+          391.16331481933594,
+          518.4778747558594
+        ],
+        [
+          314.2855453491211,
+          518.4778747558594
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.7290096282959,
+          83.43146324157715
+        ],
+        [
+          108.14713287353516,
+          83.43146324157715
+        ],
+        [
+          108.14713287353516,
+          94.23585319519043
+        ],
+        [
+          50.7290096282959,
+          94.23585319519043
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          295
+        ],
+        [
+          "Line",
+          102
+        ],
+        [
+          "Text",
+          19
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          391
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          500
+        ],
+        [
+          "Line",
+          125
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ChemicalBlock",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          715
+        ],
+        [
+          "Line",
+          160
+        ],
+        [
+          "Text",
+          19
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          492
+        ],
+        [
+          "Line",
+          122
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          551
+        ],
+        [
+          "Line",
+          90
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          404
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          538
+        ],
+        [
+          "Line",
+          86
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          466
+        ],
+        [
+          "Line",
+          138
+        ],
+        [
+          "Reference",
+          38
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792838_OneTrans_Unified_Feature_Interaction_and_Sequence_Modeling_with_One_Transformer_in_Industrial_Recomm"
+}

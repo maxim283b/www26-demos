@@ -1,0 +1,602 @@
+{
+  "table_of_contents": [
+    {
+      "title": "A Reinforcement Learning Based Hyper-Parameter Generation\nSystem Guided by LLM-Powered Virtual Users",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.2840518951416,
+          79.03992462158203
+        ],
+        [
+          552.6372985839844,
+          79.03992462158203
+        ],
+        [
+          552.6372985839844,
+          119.61273193359375
+        ],
+        [
+          56.2840518951416,
+          119.61273193359375
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.08553886413574,
+          241.3630828857422
+        ],
+        [
+          95.69775581359863,
+          241.3630828857422
+        ],
+        [
+          95.69775581359863,
+          256.06298828125
+        ],
+        [
+          51.08553886413574,
+          256.06298828125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.326263427734375,
+          518.8477935791016
+        ],
+        [
+          123.19618606567383,
+          518.8477935791016
+        ],
+        [
+          123.19618606567383,
+          533.0418090820312
+        ],
+        [
+          50.326263427734375,
+          533.0418090820312
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.574989318847656,
+          554.6912384033203
+        ],
+        [
+          102.95751571655273,
+          554.6912384033203
+        ],
+        [
+          102.95751571655273,
+          568.8819732666016
+        ],
+        [
+          50.574989318847656,
+          568.8819732666016
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.48236656188965,
+          595.8379669189453
+        ],
+        [
+          140.4955596923828,
+          595.8379669189453
+        ],
+        [
+          140.4955596923828,
+          608.5690612792969
+        ],
+        [
+          50.48236656188965,
+          608.5690612792969
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.83327102661133,
+          648.091552734375
+        ],
+        [
+          95.6169204711914,
+          648.091552734375
+        ],
+        [
+          95.6169204711914,
+          663.8453063964844
+        ],
+        [
+          50.83327102661133,
+          663.8453063964844
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6516876220703,
+          287.3399963378906
+        ],
+        [
+          397.5361328125,
+          287.3399963378906
+        ],
+        [
+          397.5361328125,
+          301.6479797363281
+        ],
+        [
+          314.6516876220703,
+          301.6479797363281
+        ]
+      ]
+    },
+    {
+      "title": "2 Problem and Formulation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.640119552612305,
+          467.4876251220703
+        ],
+        [
+          198.56739807128906,
+          467.4876251220703
+        ],
+        [
+          198.56739807128906,
+          480.8389892578125
+        ],
+        [
+          51.640119552612305,
+          480.8389892578125
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.304636001586914,
+          631.7807922363281
+        ],
+        [
+          136.0474090576172,
+          631.7807922363281
+        ],
+        [
+          136.0474090576172,
+          645.6734313964844
+        ],
+        [
+          51.304636001586914,
+          645.6734313964844
+        ]
+      ]
+    },
+    {
+      "title": "3.1 LLM-Powered Virtual User Behavior\nSimulation System",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.53221321105957,
+          646.8343963623047
+        ],
+        [
+          258.3893280029297,
+          646.8343963623047
+        ],
+        [
+          258.3893280029297,
+          674.2509841918945
+        ],
+        [
+          51.53221321105957,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "3.2 RL-Based Hyper-Parameter Optimization",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.61488342285156,
+          550.9840393066406
+        ],
+        [
+          550.1579132080078,
+          550.9840393066406
+        ],
+        [
+          550.1579132080078,
+          564.6837921142578
+        ],
+        [
+          314.61488342285156,
+          564.6837921142578
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.64026641845703,
+          301.36614990234375
+        ],
+        [
+          537.7671661376953,
+          301.36614990234375
+        ],
+        [
+          537.7671661376953,
+          326.91265869140625
+        ],
+        [
+          314.64026641845703,
+          326.91265869140625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.27527046203613,
+          576.7777862548828
+        ],
+        [
+          200.4642333984375,
+          576.7777862548828
+        ],
+        [
+          200.4642333984375,
+          589.1544799804688
+        ],
+        [
+          51.27527046203613,
+          589.1544799804688
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.49578666687012,
+          592.0063018798828
+        ],
+        [
+          294.95068359375,
+          592.0063018798828
+        ],
+        [
+          294.95068359375,
+          617.6752624511719
+        ],
+        [
+          51.49578666687012,
+          617.6752624511719
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Online A/B Experiments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.92766761779785,
+          330.9059829711914
+        ],
+        [
+          200.68997955322266,
+          330.9059829711914
+        ],
+        [
+          200.68997955322266,
+          345.27978515625
+        ],
+        [
+          50.92766761779785,
+          345.27978515625
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.984596252441406,
+          475.6061553955078
+        ],
+        [
+          127.00844192504883,
+          475.6061553955078
+        ],
+        [
+          127.00844192504883,
+          489.7159729003906
+        ],
+        [
+          50.984596252441406,
+          489.7159729003906
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.7578125,
+          83.0782585144043
+        ],
+        [
+          372.30364990234375,
+          83.0782585144043
+        ],
+        [
+          372.30364990234375,
+          96.1689453125
+        ],
+        [
+          313.7578125,
+          96.1689453125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          229
+        ],
+        [
+          "Line",
+          97
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          288
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          10
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          315
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Reference",
+          23
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792850_A_Reinforcement_Learning_Based_Hyper_Parameter_Generation_System_Guided_by_LLM_Powered_Virtual_Users"
+}

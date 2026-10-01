@@ -1,0 +1,1172 @@
+{
+  "table_of_contents": [
+    {
+      "title": "From Newborn to Impact: Bias-Aware Citation Prediction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          78.95559310913086,
+          79.58267784118652
+        ],
+        [
+          530.7890625,
+          79.58267784118652
+        ],
+        [
+          530.7890625,
+          99.67059326171875
+        ],
+        [
+          78.95559310913086,
+          99.67059326171875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          274.0353240966797,
+          107.08383178710938
+        ],
+        [
+          336.66233825683594,
+          107.08383178710938
+        ],
+        [
+          336.66233825683594,
+          119.44636917114258
+        ],
+        [
+          274.0353240966797,
+          119.44636917114258
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.11165428161621,
+          280.4381561279297
+        ],
+        [
+          95.85298919677734,
+          280.4381561279297
+        ],
+        [
+          95.85298919677734,
+          294.5885009765625
+        ],
+        [
+          51.11165428161621,
+          294.5885009765625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.8027648925781,
+          279.92298889160156
+        ],
+        [
+          387.4497985839844,
+          279.92298889160156
+        ],
+        [
+          387.4497985839844,
+          294.58843994140625
+        ],
+        [
+          313.8027648925781,
+          294.58843994140625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.9908142089844,
+          315.97473907470703
+        ],
+        [
+          367.1646423339844,
+          315.97473907470703
+        ],
+        [
+          367.1646423339844,
+          330.21746826171875
+        ],
+        [
+          313.9908142089844,
+          330.21746826171875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.53111267089844,
+          353.0570755004883
+        ],
+        [
+          397.6465759277344,
+          353.0570755004883
+        ],
+        [
+          397.6465759277344,
+          367.46746826171875
+        ],
+        [
+          314.53111267089844,
+          367.46746826171875
+        ]
+      ]
+    },
+    {
+      "title": "How can we design bias-aware models that deliver stable\npredictions on low-citation papers while revealing the\nunderlying drivers of scientific impact?",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          54.46036720275879,
+          432.93067932128906
+        ],
+        [
+          289.2919921875,
+          432.93067932128906
+        ],
+        [
+          289.2919921875,
+          468.37701416015625
+        ],
+        [
+          54.46036720275879,
+          468.37701416015625
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4931869506836,
+          385.0708465576172
+        ],
+        [
+          402.5550842285156,
+          385.0708465576172
+        ],
+        [
+          402.5550842285156,
+          400.34344482421875
+        ],
+        [
+          314.4931869506836,
+          400.34344482421875
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.227359771728516,
+          583.5611114501953
+        ],
+        [
+          135.72667694091797,
+          583.5611114501953
+        ],
+        [
+          135.72667694091797,
+          597.6044464111328
+        ],
+        [
+          51.227359771728516,
+          597.6044464111328
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Motivation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.6216583251953,
+          388.35589599609375
+        ],
+        [
+          397.4169006347656,
+          388.35589599609375
+        ],
+        [
+          397.4169006347656,
+          401.9334716796875
+        ],
+        [
+          314.6216583251953,
+          401.9334716796875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Fine-grained feature extraction",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.630109786987305,
+          118.81550216674805
+        ],
+        [
+          233.35231018066406,
+          118.81550216674805
+        ],
+        [
+          233.35231018066406,
+          132.34844970703125
+        ],
+        [
+          50.630109786987305,
+          132.34844970703125
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Bias-Aware GNN Learning Modules",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.6029739379883,
+          434.0980224609375
+        ],
+        [
+          517.7129974365234,
+          434.0980224609375
+        ],
+        [
+          517.7129974365234,
+          447.7614440917969
+        ],
+        [
+          313.6029739379883,
+          447.7614440917969
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.501325607299805,
+          460.87477111816406
+        ],
+        [
+          134.1804313659668,
+          460.87477111816406
+        ],
+        [
+          134.1804313659668,
+          474.6124572753906
+        ],
+        [
+          51.501325607299805,
+          474.6124572753906
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.61465072631836,
+          583.5794677734375
+        ],
+        [
+          177.0014190673828,
+          583.5794677734375
+        ],
+        [
+          177.0014190673828,
+          597.6044616699219
+        ],
+        [
+          51.61465072631836,
+          597.6044616699219
+        ]
+      ]
+    },
+    {
+      "title": "Sequence-based methods.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          315.31153106689453,
+          259.1689910888672
+        ],
+        [
+          421.265869140625,
+          259.1689910888672
+        ],
+        [
+          421.265869140625,
+          271.455078125
+        ],
+        [
+          315.31153106689453,
+          271.455078125
+        ]
+      ]
+    },
+    {
+      "title": "Large Language Model-based methods.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          315.39598846435547,
+          340.6454544067383
+        ],
+        [
+          474.7594299316406,
+          340.6454544067383
+        ],
+        [
+          474.7594299316406,
+          353.3080139160156
+        ],
+        [
+          315.39598846435547,
+          353.3080139160156
+        ]
+      ]
+    },
+    {
+      "title": "Metadata-based Neural Methods.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          315.17857360839844,
+          444.66375732421875
+        ],
+        [
+          450.78326416015625,
+          444.66375732421875
+        ],
+        [
+          450.78326416015625,
+          457.0790100097656
+        ],
+        [
+          315.17857360839844,
+          457.0790100097656
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Overall Performance (RQ1)",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.49624252319336,
+          648.0898590087891
+        ],
+        [
+          213.51184844970703,
+          648.0898590087891
+        ],
+        [
+          213.51184844970703,
+          663.3574523925781
+        ],
+        [
+          50.49624252319336,
+          663.3574523925781
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Ablation Study (RQ2)",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.0606231689453,
+          670.1479339599609
+        ],
+        [
+          447.8338623046875,
+          670.1479339599609
+        ],
+        [
+          447.8338623046875,
+          685.2754592895508
+        ],
+        [
+          314.0606231689453,
+          685.2754592895508
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Analysis of Robustness (RQ3)",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.087907791137695,
+          660.5412139892578
+        ],
+        [
+          225.22100830078125,
+          660.5412139892578
+        ],
+        [
+          225.22100830078125,
+          674.3164596557617
+        ],
+        [
+          51.087907791137695,
+          674.3164596557617
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Analysis of Parameter Sensitivity (RQ4)",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.27394104003906,
+          376.3711853027344
+        ],
+        [
+          541.2888336181641,
+          376.3711853027344
+        ],
+        [
+          541.2888336181641,
+          389.74346923828125
+        ],
+        [
+          314.27394104003906,
+          389.74346923828125
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.56109619140625,
+          584.0849761962891
+        ],
+        [
+          391.4154510498047,
+          584.0849761962891
+        ],
+        [
+          391.4154510498047,
+          597.6044616699219
+        ],
+        [
+          314.56109619140625,
+          597.6044616699219
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.91753959655762,
+          127.59515762329102
+        ],
+        [
+          107.91143417358398,
+          127.59515762329102
+        ],
+        [
+          107.91143417358398,
+          139.25154876708984
+        ],
+        [
+          50.91753959655762,
+          139.25154876708984
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          314.0694580078125,
+          631.8929443359375
+        ],
+        [
+          437.12791442871094,
+          631.8929443359375
+        ],
+        [
+          437.12791442871094,
+          644.3150939941406
+        ],
+        [
+          314.0694580078125,
+          644.3150939941406
+        ]
+      ]
+    },
+    {
+      "title": "B Auxiliary Losses for Stage B",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.81495475769043,
+          177.68539810180664
+        ],
+        [
+          209.98411560058594,
+          177.68539810180664
+        ],
+        [
+          209.98411560058594,
+          190.63543701171875
+        ],
+        [
+          50.81495475769043,
+          190.63543701171875
+        ]
+      ]
+    },
+    {
+      "title": "B.1 Exposure Calibration Loss",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.939632415771484,
+          266.3742370605469
+        ],
+        [
+          210.36135864257812,
+          266.3742370605469
+        ],
+        [
+          210.36135864257812,
+          280.33245849609375
+        ],
+        [
+          50.939632415771484,
+          280.33245849609375
+        ]
+      ]
+    },
+    {
+      "title": "B.2 Adversarial Venue-Invariance Loss",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.67094802856445,
+          424.3962707519531
+        ],
+        [
+          251.9553451538086,
+          424.3962707519531
+        ],
+        [
+          251.9553451538086,
+          438.4254455566406
+        ],
+        [
+          50.67094802856445,
+          438.4254455566406
+        ]
+      ]
+    },
+    {
+      "title": "B.3 Implementation Note",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.66408729553223,
+          570.258544921875
+        ],
+        [
+          186.75811767578125,
+          570.258544921875
+        ],
+        [
+          186.75811767578125,
+          584.6194458007812
+        ],
+        [
+          50.66408729553223,
+          584.6194458007812
+        ]
+      ]
+    },
+    {
+      "title": "C Dataset Diagnostics and Descriptive Statistics",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.39310264587402,
+          659.9742279052734
+        ],
+        [
+          294.09503173828125,
+          659.9742279052734
+        ],
+        [
+          294.09503173828125,
+          674.3164596557617
+        ],
+        [
+          50.39310264587402,
+          674.3164596557617
+        ]
+      ]
+    },
+    {
+      "title": "C.1 Global Characteristics",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.3426055908203,
+          125.75518798828125
+        ],
+        [
+          454.6640625,
+          125.75518798828125
+        ],
+        [
+          454.6640625,
+          139.32244873046875
+        ],
+        [
+          314.3426055908203,
+          139.32244873046875
+        ]
+      ]
+    },
+    {
+      "title": "C.2 Venue Tier Distribution",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.30248260498047,
+          193.6201400756836
+        ],
+        [
+          462.60218811035156,
+          193.6201400756836
+        ],
+        [
+          462.60218811035156,
+          207.06842041015625
+        ],
+        [
+          314.30248260498047,
+          207.06842041015625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          241
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          248
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          123
+        ],
+        [
+          "Line",
+          53
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          252
+        ],
+        [
+          "Line",
+          96
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          18
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          607
+        ],
+        [
+          "Line",
+          132
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "ListGroup",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          842
+        ],
+        [
+          "Line",
+          63
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          160
+        ],
+        [
+          "Line",
+          56
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          549
+        ],
+        [
+          "Line",
+          152
+        ],
+        [
+          "Reference",
+          42
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          367
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792702_From_Newborn_to_Impact_Bias_Aware_Citation_Prediction"
+}

@@ -1,0 +1,1203 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Quantum-enhanced Representation Learning and Matching\nLearning for Recommendation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          69.29682540893555,
+          78.85816955566406
+        ],
+        [
+          540.4454040527344,
+          78.85816955566406
+        ],
+        [
+          540.4454040527344,
+          119.62994384765625
+        ],
+        [
+          69.29682540893555,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.045021057128906,
+          185.19074249267578
+        ],
+        [
+          95.80872917175293,
+          185.19074249267578
+        ],
+        [
+          95.80872917175293,
+          199.8658447265625
+        ],
+        [
+          51.045021057128906,
+          199.8658447265625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.62473106384277,
+          395.8016052246094
+        ],
+        [
+          123.42802047729492,
+          395.8016052246094
+        ],
+        [
+          123.42802047729492,
+          410.4508056640625
+        ],
+        [
+          50.62473106384277,
+          410.4508056640625
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Information systems \u2192 Recommender systems.",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.5155029296875,
+          410.2129669189453
+        ],
+        [
+          253.29612731933594,
+          410.2129669189453
+        ],
+        [
+          253.29612731933594,
+          423.69708251953125
+        ],
+        [
+          50.5155029296875,
+          423.69708251953125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.449710845947266,
+          431.83680725097656
+        ],
+        [
+          102.87759399414062,
+          431.83680725097656
+        ],
+        [
+          102.87759399414062,
+          445.6499938964844
+        ],
+        [
+          50.449710845947266,
+          445.6499938964844
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.54556655883789,
+          471.2948913574219
+        ],
+        [
+          141.0293426513672,
+          471.2948913574219
+        ],
+        [
+          141.0293426513672,
+          484.1030578613281
+        ],
+        [
+          50.54556655883789,
+          484.1030578613281
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.85109519958496,
+          542.1883850097656
+        ],
+        [
+          133.379150390625,
+          542.1883850097656
+        ],
+        [
+          133.379150390625,
+          556.5709838867188
+        ],
+        [
+          50.85109519958496,
+          556.5709838867188
+        ]
+      ]
+    },
+    {
+      "title": "2 Preliminary",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.38279342651367,
+          390.7777862548828
+        ],
+        [
+          130.5319061279297,
+          390.7777862548828
+        ],
+        [
+          130.5319061279297,
+          404.16497802734375
+        ],
+        [
+          51.38279342651367,
+          404.16497802734375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Collaborative Filtering",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.26231575012207,
+          622.3043518066406
+        ],
+        [
+          192.0359344482422,
+          622.3043518066406
+        ],
+        [
+          192.0359344482422,
+          635.9844360351562
+        ],
+        [
+          51.26231575012207,
+          635.9844360351562
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Quantum Computation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4613723754883,
+          230.89441680908203
+        ],
+        [
+          458.5174255371094,
+          230.89441680908203
+        ],
+        [
+          458.5174255371094,
+          244.809814453125
+        ],
+        [
+          314.4613723754883,
+          244.809814453125
+        ]
+      ]
+    },
+    {
+      "title": "3 Hypotheses for Quantum Recommendation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0367736816406,
+          659.7839813232422
+        ],
+        [
+          552.3316955566406,
+          659.7839813232422
+        ],
+        [
+          552.3316955566406,
+          674.2727966308594
+        ],
+        [
+          314.0367736816406,
+          674.2727966308594
+        ]
+      ]
+    },
+    {
+      "title": "4 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.390031814575195,
+          377.8575439453125
+        ],
+        [
+          135.7554473876953,
+          377.8575439453125
+        ],
+        [
+          135.7554473876953,
+          391.20343017578125
+        ],
+        [
+          51.390031814575195,
+          391.20343017578125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Quantum CF Learning Paradigm",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.19172286987305,
+          434.53614807128906
+        ],
+        [
+          239.8699493408203,
+          434.53614807128906
+        ],
+        [
+          239.8699493408203,
+          447.81640625
+        ],
+        [
+          51.19172286987305,
+          447.81640625
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Quantum Graph-based CF Learning",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.57379913330078,
+          648.8803253173828
+        ],
+        [
+          255.32135009765625,
+          648.8803253173828
+        ],
+        [
+          255.32135009765625,
+          663.3574371337891
+        ],
+        [
+          50.57379913330078,
+          663.3574371337891
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Quantum Social-based CF Learning",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.61344146728516,
+          292.6352005004883
+        ],
+        [
+          517.3444976806641,
+          292.6352005004883
+        ],
+        [
+          517.3444976806641,
+          305.9724426269531
+        ],
+        [
+          314.61344146728516,
+          305.9724426269531
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Model Optimization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.7052917480469,
+          489.37696838378906
+        ],
+        [
+          442.3030700683594,
+          489.37696838378906
+        ],
+        [
+          442.3030700683594,
+          503.091796875
+        ],
+        [
+          314.7052917480469,
+          503.091796875
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiment",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          315.39601135253906,
+          564.6801910400391
+        ],
+        [
+          392.9980163574219,
+          564.6801910400391
+        ],
+        [
+          392.9980163574219,
+          578.5677947998047
+        ],
+        [
+          315.39601135253906,
+          578.5677947998047
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.8772506713867,
+          610.7410583496094
+        ],
+        [
+          440.8637237548828,
+          610.7410583496094
+        ],
+        [
+          440.8637237548828,
+          624.5957946777344
+        ],
+        [
+          314.8772506713867,
+          624.5957946777344
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Comparison with Classical Models",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.3488311767578,
+          150.94366836547852
+        ],
+        [
+          514.1816253662109,
+          150.94366836547852
+        ],
+        [
+          514.1816253662109,
+          164.185791015625
+        ],
+        [
+          314.3488311767578,
+          164.185791015625
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Comparison with Quantum Models",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.36517333984375,
+          464.14796447753906
+        ],
+        [
+          517.7103424072266,
+          464.14796447753906
+        ],
+        [
+          517.7103424072266,
+          478.0128173828125
+        ],
+        [
+          314.36517333984375,
+          478.0128173828125
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Model Component Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.3456268310547,
+          551.4157104492188
+        ],
+        [
+          480.5837860107422,
+          551.4157104492188
+        ],
+        [
+          480.5837860107422,
+          564.6837921142578
+        ],
+        [
+          314.3456268310547,
+          564.6837921142578
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Hyper-parameter Sensitivity Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.39018630981445,
+          448.9724578857422
+        ],
+        [
+          266.41394805908203,
+          448.9724578857422
+        ],
+        [
+          266.41394805908203,
+          462.497802734375
+        ],
+        [
+          51.39018630981445,
+          462.497802734375
+        ]
+      ]
+    },
+    {
+      "title": "5.6 User-Item Interaction Learning Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.94700241088867,
+          627.6121215820312
+        ],
+        [
+          279.31739044189453,
+          627.6121215820312
+        ],
+        [
+          279.31739044189453,
+          641.4394378662109
+        ],
+        [
+          50.94700241088867,
+          641.4394378662109
+        ]
+      ]
+    },
+    {
+      "title": "6 Comments on Using Quantum Computing",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.4540710449219,
+          349.3424835205078
+        ],
+        [
+          546.7608489990234,
+          349.3424835205078
+        ],
+        [
+          546.7608489990234,
+          362.0393981933594
+        ],
+        [
+          314.4540710449219,
+          362.0393981933594
+        ]
+      ]
+    },
+    {
+      "title": "7 Related Work",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          315.7415771484375,
+          512.4784698486328
+        ],
+        [
+          402.6865997314453,
+          512.4784698486328
+        ],
+        [
+          402.6865997314453,
+          526.2539978027344
+        ],
+        [
+          315.7415771484375,
+          526.2539978027344
+        ]
+      ]
+    },
+    {
+      "title": "7.1 Collaborative Filtering",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          315.0333938598633,
+          551.8107147216797
+        ],
+        [
+          456.2339630126953,
+          551.8107147216797
+        ],
+        [
+          456.2339630126953,
+          564.7274475097656
+        ],
+        [
+          315.0333938598633,
+          564.7274475097656
+        ]
+      ]
+    },
+    {
+      "title": "7.2 Quantum Machine Learning",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.68735313415527,
+          335.3572998046875
+        ],
+        [
+          218.33180236816406,
+          335.3572998046875
+        ],
+        [
+          218.33180236816406,
+          349.25341796875
+        ],
+        [
+          50.68735313415527,
+          349.25341796875
+        ]
+      ]
+    },
+    {
+      "title": "8 Conclusion and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.792083740234375,
+          615.6565246582031
+        ],
+        [
+          214.19110107421875,
+          615.6565246582031
+        ],
+        [
+          214.19110107421875,
+          630.4149780273438
+        ],
+        [
+          50.792083740234375,
+          630.4149780273438
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.06627655029297,
+          571.201171875
+        ],
+        [
+          410.10740661621094,
+          571.201171875
+        ],
+        [
+          410.10740661621094,
+          585.0864410400391
+        ],
+        [
+          314.06627655029297,
+          585.0864410400391
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.9546012878418,
+          82.68115997314453
+        ],
+        [
+          108.14663696289062,
+          82.68115997314453
+        ],
+        [
+          108.14663696289062,
+          96.1689453125
+        ],
+        [
+          50.9546012878418,
+          96.1689453125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          284
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          702
+        ],
+        [
+          "Line",
+          178
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1155
+        ],
+        [
+          "Line",
+          255
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "Reference",
+          9
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1104
+        ],
+        [
+          "Line",
+          237
+        ],
+        [
+          "Text",
+          29
+        ],
+        [
+          "Equation",
+          13
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          502
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1077
+        ],
+        [
+          "Line",
+          267
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          616
+        ],
+        [
+          "Line",
+          206
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          201
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          607
+        ],
+        [
+          "Line",
+          155
+        ],
+        [
+          "Reference",
+          58
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792086_Quantum_enhanced_Representation_Learning_and_Matching_Learning_for_Recommendation"
+}

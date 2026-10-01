@@ -1,0 +1,1116 @@
+{
+  "table_of_contents": [
+    {
+      "title": "GAM: A Generative Auto-Marketing Framework in Online\nE-commerce Platforms",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          75.52487182617188,
+          79.29155158996582
+        ],
+        [
+          534.1979370117188,
+          79.29155158996582
+        ],
+        [
+          534.1979370117188,
+          119.86285400390625
+        ],
+        [
+          75.52487182617188,
+          119.86285400390625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.92657470703125,
+          349.742431640625
+        ],
+        [
+          95.72903823852539,
+          349.742431640625
+        ],
+        [
+          95.72903823852539,
+          364.4136047363281
+        ],
+        [
+          50.92657470703125,
+          364.4136047363281
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.23988342285156,
+          393.3825988769531
+        ],
+        [
+          387.33998107910156,
+          393.3825988769531
+        ],
+        [
+          387.33998107910156,
+          407.965576171875
+        ],
+        [
+          314.23988342285156,
+          407.965576171875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2878112792969,
+          440.20811462402344
+        ],
+        [
+          367.24816131591797,
+          440.20811462402344
+        ],
+        [
+          367.24816131591797,
+          454.256591796875
+        ],
+        [
+          314.2878112792969,
+          454.256591796875
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.95316314697266,
+          469.14239501953125
+        ],
+        [
+          404.652587890625,
+          469.14239501953125
+        ],
+        [
+          404.652587890625,
+          481.9216003417969
+        ],
+        [
+          313.95316314697266,
+          481.9216003417969
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.66004180908203,
+          550.7258148193359
+        ],
+        [
+          397.53619384765625,
+          550.7258148193359
+        ],
+        [
+          397.53619384765625,
+          564.8256378173828
+        ],
+        [
+          314.66004180908203,
+          564.8256378173828
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.38597869873047,
+          578.4511871337891
+        ],
+        [
+          402.5652160644531,
+          578.4511871337891
+        ],
+        [
+          402.5652160644531,
+          592.9688873291016
+        ],
+        [
+          314.38597869873047,
+          592.9688873291016
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Auto-bidding and Coupon Discounting",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.50245666503906,
+          593.8838195800781
+        ],
+        [
+          535.2907104492188,
+          593.8838195800781
+        ],
+        [
+          535.2907104492188,
+          608.6609039306641
+        ],
+        [
+          314.50245666503906,
+          608.6609039306641
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Offline Reinforcement Learning and\nDecision Transformer",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.91676139831543,
+          191.22516632080078
+        ],
+        [
+          259.948974609375,
+          191.22516632080078
+        ],
+        [
+          259.948974609375,
+          218.235595703125
+        ],
+        [
+          50.91676139831543,
+          218.235595703125
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Preference Alignment",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.99070167541504,
+          359.2065124511719
+        ],
+        [
+          187.83688354492188,
+          359.2065124511719
+        ],
+        [
+          187.83688354492188,
+          373.7615966796875
+        ],
+        [
+          50.99070167541504,
+          373.7615966796875
+        ]
+      ]
+    },
+    {
+      "title": "3 Preliminary",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.40785026550293,
+          504.0859680175781
+        ],
+        [
+          130.5319061279297,
+          504.0859680175781
+        ],
+        [
+          130.5319061279297,
+          518.3294677734375
+        ],
+        [
+          51.40785026550293,
+          518.3294677734375
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Auto-Marketing Problem Formulation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.280574798583984,
+          518.678466796875
+        ],
+        [
+          268.18041229248047,
+          518.678466796875
+        ],
+        [
+          268.18041229248047,
+          534.0204772949219
+        ],
+        [
+          51.280574798583984,
+          534.0204772949219
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Generative Auto-Marketing",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.1372299194336,
+          430.64268493652344
+        ],
+        [
+          479.8259582519531,
+          430.64268493652344
+        ],
+        [
+          479.8259582519531,
+          444.2773742675781
+        ],
+        [
+          314.1372299194336,
+          444.2773742675781
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.05328941345215,
+          246.37996673583984
+        ],
+        [
+          276.56996154785156,
+          246.37996673583984
+        ],
+        [
+          276.56996154785156,
+          259.6888732910156
+        ],
+        [
+          51.05328941345215,
+          259.6888732910156
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.658782958984375,
+          648.2060852050781
+        ],
+        [
+          215.5525360107422,
+          648.2060852050781
+        ],
+        [
+          215.5525360107422,
+          661.254638671875
+        ],
+        [
+          50.658782958984375,
+          661.254638671875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.567277908325195,
+          633.4458160400391
+        ],
+        [
+          109.44972610473633,
+          633.4458160400391
+        ],
+        [
+          109.44972610473633,
+          645.5318298339844
+        ],
+        [
+          51.567277908325195,
+          645.5318298339844
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.57963562011719,
+          554.7835693359375
+        ],
+        [
+          281.03331756591797,
+          554.7835693359375
+        ],
+        [
+          281.03331756591797,
+          568.1465148925781
+        ],
+        [
+          50.57963562011719,
+          568.1465148925781
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          52.250009536743164,
+          135.0695686340332
+        ],
+        [
+          222.30331420898438,
+          135.0695686340332
+        ],
+        [
+          222.30331420898438,
+          146.29309844970703
+        ],
+        [
+          52.250009536743164,
+          146.29309844970703
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.534912109375,
+          516.2577667236328
+        ],
+        [
+          393.2171173095703,
+          516.2577667236328
+        ],
+        [
+          393.2171173095703,
+          528.38671875
+        ],
+        [
+          314.534912109375,
+          528.38671875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.2900085449219,
+          573.3213958740234
+        ],
+        [
+          441.38214111328125,
+          573.3213958740234
+        ],
+        [
+          441.38214111328125,
+          585.6231536865234
+        ],
+        [
+          314.2900085449219,
+          585.6231536865234
+        ]
+      ]
+    },
+    {
+      "title": "5.1.2 Evaluation Metrics. Based on the objective of auto-marketing,\nwe use the following metrics to evaluate performance:",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.7630558013916,
+          165.99822235107422
+        ],
+        [
+          298.9734191894531,
+          165.99822235107422
+        ],
+        [
+          298.9734191894531,
+          189.7496337890625
+        ],
+        [
+          50.7630558013916,
+          189.7496337890625
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Experimental Results",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.3345718383789,
+          202.98676300048828
+        ],
+        [
+          449.6265106201172,
+          202.98676300048828
+        ],
+        [
+          449.6265106201172,
+          217.4202880859375
+        ],
+        [
+          314.3345718383789,
+          217.4202880859375
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Alignment Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.23738861083984,
+          615.5823211669922
+        ],
+        [
+          441.6085205078125,
+          615.5823211669922
+        ],
+        [
+          441.6085205078125,
+          630.5784454345703
+        ],
+        [
+          314.23738861083984,
+          630.5784454345703
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Ablation Study",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.78177833557129,
+          513.7678985595703
+        ],
+        [
+          152.6444549560547,
+          513.7678985595703
+        ],
+        [
+          152.6444549560547,
+          528.2435607910156
+        ],
+        [
+          50.78177833557129,
+          528.2435607910156
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.2486267089844,
+          391.14134216308594
+        ],
+        [
+          390.8489685058594,
+          391.14134216308594
+        ],
+        [
+          390.8489685058594,
+          405.4075927734375
+        ],
+        [
+          314.2486267089844,
+          405.4075927734375
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.38973236083984,
+          612.2990112304688
+        ],
+        [
+          410.06231689453125,
+          612.2990112304688
+        ],
+        [
+          410.06231689453125,
+          626.5773468017578
+        ],
+        [
+          314.38973236083984,
+          626.5773468017578
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.59615516662598,
+          82.98656845092773
+        ],
+        [
+          108.17403030395508,
+          82.98656845092773
+        ],
+        [
+          108.17403030395508,
+          96.33258056640625
+        ],
+        [
+          50.59615516662598,
+          96.33258056640625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          244
+        ],
+        [
+          "Line",
+          113
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          461
+        ],
+        [
+          "Line",
+          139
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          7
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          347
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListGroup",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          332
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          439
+        ],
+        [
+          "Line",
+          158
+        ],
+        [
+          "Reference",
+          44
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          64
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Reference",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792805_GAM_A_Generative_Auto_Marketing_Framework_in_Online_E_commerce_Platforms"
+}

@@ -1,0 +1,618 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with\nPrice SKU in E-commerce Recommendation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.856685638427734,
+          78.90206909179688
+        ],
+        [
+          558.8385772705078,
+          78.90206909179688
+        ],
+        [
+          558.8385772705078,
+          119.59552001953125
+        ],
+        [
+          50.856685638427734,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.923919677734375,
+          265.62620544433594
+        ],
+        [
+          95.64056968688965,
+          265.62620544433594
+        ],
+        [
+          95.64056968688965,
+          280.1769714355469
+        ],
+        [
+          50.923919677734375,
+          280.1769714355469
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.43423843383789,
+          531.3379669189453
+        ],
+        [
+          123.47519302368164,
+          531.3379669189453
+        ],
+        [
+          123.47519302368164,
+          546.4017944335938
+        ],
+        [
+          50.43423843383789,
+          546.4017944335938
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.53282356262207,
+          578.8022918701172
+        ],
+        [
+          103.09783172607422,
+          578.8022918701172
+        ],
+        [
+          103.09783172607422,
+          593.4039764404297
+        ],
+        [
+          50.53282356262207,
+          593.4039764404297
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.60405158996582,
+          650.0092163085938
+        ],
+        [
+          92.03262519836426,
+          650.0092163085938
+        ],
+        [
+          92.03262519836426,
+          662.4191436767578
+        ],
+        [
+          50.60405158996582,
+          662.4191436767578
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.24542236328125,
+          266.77345275878906
+        ],
+        [
+          405.0295715332031,
+          266.77345275878906
+        ],
+        [
+          405.0295715332031,
+          279.498046875
+        ],
+        [
+          314.24542236328125,
+          279.498046875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.5242004394531,
+          363.92633056640625
+        ],
+        [
+          397.5361328125,
+          363.92633056640625
+        ],
+        [
+          397.5361328125,
+          378.3609924316406
+        ],
+        [
+          314.5242004394531,
+          378.3609924316406
+        ]
+      ]
+    },
+    {
+      "title": "2 Problem Formulation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.21107482910156,
+          611.9893341064453
+        ],
+        [
+          177.2333221435547,
+          611.9893341064453
+        ],
+        [
+          177.2333221435547,
+          625.5909729003906
+        ],
+        [
+          51.21107482910156,
+          625.5909729003906
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.86585235595703,
+          83.3573226928711
+        ],
+        [
+          399.8176574707031,
+          83.3573226928711
+        ],
+        [
+          399.8176574707031,
+          96.2344970703125
+        ],
+        [
+          314.86585235595703,
+          96.2344970703125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 PSKU-aware Prediction Network",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.6037826538086,
+          98.3528823852539
+        ],
+        [
+          504.9020690917969,
+          98.3528823852539
+        ],
+        [
+          504.9020690917969,
+          111.8599853515625
+        ],
+        [
+          314.6037826538086,
+          111.8599853515625
+        ]
+      ]
+    },
+    {
+      "title": "3.2 PSKU-aware Application Module",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.9230842590332,
+          382.0353469848633
+        ],
+        [
+          241.97028350830078,
+          382.0353469848633
+        ],
+        [
+          241.97028350830078,
+          396.3568115234375
+        ],
+        [
+          50.9230842590332,
+          396.3568115234375
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.54012680053711,
+          670.8146209716797
+        ],
+        [
+          133.97671508789062,
+          670.8146209716797
+        ],
+        [
+          133.97671508789062,
+          685.2317962646484
+        ],
+        [
+          51.54012680053711,
+          685.2317962646484
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.06744384765625,
+          304.6813430786133
+        ],
+        [
+          442.70892333984375,
+          304.6813430786133
+        ],
+        [
+          442.70892333984375,
+          318.0548095703125
+        ],
+        [
+          314.06744384765625,
+          318.0548095703125
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Offline Experiments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.13883399963379,
+          279.75524139404297
+        ],
+        [
+          180.01371002197266,
+          279.75524139404297
+        ],
+        [
+          180.01371002197266,
+          293.2848205566406
+        ],
+        [
+          51.13883399963379,
+          293.2848205566406
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Online A/B Testing",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.93218231201172,
+          501.6554718017578
+        ],
+        [
+          174.00726699829102,
+          501.6554718017578
+        ],
+        [
+          174.00726699829102,
+          516.6994323730469
+        ],
+        [
+          50.93218231201172,
+          516.6994323730469
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.0164852142334,
+          594.0094757080078
+        ],
+        [
+          127.02388000488281,
+          594.0094757080078
+        ],
+        [
+          127.02388000488281,
+          608.4979705810547
+        ],
+        [
+          51.0164852142334,
+          608.4979705810547
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.5274200439453,
+          318.9861602783203
+        ],
+        [
+          372.3036193847656,
+          318.9861602783203
+        ],
+        [
+          372.3036193847656,
+          332.5320129394531
+        ],
+        [
+          313.5274200439453,
+          332.5320129394531
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          249
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          486
+        ],
+        [
+          "Line",
+          141
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          406
+        ],
+        [
+          "Line",
+          127
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          401
+        ],
+        [
+          "Line",
+          141
+        ],
+        [
+          "Reference",
+          13
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792935_Beyond_Item_Level_Prediction_Fine_Grained_CVR_Modeling_with_Price_SKU_in_E_Commerce_Recommendation"
+}

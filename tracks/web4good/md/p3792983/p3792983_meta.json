@@ -1,0 +1,1115 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Communication-Efficient Federated Learning for Post-Flood Risk\nAssessment Using UAV Swarms",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.342041015625,
+          78.94424629211426
+        ],
+        [
+          559.1272888183594,
+          78.94424629211426
+        ],
+        [
+          559.1272888183594,
+          119.62994384765625
+        ],
+        [
+          51.342041015625,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.18730545043945,
+          303.7547607421875
+        ],
+        [
+          95.41584777832031,
+          303.7547607421875
+        ],
+        [
+          95.41584777832031,
+          318.0270080566406
+        ],
+        [
+          51.18730545043945,
+          318.0270080566406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.7927360534668,
+          639.7964172363281
+        ],
+        [
+          96.35023498535156,
+          639.7964172363281
+        ],
+        [
+          96.35023498535156,
+          656.0042724609375
+        ],
+        [
+          50.7927360534668,
+          656.0042724609375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.66400146484375,
+          303.9653091430664
+        ],
+        [
+          387.2271728515625,
+          303.9653091430664
+        ],
+        [
+          387.2271728515625,
+          318.048828125
+        ],
+        [
+          314.66400146484375,
+          318.048828125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2569580078125,
+          362.6941223144531
+        ],
+        [
+          367.4347229003906,
+          362.6941223144531
+        ],
+        [
+          367.4347229003906,
+          377.2049865722656
+        ],
+        [
+          314.2569580078125,
+          377.2049865722656
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.27208709716797,
+          407.0742645263672
+        ],
+        [
+          404.78599548339844,
+          407.0742645263672
+        ],
+        [
+          404.78599548339844,
+          419.5840759277344
+        ],
+        [
+          314.27208709716797,
+          419.5840759277344
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4819030761719,
+          494.92103576660156
+        ],
+        [
+          397.9415588378906,
+          494.92103576660156
+        ],
+        [
+          397.9415588378906,
+          509.86700439453125
+        ],
+        [
+          314.4819030761719,
+          509.86700439453125
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3625183105469,
+          175.33250427246094
+        ],
+        [
+          402.5542907714844,
+          175.33250427246094
+        ],
+        [
+          402.5542907714844,
+          189.84490966796875
+        ],
+        [
+          314.3625183105469,
+          189.84490966796875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Deep Learning Segmentation Techniques for\nDisaster Assessment",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.29124450683594,
+          190.85438919067383
+        ],
+        [
+          558.6212310791016,
+          190.85438919067383
+        ],
+        [
+          558.6212310791016,
+          218.48797607421875
+        ],
+        [
+          314.29124450683594,
+          218.48797607421875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Communication-Efficient Federated\nLearning for Segmentation Tasks",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.90184783935547,
+          569.5162811279297
+        ],
+        [
+          520.6265716552734,
+          569.5162811279297
+        ],
+        [
+          520.6265716552734,
+          597.6044311523438
+        ],
+        [
+          313.90184783935547,
+          597.6044311523438
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.240394592285156,
+          435.40589904785156
+        ],
+        [
+          135.19488143920898,
+          435.40589904785156
+        ],
+        [
+          135.19488143920898,
+          447.26390075683594
+        ],
+        [
+          51.240394592285156,
+          447.26390075683594
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.189828872680664,
+          559.9221954345703
+        ],
+        [
+          188.32110214233398,
+          559.9221954345703
+        ],
+        [
+          188.32110214233398,
+          572.5128479003906
+        ],
+        [
+          51.189828872680664,
+          572.5128479003906
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.91777420043945,
+          478.1627197265625
+        ],
+        [
+          272.7754669189453,
+          478.1627197265625
+        ],
+        [
+          272.7754669189453,
+          490.70672607421875
+        ],
+        [
+          50.91777420043945,
+          490.70672607421875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.41322898864746,
+          241.0330810546875
+        ],
+        [
+          261.2918014526367,
+          241.0330810546875
+        ],
+        [
+          261.2918014526367,
+          266.2899398803711
+        ],
+        [
+          51.41322898864746,
+          266.2899398803711
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.0949172973633,
+          513.3625030517578
+        ],
+        [
+          464.9918975830078,
+          513.3625030517578
+        ],
+        [
+          464.9918975830078,
+          525.7672119140625
+        ],
+        [
+          315.0949172973633,
+          525.7672119140625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.73168182373047,
+          528.6776733398438
+        ],
+        [
+          440.600830078125,
+          528.6776733398438
+        ],
+        [
+          440.600830078125,
+          540.8473205566406
+        ],
+        [
+          314.73168182373047,
+          540.8473205566406
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Impact of the Number of Distillation Levels\non Model Performance",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.364139556884766,
+          383.9867935180664
+        ],
+        [
+          294.1508102416992,
+          383.9867935180664
+        ],
+        [
+          294.1508102416992,
+          411.2369689941406
+        ],
+        [
+          51.364139556884766,
+          411.2369689941406
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Impact of Pooling Strategy on Model\nPerformance",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.50399017333984,
+          438.8997344970703
+        ],
+        [
+          525.0034332275391,
+          438.8997344970703
+        ],
+        [
+          525.0034332275391,
+          466.031982421875
+        ],
+        [
+          314.50399017333984,
+          466.031982421875
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Performance Comparison of Different\nFederated Learning Algorithms under\nNon-IID Scenarios",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.13358116149902,
+          448.1307678222656
+        ],
+        [
+          267.33074951171875,
+          448.1307678222656
+        ],
+        [
+          267.33074951171875,
+          487.9499816894531
+        ],
+        [
+          51.13358116149902,
+          487.9499816894531
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.969444274902344,
+          561.1410369873047
+        ],
+        [
+          126.73583221435547,
+          561.1410369873047
+        ],
+        [
+          126.73583221435547,
+          575.6209716796875
+        ],
+        [
+          50.969444274902344,
+          575.6209716796875
+        ]
+      ]
+    },
+    {
+      "title": "6 Acknowledgment",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.90381622314453,
+          527.0663452148438
+        ],
+        [
+          421.7977600097656,
+          527.0663452148438
+        ],
+        [
+          421.7977600097656,
+          541.1054229736328
+        ],
+        [
+          313.90381622314453,
+          541.1054229736328
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.9954376220703,
+          605.4759521484375
+        ],
+        [
+          372.3036193847656,
+          605.4759521484375
+        ],
+        [
+          372.3036193847656,
+          619.4569702148438
+        ],
+        [
+          313.9954376220703,
+          619.4569702148438
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          314.09012603759766,
+          240.0362777709961
+        ],
+        [
+          392.8506774902344,
+          240.0362777709961
+        ],
+        [
+          392.8506774902344,
+          253.00868225097656
+        ],
+        [
+          314.09012603759766,
+          253.00868225097656
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          313.91908264160156,
+          254.9180145263672
+        ],
+        [
+          544.3825378417969,
+          254.9180145263672
+        ],
+        [
+          544.3825378417969,
+          293.77386474609375
+        ],
+        [
+          313.91908264160156,
+          293.77386474609375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.014671325683594,
+          322.2937545776367
+        ],
+        [
+          281.81085205078125,
+          322.2937545776367
+        ],
+        [
+          281.81085205078125,
+          347.3445053100586
+        ],
+        [
+          51.014671325683594,
+          347.3445053100586
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.81629943847656,
+          386.42308044433594
+        ],
+        [
+          451.3212432861328,
+          386.42308044433594
+        ],
+        [
+          451.3212432861328,
+          399.61834716796875
+        ],
+        [
+          314.81629943847656,
+          399.61834716796875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          242
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          9
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          17
+        ],
+        [
+          "Equation",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          344
+        ],
+        [
+          "Line",
+          135
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          603
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          241
+        ],
+        [
+          "Line",
+          121
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          425
+        ],
+        [
+          "Line",
+          139
+        ],
+        [
+          "Reference",
+          28
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          49
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          8
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792983_Communication_Efficient_Federated_Learning_for_Post_Flood_Risk_Assessment_Using_UAV_Swarms"
+}

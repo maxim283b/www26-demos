@@ -1,0 +1,1519 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Cardinality is Not Enough: Super Host Detection via Segmented\nCardinality Estimation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          54.49285125732422,
+          79.03106689453125
+        ],
+        [
+          556.5517730712891,
+          79.03106689453125
+        ],
+        [
+          556.5517730712891,
+          119.61279296875
+        ],
+        [
+          54.49285125732422,
+          119.61279296875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.82737159729004,
+          358.91837310791016
+        ],
+        [
+          95.48459815979004,
+          358.91837310791016
+        ],
+        [
+          95.48459815979004,
+          372.8331604003906
+        ],
+        [
+          50.82737159729004,
+          372.8331604003906
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.658273696899414,
+          570.3590698242188
+        ],
+        [
+          123.36225128173828,
+          570.3590698242188
+        ],
+        [
+          123.36225128173828,
+          584.767822265625
+        ],
+        [
+          50.658273696899414,
+          584.767822265625
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.014488220214844,
+          606.8139038085938
+        ],
+        [
+          102.98231506347656,
+          606.8139038085938
+        ],
+        [
+          102.98231506347656,
+          621.3170013427734
+        ],
+        [
+          51.014488220214844,
+          621.3170013427734
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.251787185668945,
+          650.1743316650391
+        ],
+        [
+          91.80879592895508,
+          650.1743316650391
+        ],
+        [
+          91.80879592895508,
+          662.5450744628906
+        ],
+        [
+          51.251787185668945,
+          662.5450744628906
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.98590087890625,
+          359.53218841552734
+        ],
+        [
+          405.5814971923828,
+          359.53218841552734
+        ],
+        [
+          405.5814971923828,
+          372.1540832519531
+        ],
+        [
+          314.98590087890625,
+          372.1540832519531
+        ]
+      ]
+    },
+    {
+      "title": "Resource Availability:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.29817962646484,
+          441.5514678955078
+        ],
+        [
+          397.40126037597656,
+          441.5514678955078
+        ],
+        [
+          397.40126037597656,
+          453.9910888671875
+        ],
+        [
+          314.29817962646484,
+          453.9910888671875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6787872314453,
+          484.65435791015625
+        ],
+        [
+          397.5368957519531,
+          484.65435791015625
+        ],
+        [
+          397.5368957519531,
+          498.9089660644531
+        ],
+        [
+          314.6787872314453,
+          498.9089660644531
+        ]
+      ]
+    },
+    {
+      "title": "2 Motivation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.38758087158203,
+          82.60043334960938
+        ],
+        [
+          389.29522705078125,
+          82.60043334960938
+        ],
+        [
+          389.29522705078125,
+          96.16900634765625
+        ],
+        [
+          314.38758087158203,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Existing Solutions and Limitations",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.4144744873047,
+          97.4608383178711
+        ],
+        [
+          513.9738464355469,
+          97.4608383178711
+        ],
+        [
+          513.9738464355469,
+          111.9254150390625
+        ],
+        [
+          314.4144744873047,
+          111.9254150390625
+        ]
+      ]
+    },
+    {
+      "title": "Figure 2: Hierarchical approach for cardinality estimation.",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          52.088876724243164,
+          248.1855010986328
+        ],
+        [
+          292.5876770019531,
+          248.1855010986328
+        ],
+        [
+          292.5876770019531,
+          259.68707275390625
+        ],
+        [
+          52.088876724243164,
+          259.68707275390625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Empirical Study",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.05050277709961,
+          348.8525161743164
+        ],
+        [
+          158.30702590942383,
+          348.8525161743164
+        ],
+        [
+          158.30702590942383,
+          361.4527893066406
+        ],
+        [
+          51.05050277709961,
+          361.4527893066406
+        ]
+      ]
+    },
+    {
+      "title": "3 Design of SegSketch",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.0376281738281,
+          203.14739227294922
+        ],
+        [
+          434.2906036376953,
+          203.14739227294922
+        ],
+        [
+          434.2906036376953,
+          216.407470703125
+        ],
+        [
+          315.0376281738281,
+          216.407470703125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Data Structure",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.91698455810547,
+          271.54964447021484
+        ],
+        [
+          415.00726318359375,
+          271.54964447021484
+        ],
+        [
+          415.00726318359375,
+          284.4599609375
+        ],
+        [
+          314.91698455810547,
+          284.4599609375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Key Design",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          315.0479049682617,
+          464.91343688964844
+        ],
+        [
+          399.0570373535156,
+          464.91343688964844
+        ],
+        [
+          399.0570373535156,
+          477.012451171875
+        ],
+        [
+          315.0479049682617,
+          477.012451171875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.1654281616211,
+          376.06285858154297
+        ],
+        [
+          426.0303039550781,
+          376.06285858154297
+        ],
+        [
+          426.0303039550781,
+          388.2696533203125
+        ],
+        [
+          314.1654281616211,
+          388.2696533203125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          54.11955642700195,
+          84.57250785827637
+        ],
+        [
+          205.43582153320312,
+          84.57250785827637
+        ],
+        [
+          205.43582153320312,
+          95.74724006652832
+        ],
+        [
+          54.11955642700195,
+          95.74724006652832
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.9952392578125,
+          233.31568908691406
+        ],
+        [
+          436.85398864746094,
+          233.31568908691406
+        ],
+        [
+          436.85398864746094,
+          245.03931427001953
+        ],
+        [
+          314.9952392578125,
+          245.03931427001953
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.37440490722656,
+          560.4322357177734
+        ],
+        [
+          221.41985321044922,
+          560.4322357177734
+        ],
+        [
+          221.41985321044922,
+          572.5473175048828
+        ],
+        [
+          51.37440490722656,
+          572.5473175048828
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.85443115234375,
+          590.5763854980469
+        ],
+        [
+          456.80799865722656,
+          590.5763854980469
+        ],
+        [
+          456.80799865722656,
+          602.5027313232422
+        ],
+        [
+          314.85443115234375,
+          602.5027313232422
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.1035690307617,
+          606.2595062255859
+        ],
+        [
+          439.99388122558594,
+          606.2595062255859
+        ],
+        [
+          439.99388122558594,
+          618.2424774169922
+        ],
+        [
+          315.1035690307617,
+          618.2424774169922
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Accuracy of Super Host Detection",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.48565673828125,
+          122.34239959716797
+        ],
+        [
+          509.9747772216797,
+          122.34239959716797
+        ],
+        [
+          509.9747772216797,
+          135.51483154296875
+        ],
+        [
+          314.48565673828125,
+          135.51483154296875
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Scalability",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.86121368408203,
+          435.01922607421875
+        ],
+        [
+          130.58521270751953,
+          435.01922607421875
+        ],
+        [
+          130.58521270751953,
+          447.8420104980469
+        ],
+        [
+          51.86121368408203,
+          447.8420104980469
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Parameter Evaluation",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.48382759094238,
+          638.6332397460938
+        ],
+        [
+          186.98265838623047,
+          638.6332397460938
+        ],
+        [
+          186.98265838623047,
+          652.3330078125
+        ],
+        [
+          51.48382759094238,
+          652.3330078125
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Throughput",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.7926330566406,
+          661.194580078125
+        ],
+        [
+          403.6161346435547,
+          661.194580078125
+        ],
+        [
+          403.6161346435547,
+          674.3164520263672
+        ],
+        [
+          314.7926330566406,
+          674.3164520263672
+        ]
+      ]
+    },
+    {
+      "title": "6 Performance on P4",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.049306869506836,
+          278.08287048339844
+        ],
+        [
+          165.24363327026367,
+          278.08287048339844
+        ],
+        [
+          165.24363327026367,
+          291.9579772949219
+        ],
+        [
+          51.049306869506836,
+          291.9579772949219
+        ]
+      ]
+    },
+    {
+      "title": "7 Related Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.495723724365234,
+          644.4964599609375
+        ],
+        [
+          139.02333068847656,
+          644.4964599609375
+        ],
+        [
+          139.02333068847656,
+          658.5599975585938
+        ],
+        [
+          51.495723724365234,
+          658.5599975585938
+        ]
+      ]
+    },
+    {
+      "title": "7.1 Sketch-Based Cardinality Estimation",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.115922927856445,
+          660.0873413085938
+        ],
+        [
+          261.66082763671875,
+          660.0873413085938
+        ],
+        [
+          261.66082763671875,
+          674.2509994506836
+        ],
+        [
+          51.115922927856445,
+          674.2509994506836
+        ]
+      ]
+    },
+    {
+      "title": "7.2 Hierarchical Methods for HHH Detection",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.18540954589844,
+          287.38526916503906
+        ],
+        [
+          549.8778533935547,
+          287.38526916503906
+        ],
+        [
+          549.8778533935547,
+          301.6219787597656
+        ],
+        [
+          314.18540954589844,
+          301.6219787597656
+        ]
+      ]
+    },
+    {
+      "title": "8 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.33187103271484,
+          485.5033721923828
+        ],
+        [
+          391.4306945800781,
+          485.5033721923828
+        ],
+        [
+          391.4306945800781,
+          498.93499755859375
+        ],
+        [
+          314.33187103271484,
+          498.93499755859375
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgment",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.34352111816406,
+          616.5034332275391
+        ],
+        [
+          406.41046142578125,
+          616.5034332275391
+        ],
+        [
+          406.41046142578125,
+          630.4804534912109
+        ],
+        [
+          314.34352111816406,
+          630.4804534912109
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.940656661987305,
+          83.34151268005371
+        ],
+        [
+          108.43535614013672,
+          83.34151268005371
+        ],
+        [
+          108.43535614013672,
+          96.16900634765625
+        ],
+        [
+          50.940656661987305,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.19731330871582,
+          124.27011108398438
+        ],
+        [
+          174.72926330566406,
+          124.27011108398438
+        ],
+        [
+          174.72926330566406,
+          136.36404418945312
+        ],
+        [
+          51.19731330871582,
+          136.36404418945312
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.225202560424805,
+          138.45549774169922
+        ],
+        [
+          259.04688262939453,
+          138.45549774169922
+        ],
+        [
+          259.04688262939453,
+          151.2605094909668
+        ],
+        [
+          51.225202560424805,
+          151.2605094909668
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.5898208618164,
+          185.23584365844727
+        ],
+        [
+          560.7693786621094,
+          185.23584365844727
+        ],
+        [
+          560.7693786621094,
+          210.5738983154297
+        ],
+        [
+          314.5898208618164,
+          210.5738983154297
+        ]
+      ]
+    },
+    {
+      "title": "B Experimental Results",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.937211990356445,
+          308.9908447265625
+        ],
+        [
+          179.2060661315918,
+          308.9908447265625
+        ],
+        [
+          179.2060661315918,
+          322.914794921875
+        ],
+        [
+          50.937211990356445,
+          322.914794921875
+        ]
+      ]
+    },
+    {
+      "title": "B.1 Impact of Threshold Scaling Factor \ufffd\ufffd on\nSuper Host Detection",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.77491760253906,
+          325.07897186279297
+        ],
+        [
+          279.0266876220703,
+          325.07897186279297
+        ],
+        [
+          279.0266876220703,
+          351.55780029296875
+        ],
+        [
+          50.77491760253906,
+          351.55780029296875
+        ]
+      ]
+    },
+    {
+      "title": "B.2 Accuracy of Super Host Detection",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.69956970214844,
+          83.6418285369873
+        ],
+        [
+          511.7611083984375,
+          83.6418285369873
+        ],
+        [
+          511.7611083984375,
+          96.1907958984375
+        ],
+        [
+          314.69956970214844,
+          96.1907958984375
+        ]
+      ]
+    },
+    {
+      "title": "B.3 Impact of IP Segment Width on Super Host\nDetection",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.95406913757324,
+          318.2201385498047
+        ],
+        [
+          294.12730407714844,
+          318.2201385498047
+        ],
+        [
+          294.12730407714844,
+          344.38800048828125
+        ],
+        [
+          50.95406913757324,
+          344.38800048828125
+        ]
+      ]
+    },
+    {
+      "title": "B.4 Throughput",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.38338088989258,
+          648.7998962402344
+        ],
+        [
+          141.15771102905273,
+          648.7998962402344
+        ],
+        [
+          141.15771102905273,
+          663.3574523925781
+        ],
+        [
+          50.38338088989258,
+          663.3574523925781
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          282
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          18
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          338
+        ],
+        [
+          "Line",
+          116
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          482
+        ],
+        [
+          "Line",
+          153
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          495
+        ],
+        [
+          "Line",
+          158
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          495
+        ],
+        [
+          "Line",
+          190
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Figure",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "FigureGroup",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          318
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          511
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          49
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          17
+        ],
+        [
+          "Equation",
+          15
+        ],
+        [
+          "Reference",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          486
+        ],
+        [
+          "Line",
+          146
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          323
+        ],
+        [
+          "Line",
+          117
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792071_Cardinality_is_Not_Enough_Super_Host_Detection_via_Segmented_Cardinality_Estimation"
+}

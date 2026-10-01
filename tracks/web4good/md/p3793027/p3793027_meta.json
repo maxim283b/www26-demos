@@ -1,0 +1,1408 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Mind the Ambiguity: Aleatoric Uncertainty Quantification in\nLLMs for Safe Medical Question Answering",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          65.71577453613281,
+          79.18032646179199
+        ],
+        [
+          543.8526306152344,
+          79.18032646179199
+        ],
+        [
+          543.8526306152344,
+          119.63006591796875
+        ],
+        [
+          65.71577453613281,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.79668426513672,
+          335.69652557373047
+        ],
+        [
+          95.74900817871094,
+          335.69652557373047
+        ],
+        [
+          95.74900817871094,
+          350.0032653808594
+        ],
+        [
+          50.79668426513672,
+          350.0032653808594
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.6867218017578,
+          335.6499710083008
+        ],
+        [
+          387.5979309082031,
+          335.6499710083008
+        ],
+        [
+          387.5979309082031,
+          350.0247802734375
+        ],
+        [
+          313.6867218017578,
+          350.0247802734375
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.78690338134766,
+          394.4205322265625
+        ],
+        [
+          367.149169921875,
+          394.4205322265625
+        ],
+        [
+          367.149169921875,
+          409.3139953613281
+        ],
+        [
+          313.78690338134766,
+          409.3139953613281
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.8871765136719,
+          439.1949920654297
+        ],
+        [
+          404.8308563232422,
+          439.1949920654297
+        ],
+        [
+          404.8308563232422,
+          451.9501037597656
+        ],
+        [
+          313.8871765136719,
+          451.9501037597656
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.7030715942383,
+          528.5122375488281
+        ],
+        [
+          397.536865234375,
+          528.5122375488281
+        ],
+        [
+          397.536865234375,
+          542.7440032958984
+        ],
+        [
+          314.7030715942383,
+          542.7440032958984
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.15662384033203,
+          649.4111022949219
+        ],
+        [
+          91.77256965637207,
+          649.4111022949219
+        ],
+        [
+          91.77256965637207,
+          662.8906402587891
+        ],
+        [
+          51.15662384033203,
+          662.8906402587891
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Works",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.92625427246094,
+          644.5544586181641
+        ],
+        [
+          407.7246551513672,
+          644.5544586181641
+        ],
+        [
+          407.7246551513672,
+          658.5600128173828
+        ],
+        [
+          314.92625427246094,
+          658.5600128173828
+        ]
+      ]
+    },
+    {
+      "title": "2.1 LLMs for Medical QA",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.8721923828125,
+          660.2558441162109
+        ],
+        [
+          448.09986877441406,
+          660.2558441162109
+        ],
+        [
+          448.09986877441406,
+          674.2510070800781
+        ],
+        [
+          314.8721923828125,
+          674.2510070800781
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Uncertainty Quantification in LLMs",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.558549880981445,
+          254.0719985961914
+        ],
+        [
+          255.725830078125,
+          254.0719985961914
+        ],
+        [
+          255.725830078125,
+          268.77203369140625
+        ],
+        [
+          50.558549880981445,
+          268.77203369140625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Representation Engineering",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.6487979888916,
+          561.3333892822266
+        ],
+        [
+          218.22772979736328,
+          561.3333892822266
+        ],
+        [
+          218.22772979736328,
+          575.6864471435547
+        ],
+        [
+          50.6487979888916,
+          575.6864471435547
+        ]
+      ]
+    },
+    {
+      "title": "3 Clear-to-Vague Medical QA Benchmark",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.02320098876953,
+          172.92599487304688
+        ],
+        [
+          528.9369506835938,
+          172.92599487304688
+        ],
+        [
+          528.9369506835938,
+          186.75042724609375
+        ],
+        [
+          314.02320098876953,
+          186.75042724609375
+        ]
+      ]
+    },
+    {
+      "title": "4 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.10585021972656,
+          648.6578521728516
+        ],
+        [
+          399.8168640136719,
+          648.6578521728516
+        ],
+        [
+          399.8168640136719,
+          663.3574523925781
+        ],
+        [
+          314.10585021972656,
+          663.3574523925781
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Definition and Problem Formulation",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.11652374267578,
+          250.0466079711914
+        ],
+        [
+          260.96617126464844,
+          250.0466079711914
+        ],
+        [
+          260.96617126464844,
+          263.46002197265625
+        ],
+        [
+          51.11652374267578,
+          263.46002197265625
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Linear Encoding of Aleatoric Uncertainty",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          51.1600456237793,
+          441.7793884277344
+        ],
+        [
+          283.8423614501953,
+          441.7793884277344
+        ],
+        [
+          283.8423614501953,
+          455.89044189453125
+        ],
+        [
+          51.1600456237793,
+          455.89044189453125
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Aleatoric Uncertainty Probe",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.10037994384766,
+          598.8001098632812
+        ],
+        [
+          482.3719024658203,
+          598.8001098632812
+        ],
+        [
+          482.3719024658203,
+          612.7630157470703
+        ],
+        [
+          314.10037994384766,
+          612.7630157470703
+        ]
+      ]
+    },
+    {
+      "title": "4.4 AU-Guided \"Clarify-Before-Answer\"\nMedical QA Framework",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.5351028442383,
+          83.72963905334473
+        ],
+        [
+          524.5310211181641,
+          83.72963905334473
+        ],
+        [
+          524.5310211181641,
+          109.1199951171875
+        ],
+        [
+          315.5351028442383,
+          109.1199951171875
+        ]
+      ]
+    },
+    {
+      "title": "5 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.01412200927734,
+          533.6946716308594
+        ],
+        [
+          398.1772155761719,
+          533.6946716308594
+        ],
+        [
+          398.1772155761719,
+          546.7518157958984
+        ],
+        [
+          315.01412200927734,
+          546.7518157958984
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.7545471191406,
+          548.8613433837891
+        ],
+        [
+          441.38690185546875,
+          548.8613433837891
+        ],
+        [
+          441.38690185546875,
+          562.4428100585938
+        ],
+        [
+          314.7545471191406,
+          562.4428100585938
+        ]
+      ]
+    },
+    {
+      "title": "5.2 AU Quantification Performance",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.49694061279297,
+          594.3308258056641
+        ],
+        [
+          500.82037353515625,
+          594.3308258056641
+        ],
+        [
+          500.82037353515625,
+          608.4980010986328
+        ],
+        [
+          314.49694061279297,
+          608.4980010986328
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Effectiveness of AU-Guided Clarification",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.84556770324707,
+          582.5040435791016
+        ],
+        [
+          280.8947067260742,
+          582.5040435791016
+        ],
+        [
+          280.8947067260742,
+          597.5390014648438
+        ],
+        [
+          50.84556770324707,
+          597.5390014648438
+        ]
+      ]
+    },
+    {
+      "title": "5.4 Robustness Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.39207458496094,
+          474.48399353027344
+        ],
+        [
+          180.8437042236328,
+          474.48399353027344
+        ],
+        [
+          180.8437042236328,
+          487.9499816894531
+        ],
+        [
+          51.39207458496094,
+          487.9499816894531
+        ]
+      ]
+    },
+    {
+      "title": "5.5 Computational Efficiency Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.26918029785156,
+          649.1689453125
+        ],
+        [
+          516.1785736083984,
+          649.1689453125
+        ],
+        [
+          516.1785736083984,
+          663.3138275146484
+        ],
+        [
+          314.26918029785156,
+          663.3138275146484
+        ]
+      ]
+    },
+    {
+      "title": "5.6 Case Study",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.05002784729004,
+          605.3871002197266
+        ],
+        [
+          132.65988159179688,
+          605.3871002197266
+        ],
+        [
+          132.65988159179688,
+          619.4570159912109
+        ],
+        [
+          51.05002784729004,
+          619.4570159912109
+        ]
+      ]
+    },
+    {
+      "title": "6 Limitations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.1761169433594,
+          218.15171813964844
+        ],
+        [
+          391.9929656982422,
+          218.15171813964844
+        ],
+        [
+          391.9929656982422,
+          232.24200439453125
+        ],
+        [
+          314.1761169433594,
+          232.24200439453125
+        ]
+      ]
+    },
+    {
+      "title": "7 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.25501251220703,
+          444.3493194580078
+        ],
+        [
+          390.8495788574219,
+          444.3493194580078
+        ],
+        [
+          390.8495788574219,
+          458.7259826660156
+        ],
+        [
+          314.25501251220703,
+          458.7259826660156
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.99388122558594,
+          605.2403411865234
+        ],
+        [
+          410.3367004394531,
+          605.2403411865234
+        ],
+        [
+          410.3367004394531,
+          619.5214385986328
+        ],
+        [
+          313.99388122558594,
+          619.5214385986328
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.98429298400879,
+          83.19660186767578
+        ],
+        [
+          108.27198028564453,
+          83.19660186767578
+        ],
+        [
+          108.27198028564453,
+          96.16900634765625
+        ],
+        [
+          50.98429298400879,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "Prompt for Multiple-Choice Medical QA",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          63.83651161193848,
+          88.09725379943848
+        ],
+        [
+          231.7843780517578,
+          88.09725379943848
+        ],
+        [
+          231.7843780517578,
+          101.08721923828125
+        ],
+        [
+          63.83651161193848,
+          101.08721923828125
+        ]
+      ]
+    },
+    {
+      "title": "8 Appendix",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.69699478149414,
+          432.0277862548828
+        ],
+        [
+          119.55071640014648,
+          432.0277862548828
+        ],
+        [
+          119.55071640014648,
+          446.2418212890625
+        ],
+        [
+          50.69699478149414,
+          446.2418212890625
+        ]
+      ]
+    },
+    {
+      "title": "8.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.57653999328613,
+          447.5830078125
+        ],
+        [
+          176.6063690185547,
+          447.5830078125
+        ],
+        [
+          176.6063690185547,
+          461.93280029296875
+        ],
+        [
+          50.57653999328613,
+          461.93280029296875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          65.55444145202637,
+          224.15267944335938
+        ],
+        [
+          231.6906509399414,
+          224.15267944335938
+        ],
+        [
+          231.6906509399414,
+          236.43651580810547
+        ],
+        [
+          65.55444145202637,
+          236.43651580810547
+        ]
+      ]
+    },
+    {
+      "title": "8.2 Prompt Templates",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.7479248046875,
+          617.66162109375
+        ],
+        [
+          433.8549041748047,
+          617.66162109375
+        ],
+        [
+          433.8549041748047,
+          632.4298248291016
+        ],
+        [
+          313.7479248046875,
+          632.4298248291016
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          65.00914192199707,
+          88.08004188537598
+        ],
+        [
+          286.2801818847656,
+          88.08004188537598
+        ],
+        [
+          286.2801818847656,
+          100.25565719604492
+        ],
+        [
+          65.00914192199707,
+          100.25565719604492
+        ]
+      ]
+    },
+    {
+      "title": "8.3 Human Evaluation of Ambiguous Question\nGeneration",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          49.80842971801758,
+          650.5407257080078
+        ],
+        [
+          292.8885955810547,
+          650.5407257080078
+        ],
+        [
+          292.8885955810547,
+          678.1820068359375
+        ],
+        [
+          49.80842971801758,
+          678.1820068359375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          246
+        ],
+        [
+          "Line",
+          99
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          375
+        ],
+        [
+          "Line",
+          142
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          325
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          494
+        ],
+        [
+          "Line",
+          124
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          574
+        ],
+        [
+          "Line",
+          148
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          393
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          388
+        ],
+        [
+          "Line",
+          131
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          563
+        ],
+        [
+          "Line",
+          115
+        ],
+        [
+          "Text",
+          22
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          539
+        ],
+        [
+          "Line",
+          154
+        ],
+        [
+          "Reference",
+          44
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          285
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          17
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          230
+        ],
+        [
+          "Line",
+          85
+        ],
+        [
+          "Text",
+          29
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          100
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793027_Mind_the_Ambiguity_Aleatoric_Uncertainty_Quantification_in_LLMs_for_Safe_Medical_Question_Answering"
+}

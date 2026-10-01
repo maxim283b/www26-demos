@@ -1,0 +1,1421 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Long Story Short: Auditing U.S. Political Polarization in\nRecommendations for Long- vs. Short-form Videos on YouTube",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          54.94782257080078,
+          79.59845924377441
+        ],
+        [
+          554.4053649902344,
+          79.59845924377441
+        ],
+        [
+          554.4053649902344,
+          119.62994384765625
+        ],
+        [
+          54.94782257080078,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.023162841796875,
+          241.36166381835938
+        ],
+        [
+          95.8440170288086,
+          241.36166381835938
+        ],
+        [
+          95.8440170288086,
+          256.123291015625
+        ],
+        [
+          51.023162841796875,
+          256.123291015625
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.682106018066406,
+          464.211181640625
+        ],
+        [
+          123.46537399291992,
+          464.211181640625
+        ],
+        [
+          123.46537399291992,
+          478.6208190917969
+        ],
+        [
+          50.682106018066406,
+          478.6208190917969
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.63315391540527,
+          533.4201049804688
+        ],
+        [
+          103.00903701782227,
+          533.4201049804688
+        ],
+        [
+          103.00903701782227,
+          547.6489715576172
+        ],
+        [
+          50.63315391540527,
+          547.6489715576172
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.37457466125488,
+          564.1440582275391
+        ],
+        [
+          140.49554443359375,
+          564.1440582275391
+        ],
+        [
+          140.49554443359375,
+          576.9790649414062
+        ],
+        [
+          50.37457466125488,
+          576.9790649414062
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.82155799865723,
+          649.4497375488281
+        ],
+        [
+          91.18463516235352,
+          649.4497375488281
+        ],
+        [
+          91.18463516235352,
+          662.4090270996094
+        ],
+        [
+          50.82155799865723,
+          662.4090270996094
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3828430175781,
+          241.51116943359375
+        ],
+        [
+          397.85975646972656,
+          241.51116943359375
+        ],
+        [
+          397.85975646972656,
+          256.12298583984375
+        ],
+        [
+          314.3828430175781,
+          256.12298583984375
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.86249923706055,
+          310.60752868652344
+        ],
+        [
+          138.6752700805664,
+          310.60752868652344
+        ],
+        [
+          138.6752700805664,
+          325.7019958496094
+        ],
+        [
+          50.86249923706055,
+          325.7019958496094
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Auditing YouTube",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.59666442871094,
+          401.2237243652344
+        ],
+        [
+          168.12432861328125,
+          401.2237243652344
+        ],
+        [
+          168.12432861328125,
+          415.57440185546875
+        ],
+        [
+          50.59666442871094,
+          415.57440185546875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Online Polarization",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.303810119628906,
+          600.7585601806641
+        ],
+        [
+          176.00983428955078,
+          600.7585601806641
+        ],
+        [
+          176.00983428955078,
+          614.9059753417969
+        ],
+        [
+          50.303810119628906,
+          614.9059753417969
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Online Polarization by Recommendation\nSystems",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5912399291992,
+          227.72801971435547
+        ],
+        [
+          546.1427764892578,
+          227.72801971435547
+        ],
+        [
+          546.1427764892578,
+          255.48797607421875
+        ],
+        [
+          314.5912399291992,
+          255.48797607421875
+        ]
+      ]
+    },
+    {
+      "title": "3 Methods",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.0251693725586,
+          510.52354431152344
+        ],
+        [
+          377.23475646972656,
+          510.52354431152344
+        ],
+        [
+          377.23475646972656,
+          525.1439819335938
+        ],
+        [
+          314.0251693725586,
+          525.1439819335938
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Identifying Channels and Collecting Videos",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.5369186401367,
+          648.1257476806641
+        ],
+        [
+          559.2717590332031,
+          648.1257476806641
+        ],
+        [
+          559.2717590332031,
+          663.3574371337891
+        ],
+        [
+          313.5369186401367,
+          663.3574371337891
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Matching Long- and Short-form Videos",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.75328826904297,
+          405.10789489746094
+        ],
+        [
+          272.53443145751953,
+          405.10789489746094
+        ],
+        [
+          272.53443145751953,
+          419.6194152832031
+        ],
+        [
+          50.75328826904297,
+          419.6194152832031
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Selecting Seed Video Pairs",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.87625503540039,
+          669.9942626953125
+        ],
+        [
+          207.59133911132812,
+          669.9942626953125
+        ],
+        [
+          207.59133911132812,
+          685.2754287719727
+        ],
+        [
+          50.87625503540039,
+          685.2754287719727
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Collecting Recommendations",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.03741455078125,
+          537.1975250244141
+        ],
+        [
+          489.25428771972656,
+          537.1975250244141
+        ],
+        [
+          489.25428771972656,
+          551.6174468994141
+        ],
+        [
+          314.03741455078125,
+          551.6174468994141
+        ]
+      ]
+    },
+    {
+      "title": "3.5 Dataset",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.08763122558594,
+          347.013427734375
+        ],
+        [
+          379.5908508300781,
+          347.013427734375
+        ],
+        [
+          379.5908508300781,
+          361.281982421875
+        ],
+        [
+          314.08763122558594,
+          361.281982421875
+        ]
+      ]
+    },
+    {
+      "title": "4 Analysis and Results",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.2705307006836,
+          404.3608703613281
+        ],
+        [
+          437.8377227783203,
+          404.3608703613281
+        ],
+        [
+          437.8377227783203,
+          419.135986328125
+        ],
+        [
+          314.2705307006836,
+          419.135986328125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Politicization",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.0382385253906,
+          484.3902282714844
+        ],
+        [
+          409.01239013671875,
+          484.3902282714844
+        ],
+        [
+          409.01239013671875,
+          498.90899658203125
+        ],
+        [
+          314.0382385253906,
+          498.90899658203125
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Diversity",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.52506446838379,
+          142.74552154541016
+        ],
+        [
+          123.95478057861328,
+          142.74552154541016
+        ],
+        [
+          123.95478057861328,
+          156.85797119140625
+        ],
+        [
+          50.52506446838379,
+          156.85797119140625
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Partisan Leaning",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.2423553466797,
+          269.8722839355469
+        ],
+        [
+          427.2873229980469,
+          269.8722839355469
+        ],
+        [
+          427.2873229980469,
+          284.6224060058594
+        ],
+        [
+          314.2423553466797,
+          284.6224060058594
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Engagement",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.2616271972656,
+          379.45262145996094
+        ],
+        [
+          404.5339050292969,
+          379.45262145996094
+        ],
+        [
+          404.5339050292969,
+          393.4704284667969
+        ],
+        [
+          314.2616271972656,
+          393.4704284667969
+        ]
+      ]
+    },
+    {
+      "title": "5 Discussion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.90230178833008,
+          224.56228637695312
+        ],
+        [
+          123.94620895385742,
+          224.56228637695312
+        ],
+        [
+          123.94620895385742,
+          238.5989990234375
+        ],
+        [
+          50.90230178833008,
+          238.5989990234375
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Politicization and Content Diversity",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.8253288269043,
+          336.8991165161133
+        ],
+        [
+          257.33329010009766,
+          336.8991165161133
+        ],
+        [
+          257.33329010009766,
+          351.3189697265625
+        ],
+        [
+          50.8253288269043,
+          351.3189697265625
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Ideological Skew, Drift, and Popularity in\nRecommendations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.78930854797363,
+          646.0686492919922
+        ],
+        [
+          283.8504409790039,
+          646.0686492919922
+        ],
+        [
+          283.8504409790039,
+          674.2509841918945
+        ],
+        [
+          50.78930854797363,
+          674.2509841918945
+        ]
+      ]
+    },
+    {
+      "title": "5.3 Ethical considerations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.8771743774414,
+          325.6938171386719
+        ],
+        [
+          452.6484069824219,
+          325.6938171386719
+        ],
+        [
+          452.6484069824219,
+          340.0039978027344
+        ],
+        [
+          313.8771743774414,
+          340.0039978027344
+        ]
+      ]
+    },
+    {
+      "title": "6 Limitations",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.8460235595703,
+          539.5824279785156
+        ],
+        [
+          391.89617919921875,
+          539.5824279785156
+        ],
+        [
+          391.89617919921875,
+          553.7029571533203
+        ],
+        [
+          313.8460235595703,
+          553.7029571533203
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.49799346923828,
+          82.89721298217773
+        ],
+        [
+          108.13786697387695,
+          82.89721298217773
+        ],
+        [
+          108.13786697387695,
+          94.04606437683105
+        ],
+        [
+          50.49799346923828,
+          94.04606437683105
+        ]
+      ]
+    },
+    {
+      "title": "A LLM Prompt",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.940032958984375,
+          121.02962493896484
+        ],
+        [
+          135.6940155029297,
+          121.02962493896484
+        ],
+        [
+          135.6940155029297,
+          134.60479736328125
+        ],
+        [
+          50.940032958984375,
+          134.60479736328125
+        ]
+      ]
+    },
+    {
+      "title": "B Validation for Pairing Long- and Short-form\nVideos",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.971778869628906,
+          500.3943786621094
+        ],
+        [
+          291.84764099121094,
+          500.3943786621094
+        ],
+        [
+          291.84764099121094,
+          527.7919921875
+        ],
+        [
+          50.971778869628906,
+          527.7919921875
+        ]
+      ]
+    },
+    {
+      "title": "C Additional Watch-time Analysis",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.93018341064453,
+          665.6867065429688
+        ],
+        [
+          496.46791076660156,
+          665.6867065429688
+        ],
+        [
+          496.46791076660156,
+          680.2289733886719
+        ],
+        [
+          313.93018341064453,
+          680.2289733886719
+        ]
+      ]
+    },
+    {
+      "title": "D Additional Partisan Leaning Analysis",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.21385955810547,
+          266.6521911621094
+        ],
+        [
+          522.6968994140625,
+          266.6521911621094
+        ],
+        [
+          522.6968994140625,
+          281.7884216308594
+        ],
+        [
+          314.21385955810547,
+          281.7884216308594
+        ]
+      ]
+    },
+    {
+      "title": "E Additional Engagement Analysis",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.4173812866211,
+          365.64859771728516
+        ],
+        [
+          498.37513732910156,
+          365.64859771728516
+        ],
+        [
+          498.37513732910156,
+          380.29541015625
+        ],
+        [
+          314.4173812866211,
+          380.29541015625
+        ]
+      ]
+    },
+    {
+      "title": "F Autoplay Recomendations vs. Sidebar\nRecommendations",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.46984100341797,
+          530.9848022460938
+        ],
+        [
+          521.1839904785156,
+          530.9848022460938
+        ],
+        [
+          521.1839904785156,
+          559.5569915771484
+        ],
+        [
+          314.46984100341797,
+          559.5569915771484
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          259
+        ],
+        [
+          "Line",
+          106
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          279
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          319
+        ],
+        [
+          "Line",
+          151
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          297
+        ],
+        [
+          "Line",
+          105
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          395
+        ],
+        [
+          "Line",
+          114
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          232
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Figure",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "FigureGroup",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          397
+        ],
+        [
+          "Line",
+          126
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          315
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          550
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          47
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          270
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          248
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Reference",
+          7
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          135
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "FigureGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792277_Long_Story_Short_Auditing_U_S_Political_Polarization_in_Recommendations_for_Long_vs_Short_form_Video"
+}

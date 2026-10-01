@@ -1,0 +1,1298 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Efficient High-Dimensional Time Series Forecasting with\nTransformers: A Channel Reordering Perspective",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          80.63653564453125,
+          79.04707717895508
+        ],
+        [
+          529.1797485351562,
+          79.04707717895508
+        ],
+        [
+          529.1797485351562,
+          119.62994384765625
+        ],
+        [
+          80.63653564453125,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.72966766357422,
+          303.78460693359375
+        ],
+        [
+          95.84433174133301,
+          303.78460693359375
+        ],
+        [
+          95.84433174133301,
+          317.9719543457031
+        ],
+        [
+          50.72966766357422,
+          317.9719543457031
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.68370246887207,
+          648.252685546875
+        ],
+        [
+          92.95267295837402,
+          648.252685546875
+        ],
+        [
+          92.95267295837402,
+          662.9225921630859
+        ],
+        [
+          50.68370246887207,
+          662.9225921630859
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.0597457885742,
+          304.1487350463867
+        ],
+        [
+          387.2271728515625,
+          304.1487350463867
+        ],
+        [
+          387.2271728515625,
+          317.99383544921875
+        ],
+        [
+          313.0597457885742,
+          317.99383544921875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.9893493652344,
+          339.10567474365234
+        ],
+        [
+          367.5577926635742,
+          339.10567474365234
+        ],
+        [
+          367.5577926635742,
+          353.6230163574219
+        ],
+        [
+          313.9893493652344,
+          353.6230163574219
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.16776275634766,
+          369.3596878051758
+        ],
+        [
+          404.6525573730469,
+          369.3596878051758
+        ],
+        [
+          404.6525573730469,
+          381.945068359375
+        ],
+        [
+          314.16776275634766,
+          381.945068359375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2806701660156,
+          451.03550720214844
+        ],
+        [
+          397.6868133544922,
+          451.03550720214844
+        ],
+        [
+          397.6868133544922,
+          466.031982421875
+        ],
+        [
+          314.2806701660156,
+          466.031982421875
+        ]
+      ]
+    },
+    {
+      "title": "2 Preliminaries",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.8666534423828,
+          562.1096649169922
+        ],
+        [
+          402.4183044433594,
+          562.1096649169922
+        ],
+        [
+          402.4183044433594,
+          576.1959686279297
+        ],
+        [
+          314.8666534423828,
+          576.1959686279297
+        ]
+      ]
+    },
+    {
+      "title": "2.1 High-Dimensional Time Series Forecasting",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.5965270996094,
+          576.7219848632812
+        ],
+        [
+          557.13427734375,
+          576.7219848632812
+        ],
+        [
+          557.13427734375,
+          591.9524383544922
+        ],
+        [
+          314.5965270996094,
+          591.9524383544922
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Energy Minimizing of HDTS",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.909820556640625,
+          402.5664825439453
+        ],
+        [
+          219.7734832763672,
+          402.5664825439453
+        ],
+        [
+          219.7734832763672,
+          416.4884338378906
+        ],
+        [
+          50.909820556640625,
+          416.4884338378906
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.718414306640625,
+          638.7080841064453
+        ],
+        [
+          135.81177520751953,
+          638.7080841064453
+        ],
+        [
+          135.81177520751953,
+          652.3984375
+        ],
+        [
+          51.718414306640625,
+          652.3984375
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Channel Reordering Module",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.6242218017578,
+          446.4916534423828
+        ],
+        [
+          484.36720275878906,
+          446.4916534423828
+        ],
+        [
+          484.36720275878906,
+          460.3524169921875
+        ],
+        [
+          314.6242218017578,
+          460.3524169921875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.6459426879883,
+          166.5230712890625
+        ],
+        [
+          517.2112426757812,
+          166.5230712890625
+        ],
+        [
+          517.2112426757812,
+          178.35235977172852
+        ],
+        [
+          314.6459426879883,
+          178.35235977172852
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.068870544433594,
+          82.96797752380371
+        ],
+        [
+          203.17554473876953,
+          82.96797752380371
+        ],
+        [
+          203.17554473876953,
+          95.5869312286377
+        ],
+        [
+          51.068870544433594,
+          95.5869312286377
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.54100036621094,
+          594.8597259521484
+        ],
+        [
+          480.5538024902344,
+          594.8597259521484
+        ],
+        [
+          480.5538024902344,
+          607.3488922119141
+        ],
+        [
+          314.54100036621094,
+          607.3488922119141
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          51.348209381103516,
+          306.3984146118164
+        ],
+        [
+          134.20452117919922,
+          306.3984146118164
+        ],
+        [
+          134.20452117919922,
+          320.1758117675781
+        ],
+        [
+          51.348209381103516,
+          320.1758117675781
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.844675064086914,
+          422.3672332763672
+        ],
+        [
+          176.7726287841797,
+          422.3672332763672
+        ],
+        [
+          176.7726287841797,
+          436.7768249511719
+        ],
+        [
+          50.844675064086914,
+          436.7768249511719
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Performance Comparisons (RQ1)",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.7233428955078,
+          354.7748336791992
+        ],
+        [
+          507.2010498046875,
+          354.7748336791992
+        ],
+        [
+          507.2010498046875,
+          369.4028015136719
+        ],
+        [
+          313.7233428955078,
+          369.4028015136719
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Model Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.3493118286133,
+          643.9584045410156
+        ],
+        [
+          419.1359558105469,
+          643.9584045410156
+        ],
+        [
+          419.1359558105469,
+          658.8879699707031
+        ],
+        [
+          314.3493118286133,
+          658.8879699707031
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Efficiency Comparisons (RQ5)",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          50.97997856140137,
+          637.5071411132812
+        ],
+        [
+          227.18643951416016,
+          637.5071411132812
+        ],
+        [
+          227.18643951416016,
+          652.3547973632812
+        ],
+        [
+          50.97997856140137,
+          652.3547973632812
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.3419418334961,
+          436.90269470214844
+        ],
+        [
+          391.33740234375,
+          436.90269470214844
+        ],
+        [
+          391.33740234375,
+          451.0539855957031
+        ],
+        [
+          314.3419418334961,
+          451.0539855957031
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.00402069091797,
+          635.7687835693359
+        ],
+        [
+          410.2126007080078,
+          635.7687835693359
+        ],
+        [
+          410.2126007080078,
+          650.3724365234375
+        ],
+        [
+          314.00402069091797,
+          650.3724365234375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.949153900146484,
+          82.91298866271973
+        ],
+        [
+          108.17015075683594,
+          82.91298866271973
+        ],
+        [
+          108.17015075683594,
+          93.99049186706543
+        ],
+        [
+          50.949153900146484,
+          93.99049186706543
+        ]
+      ]
+    },
+    {
+      "title": "A Channel Strategies",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          51.18333435058594,
+          271.28189849853516
+        ],
+        [
+          165.822509765625,
+          271.28189849853516
+        ],
+        [
+          165.822509765625,
+          285.5674133300781
+        ],
+        [
+          51.18333435058594,
+          285.5674133300781
+        ]
+      ]
+    },
+    {
+      "title": "B Related Work",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.8678207397461,
+          147.46422958374023
+        ],
+        [
+          404.0815734863281,
+          147.46422958374023
+        ],
+        [
+          404.0815734863281,
+          161.17498779296875
+        ],
+        [
+          314.8678207397461,
+          161.17498779296875
+        ]
+      ]
+    },
+    {
+      "title": "C Convergence Analysis",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.7264862060547,
+          585.0713653564453
+        ],
+        [
+          446.3323516845703,
+          585.0713653564453
+        ],
+        [
+          446.3323516845703,
+          599.4734344482422
+        ],
+        [
+          314.7264862060547,
+          599.4734344482422
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          51.60215377807617,
+          498.1436462402344
+        ],
+        [
+          166.11274337768555,
+          498.1436462402344
+        ],
+        [
+          166.11274337768555,
+          510.06394958496094
+        ],
+        [
+          51.60215377807617,
+          510.06394958496094
+        ]
+      ]
+    },
+    {
+      "title": "E Baseline Details",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.59108543395996,
+          204.67613983154297
+        ],
+        [
+          150.40918350219727,
+          204.67613983154297
+        ],
+        [
+          150.40918350219727,
+          219.14495849609375
+        ],
+        [
+          50.59108543395996,
+          219.14495849609375
+        ]
+      ]
+    },
+    {
+      "title": "F Hyperparameter Studies",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          314.10774993896484,
+          204.54045867919922
+        ],
+        [
+          455.76068115234375,
+          204.54045867919922
+        ],
+        [
+          455.76068115234375,
+          219.16680908203125
+        ],
+        [
+          314.10774993896484,
+          219.16680908203125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          255
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          307
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          435
+        ],
+        [
+          "Line",
+          133
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "Equation",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "Equation",
+          7
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          415
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          862
+        ],
+        [
+          "Line",
+          68
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          189
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          570
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          51
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          348
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          10
+        ],
+        [
+          "ListGroup",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          204
+        ],
+        [
+          "Line",
+          64
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792392_Efficient_High_Dimensional_Time_Series_Forecasting_with_Transformers_A_Channel_Reordering_Perspectiv"
+}

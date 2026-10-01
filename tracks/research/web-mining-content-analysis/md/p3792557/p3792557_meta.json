@@ -1,0 +1,1078 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Mitigating Cognitive Vulnerabilities in Code Generation via\nMulti-Agent Adversarial Debate",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          68.2339096069336,
+          78.85306549072266
+        ],
+        [
+          541.5687561035156,
+          78.85306549072266
+        ],
+        [
+          541.5687561035156,
+          119.62994384765625
+        ],
+        [
+          68.2339096069336,
+          119.62994384765625
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.850929260253906,
+          241.31570434570312
+        ],
+        [
+          95.77262878417969,
+          241.31570434570312
+        ],
+        [
+          95.77262878417969,
+          255.7529296875
+        ],
+        [
+          50.850929260253906,
+          255.7529296875
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.20656967163086,
+          573.7847900390625
+        ],
+        [
+          123.64369583129883,
+          573.7847900390625
+        ],
+        [
+          123.64369583129883,
+          588.2308044433594
+        ],
+        [
+          50.20656967163086,
+          588.2308044433594
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.83610916137695,
+          649.2756500244141
+        ],
+        [
+          92.28758811950684,
+          649.2756500244141
+        ],
+        [
+          92.28758811950684,
+          662.6495819091797
+        ],
+        [
+          50.83610916137695,
+          662.6495819091797
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.0877914428711,
+          241.8160629272461
+        ],
+        [
+          367.0518035888672,
+          241.8160629272461
+        ],
+        [
+          367.0518035888672,
+          255.7529296875
+        ],
+        [
+          314.0877914428711,
+          255.7529296875
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.356201171875,
+          271.0176315307617
+        ],
+        [
+          404.6525573730469,
+          271.0176315307617
+        ],
+        [
+          404.6525573730469,
+          283.49005126953125
+        ],
+        [
+          314.356201171875,
+          283.49005126953125
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.6839599609375,
+          341.7843933105469
+        ],
+        [
+          397.5361328125,
+          341.7843933105469
+        ],
+        [
+          397.5361328125,
+          356.4429931640625
+        ],
+        [
+          314.6839599609375,
+          356.4429931640625
+        ]
+      ]
+    },
+    {
+      "title": "2 Related Work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.2770767211914,
+          232.71885681152344
+        ],
+        [
+          402.5543212890625,
+          232.71885681152344
+        ],
+        [
+          402.5543212890625,
+          247.27899169921875
+        ],
+        [
+          314.2770767211914,
+          247.27899169921875
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Large Language Model for programming",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.87967681884766,
+          248.2280502319336
+        ],
+        [
+          544.0491027832031,
+          248.2280502319336
+        ],
+        [
+          544.0491027832031,
+          263.0364990234375
+        ],
+        [
+          314.87967681884766,
+          263.0364990234375
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Multi-Agent for Code Generation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.57115936279297,
+          505.83631896972656
+        ],
+        [
+          507.62017822265625,
+          505.83631896972656
+        ],
+        [
+          507.62017822265625,
+          520.8914184570312
+        ],
+        [
+          313.57115936279297,
+          520.8914184570312
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.316537857055664,
+          616.2691040039062
+        ],
+        [
+          135.6591339111328,
+          616.2691040039062
+        ],
+        [
+          135.6591339111328,
+          630.4804382324219
+        ],
+        [
+          51.316537857055664,
+          630.4804382324219
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Task Definition",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.5660400390625,
+          460.9789581298828
+        ],
+        [
+          419.75701904296875,
+          460.9789581298828
+        ],
+        [
+          419.75701904296875,
+          474.5019836425781
+        ],
+        [
+          314.5660400390625,
+          474.5019836425781
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Adversarial Debate: The Cognitive Crucible",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.4839859008789,
+          660.2567596435547
+        ],
+        [
+          559.673583984375,
+          660.2567596435547
+        ],
+        [
+          559.673583984375,
+          674.3164291381836
+        ],
+        [
+          314.4839859008789,
+          674.3164291381836
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Automated Counterfactual Verification",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.8195495605469,
+          529.0608673095703
+        ],
+        [
+          536.9501037597656,
+          529.0608673095703
+        ],
+        [
+          536.9501037597656,
+          543.8809814453125
+        ],
+        [
+          314.8195495605469,
+          543.8809814453125
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Code Generation",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.1007194519043,
+          83.54596710205078
+        ],
+        [
+          163.08717727661133,
+          83.54596710205078
+        ],
+        [
+          163.08717727661133,
+          96.1689453125
+        ],
+        [
+          51.1007194519043,
+          96.1689453125
+        ]
+      ]
+    },
+    {
+      "title": "3.5 Algorithm Description",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.962371826171875,
+          486.6874237060547
+        ],
+        [
+          191.3298454284668,
+          486.6874237060547
+        ],
+        [
+          191.3298454284668,
+          500.2164001464844
+        ],
+        [
+          50.962371826171875,
+          500.2164001464844
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.90083312988281,
+          612.4401397705078
+        ],
+        [
+          133.72998046875,
+          612.4401397705078
+        ],
+        [
+          133.72998046875,
+          625.7047882080078
+        ],
+        [
+          51.90083312988281,
+          625.7047882080078
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          51.69553184509277,
+          627.4645843505859
+        ],
+        [
+          177.07997131347656,
+          627.4645843505859
+        ],
+        [
+          177.07997131347656,
+          641.3957824707031
+        ],
+        [
+          51.69553184509277,
+          641.3957824707031
+        ]
+      ]
+    },
+    {
+      "title": "Algorithm 1: CodeForge Framework for Proactive Cognitive\nHardening",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          317.1408004760742,
+          84.68960380554199
+        ],
+        [
+          548.5836181640625,
+          84.68960380554199
+        ],
+        [
+          548.5836181640625,
+          107.876953125
+        ],
+        [
+          317.1408004760742,
+          107.876953125
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Results and Analysis",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.76738739013672,
+          503.9198913574219
+        ],
+        [
+          252.7873306274414,
+          503.9198913574219
+        ],
+        [
+          252.7873306274414,
+          518.2198181152344
+        ],
+        [
+          50.76738739013672,
+          518.2198181152344
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Ablation Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          50.9212703704834,
+          403.0279541015625
+        ],
+        [
+          152.80863189697266,
+          403.0279541015625
+        ],
+        [
+          152.80863189697266,
+          416.7339782714844
+        ],
+        [
+          50.9212703704834,
+          416.7339782714844
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Impact of debate rounds \ufffd\ufffd",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.34228706359863,
+          616.1730651855469
+        ],
+        [
+          210.38335418701172,
+          616.1730651855469
+        ],
+        [
+          210.38335418701172,
+          630.4367980957031
+        ],
+        [
+          51.34228706359863,
+          630.4367980957031
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Performance of open-source LLMs",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.19602966308594,
+          606.0860137939453
+        ],
+        [
+          513.7722015380859,
+          606.0860137939453
+        ],
+        [
+          513.7722015380859,
+          619.477783203125
+        ],
+        [
+          314.19602966308594,
+          619.477783203125
+        ]
+      ]
+    },
+    {
+      "title": "4.6 Performance of different types of\nalgorithms",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.416259765625,
+          82.71724319458008
+        ],
+        [
+          509.73719787597656,
+          82.71724319458008
+        ],
+        [
+          509.73719787597656,
+          109.1854248046875
+        ],
+        [
+          314.416259765625,
+          109.1854248046875
+        ]
+      ]
+    },
+    {
+      "title": "4.7 Performance of different programming\nlanguages",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.94359588623047,
+          327.29097747802734
+        ],
+        [
+          538.7323150634766,
+          327.29097747802734
+        ],
+        [
+          538.7323150634766,
+          354.39141845703125
+        ],
+        [
+          313.94359588623047,
+          354.39141845703125
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.39595794677734,
+          506.56617736816406
+        ],
+        [
+          391.0675506591797,
+          506.56617736816406
+        ],
+        [
+          391.0675506591797,
+          520.8259887695312
+        ],
+        [
+          314.39595794677734,
+          520.8259887695312
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.7582950592041,
+          83.03054809570312
+        ],
+        [
+          108.19386291503906,
+          83.03054809570312
+        ],
+        [
+          108.19386291503906,
+          96.1689453125
+        ],
+        [
+          50.7582950592041,
+          96.1689453125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          258
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          290
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          444
+        ],
+        [
+          "Line",
+          137
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          289
+        ],
+        [
+          "Line",
+          76
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          567
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Text",
+          22
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          162
+        ],
+        [
+          "Line",
+          67
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          250
+        ],
+        [
+          "Line",
+          88
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          283
+        ],
+        [
+          "Line",
+          126
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          443
+        ],
+        [
+          "Line",
+          137
+        ],
+        [
+          "Reference",
+          32
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792557_Mitigating_Cognitive_Vulnerabilities_in_Code_Generation_via_Multi_Agent_Adversarial_Debate"
+}

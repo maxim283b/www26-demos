@@ -1,0 +1,1399 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Hermes the Polyglot: A Unified Framework to Enhance\nExpressiveness for Multimodal Interlingual Subtitling",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          89.03677368164062,
+          79.4721794128418
+        ],
+        [
+          520.9248504638672,
+          79.4721794128418
+        ],
+        [
+          520.9248504638672,
+          119.63006591796875
+        ],
+        [
+          89.03677368164062,
+          119.63006591796875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.93931198120117,
+          407.54786682128906
+        ],
+        [
+          95.48899269104004,
+          407.54786682128906
+        ],
+        [
+          95.48899269104004,
+          421.6051330566406
+        ],
+        [
+          50.93931198120117,
+          421.6051330566406
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.0380859375,
+          648.5027160644531
+        ],
+        [
+          91.35550117492676,
+          648.5027160644531
+        ],
+        [
+          91.35550117492676,
+          662.7689208984375
+        ],
+        [
+          51.0380859375,
+          662.7689208984375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.14876556396484,
+          407.9072570800781
+        ],
+        [
+          387.6160583496094,
+          407.9072570800781
+        ],
+        [
+          387.6160583496094,
+          421.6268310546875
+        ],
+        [
+          314.14876556396484,
+          421.6268310546875
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.9274139404297,
+          454.46717834472656
+        ],
+        [
+          367.0350036621094,
+          454.46717834472656
+        ],
+        [
+          367.0350036621094,
+          469.093994140625
+        ],
+        [
+          313.9274139404297,
+          469.093994140625
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.2962341308594,
+          498.13197326660156
+        ],
+        [
+          404.6535949707031,
+          498.13197326660156
+        ],
+        [
+          404.6535949707031,
+          510.06707763671875
+        ],
+        [
+          314.2962341308594,
+          510.06707763671875
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.8153839111328,
+          583.1488494873047
+        ],
+        [
+          397.6178283691406,
+          583.1488494873047
+        ],
+        [
+          397.6178283691406,
+          597.5390014648438
+        ],
+        [
+          314.8153839111328,
+          597.5390014648438
+        ]
+      ]
+    },
+    {
+      "title": "2 Task Definition and Notations",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.44319534301758,
+          593.8638610839844
+        ],
+        [
+          219.33267211914062,
+          593.8638610839844
+        ],
+        [
+          219.33267211914062,
+          608.4980010986328
+        ],
+        [
+          51.44319534301758,
+          608.4980010986328
+        ]
+      ]
+    },
+    {
+      "title": "3 Proposed Framework",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.1665496826172,
+          223.67273712158203
+        ],
+        [
+          440.1260070800781,
+          223.67273712158203
+        ],
+        [
+          440.1260070800781,
+          238.4078369140625
+        ],
+        [
+          314.1665496826172,
+          238.4078369140625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Speaker Diarization",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3660888671875,
+          303.3574676513672
+        ],
+        [
+          441.13916015625,
+          303.3574676513672
+        ],
+        [
+          441.13916015625,
+          317.6108093261719
+        ],
+        [
+          314.3660888671875,
+          317.6108093261719
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.58485412597656,
+          660.4091491699219
+        ],
+        [
+          477.15142822265625,
+          660.4091491699219
+        ],
+        [
+          477.15142822265625,
+          672.9736175537109
+        ],
+        [
+          314.58485412597656,
+          672.9736175537109
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Expressiveness Enhancement",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.48298454284668,
+          648.4345092773438
+        ],
+        [
+          224.5338592529297,
+          648.4345092773438
+        ],
+        [
+          224.5338592529297,
+          663.3138122558594
+        ],
+        [
+          50.48298454284668,
+          663.3138122558594
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          315.7426300048828,
+          200.00672149658203
+        ],
+        [
+          438.45098876953125,
+          200.00672149658203
+        ],
+        [
+          438.45098876953125,
+          212.1112289428711
+        ],
+        [
+          315.7426300048828,
+          212.1112289428711
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.62109375,
+          83.98267364501953
+        ],
+        [
+          459.9576873779297,
+          83.98267364501953
+        ],
+        [
+          459.9576873779297,
+          95.14463424682617
+        ],
+        [
+          315.62109375,
+          95.14463424682617
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.37007904052734,
+          543.3651123046875
+        ],
+        [
+          398.0730743408203,
+          543.3651123046875
+        ],
+        [
+          398.0730743408203,
+          554.8420257568359
+        ],
+        [
+          315.37007904052734,
+          554.8420257568359
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          315.43599700927734,
+          559.0420532226562
+        ],
+        [
+          452.2020263671875,
+          559.0420532226562
+        ],
+        [
+          452.2020263671875,
+          571.1079254150391
+        ],
+        [
+          315.43599700927734,
+          571.1079254150391
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Translation Quality Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.83856964111328,
+          266.0965805053711
+        ],
+        [
+          232.69464111328125,
+          266.0965805053711
+        ],
+        [
+          232.69464111328125,
+          279.73004150390625
+        ],
+        [
+          50.83856964111328,
+          279.73004150390625
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Human Evaluation of Translation Quality",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.8654327392578,
+          82.6237735748291
+        ],
+        [
+          551.3416442871094,
+          82.6237735748291
+        ],
+        [
+          551.3416442871094,
+          96.16900634765625
+        ],
+        [
+          313.8654327392578,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Speaker Diarization Evaluation",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.0733947753906,
+          219.58426666259766
+        ],
+        [
+          497.61570739746094,
+          219.58426666259766
+        ],
+        [
+          497.61570739746094,
+          233.48785400390625
+        ],
+        [
+          314.0733947753906,
+          233.48785400390625
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Ablation Study",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.40953063964844,
+          389.4158477783203
+        ],
+        [
+          416.8023376464844,
+          389.4158477783203
+        ],
+        [
+          416.8023376464844,
+          403.6409912109375
+        ],
+        [
+          314.40953063964844,
+          403.6409912109375
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.43988037109375,
+          557.4327392578125
+        ],
+        [
+          391.1773681640625,
+          557.4327392578125
+        ],
+        [
+          391.1773681640625,
+          571.3849945068359
+        ],
+        [
+          314.43988037109375,
+          571.3849945068359
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.18829345703125,
+          660.2606506347656
+        ],
+        [
+          410.5608215332031,
+          660.2606506347656
+        ],
+        [
+          410.5608215332031,
+          674.3164596557617
+        ],
+        [
+          314.18829345703125,
+          674.3164596557617
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          51.00012016296387,
+          83.0654411315918
+        ],
+        [
+          108.14713287353516,
+          83.0654411315918
+        ],
+        [
+          108.14713287353516,
+          96.16900634765625
+        ],
+        [
+          51.00012016296387,
+          96.16900634765625
+        ]
+      ]
+    },
+    {
+      "title": "A Related Work",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.70370674133301,
+          419.66802978515625
+        ],
+        [
+          141.3519630432129,
+          419.66802978515625
+        ],
+        [
+          141.3519630432129,
+          434.49298095703125
+        ],
+        [
+          50.70370674133301,
+          434.49298095703125
+        ]
+      ]
+    },
+    {
+      "title": "A.1 Speaker Diarization",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.98611831665039,
+          435.52757263183594
+        ],
+        [
+          179.45901489257812,
+          435.52757263183594
+        ],
+        [
+          179.45901489257812,
+          450.205810546875
+        ],
+        [
+          50.98611831665039,
+          450.205810546875
+        ]
+      ]
+    },
+    {
+      "title": "A.2 LLM-as-a-Judge",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          50.986759185791016,
+          615.2016906738281
+        ],
+        [
+          158.59857559204102,
+          615.2016906738281
+        ],
+        [
+          158.59857559204102,
+          630.4804534912109
+        ],
+        [
+          50.986759185791016,
+          630.4804534912109
+        ]
+      ]
+    },
+    {
+      "title": "A.3 Language Model Preference Optimization",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.78233337402344,
+          191.58514022827148
+        ],
+        [
+          550.6363677978516,
+          191.58514022827148
+        ],
+        [
+          550.6363677978516,
+          205.86346435546875
+        ],
+        [
+          314.78233337402344,
+          205.86346435546875
+        ]
+      ]
+    },
+    {
+      "title": "B More Details on Experimental Settings",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.6956253051758,
+          357.3897171020508
+        ],
+        [
+          527.6605224609375,
+          357.3897171020508
+        ],
+        [
+          527.6605224609375,
+          373.0264587402344
+        ],
+        [
+          313.6956253051758,
+          373.0264587402344
+        ]
+      ]
+    },
+    {
+      "title": "B.1 Main Settings",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          314.1746520996094,
+          374.7725830078125
+        ],
+        [
+          412.4248352050781,
+          374.7725830078125
+        ],
+        [
+          412.4248352050781,
+          388.71746826171875
+        ],
+        [
+          314.1746520996094,
+          388.71746826171875
+        ]
+      ]
+    },
+    {
+      "title": "B.2 Human Translation Quality Evaluation",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.45973014831543,
+          248.17728424072266
+        ],
+        [
+          275.0126953125,
+          248.17728424072266
+        ],
+        [
+          275.0126953125,
+          262.49298095703125
+        ],
+        [
+          50.45973014831543,
+          262.49298095703125
+        ]
+      ]
+    },
+    {
+      "title": "C Dataset Construction",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.32477569580078,
+          460.733642578125
+        ],
+        [
+          177.64589309692383,
+          460.733642578125
+        ],
+        [
+          177.64589309692383,
+          475.3919982910156
+        ],
+        [
+          50.32477569580078,
+          475.3919982910156
+        ]
+      ]
+    },
+    {
+      "title": "C.1 Data Sources",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          50.3368034362793,
+          476.84344482421875
+        ],
+        [
+          144.10638427734375,
+          476.84344482421875
+        ],
+        [
+          144.10638427734375,
+          491.0830078125
+        ],
+        [
+          50.3368034362793,
+          491.0830078125
+        ]
+      ]
+    },
+    {
+      "title": "C.2 Bilingual Parallel Corpus Construction",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          314.1203155517578,
+          626.9554595947266
+        ],
+        [
+          539.4414367675781,
+          626.9554595947266
+        ],
+        [
+          539.4414367675781,
+          641.439453125
+        ],
+        [
+          314.1203155517578,
+          641.439453125
+        ]
+      ]
+    },
+    {
+      "title": "D Additional Experiments",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.88751029968262,
+          236.13800811767578
+        ],
+        [
+          192.13378143310547,
+          236.13800811767578
+        ],
+        [
+          192.13378143310547,
+          249.92681884765625
+        ],
+        [
+          50.88751029968262,
+          249.92681884765625
+        ]
+      ]
+    },
+    {
+      "title": "D.1 Speaker Turn Threshold \ufffd\ufffd",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.92214584350586,
+          251.3957748413086
+        ],
+        [
+          208.63286590576172,
+          251.3957748413086
+        ],
+        [
+          208.63286590576172,
+          265.6177978515625
+        ],
+        [
+          50.92214584350586,
+          265.6177978515625
+        ]
+      ]
+    },
+    {
+      "title": "D.2 Terminology Identification Model Size",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          50.39484214782715,
+          616.18505859375
+        ],
+        [
+          270.33899688720703,
+          616.18505859375
+        ],
+        [
+          270.33899688720703,
+          630.4804534912109
+        ],
+        [
+          50.39484214782715,
+          630.4804534912109
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          200
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          452
+        ],
+        [
+          "Line",
+          112
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          9
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          618
+        ],
+        [
+          "Line",
+          94
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          352
+        ],
+        [
+          "Line",
+          107
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          755
+        ],
+        [
+          "Line",
+          73
+        ],
+        [
+          "Caption",
+          5
+        ],
+        [
+          "Table",
+          5
+        ],
+        [
+          "Reference",
+          5
+        ],
+        [
+          "TableGroup",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          60
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          570
+        ],
+        [
+          "Line",
+          156
+        ],
+        [
+          "Reference",
+          47
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          357
+        ],
+        [
+          "Line",
+          120
+        ],
+        [
+          "Reference",
+          14
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          466
+        ],
+        [
+          "Line",
+          118
+        ],
+        [
+          "Reference",
+          9
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Footnote",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          195
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792262_Hermes_the_Polyglot_A_Unified_Framework_to_Enhance_Expressiveness_for_Multimodal_Interlingual_Subtit"
+}

@@ -1,0 +1,588 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Feature-PI: A Data Repository for Learning-based Feature\nImportance Estimation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          78.37533760070801,
+          79.64071655273438
+        ],
+        [
+          532.4407653808594,
+          79.64071655273438
+        ],
+        [
+          532.4407653808594,
+          119.59552001953125
+        ],
+        [
+          78.37533760070801,
+          119.59552001953125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.986982345581055,
+          183.01422500610352
+        ],
+        [
+          95.79360008239746,
+          183.01422500610352
+        ],
+        [
+          95.79360008239746,
+          197.3070068359375
+        ],
+        [
+          50.986982345581055,
+          197.3070068359375
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.8582763671875,
+          382.7252426147461
+        ],
+        [
+          123.73155212402344,
+          382.7252426147461
+        ],
+        [
+          123.73155212402344,
+          396.70880126953125
+        ],
+        [
+          50.8582763671875,
+          396.70880126953125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.13707160949707,
+          417.2970886230469
+        ],
+        [
+          102.87902069091797,
+          417.2970886230469
+        ],
+        [
+          102.87902069091797,
+          431.6829833984375
+        ],
+        [
+          51.13707160949707,
+          431.6829833984375
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.142696380615234,
+          446.6437225341797
+        ],
+        [
+          141.0446548461914,
+          446.6437225341797
+        ],
+        [
+          141.0446548461914,
+          458.7460632324219
+        ],
+        [
+          51.142696380615234,
+          458.7460632324219
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.221717834472656,
+          505.9537353515625
+        ],
+        [
+          133.379150390625,
+          505.9537353515625
+        ],
+        [
+          133.379150390625,
+          520.3869934082031
+        ],
+        [
+          51.221717834472656,
+          520.3869934082031
+        ]
+      ]
+    },
+    {
+      "title": "2 Related work",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.864736557006836,
+          148.3937873840332
+        ],
+        [
+          136.56254196166992,
+          148.3937873840332
+        ],
+        [
+          136.56254196166992,
+          161.92999267578125
+        ],
+        [
+          50.864736557006836,
+          161.92999267578125
+        ]
+      ]
+    },
+    {
+      "title": "3 Feature-PI",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.8282241821289,
+          238.3517074584961
+        ],
+        [
+          386.2235107421875,
+          238.3517074584961
+        ],
+        [
+          386.2235107421875,
+          253.11798095703125
+        ],
+        [
+          314.8282241821289,
+          253.11798095703125
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Dataset collection",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.45567321777344,
+          254.04331970214844
+        ],
+        [
+          430.9285888671875,
+          254.04331970214844
+        ],
+        [
+          430.9285888671875,
+          268.8099365234375
+        ],
+        [
+          314.45567321777344,
+          268.8099365234375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Label Generation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.3353729248047,
+          531.0434417724609
+        ],
+        [
+          427.8958740234375,
+          531.0434417724609
+        ],
+        [
+          427.8958740234375,
+          545.5099945068359
+        ],
+        [
+          314.3353729248047,
+          545.5099945068359
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Evaluation Protocol",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.79188346862793,
+          309.2725524902344
+        ],
+        [
+          177.1571044921875,
+          309.2725524902344
+        ],
+        [
+          177.1571044921875,
+          323.56597900390625
+        ],
+        [
+          50.79188346862793,
+          323.56597900390625
+        ]
+      ]
+    },
+    {
+      "title": "4 Analysis",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.68418884277344,
+          245.89764404296875
+        ],
+        [
+          377.33287811279297,
+          245.89764404296875
+        ],
+        [
+          377.33287811279297,
+          259.98797607421875
+        ],
+        [
+          314.68418884277344,
+          259.98797607421875
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.24695587158203,
+          624.7490844726562
+        ],
+        [
+          391.2341766357422,
+          624.7490844726562
+        ],
+        [
+          391.2341766357422,
+          638.9539642333984
+        ],
+        [
+          314.24695587158203,
+          638.9539642333984
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.86299705505371,
+          525.7273864746094
+        ],
+        [
+          145.88287353515625,
+          525.7273864746094
+        ],
+        [
+          145.88287353515625,
+          538.0152282714844
+        ],
+        [
+          50.86299705505371,
+          538.0152282714844
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.552879333496094,
+          573.5424957275391
+        ],
+        [
+          108.44469451904297,
+          573.5424957275391
+        ],
+        [
+          108.44469451904297,
+          585.5389709472656
+        ],
+        [
+          50.552879333496094,
+          585.5389709472656
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          247
+        ],
+        [
+          "Line",
+          101
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          326
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Footnote",
+          4
+        ],
+        [
+          "Reference",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          290
+        ],
+        [
+          "Line",
+          110
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          386
+        ],
+        [
+          "Line",
+          131
+        ],
+        [
+          "Reference",
+          22
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792883_Feature_PI_A_Data_Repository_for_Learning_based_Feature_Importance_Estimation"
+}

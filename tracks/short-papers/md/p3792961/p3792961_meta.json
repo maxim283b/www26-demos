@@ -1,0 +1,556 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study\nof TabPFN",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.30813789367676,
+          78.8254280090332
+        ],
+        [
+          559.5327758789062,
+          78.8254280090332
+        ],
+        [
+          559.5327758789062,
+          119.5955810546875
+        ],
+        [
+          51.30813789367676,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.29490280151367,
+          203.93895721435547
+        ],
+        [
+          95.41621398925781,
+          203.93895721435547
+        ],
+        [
+          95.41621398925781,
+          217.6719970703125
+        ],
+        [
+          51.29490280151367,
+          217.6719970703125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.08381462097168,
+          424.6057434082031
+        ],
+        [
+          123.16777038574219,
+          424.6057434082031
+        ],
+        [
+          123.16777038574219,
+          439.2568054199219
+        ],
+        [
+          50.08381462097168,
+          439.2568054199219
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.21363067626953,
+          471.48138427734375
+        ],
+        [
+          102.97725677490234,
+          471.48138427734375
+        ],
+        [
+          102.97725677490234,
+          485.4559631347656
+        ],
+        [
+          50.21363067626953,
+          485.4559631347656
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.24018096923828,
+          510.8251190185547
+        ],
+        [
+          140.8681297302246,
+          510.8251190185547
+        ],
+        [
+          140.8681297302246,
+          523.9880676269531
+        ],
+        [
+          50.24018096923828,
+          523.9880676269531
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.05815315246582,
+          572.757568359375
+        ],
+        [
+          133.3798828125,
+          572.757568359375
+        ],
+        [
+          133.3798828125,
+          586.6520080566406
+        ],
+        [
+          51.05815315246582,
+          586.6520080566406
+        ]
+      ]
+    },
+    {
+      "title": "2 Background and Related Work",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.02425384521484,
+          500.1412353515625
+        ],
+        [
+          487.1399230957031,
+          500.1412353515625
+        ],
+        [
+          487.1399230957031,
+          515.2434387207031
+        ],
+        [
+          314.02425384521484,
+          515.2434387207031
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Fairness and its Challenge in ML",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          313.8805389404297,
+          515.6090240478516
+        ],
+        [
+          504.7964630126953,
+          515.6090240478516
+        ],
+        [
+          504.7964630126953,
+          530.9344482421875
+        ],
+        [
+          313.8805389404297,
+          530.9344482421875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Pre-Trained Tabular Foundation Model",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.533653259277344,
+          353.1969451904297
+        ],
+        [
+          272.28973388671875,
+          353.1969451904297
+        ],
+        [
+          272.28973388671875,
+          367.4019775390625
+        ],
+        [
+          50.533653259277344,
+          367.4019775390625
+        ]
+      ]
+    },
+    {
+      "title": "3 Experiments",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.6972351074219,
+          259.1301727294922
+        ],
+        [
+          397.65692138671875,
+          259.1301727294922
+        ],
+        [
+          397.65692138671875,
+          273.0457763671875
+        ],
+        [
+          314.6972351074219,
+          273.0457763671875
+        ]
+      ]
+    },
+    {
+      "title": "3.1 RQ1",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.40509033203125,
+          501.9957275390625
+        ],
+        [
+          364.1222839355469,
+          501.9957275390625
+        ],
+        [
+          364.1222839355469,
+          516.2869873046875
+        ],
+        [
+          314.40509033203125,
+          516.2869873046875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 RQ2",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.42671966552734,
+          602.8763122558594
+        ],
+        [
+          364.6002960205078,
+          602.8763122558594
+        ],
+        [
+          364.6002960205078,
+          617.0839996337891
+        ],
+        [
+          314.42671966552734,
+          617.0839996337891
+        ]
+      ]
+    },
+    {
+      "title": "4 Results and Discussion",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.3207950592041,
+          434.9666290283203
+        ],
+        [
+          184.28993225097656,
+          434.9666290283203
+        ],
+        [
+          184.28993225097656,
+          447.72796630859375
+        ],
+        [
+          51.3207950592041,
+          447.72796630859375
+        ]
+      ]
+    },
+    {
+      "title": "5 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.82912826538086,
+          627.0661468505859
+        ],
+        [
+          126.6926040649414,
+          627.0661468505859
+        ],
+        [
+          126.6926040649414,
+          641.3740081787109
+        ],
+        [
+          50.82912826538086,
+          641.3740081787109
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.8637924194336,
+          212.85637664794922
+        ],
+        [
+          372.3041076660156,
+          212.85637664794922
+        ],
+        [
+          372.3041076660156,
+          226.927978515625
+        ],
+        [
+          314.8637924194336,
+          226.927978515625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          355
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          8
+        ],
+        [
+          "Footnote",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          335
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "Text",
+          15
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          373
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          557
+        ],
+        [
+          "Line",
+          133
+        ],
+        [
+          "Reference",
+          24
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792961_Causal_Pre_training_Under_the_Fairness_Lens_An_Empirical_Study_of_TabPFN"
+}

@@ -1,0 +1,624 @@
+{
+  "table_of_contents": [
+    {
+      "title": "HierCon: Hierarchical Contrastive Attention\nfor Audio Deepfake Detection",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          130.02523040771484,
+          79.09476470947266
+        ],
+        [
+          479.3161315917969,
+          79.09476470947266
+        ],
+        [
+          479.3161315917969,
+          119.5955810546875
+        ],
+        [
+          130.02523040771484,
+          119.5955810546875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.43587112426758,
+          205.4959487915039
+        ],
+        [
+          95.63860702514648,
+          205.4959487915039
+        ],
+        [
+          95.63860702514648,
+          219.35205078125
+        ],
+        [
+          51.43587112426758,
+          219.35205078125
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          49.999277114868164,
+          416.46409606933594
+        ],
+        [
+          123.38611221313477,
+          416.46409606933594
+        ],
+        [
+          123.38611221313477,
+          430.602783203125
+        ],
+        [
+          49.999277114868164,
+          430.602783203125
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.08940505981445,
+          452.5542755126953
+        ],
+        [
+          103.08643341064453,
+          452.5542755126953
+        ],
+        [
+          103.08643341064453,
+          466.4689636230469
+        ],
+        [
+          50.08940505981445,
+          466.4689636230469
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.23659324645996,
+          483.052001953125
+        ],
+        [
+          140.4966278076172,
+          483.052001953125
+        ],
+        [
+          140.4966278076172,
+          495.2471008300781
+        ],
+        [
+          50.23659324645996,
+          495.2471008300781
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.30516242980957,
+          556.2317047119141
+        ],
+        [
+          133.3798828125,
+          556.2317047119141
+        ],
+        [
+          133.3798828125,
+          570.2809906005859
+        ],
+        [
+          51.30516242980957,
+          570.2809906005859
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.388715744018555,
+          649.1838684082031
+        ],
+        [
+          91.66926383972168,
+          649.1838684082031
+        ],
+        [
+          91.66926383972168,
+          662.5279998779297
+        ],
+        [
+          51.388715744018555,
+          662.5279998779297
+        ]
+      ]
+    },
+    {
+      "title": "2 Proposed Method",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.26791191101074,
+          259.4059295654297
+        ],
+        [
+          157.59439086914062,
+          259.4059295654297
+        ],
+        [
+          157.59439086914062,
+          273.08978271484375
+        ],
+        [
+          51.26791191101074,
+          273.08978271484375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Preliminaries",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.364145278930664,
+          275.30804443359375
+        ],
+        [
+          146.72289276123047,
+          275.30804443359375
+        ],
+        [
+          146.72289276123047,
+          288.75897216796875
+        ],
+        [
+          51.364145278930664,
+          288.75897216796875
+        ]
+      ]
+    },
+    {
+      "title": "2.2 HierCon",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          51.523080825805664,
+          520.4040069580078
+        ],
+        [
+          122.1943473815918,
+          520.4040069580078
+        ],
+        [
+          122.1943473815918,
+          533.7780151367188
+        ],
+        [
+          51.523080825805664,
+          533.7780151367188
+        ]
+      ]
+    },
+    {
+      "title": "3 Experiments",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.03970527648926,
+          218.32134246826172
+        ],
+        [
+          133.50457763671875,
+          218.32134246826172
+        ],
+        [
+          133.50457763671875,
+          231.55780029296875
+        ],
+        [
+          51.03970527648926,
+          231.55780029296875
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Overall Performance",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          50.701772689819336,
+          540.0118103027344
+        ],
+        [
+          182.31421279907227,
+          540.0118103027344
+        ],
+        [
+          182.31421279907227,
+          553.7030029296875
+        ],
+        [
+          50.701772689819336,
+          553.7030029296875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Ablation Studies",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.5677795410156,
+          376.25988006591797
+        ],
+        [
+          424.7263641357422,
+          376.25988006591797
+        ],
+        [
+          424.7263641357422,
+          389.3199768066406
+        ],
+        [
+          314.5677795410156,
+          389.3199768066406
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Attention Analysis and Interpretability",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.36836051940918,
+          265.91773223876953
+        ],
+        [
+          272.7763366699219,
+          265.91773223876953
+        ],
+        [
+          272.7763366699219,
+          279.7518310546875
+        ],
+        [
+          50.36836051940918,
+          279.7518310546875
+        ]
+      ]
+    },
+    {
+      "title": "4 Conclusion",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.2693176269531,
+          215.86566925048828
+        ],
+        [
+          391.43023681640625,
+          215.86566925048828
+        ],
+        [
+          391.43023681640625,
+          228.88800048828125
+        ],
+        [
+          314.2693176269531,
+          228.88800048828125
+        ]
+      ]
+    },
+    {
+      "title": "5 Acknowledgments",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.1913375854492,
+          359.40545654296875
+        ],
+        [
+          426.4569091796875,
+          359.40545654296875
+        ],
+        [
+          426.4569091796875,
+          373.86444091796875
+        ],
+        [
+          314.1913375854492,
+          373.86444091796875
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.6875228881836,
+          573.6703033447266
+        ],
+        [
+          372.3041076660156,
+          573.6703033447266
+        ],
+        [
+          372.3041076660156,
+          587.5760040283203
+        ],
+        [
+          313.6875228881836,
+          587.5760040283203
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          239
+        ],
+        [
+          "Line",
+          109
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          645
+        ],
+        [
+          "Line",
+          150
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          284
+        ],
+        [
+          "Line",
+          108
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          198
+        ],
+        [
+          "Line",
+          91
+        ],
+        [
+          "Reference",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          79
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "Reference",
+          9
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3792873_HierCon_Hierarchical_Contrastive_Attention_for_Audio_Deepfake_Detection"
+}

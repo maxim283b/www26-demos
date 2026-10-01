@@ -1,0 +1,1163 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Online GPU Energy Optimization with Switching-Aware Bandits",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          51.42089080810547,
+          79.05828094482422
+        ],
+        [
+          558.5419464111328,
+          79.05828094482422
+        ],
+        [
+          558.5419464111328,
+          99.705078125
+        ],
+        [
+          51.42089080810547,
+          99.705078125
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.92276954650879,
+          222.4877700805664
+        ],
+        [
+          95.64612007141113,
+          222.4877700805664
+        ],
+        [
+          95.64612007141113,
+          234.42633819580078
+        ],
+        [
+          50.92276954650879,
+          234.42633819580078
+        ]
+      ]
+    },
+    {
+      "title": "CCS Concepts",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          50.58710861206055,
+          555.4582214355469
+        ],
+        [
+          123.44295501708984,
+          555.4582214355469
+        ],
+        [
+          123.44295501708984,
+          569.7588195800781
+        ],
+        [
+          50.58710861206055,
+          569.7588195800781
+        ]
+      ]
+    },
+    {
+      "title": "Keywords",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.3026885986328,
+          222.45831298828125
+        ],
+        [
+          367.0350341796875,
+          222.45831298828125
+        ],
+        [
+          367.0350341796875,
+          236.197998046875
+        ],
+        [
+          314.3026885986328,
+          236.197998046875
+        ]
+      ]
+    },
+    {
+      "title": "ACM Reference Format:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.244873046875,
+          252.40225982666016
+        ],
+        [
+          404.72076416015625,
+          252.40225982666016
+        ],
+        [
+          404.72076416015625,
+          264.1673583984375
+        ],
+        [
+          314.244873046875,
+          264.1673583984375
+        ]
+      ]
+    },
+    {
+      "title": "1 Introduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          314.4811477661133,
+          326.31163787841797
+        ],
+        [
+          397.7840881347656,
+          326.31163787841797
+        ],
+        [
+          397.7840881347656,
+          339.02034759521484
+        ],
+        [
+          314.4811477661133,
+          339.02034759521484
+        ]
+      ]
+    },
+    {
+      "title": "2 Preliminaries",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          314.90794372558594,
+          625.1478424072266
+        ],
+        [
+          402.3075256347656,
+          625.1478424072266
+        ],
+        [
+          402.3075256347656,
+          637.5344696044922
+        ],
+        [
+          314.90794372558594,
+          637.5344696044922
+        ]
+      ]
+    },
+    {
+      "title": "2.1 The Aurora Node Architecture",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.9617691040039,
+          670.2687377929688
+        ],
+        [
+          493.7571716308594,
+          670.2687377929688
+        ],
+        [
+          493.7571716308594,
+          683.111572265625
+        ],
+        [
+          313.9617691040039,
+          683.111572265625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Multi-Armed Bandits",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          51.32369041442871,
+          532.3050384521484
+        ],
+        [
+          184.2007827758789,
+          532.3050384521484
+        ],
+        [
+          184.2007827758789,
+          544.1425323486328
+        ],
+        [
+          51.32369041442871,
+          544.1425323486328
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Problem Definition",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.60506439208984,
+          377.0848388671875
+        ],
+        [
+          438.8588104248047,
+          377.0848388671875
+        ],
+        [
+          438.8588104248047,
+          389.03627014160156
+        ],
+        [
+          314.60506439208984,
+          389.03627014160156
+        ]
+      ]
+    },
+    {
+      "title": "3 Methodology",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          314.9989471435547,
+          638.688720703125
+        ],
+        [
+          399.8168640136719,
+          638.688720703125
+        ],
+        [
+          399.8168640136719,
+          652.3984527587891
+        ],
+        [
+          314.9989471435547,
+          652.3984527587891
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          315.2251510620117,
+          83.79447555541992
+        ],
+        [
+          414.62351989746094,
+          83.79447555541992
+        ],
+        [
+          414.62351989746094,
+          94.97953033447266
+        ],
+        [
+          315.2251510620117,
+          94.97953033447266
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.77071189880371,
+          118.07091522216797
+        ],
+        [
+          293.69366455078125,
+          118.07091522216797
+        ],
+        [
+          293.69366455078125,
+          130.70829391479492
+        ],
+        [
+          50.77071189880371,
+          130.70829391479492
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          314.9493713378906,
+          528.7029876708984
+        ],
+        [
+          460.6318817138672,
+          528.7029876708984
+        ],
+        [
+          460.6318817138672,
+          540.8611907958984
+        ],
+        [
+          314.9493713378906,
+          540.8611907958984
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Constrained EnergyUCB for QoS Guarantee",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          50.78719139099121,
+          670.97314453125
+        ],
+        [
+          294.21922302246094,
+          670.97314453125
+        ],
+        [
+          294.21922302246094,
+          685.1772766113281
+        ],
+        [
+          50.78719139099121,
+          685.1772766113281
+        ]
+      ]
+    },
+    {
+      "title": "4 Experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.806640625,
+          267.2241439819336
+        ],
+        [
+          398.1083221435547,
+          267.2241439819336
+        ],
+        [
+          398.1083221435547,
+          280.10882568359375
+        ],
+        [
+          314.806640625,
+          280.10882568359375
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Experimental Setup",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          314.80725860595703,
+          312.9070587158203
+        ],
+        [
+          441.61903381347656,
+          312.9070587158203
+        ],
+        [
+          441.61903381347656,
+          326.27679443359375
+        ],
+        [
+          314.80725860595703,
+          326.27679443359375
+        ]
+      ]
+    },
+    {
+      "title": "Evaluation Metrics. We employ two metrics in the evaluation.",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          50.61005401611328,
+          612.7774658203125
+        ],
+        [
+          287.63275146484375,
+          612.7774658203125
+        ],
+        [
+          287.63275146484375,
+          625.451171875
+        ],
+        [
+          50.61005401611328,
+          625.451171875
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Experimental Results",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          314.6316146850586,
+          589.9488830566406
+        ],
+        [
+          449.56622314453125,
+          589.9488830566406
+        ],
+        [
+          449.56622314453125,
+          603.9108276367188
+        ],
+        [
+          314.6316146850586,
+          603.9108276367188
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Ablation Study",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          51.19596862792969,
+          616.6448364257812
+        ],
+        [
+          152.6453399658203,
+          616.6448364257812
+        ],
+        [
+          152.6453399658203,
+          630.4150085449219
+        ],
+        [
+          51.19596862792969,
+          630.4150085449219
+        ]
+      ]
+    },
+    {
+      "title": "Table 2: Ablation study of EnergyUCB.",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          354.0911865234375,
+          131.45315551757812
+        ],
+        [
+          518.2470703125,
+          131.45315551757812
+        ],
+        [
+          518.2470703125,
+          142.98400497436523
+        ],
+        [
+          354.0911865234375,
+          142.98400497436523
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Switching Cost Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.5235366821289,
+          289.12886810302734
+        ],
+        [
+          462.810791015625,
+          289.12886810302734
+        ],
+        [
+          462.810791015625,
+          302.8454284667969
+        ],
+        [
+          314.5235366821289,
+          302.8454284667969
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Reward Formulation Analysis",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          314.18792724609375,
+          510.0065460205078
+        ],
+        [
+          491.55702209472656,
+          510.0065460205078
+        ],
+        [
+          491.55702209472656,
+          523.9960021972656
+        ],
+        [
+          314.18792724609375,
+          523.9960021972656
+        ]
+      ]
+    },
+    {
+      "title": "4.6 Quality of Service Analysis",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.124122619628906,
+          383.49884033203125
+        ],
+        [
+          212.81549835205078,
+          383.49884033203125
+        ],
+        [
+          212.81549835205078,
+          396.70599365234375
+        ],
+        [
+          51.124122619628906,
+          396.70599365234375
+        ]
+      ]
+    },
+    {
+      "title": "5 Related Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          51.28832817077637,
+          670.318359375
+        ],
+        [
+          138.75248336791992,
+          670.318359375
+        ],
+        [
+          138.75248336791992,
+          683.1480560302734
+        ],
+        [
+          51.28832817077637,
+          683.1480560302734
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Energy Optimization in CPUs/GPUs",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.3802795410156,
+          83.13168525695801
+        ],
+        [
+          521.7366485595703,
+          83.13168525695801
+        ],
+        [
+          521.7366485595703,
+          96.23443603515625
+        ],
+        [
+          314.3802795410156,
+          96.23443603515625
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Multi-Armed Bandit and Its Applications",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.94403076171875,
+          287.55821228027344
+        ],
+        [
+          547.9439849853516,
+          287.55821228027344
+        ],
+        [
+          547.9439849853516,
+          301.73382568359375
+        ],
+        [
+          313.94403076171875,
+          301.73382568359375
+        ]
+      ]
+    },
+    {
+      "title": "6 Conclusion and Future Work",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          313.9754104614258,
+          509.6512756347656
+        ],
+        [
+          478.3358459472656,
+          509.6512756347656
+        ],
+        [
+          478.3358459472656,
+          522.0183563232422
+        ],
+        [
+          313.9754104614258,
+          522.0183563232422
+        ]
+      ]
+    },
+    {
+      "title": "Acknowledgments",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          314.0181655883789,
+          637.8096313476562
+        ],
+        [
+          410.28350830078125,
+          637.8096313476562
+        ],
+        [
+          410.28350830078125,
+          652.3984375
+        ],
+        [
+          314.0181655883789,
+          652.3984375
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          50.73649978637695,
+          83.03041076660156
+        ],
+        [
+          108.30678176879883,
+          83.03041076660156
+        ],
+        [
+          108.30678176879883,
+          94.25554275512695
+        ],
+        [
+          50.73649978637695,
+          94.25554275512695
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          235
+        ],
+        [
+          "Line",
+          104
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Footnote",
+          7
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          314
+        ],
+        [
+          "Line",
+          125
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          545
+        ],
+        [
+          "Line",
+          135
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Reference",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          545
+        ],
+        [
+          "Line",
+          118
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "ListItem",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          704
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          457
+        ],
+        [
+          "Line",
+          130
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          451
+        ],
+        [
+          "Line",
+          133
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Reference",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          460
+        ],
+        [
+          "Line",
+          138
+        ],
+        [
+          "Reference",
+          38
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\p3793034_Online_GPU_Energy_Optimization_with_Switching_Aware_Bandits"
+}
